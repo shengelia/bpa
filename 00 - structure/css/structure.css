@@ -1,0 +1,154 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.no-lr-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
+.no-lr-margin {
+	margin-left: 0;
+	margin-right: 0;
+}
+@font-face{
+    font-family: 'MarkPro';
+    src: url('../fonts/MarkPro.otf');
+}
+body {
+    position: relative;
+    font-family: 'MarkPro';
+}
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background-color: #E3E3E3;
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+.website-logo {
+    width: 160px;
+    padding: 2.5px 0 2.5px;
+}
+.website-background {
+	background: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	margin-top: 50px;
+}
+/* ----------------- Min queries 768 px ----------------- */
+/* -- Max queries 1200, 991, 768, 650, 550, 420, 320 px --*/
+@media (min-width: 768px) {
+	.mobile-hidden {
+		display: none !important;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 1200 --------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 1200px) {
+	.website-background {
+	    height: 300px;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 991 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 991px) {
+	.website-background {
+	    height: 250px;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 768 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 768px) {
+	.mobile-center-align {
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 650 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 650px) {
+	.website-background {
+	    height: 200px;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 550 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 550px) {
+	
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 420 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 420px) {
+	
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 320 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+@media (max-width: 320px) {
+	
+}
