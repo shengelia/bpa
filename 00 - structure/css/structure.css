@@ -87,8 +87,43 @@ body {
 	height: 400px;
 	margin-top: 50px;
 }
+.website-background .container {
+	position: relative;
+}
+.website-background-text {
+	float: left;
+	top: 25px;
+}
+.website-background-text h1 {
+	color: white;
+	font-size: 28px;
+	line-height: 38px;
+	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-stroke: 0.45px;
+	-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
+	text-shadow: #fff 0px 1px 1px;
+	padding: 15px;
+	background: rgba(0, 0, 0, 0.4);
+}
+.website-background-trusted-and-date {
+	float: right;
+	text-align: center;
+}
+.trusted {
+	width: 150px;
+	position: absolute;
+	top: 300px;
+	right: 0;
+}
+
 /* ----------------- Min queries 768 px ----------------- */
-/* -- Max queries 1200, 991, 768, 650, 550, 420, 320 px --*/
+/* -- Max queries 1199, 991, 768, 650, 550, 420, 320 px --*/
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- min 768 ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 @media (min-width: 768px) {
 	.mobile-hidden {
 		display: none !important;
@@ -96,11 +131,18 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-/* --------------------------------------------- 1200 --------------------------------------------- */
+/* --------------------------------------------- max 1199 ----------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 	.website-background {
 	    height: 300px;
+	}
+	.website-background-text h1 {
+	    font-size: 24px;
+	    line-height: 32px;
+	}
+	.trusted {
+	    top: 200px;
 	}
 }
 
