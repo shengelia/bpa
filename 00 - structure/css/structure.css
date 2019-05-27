@@ -105,7 +105,7 @@ body {
 	-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
 	text-shadow: #fff 0px 1px 1px;
 	padding: 15px;
-	background: rgba(0, 0, 0, 0.4);
+	background: rgba(0, 0, 0, 0.45);
 }
 .website-background-trusted-and-date {
 	float: right;
@@ -116,6 +116,64 @@ body {
 	position: absolute;
 	top: 300px;
 	right: 0;
+}
+.date span {
+	position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    top: 270px;
+    right: 25px;
+}
+
+.subscribe-form {
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+.subscribe-form input {
+    box-sizing: border-box;
+    color: #717171;
+    padding: 14px 18px;
+    outline-color: #048553;
+    border: none;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+    background: #f3f3f3;
+}
+.subscribe-form button {
+    background-color: #88bbfb;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 25px 12px 25px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.message-content {
+    position: absolute;
+    top: 10px;
+}
+.message-content, .message-content-err {
+    position: absolute;
+    font-size: 20px;
+    top: 25%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.message-content {
+    font-weight: bold;
+    color: #0F9200;
+    border-radius: 5px;
+}
+.message-content-err {
+    font-weight: bold;
+    color: #FF0000;
+    border-radius: 5px;
 }
 
 /* ----------------- Min queries 768 px ----------------- */
@@ -144,6 +202,9 @@ body {
 	.trusted {
 	    top: 200px;
 	}
+	.date span {
+	    top: 175px;
+	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -152,6 +213,19 @@ body {
 @media (max-width: 991px) {
 	.website-background {
 	    height: 250px;
+	}
+	.trusted {
+	    top: 170px;
+	    width: 120px;
+	}
+	.website-background-text h1 {
+	    font-size: 18px;
+	    line-height: 30px;
+	}
+	.date span {
+	    top: 145px;
+	    font-size: 14px;
+	    right: 15px;
 	}
 }
 
@@ -162,6 +236,18 @@ body {
 	.mobile-center-align {
 		text-align: center;
 		margin: 0 auto;
+	}
+	.website-background-text {
+	    top: 10px;
+	}
+	.website-background-text h1 {
+	    font-size: 16px;
+	    line-height: 28px;
+	    font-weight: 200;
+	}
+	.website-background-text h1 {
+	    font-size: 16px;
+	    line-height: 28px;
 	}
 }
 

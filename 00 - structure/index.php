@@ -79,6 +79,17 @@
 </section>
 
 
+<section class="subscribe-form">
+    <form>
+        <input type="email" id="subscribe-email" placeholder="Enter e-mail" class="wow fadeInLeft" data-wow-delay="0.5s">
+        <button id="signup-button">Subscribe</button>
+        <label for="subscribe-email" class="subscribe-message error">
+            <span class="message-content"></span>
+            <span class="message-content-err"></span>
+        </label>
+    </form>
+</section>
+
 <?php include "components/javascript.php";?>
 </body>
 </html>
