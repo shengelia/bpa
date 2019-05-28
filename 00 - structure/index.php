@@ -63,10 +63,10 @@
 <section class="website-background">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10 website-background-text">
+			<div class="col-lg-9 col-md-9 col-sm-10 website-background-text">
 				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus hic dignissimos, dolorem recusandae fugiat blanditiis eveniet incidunt, pariatur quibusdam quam facilis, voluptatum, tenetur et quia eos aspernatur non. Sapiente perferendis error assumenda pariatur harum tempora autem, ullam blanditiis quibusdam.</h1>
 			</div>
-			<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 website-background-trusted-and-date">
+			<div class="col-lg-3 col-md-3 col-sm-2 website-background-trusted-and-date">
 				<div class="trusted">
 					<img src="img/trusted.png" alt="Trusted Choise" width="100%">
 				</div>
