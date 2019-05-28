@@ -1,4 +1,17 @@
-
+.filter-main {
+	width: 50%;
+	margin: 0 auto;
+}
+.filter-header li img {
+	width: 94px;
+}
+.filter-header li:first-child {
+	pointer-events: none;
+}
+.filter_active {
+	background: black;
+	color: white;
+}
 
 /* --------------------------- ----- --------------------------- */
 /* --------------------------- ----- --------------------------- */
