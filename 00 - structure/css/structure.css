@@ -75,17 +75,15 @@ body {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  border-radius: 15px;
   background-color: #E3E3E3;
 } 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: red; 
-  border-radius: 10px;
+  background: #818181;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #b30000; 
+  background: #818181; 
 }
 .website-logo {
     width: 160px;
@@ -191,7 +189,31 @@ body {
     color: #FF0000;
     border-radius: 5px;
 }
-
+.filter-main {
+	width: 50%;
+	margin: 0 auto;
+}
+.filter-header {
+	display: flex;
+	width: 100%;
+	text-align: center;
+}
+.filter-header li {
+	flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+.filter-header li img {
+	width: 94px;
+}
+.filter-header li:first-child {
+	pointer-events: none;
+}
+.filter_active {
+	background: black;
+	color: white;
+}
 /* ----------------- Min queries 768 px ----------------- */
 /* -- Max queries 1199, 991, 768, 650, 550, 414, 320 px --*/
 
