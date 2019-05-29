@@ -25,6 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	cursor: default;
 }
 ol, ul {
 	list-style: none;
@@ -189,7 +190,7 @@ body {
     color: #FF0000;
     border-radius: 5px;
 }
-.filter-header {
+.filter-header, .cards {
 	display: flex;
 	width: 100%;
 	text-align: center;
@@ -200,6 +201,29 @@ body {
     text-align: center;
     box-sizing: border-box;
 }
+.table-header-items {
+	width: 100%;
+}
+.table-header-item-1-number, .card-item-1-number {
+	width: 5%;
+}
+.table-header-item-2-casino, .card-item-2-casino {
+	width: 20%;
+}
+.table-header-item-3-address, .card-item-3-address {
+	width: 25%;
+}
+.table-header-item-4-rating, .card-item-4-rating {
+	width: 15%;
+}
+.table-header-item-5-score, .card-item-5-score {
+	width: 15%;
+}
+.table-header-item-6-visit, .card-item-6-visit {
+	width: 20%;
+}
+
+
 /* ----------------- Min queries 768 px ----------------- */
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
 
