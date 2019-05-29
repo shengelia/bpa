@@ -39,7 +39,7 @@
 	            <a class="navbar-brand website-logo" href="#"><img src="img/logo.png" alt="Website Logo" width="100%"></a>
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right no-lr-padding mobile-center-align">
+				<ul class="nav navbar-nav navbar-right">
 					<li class="active"><a href="javascript:void(0);">Home</a></li>
 					<li><a href="javascript:void(0);">Games</a></li>
 					<li><a href="javascript:void(0);">How we score?</a></li>
@@ -49,12 +49,12 @@
 		            <li><a href="javascript:void(0);">Poker</a></li>
 		            <li><a href="javascript:void(0);">Baccarat</a></li>
 		            <li><a href="javascript:void(0);">Slots</a></li> -->
-					<li class="mobile-hidden"><a href="javascript:void(0);">Review</a></li>
-		            <li class="mobile-hidden"><a href="javascript:void(0);">Cookies</a></li>
-		            <li class="mobile-hidden"><a href="javascript:void(0);">Privacy Policy</a></li>
-		            <li class="mobile-hidden"><a href="javascript:void(0);">About Us</a></li>
-		            <li class="mobile-hidden"><a href="javascript:void(0);">Terms and Conditions</a></li>
-		            <li class="mobile-hidden"><a href="javascript:void(0);">Contact Us</a></li>
+					<li class="desktop-hidden"><a href="javascript:void(0);">Review</a></li>
+		            <li class="desktop-hidden"><a href="javascript:void(0);">Cookies</a></li>
+		            <li class="desktop-hidden"><a href="javascript:void(0);">Privacy Policy</a></li>
+		            <li class="desktop-hidden"><a href="javascript:void(0);">About Us</a></li>
+		            <li class="desktop-hidden"><a href="javascript:void(0);">Terms and Conditions</a></li>
+		            <li class="desktop-hidden"><a href="javascript:void(0);">Contact Us</a></li>
 				</ul>
 	        </div><!--/.nav-collapse -->
         </div>
@@ -114,15 +114,13 @@
 				<div filter="bl, s" class="cards card-item cards-mob" id="card-1">
 					<div class="card-item-1-number">
 						<div class="editors-choice">
-							<img src="img/badge-with-a-star.png" alt="Editors choise" width="100%">
+							<span>Editor Picks</span>
 						</div>
 						<span>1</span>
 					</div>
 					<div class="card-item-2-casino">
 						<a href="#">
-							<img src="img/casino-img.png" alt="Hotel Logo" width="100%" class="hotel-logo-desktop">
-							<img src="img/bad_bentheim_casino.png" alt="Hotel Logo" width="100%"
-							class="hotel-logo-mobile">
+							<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 						</a>
 					</div>
 					<div class="card-item-3-address">
@@ -131,34 +129,165 @@
 						</span>
 					</div>
 					<div class="card-item-4-rating">
-						<div class="bc-star-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="2"></div>
-								<div class="rated-info">
-									<p>Rated: <strong class="rated">604</strong></p>
-									<a href="review-all.html">Review</a>
-								</div>
+						<div class="ratings">
+							<div class="rate_message"></div>
+							<div class="rating not-rated" data-rate-value="3"></div>
+							<div class="rated-info">
+								<a href="">Review</a>
 							</div>
 						</div>
 					</div>
 					<div class="card-item-5-score">
-						<div class="our-score-total">
+						<div class="our-score">
 							<span>9.8</span>
-							<p>Our Score</p>
 						</div>
 					</div>
 					<div class="card-item-6-visit">
 						<button>
-						<a href="#">
-							Visit
-							<span>
-								<img src="img/arrow.png" alt="Visit Website" width="100%">
-							</span>
-						</a>
+							<a href="#">Visit Site</a>
 						</button>
 					</div>
 				</div>
+
+				<!-- <div filter="bl" class="cards card-item cards-mob" id="card-2">
+					<div class="card-item-1-number">
+						<span>2</span>
+					</div>
+					<div class="card-item-2-casino">
+						<a href="#">
+							<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
+						</a>
+					</div>
+					<div class="card-item-3-address">
+						<span>
+							<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+						</span>
+					</div>
+					<div class="card-item-4-rating">
+						<div class="ratings">
+							<div class="rate_message"></div>
+							<div class="rating not-rated" data-rate-value="3"></div>
+							<div class="rated-info">
+								<a href="">Review</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-item-5-score">
+						<div class="our-score">
+							<span>9.8</span>
+						</div>
+					</div>
+					<div class="card-item-6-visit">
+						<button>
+							<a href="#">Visit Site</a>
+						</button>
+					</div>
+				</div>
+
+				<div filter="s" class="cards card-item cards-mob" id="card-3">
+					<div class="card-item-1-number">
+						<span>3</span>
+					</div>
+					<div class="card-item-2-casino">
+						<a href="#">
+							<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
+						</a>
+					</div>
+					<div class="card-item-3-address">
+						<span>
+							<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+						</span>
+					</div>
+					<div class="card-item-4-rating">
+						<div class="ratings">
+							<div class="rate_message"></div>
+							<div class="rating not-rated" data-rate-value="3"></div>
+							<div class="rated-info">
+								<a href="">Review</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-item-5-score">
+						<div class="our-score">
+							<span>9.8</span>
+						</div>
+					</div>
+					<div class="card-item-6-visit">
+						<button>
+							<a href="#">Visit Site</a>
+						</button>
+					</div>
+				</div>
+
+				<div filter="p" class="cards card-item cards-mob" id="card-4">
+					<div class="card-item-1-number">
+						<span>4</span>
+					</div>
+					<div class="card-item-2-casino">
+						<a href="#">
+							<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
+						</a>
+					</div>
+					<div class="card-item-3-address">
+						<span>
+							<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+						</span>
+					</div>
+					<div class="card-item-4-rating">
+						<div class="ratings">
+							<div class="rate_message"></div>
+							<div class="rating not-rated" data-rate-value="3"></div>
+							<div class="rated-info">
+								<a href="">Review</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-item-5-score">
+						<div class="our-score">
+							<span>9.8</span>
+						</div>
+					</div>
+					<div class="card-item-6-visit">
+						<button>
+							<a href="#">Visit Site</a>
+						</button>
+					</div>
+				</div>
+
+				<div filter="r" class="cards card-item cards-mob" id="card-5">
+					<div class="card-item-1-number">
+						<span>5</span>
+					</div>
+					<div class="card-item-2-casino">
+						<a href="#">
+							<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
+						</a>
+					</div>
+					<div class="card-item-3-address">
+						<span>
+							<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+						</span>
+					</div>
+					<div class="card-item-4-rating">
+						<div class="ratings">
+							<div class="rate_message"></div>
+							<div class="rating not-rated" data-rate-value="3"></div>
+							<div class="rated-info">
+								<a href="">Review</a>
+							</div>
+						</div>
+					</div>
+					<div class="card-item-5-score">
+						<div class="our-score">
+							<span>9.8</span>
+						</div>
+					</div>
+					<div class="card-item-6-visit">
+						<button>
+							<a href="#">Visit Site</a>
+						</button>
+					</div>
+				</div> -->
 			</div>
 		</div>
 	</div>
@@ -166,8 +295,11 @@
 
 
 <section class="subscribe-form">
+	<div class="subscribe-now">Subscribe Now</div>
+	<div class="get-notified">Get notified about our services</div>
+	<div class="subscribe-form-separator"></div>
     <form>
-        <input type="email" id="subscribe-email" placeholder="Enter e-mail" class="wow fadeInLeft" data-wow-delay="0.5s">
+        <input type="email" id="subscribe-email" placeholder="example@mail.com" class="wow fadeInLeft" data-wow-delay="0.5s">
         <button id="signup-button">Subscribe</button>
         <label for="subscribe-email" class="subscribe-message error">
             <span class="message-content"></span>
@@ -175,6 +307,63 @@
         </label>
     </form>
 </section>
+
+
+<footer class="website-footer">
+	<div class="scrolling-footer">
+		<div class="container ">
+			<div class="footer-text">
+				<p>Every lover of gambling dreams of once to break a huge jackpot that will forever change his life
+					for the better. Even the most pragmatic and skeptical users deep down hope to win a huge jackpot
+					or get into a fantastic white line that will bring huge benefits. <br><br>
+
+
+					Huge winnings are by no means frequent in gambling, otherwise all operators would have been
+					ruined long ago. However, every fan of gambling entertainment has a chance to become a
+					millionaire overnight if, of course, he prefers games that allow him to claim huge payments. We
+					read articles and news about the most incredible winnings in the history of the gambling
+					business, and we dream to be on this list of lucky ones.<br><br>
+
+
+					Have you ever won big in a casino, in slots, in a lottery, in poker tournaments or sweepstakes?
+					Nowadays you can hit the jackpot, even playing on your mobile phone. But remember, the larger
+					the jackpot, the more players claim it. Really evaluate your capabilities.Every lover of
+					gambling dreams of once to break a huge jackpot that will forever change his life for the
+					better. Even the most pragmatic and skeptical users deep down hope to win a huge jackpot or get
+					into a fantastic white line that will bring huge benefits.<br><br>
+
+
+					Huge winnings are by no means frequent in gambling, otherwise all operators would have been
+					ruined long ago. However, every fan of gambling entertainment has a chance to become a
+					millionaire overnight if, of course, he prefers games that allow him to claim huge payments. We
+					read articles and news about the most incredible winnings in the history of the gambling
+					business, and we dream to be on this list of lucky ones.<br><br>
+
+
+					Have you ever won big in a casino, in slots, in a lottery, in poker tournaments or sweepstakes?
+					Nowadays you can hit the jackpot, even playing on your mobile phone. But remember, the larger
+					the jackpot, the more players claim it. Really evaluate your capabilities.</p>
+
+			</div>
+		</div>
+	</div>
+	<div class="static-footer">
+		<div class="container ">
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-copyright">
+				<span>© 2019 Casino Hotels. All Rights Reserved</span>
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-menu-list">
+				<ul>
+					<li class="mobile-hidden"><a href="about.html">About Us</a></li>
+					<li class="mobile-hidden"><a href="contact.html">Contact</a></li>
+					<li class="mobile-hidden"><a href="terms.html">Terms of Service</a></li>
+					<li class="mobile-hidden"><a href="cookie.html">Cookie</a></li>
+					<li class="mobile-hidden"><a href="privacy.html">Privacy</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 
 <?php include "components/javascript.php";?>
 </body>

@@ -1,3 +1,18 @@
+// rating stars
+var options = {
+    max_value: 5,
+    step_size: 0.5,
+    initial_value: 0,
+    cursor: 'pointer',
+    readonly: true,
+    change_once: true,
+    // ajax_method: 'POST',
+    // url: 'http://localhost/test.php',
+    additional_data: {} // Additional data to send to the server
+}
+$(".rating").rate(options);
+
+
 // current day (today) starts
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');

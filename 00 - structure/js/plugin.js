@@ -218,7 +218,7 @@
             },
             te = /([\0-\x1f\x7f]|^-?\d)|^-$|[^\0-\x1f\x7f-\uFFFF\w-]/g,
             ne = function(e, t) {
-                return t ? "\0" === e ? "ï¿½" : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e
+                return t ? "\0" === e ? "�" : e.slice(0, -1) + "\\" + e.charCodeAt(e.length - 1).toString(16) + " " : "\\" + e
             },
             re = function() {
                 T()
@@ -3328,14 +3328,14 @@
         initial_value: 0,
         symbols: {
             utf8_star: {
-                base: "â˜†",
-                hover: "â˜…",
-                selected: "â˜…"
+                base: "☆",
+                hover: "★",
+                selected: "★"
             },
             utf8_hexagon: {
-                base: "â¬¡",
-                hover: "â¬¢",
-                selected: "â¬¢"
+                base: "⬡",
+                hover: "⬢",
+                selected: "⬢"
             },
             hearts: "&hearts;",
             fontawesome_beer: '<i class="fa fa-beer"></i>',

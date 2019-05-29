@@ -140,7 +140,6 @@ body {
     background: rgba(0, 0, 0, 0.45);
     /*border: 1px dotted green;*/
 }
-
 .subscribe-form {
     text-align: center;
     padding: 50px 0;
@@ -148,24 +147,34 @@ body {
 }
 .subscribe-form input {
     box-sizing: border-box;
-    color: #717171;
-    padding: 14px 18px;
+    color: #5f82b8;
+    font-size: 20px;
+    padding: 14px 65px;
+    text-align: center;
     outline-color: #048553;
-    border: none;
+    border: 1px solid #093f92;
     -webkit-transition: 0.2s ease-in-out;
     -o-transition: 0.2s ease-in-out;
     transition: 0.2s ease-in-out;
-    background: #f3f3f3;
+    background: transparent;
+    margin-bottom: 10px;
+}
+.subscribe-form form {
+	display: inline-grid;
+	margin-top: 45px;
 }
 .subscribe-form button {
-    background-color: #88bbfb;
+    background-color: #20d389;
     border: none;
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 14.1px 25px 15px 25px;
+    padding: 17px 25px 16px 25px;
     box-sizing: border-box;
     font-size: 18px;
+}
+#subscribe-email::placeholder {
+	color: #5f82b8;
 }
 .message-content {
     position: absolute;
@@ -174,7 +183,7 @@ body {
 .message-content, .message-content-err {
     position: absolute;
     font-size: 14px;
-    top: 25%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -182,12 +191,12 @@ body {
 }
 .message-content {
     font-weight: bold;
-    color: #0F9200;
+    color: #20d389;
     border-radius: 5px;
 }
 .message-content-err {
     font-weight: bold;
-    color: #FF0000;
+    color: #e3474c;
     border-radius: 5px;
 }
 .filter-header, .cards {
@@ -206,24 +215,261 @@ body {
 }
 .table-header-item-1-number, .card-item-1-number {
 	width: 5%;
+	border: 1px dotted green;
 }
 .table-header-item-2-casino, .card-item-2-casino {
 	width: 20%;
+	border: 1px dotted green;
 }
 .table-header-item-3-address, .card-item-3-address {
 	width: 25%;
+	border: 1px dotted green;
 }
 .table-header-item-4-rating, .card-item-4-rating {
 	width: 15%;
+	border: 1px dotted green;
 }
 .table-header-item-5-score, .card-item-5-score {
 	width: 15%;
+	border: 1px dotted green;
 }
 .table-header-item-6-visit, .card-item-6-visit {
 	width: 20%;
+	border: 1px dotted green;
 }
-
-
+.ratings {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+}
+.ratings div {
+    text-align: center;
+    margin: 0 auto;
+}
+.rating {
+    text-align: center;
+    color: #DFA641;/*Golden color*/
+    font-size: 30px;
+}
+.rate_message {
+    position: absolute;
+    color: #DFA641;/*Golden color*/
+    text-align: center;
+    width: 100%;
+    top: 10px;
+}
+.rate_message p {
+    margin: -10px auto 0;
+}
+.rated-info p {
+    margin: 0 auto;
+}
+.card-item-1-number, .card-item-2-casino, .card-item-3-address, .card-item-4-rating, .card-item-5-score, .card-item-6-visit {
+	position: relative;
+}
+.cards {
+	height: 140px;
+	border-bottom: 1px solid #C0C0C0;
+}
+.card-item-1-number span, .card-item-2-casino a, .card-item-3-address span, .card-item-4-rating .ratings, .card-item-5-score div, .card-item-6-visit button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.filter-main {
+	width: 75%;
+	margin: 0 auto;
+}
+.filter-header li img {
+	width: 94px;
+}
+/*.filter-header li:first-child {
+	pointer-events: none;
+}*/
+.filter_active {
+	background: #ffbb42;
+}
+.filter {
+	background: #ffc45b;
+}
+.filter-header {
+	position: relative;
+}
+.filter ul li {
+	padding: 75px 20px;
+	position: relative;
+	margin: 0 15px;
+}
+.filter ul li a {
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	color: #093f92;
+	text-decoration: none;
+	font-size: 22px;
+}
+.filter ul li:first-child a {
+	font-family: 'MarkPro-Bold';
+	font-size: 25px;
+}
+.table-header {
+	background: #093f92;
+	color: white;
+}
+.table-header-items {
+	display: flex;
+	position: relative;
+}
+.table-header-items div {
+	position: relative;
+	padding: 30px 0;
+	font-size: 18px;
+}
+.table-header-items div span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+}
+.card-item-1-number span {
+	font-family: 'MarkPro-Bold';
+	font-weight: bold;
+	font-size: 24px;
+}
+.editors-choice span {
+	position: absolute;
+    top: 8px;
+    left: 30px;
+    background: #e3474c;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 105px;
+    font-size: 13px;
+    padding: 2px 5px;
+}
+.card-item-2-casino img {
+	width: 190px;
+	border: 1px dotted red;
+}
+.card-item-3-address span {
+	width: 275px;
+	color: #093f92;
+	font-weight: bold;
+	border: 1px dotted red;
+}
+.rated-info a {
+	color: #DFA641;
+	font-weight: bold;
+	font-size: 17px;
+}
+.our-score span {
+	font-size: 40px;
+	font-weight: bold;
+	color: #093f92;
+}
+.subscribe-now {
+	font-size: 40px;
+	font-weight: bold;
+	color: #093f92;
+	margin-bottom: 10px;
+}
+.get-notified {
+	font-size: 20px;
+	font-weight: bold;
+	color: #7a95bd;
+}
+.subscribe-form-separator {
+	width: 15px;
+	border-bottom: 1px solid #093f92;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.rating {
+	pointer-events: none;
+}
+.card-item-6-visit button {
+	width: 190px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    background-color: #20d389;
+    letter-spacing: 1px;
+    border: none;
+}
+.card-item-6-visit button a {
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+}
+.website-footer {
+	color: white;
+    text-align: justify;
+    line-height: 21px;
+    display: block;
+}
+.scrolling-footer {
+    background-color: #093f92;
+    min-height: 300px;
+    padding: 50px 0;
+}
+.footer-text {
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+.scrolling-footer ::-webkit-scrollbar {
+  width: 4px;
+  height: 2px;
+}
+.scrolling-footer ::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ .scrolling-footer ::-webkit-scrollbar-thumb, .scrolling-footer ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.2); 
+}
+.footer-copyright {
+    position: relative;
+}
+.footer-copyright span {
+    position: absolute;
+    left: 0%;
+    top: 38%;
+    color: #093f92;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer-menu-list ul {
+	display: flex;
+	font-weight: bold;
+}
+.footer-menu-list ul li {
+	margin: 0 10px;
+}
+.footer-menu-list ul li a {
+	color: #093f92;
+	font-size: 16px;
+}
+.static-footer {
+	padding: 30px 0;
+}
 /* ----------------- Min queries 768 px ----------------- */
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
 
@@ -231,7 +477,7 @@ body {
 /* --------------------------------------------- min 768 ------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 @media (min-width: 768px) {
-	.mobile-hidden {
+	.desktop-hidden {
 		display: none !important;
 	}
 }
@@ -240,6 +486,18 @@ body {
 /* --------------------------------------------- max 1199 ----------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 1199px) {
+	.trusted {
+	    width: 130px;
+	}
+	.card-item-6-visit button {
+	    width: 170px;
+	}
+	.card-item-3-address span {
+	    width: 215px;
+	}
+	.card-item-2-casino img {
+	    width: 175px;
+	}
 	.website-background {
 	    height: 300px;
 	}
@@ -260,12 +518,55 @@ body {
 /* --------------------------------------------- 991 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
+	.filter ul li {
+	    padding: 75px 0px;
+	    position: relative;
+	    margin: 0px;
+	}
+	.filter ul li:first-child a {
+	    font-size: 20px;
+	}
+	.filter-main {
+	    width: 70%;
+	}
+	.filter ul li a {
+	    font-size: 18px;
+	}
+	.filter-header li img {
+	    width: 75px;
+	}
+	.editors-choice span {
+	    left: 44px;
+	    width: 90px;
+	    font-size: 11px;
+	}
+	.cards {
+	    height: 110px;
+	}
+	.card-item-6-visit button {
+	    width: 125px;
+	}
+	.card-item-6-visit button a {
+	    font-size: 18px;
+	}
+	.table-header-item-5-score, .card-item-5-score {
+	    width: 10%;
+	}
+	.table-header-item-4-rating, .card-item-4-rating {
+	    width: 20%;
+	}
+	.card-item-3-address span {
+	    width: 160px;
+	}
+	.card-item-2-casino img {
+	    width: 135px;
+	}
 	.website-background {
 	    height: 250px;
 	}
 	.trusted {
 	    top: 170px;
-	    width: 120px;
+	    width: 115px;
 	}
 	.website-background-text h1 {
 	    font-size: 18px;
@@ -282,6 +583,82 @@ body {
 /* --------------------------------------------- 768 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 768px) {
+	.mobile-hidden {
+		display: none;
+	}
+	.scrolling-footer {
+	    padding: 20px 0;
+	}
+	.footer-menu-list ul li a {
+	    font-size: 12px;
+	}
+	.footer-menu-list ul li {
+	    margin: 0px 5px;
+	}
+	.footer-copyright span {
+	    font-size: 17px;
+	}
+	.footer-copyright {
+		width: 95%;
+	}
+	.footer-menu-list {
+		float: right;
+	}
+	.footer-text {
+	    width: 90%;
+	    margin: 0 auto;
+	}
+	.message-content, .message-content-err {
+	    top: 40%;
+	}
+	.subscribe-form form {
+	    margin-top: 25px;
+	}
+	.subscribe-form-separator {
+	    padding: 5px 0;
+	}
+	.subscribe-now {
+	    font-size: 32px;
+	    margin-bottom: 5px;
+	}
+	.subscribe-form {
+	    padding: 20px 0;
+	}
+	.cards {
+	    height: 100px;
+	}
+	.card-item-3-address span p {
+		font-size: 15px;
+	}
+	.our-score span {
+	    font-size: 36px;
+	}
+	.card-item-6-visit button {
+		height: 40px;
+	    width: 100px;
+	}
+	.card-item-6-visit button a {
+	    font-size: 16px;
+	}
+	.table-header-item-6-visit, .card-item-6-visit {
+	    width: 18%;
+	}
+	.table-header-item-4-rating, .card-item-4-rating {
+	    width: 22%;
+	}
+	.card-item-3-address span {
+	    width: 140px;
+	}
+	.card-item-2-casino img {
+	    width: 115px;
+	}
+	.table-header-items div {
+	    padding: 20px 0;
+	    font-size: 16px;
+	}
+	.filter-main {
+	    width: 100%;
+	}
 	.date span {
 	    top: -110px;
 	    width: 110px;
@@ -314,6 +691,19 @@ body {
 /* --------------------------------------------- 650 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 650px) {
+	
+	.table-header-item-2-casino, .card-item-2-casino {
+	    width: 85%;
+	}
+	.table-header-item-1-number, .card-item-1-number {
+	    width: 15%;
+	}
+	.hotels {
+		margin-top: 20px;
+	}
+	.table-header {
+		display: none;
+	}
 	.website-background-text h1 {
 	    font-size: 14px;
 	    line-height: 24px;
