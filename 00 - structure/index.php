@@ -140,6 +140,7 @@
 					<div class="card-item-5-score">
 						<div class="our-score">
 							<span>9.8</span>
+							<p>Our score</p>
 						</div>
 					</div>
 					<div class="card-item-6-visit">
@@ -149,7 +150,7 @@
 					</div>
 				</div>
 
-				<!-- <div filter="bl" class="cards card-item cards-mob" id="card-2">
+				<div filter="bl" class="cards card-item cards-mob" id="card-2">
 					<div class="card-item-1-number">
 						<span>2</span>
 					</div>
@@ -287,7 +288,7 @@
 							<a href="#">Visit Site</a>
 						</button>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>
 	</div>
