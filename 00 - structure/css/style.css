@@ -92,7 +92,7 @@ body {
 
 .navbar-right li a {
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -598,6 +598,40 @@ body {
  .scrolling-footer ::-webkit-scrollbar-thumb, .scrolling-footer ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 0.2); 
 }
+.game_info {
+	background-color: #FFBB42;
+	padding: 20px 0;
+}
+.game-text {
+	color: #093F92;
+	font-weight: bold;
+}
+.game-text button {
+	background: none;
+	border: none;
+	color: #08377E;
+	font-style: italic;
+}
+.language-selection {
+	width: 50px;
+	text-align: center;
+	margin: 0 auto;
+}
+.website-logo {
+	display: flex;
+}
+.language-selection {
+	width: 30px;
+}
+.language-selection-mobile {
+	width: 20px;
+}
+.language-selection-mobile-1 a img{
+	margin: 15px 15px 15px 25px;
+}
+.language-selection-mobile-2 a img {
+	margin: 15px 5px;
+}
 /* ----------------- Min queries 768 px ----------------- */
 
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
@@ -678,8 +712,12 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.website-background-text {
+	    top: 60px;
+	    left: -15px;
+	}
 	.mobile-hidden {
-		display: none;
+		display: none !important;
 	}
 
 	.filter ul li {
@@ -748,8 +786,10 @@ body {
 	}
 
 	.website-background-text h1 {
-		font-size: 18px;
-		line-height: 30px;
+		font-size: 17px;
+	    line-height: 25px;
+	    font-weight: 100;
+	    padding: 10px;
 	}
 
 	.date span {
@@ -766,6 +806,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.mobile-hidden-768 {
+		display: none !important;
+	}
 	.scrolling-footer {
 		padding: 20px 0;
 	}
@@ -890,7 +933,7 @@ body {
 
 	.website-background-text h1 {
 		font-size: 16px;
-		line-height: 28px;
+		line-height: 24px;
 		width: 80%;
 	}
 
@@ -985,7 +1028,8 @@ body {
 
 	.website-background-text h1 {
 		font-size: 14px;
-		line-height: 24px;
+	    line-height: 23px;
+	    padding: 5px 10px;
 	}
 
 }
@@ -996,6 +1040,27 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.website-background-text {
+	    left: 0px;
+	}
+	.trusted {
+	    top: 62px;
+	    width: 65px;
+	}
+	.date span {
+	    top: 95px;
+	    width: 110px;
+	    padding: 5px;
+	    right: 90px;
+	    line-height: 20px;
+	}
+	.website-background-text h1 {
+	    width: 100%;
+	    padding: 5px;
+	    font-family: 'MarkPro-ExtraLight';
+	    line-height: 18px;
+	    font-size: 13px;
+	}
 	.filter ul li a {
 		font-size: 16px;
 	}
@@ -1033,18 +1098,6 @@ body {
 
 	.website-background-text h1 {
 		line-height: 20px;
-	}
-
-	.date span {
-		top: -70px;
-		width: 75px;
-		right: 0px;
-		line-height: 20px;
-	}
-
-	.trusted {
-		top: 0px;
-		width: 75px;
 	}
 
 }
@@ -1088,6 +1141,18 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.language-selection-mobile-1 a img {
+	    margin: 15px 15px 15px 15px;
+	}
+	.website-logo {
+	    width: 40%;
+	    height: 40px;
+	    margin-top: 5px;
+	    padding: 2.5px 0 2.5px;
+	}
+	.website-background-text {
+	    top: 53px;
+	}
 	.footer-copyright span {
 		font-size: 12px;
 	}
@@ -1158,4 +1223,11 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.date span {
+	    top: 80px;
+	}
+	.trusted {
+	    top: 55px;
+	    width: 55px;
+	}
 }
