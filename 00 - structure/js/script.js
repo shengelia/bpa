@@ -1,3 +1,11 @@
+// navbar
+$(function () {
+  $(document).scroll(function () {
+      var $nav = $(".navbar-fixed-top");
+      $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+    });
+});
+
 // rating stars
 var options = {
     max_value: 5,

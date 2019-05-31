@@ -47,7 +47,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-9 col-md-9 col-sm-10 website-background-text">
-				<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatibus hic dignissimos, dolorem recusandae fugiat blanditiis eveniet incidunt, pariatur quibusdam quam facilis, voluptatum, tenetur et quia eos aspernatur non. Sapiente perferendis error assumenda pariatur harum tempora autem, ullam blanditiis quibusdam.</h1>
+				<h1>
+					Vill du känna dig trygg, säker och avslappnad när du spelar på kasino? Då är kasinospecialiserade hotell destinationen för dig. Det är dags att upptäcka de bästa Kasinohotellen. Det tar inte lång tid!
+				</h1>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-2 website-background-trusted-and-date">
 				<div class="trusted">
@@ -65,8 +67,8 @@
 	<div class="filter tab">
 		<div class="container">
 			<div class="row filter-main">
-				<div class="col-md-12 col-12 filter-header">
-					<ul class="row filter-list filter-header">
+				<div class="col-md-12 col-12">
+					<ul class="row filter-list filter-header filter-games">
 						<li tab="all" class="col-25 col-50 filter-item">
 							View all
 						</li>
@@ -141,282 +143,184 @@
 					</div>
 				</div>
 
-				<div class="col-12 col-md-12 col-xl-12 tab-cards ">
+				<div class="col-12 col-md-12 col-xl-12 tab-cards">
 					<!-- 1 -->
-					<div tab="all,bl,r,p,ba" class="row active card hotels-stars">
-						<div class="number col-md-1 text-center t10-position-mobile">1</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/logo.png" class="Logo w-100 text-center">
+					<div tab="all,bl,s" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
+						<div class="card-item-1-number">
+							<div class="editors-choice">
+								<span>Editor Picks</span>
+							</div>
+							<span>1</span>
+						</div>
+						<div class="card-item-2-casino">
+							<a href="#">
+								<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>
 						</div>
-						<div class="address col-6 col-md-3">
-							<p>1,avenue du Casino Montreal H3C 4W7</p>
+						<div class="card-item-3-address">
+							<span>
+								<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+							</span>
 						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">346</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-4-rating">
+							<div class="ratings">
+								<div class="rate_message"></div>
+								<div class="rating not-rated" data-rate-value="3"></div>
+								<div class="rated-info">
+									<a href="">Review</a>
+								</div>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2>9.8</h2>
-							<p>Our score</p>
+						<div class="card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
 						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
+						<div class="card-item-6-visit">
+							<button>
+								<a href="#">Visit Site</a>
+							</button>
 						</div>
 					</div>
 					<!-- 2 -->
-					<div tab="all,bl,r,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">2</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/rrc-logo-300-x-200.png" class="RRC-logo-300x200 w-100 text-center">
+					<div tab="bl" class="row active card hotels-stars cards card-item cards-mob" id="card-2">
+						<div class="card-item-1-number">
+							<span>2</span>
+						</div>
+						<div class="card-item-2-casino">
+							<a href="#">
+								<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>
 						</div>
-						<div class="address col-6 col-md-3">
-							<p>8811 River Road Richmond, BC V6X 3P8</p>
+						<div class="card-item-3-address">
+							<span>
+								<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+							</span>
 						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">3256</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-4-rating">
+							<div class="ratings">
+								<div class="rate_message"></div>
+								<div class="rating not-rated" data-rate-value="3"></div>
+								<div class="rated-info">
+									<a href="">Review</a>
+								</div>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 9.6</h2>
-							<p>Our score</p>
+						<div class="card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+							</div>
 						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
+						<div class="card-item-6-visit">
+							<button>
+								<a href="#">Visit Site</a>
+							</button>
 						</div>
 					</div>
 					<!-- 3 -->
-					<div tab="all,bl,r,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">3</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/tri-201310102442653-jpg.png"
-								class="tri201310102442653-jpg w-100 text-center">
+					<div tab="all,s" class="row active card hotels-stars cards card-item cards-mob" id="card-3">
+						<div class="card-item-1-number">
+							<span>3</span>
+						</div>
+						<div class="card-item-2-casino">
+							<a href="#">
+								<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>
 						</div>
-						<div class="address col-6 col-md-3">
-							<p>2080 United Boulevard Coquitlam, BC V3K 6W3</p>
+						<div class="card-item-3-address">
+							<span>
+								<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+							</span>
 						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">7852</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-4-rating">
+							<div class="ratings">
+								<div class="rate_message"></div>
+								<div class="rating not-rated" data-rate-value="3"></div>
+								<div class="rated-info">
+									<a href="">Review</a>
+								</div>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 9.3</h2>
-							<p>Our score</p>
+						<div class="card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+							</div>
 						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
+						<div class="card-item-6-visit">
+							<button>
+								<a href="#">Visit Site</a>
+							</button>
 						</div>
 					</div>
 					<!-- 4 -->
-					<div tab="all,bl,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">4</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/f-0312-ef-431.png" class="f0312ef431 w-100 text-center">
+					<div tab="all,p" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
+						<div class="card-item-1-number">
+							<span>4</span>
+						</div>
+						<div class="card-item-2-casino">
+							<a href="#">
+								<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>
 						</div>
-						<div class="address col-6 col-md-3">
-							<p>Brantford, Ontario, STN Main Newmarket, ON L3Y 0B1 </p>
+						<div class="card-item-3-address">
+							<span>
+								<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+							</span>
 						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">467</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-4-rating">
+							<div class="ratings">
+								<div class="rate_message"></div>
+								<div class="rating not-rated" data-rate-value="3"></div>
+								<div class="rated-info">
+									<a href="">Review</a>
+								</div>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.8</h2>
-							<p>Our score</p>
+						<div class="card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+							</div>
 						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
+						<div class="card-item-6-visit">
+							<button>
+								<a href="#">Visit Site</a>
+							</button>
 						</div>
 					</div>
 					<!-- 5 -->
-					<div tab="all,bl,r" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">5</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/nlc-logo.png" class="NLC_logo  text-center">
+					<div tab="all,r" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
+						<div class="card-item-1-number">
+							<span>5</span>
+						</div>
+						<div class="card-item-2-casino">
+							<a href="#">
+								<img src="img/casino-logo.svg" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>
 						</div>
-						<div class="address col-6 col-md-3">
-							<p>44 Marquis Road Prince Albert SK S6V 7Y5</p>
+						<div class="card-item-3-address">
+							<span>
+								<p>6380 Fallsview BLVD. PO Box 300 Niagara Falls, ON L2G 7X5</p>
+							</span>
 						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">758</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-4-rating">
+							<div class="ratings">
+								<div class="rate_message"></div>
+								<div class="rating not-rated" data-rate-value="3"></div>
+								<div class="rated-info">
+									<a href="">Review</a>
+								</div>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.7</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
-						</div>
-					</div>
-					<!-- 6 -->
-					<div tab="all,bl,p" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">6</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/imagesoptimize-php-p-dc-image-df-84-a-75-f-4665-c-6-d-8-edd-28300-a-99-e-9317.png"
-								class="imagesoptimizephp_pdcimagedf84a75f4665c6d8edd28300a99e9317 text-center">
-							</a>
-						</div>
-						<div class="address col-6 col-md-3">
-							<p>204 Dakota Dunes Way Whitecap, SK S7K 2L2</p>
-						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">753</strong></p>
-								<a href="review.html"><u>Review</u></a>
+						<div class="card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
 							</div>
 						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.5</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
-						</div>
-					</div>
-					<!-- 7 -->
-					<div tab="all,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">7</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/imagesoptimize-php-p-dc-image-05-a-28-b-0265-dcf-2-cf-6518-b-814-d-69869-f-2.png"
-								class="imagesoptimizephp_pdcimage05a28b0265dcf2cf6518b814d69869f2 text-center">
-							</a>
-						</div>
-						<div class="address col-6 col-md-3">
-							<p>6380 Fallsview Blvd. PO Box 300 Niagara Falls, ON L2G 7X5</p>
-						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="5"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">345</strong></p>
-								<a href="review.html"><u>Review</u></a>
-							</div>
-						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.3</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
-						</div>
-					</div>
-					<!-- 8 -->
-					<div tab="all,r,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">8</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/imagesoptimize-php-p-dc-image-59-ed-304-fa-879-f-24982-c-5-ca-75-c-12-ea-35-a.png"
-								class="imagesoptimizephp_pdcimage59ed304fa879f24982c5ca75c12ea35a text-center">
-							</a>
-						</div>
-						<div class="address col-6 col-md-3">
-							<p>6380 Fallsview Blvd. PO Box 300 Niagara Falls, ON L2G 7X5</p>
-						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="4"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">346</strong></p>
-								<a href="review.html"><u>Review</u></a>
-							</div>
-						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.2</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
-						</div>
-					</div>
-					<!-- 9 -->
-					<div tab="all,p,ba" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">9</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/imagesoptimize-php-p-dc-image-5959-ef-7836-a-73-fa-8-c-3-be-7-ead-3372-a-263.png"
-								class="text-center imagesoptimizephp_pdcimage5959ef7836a73fa8c3be7ead3372a263">
-							</a>
-						</div>
-						<div class="address col-6 col-md-3">
-							<p>5705 Falls Ave. Niagara Falls, ON L2E 6T3 Canada</p>
-						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="4"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">346</strong></p>
-								<a href="review.html"><u>Review</u></a>
-							</div>
-						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.1</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
-						</div>
-					</div>
-					<!-- 10 -->
-					<div tab="all,p,s" class="row active card">
-						<div class="number col-md-1 text-center t10-position-mobile">10</div>
-						<div class="hotel_logo col-6 col-md-2 t10-hotel-logo-mobile">
-							<a href="javascript:;">
-								<img src="img/hotels/imagesoptimize-php-p-dc-image-6-c-336-a-9050501-ae-46467-b-88889-e-4286-f.png"
-								class="text-center imagesoptimizephp_pdcimage6c336a9050501ae46467b88889e4286f">
-							</a>
-						</div>
-						<div class="address col-6 col-md-3">
-							<p>1, avenue du
-							Casino Montreal H3C 4W7</p>
-						</div>
-						<div class="ratings col-md-2 t10-ratings-mobile">
-							<p class="rate_message"></p>
-							<div class="rating not-rated" data-rate-value="4"></div>
-							<div class="rated2 ">
-								<p>Rated:<strong class="rated">346</strong></p>
-								<a href="review.html"><u>Review</u></a>
-							</div>
-						</div>
-						<div class="score col-6 col-md-1 text-center">
-							<h2> 8.0</h2>
-							<p>Our score</p>
-						</div>
-						<div class="visit col-6 col-md-3">
-							<a href="javascript:;">GO TO SITE</a>
+						<div class="card-item-6-visit">
+							<button>
+								<a href="#">Visit Site</a>
+							</button>
 						</div>
 					</div>
 				</div>
@@ -495,6 +399,7 @@
 		</div>
 	</div>
 </footer>
+
 <?php include "components/javascript.php";?>
 <script>
 	$(document).ready(function() {
