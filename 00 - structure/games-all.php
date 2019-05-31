@@ -18,12 +18,12 @@
 		            <span class="icon-bar"></span>
 	            <span class="icon-bar"></span>
 	            </button>
-	            <a class="navbar-brand website-logo" href="#"><img src="img/logo.png" alt="Website Logo" width="100%"></a>
+	            <a class="navbar-brand website-logo" href="index.php"><img src="img/logo.png" alt="Website Logo" width="100%"></a>
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="javascript:void(0);">Home</a></li>
-					<li class="active"><a href="javascript:void(0);">Games</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li class="active"><a href="games-all.php">Games</a></li>
 					<li><a href="javascript:void(0);">How we score?</a></li>
 					<!-- 
 					<li><a href="javascript:void(0);">Blackjack</a></li>
@@ -495,7 +495,12 @@
 		</div>
 	</div>
 </footer>
-
 <?php include "components/javascript.php";?>
+<script>
+	$(document).ready(function() {
+		$("#gamesBl").click();
+	});
+</script>
+
 </body>
 </html>

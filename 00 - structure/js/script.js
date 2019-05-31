@@ -270,6 +270,7 @@ $(document).ready(function() {
     });
 });
 
+//Read more
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
@@ -414,3 +415,4 @@ function myFunction_re4() {
         moreText.style.display = "inline";
     }
 }
+//Read more ends
