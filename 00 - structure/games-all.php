@@ -365,20 +365,7 @@
 		</div>
 	</div>
 	<div class="static-footer">
-		<div class="container ">
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-copyright">
-				<span>© 2019 Casino Hotels. All Rights Reserved</span>
-			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 footer-menu-list">
-				<ul>
-					<li class="mobile-hidden"><a href="about.html">About Us</a></li>
-					<li class="mobile-hidden"><a href="contact.html">Contact</a></li>
-					<li class="mobile-hidden"><a href="terms.html">Terms of Service</a></li>
-					<li class="mobile-hidden"><a href="cookie.html">Cookie</a></li>
-					<li class="mobile-hidden"><a href="privacy.html">Privacy</a></li>
-				</ul>
-			</div>
-		</div>
+		<?php include "components/static-footer.php";?>
 	</div>
 </footer>
 

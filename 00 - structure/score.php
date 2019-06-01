@@ -3,12 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>About</title>
+	<title>How We Score?</title>
 	<?php include "components/stylesheets.php";?>
 </head>
 
 <body>
-<?php include "components/header.php";?>
+	<?php include "components/header.php";?>
 
 <section class="website-background">
 	<div class="container">
@@ -28,21 +28,83 @@
 	</div>
 </section>
 
-<?php include "components/current-page.php";?>
+<section class="bc-how-we-score how-we-score-sc--s--">
+    <div class="container">
+        <div class="list--s-- flex--s-- wrap--s-- j-sp-between--s-- bc-how-we-score-container">
+        	<div class="row">
+	        	<div class="bc-row col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	        		<div class="col-25--s-- t-center--s-- wow fadeInUp col-lg-3 col-md-3 col-sm-3 col-xs-6" data-wow-delay="0.5s">
+	        		    <div>
+	        		        <div class="img-outer--s--">
+	        		            <img src="img/hws-1.png" alt="icon1" />
+	        		        </div>
+	        		        <p>Variety of Games</p>
+	        		        <img src="img/more.png" alt="Read more" width="100%" class="hws-read-more">
+	        		        <div class="info--s--">
+	        		            <div class="close--s--">      		                
+	        		            </div>
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		            The enormous number of diverse games is offered to our special customers!
+	        		        </div>
+	        		    </div>
+	        		</div>
 
-<section class="website-about">
-	<div class="container">
-		<div class="website-text-content">
-			<h1>About us</h1>
+	        		<div class="col-25--s-- t-center--s-- wow fadeInUp col-lg-3 col-md-3 col-sm-3 col-xs-6" data-wow-delay="0.5s">
+	        		    <div>
+	        		        <div class="img-outer--s--">
+	        		            <img src="img/hws-2.png" alt="icon2"/>
+	        		        </div>
+	        		        <p>Size and Number of Jackpots</p>
+	        		        <img src="img/more.png" alt="Read more" width="100%" class="hws-read-more">
+	        		        <div class="info--s--">
+	        		            <div class="close--s--">
+	        		                
+	        		            </div>
+	        		            The great amount of huge Jackpots will be provided for you!
+	        		        </div>
+	        		    </div>
+	        		</div>
 
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae tenetur, pariatur dignissimos assumenda, veritatis quaerat. Quidem, id, iste officia sunt veritatis nam placeat dolor cum mollitia maiores pariatur rerum neque.</p>
+	        		<div class="col-25--s-- t-center--s-- wow fadeInUp col-lg-3 col-md-3 col-sm-3 col-xs-6" data-wow-delay="0.5s">
+	        		    <div>
+	        		        <div class="img-outer--s--">
+	        		            <img src="img/hws-3.png" alt="icon3"/>
+	        		        </div>
+	        		        <p>Loyalty Rewards</p>
+	        		        <img src="img/more.png" alt="Read more" width="100%" class="hws-read-more">
+	        		        <div class="info--s--">
+	        		            <div class="close--s--">
+	        		                
+	        		            </div>
+	        		            Big range of rewards is provided for loyal players!
+	        		        </div>
+	        		    </div>
+	        		</div>
 
-			<h2>Header</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit cupiditate, eveniet voluptates, id ex veniam odio possimus ipsum perspiciatis quis quia libero. Enim voluptas, ratione deserunt voluptatibus officiis officia.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit cupiditate, eveniet voluptates, id ex veniam odio possimus ipsum perspiciatis quis quia libero. Enim voluptas, ratione deserunt voluptatibus officiis officia.</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit cupiditate, eveniet voluptates, id ex veniam odio possimus ipsum perspiciatis quis quia libero. Enim voluptas, ratione deserunt voluptatibus officiis officia.</p>
-		</div>
-	</div>
+	        		<div class="col-25--s-- t-center--s-- wow fadeInUp col-lg-3 col-md-3 col-sm-3 col-xs-6" data-wow-delay="0.5s">
+	        		    <div>
+	        		        <div class="img-outer--s--">
+	        		            <img src="img/hws-4.png" alt="icon4"/>
+	        		        </div>
+	        		        <p>Other Entertainment</p>
+	        		        <img src="img/more.png" alt="Read more" width="100%" class="hws-read-more">
+	        		        <div class="info--s--">
+	        		            <div class="close--s--">
+	        		                
+	        		            </div>
+	        		            Besides gambling games, our players are offered a wide range of other activities,
+	        		            such as animation activities on swimming pools, sport entertainment, night life.
+	        		        </div>
+	        		    </div>
+	        		</div>
+	        	</div>	        		
+        	</div>
+        </div>
+    </div>
 </section>
 
 <section class="subscribe-form">

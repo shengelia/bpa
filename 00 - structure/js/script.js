@@ -424,3 +424,16 @@ function myFunction_re4() {
     }
 }
 //Read more ends
+
+$(document).ready(function () {  
+    $(".how-we-score-sc--s-- .list--s-- .col-25--s--").click(function () {
+        $(this).find(".info--s--").fadeToggle();
+        $(".how-we-score-sc--s-- .list--s-- .col-25--s--").not($(this)).find('.info--s--').fadeOut();
+    });
+
+    $(".how-we-score-sc--s-- .close--s-- i").click(function () {
+        $(this)
+            .closest(".info--s--")
+            .fadeOut();
+    });
+});

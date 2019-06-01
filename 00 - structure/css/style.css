@@ -567,70 +567,242 @@ body {
 }
 
 .tab-body .filter-body [tab] {
-    display: none
+	display: none
 }
+
 .interior .filter-body [tab].active {
-    display: flex;
-    background: unset;
+	display: flex;
+	background: unset;
 }
+
 .interior .game_info [tab].active {
-    display: block
+	display: block
 }
+
 #more, #more1, #more2, #more3, #more4 {
-  display: none;
+	display: none;
 }
+
 .games-filter ul li:first-child {
 	display: none;
 }
+
 .games-filter ul li:not(:first-child) {
 	margin-top: 0;
 }
+
 .filter-games li {
 	margin-top: 0px !important;
 }
-.scrolling-footer ::-webkit-scrollbar {
-  width: 4px;
-  height: 2px;
+
+.scrolling-footer::-webkit-scrollbar {
+	width: 4px;
+	height: 2px;
 }
-.scrolling-footer ::-webkit-scrollbar-track {
-  background: transparent; 
+
+.scrolling-footer::-webkit-scrollbar-track {
+	background: transparent;
 }
- .scrolling-footer ::-webkit-scrollbar-thumb, .scrolling-footer ::-webkit-scrollbar-thumb:window-inactive {
-  background: rgba(0, 0, 0, 0.2); 
+
+.scrolling-footer::-webkit-scrollbar-thumb, .scrolling-footer::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0, 0, 0, 0.2);
 }
+
 .game_info {
 	background-color: #FFBB42;
 	padding: 20px 0;
 }
+
 .game-text {
 	color: #093F92;
 	font-weight: bold;
 }
+
 .game-text button {
 	background: none;
 	border: none;
 	color: #08377E;
 	font-style: italic;
 }
+
 .language-selection {
 	width: 50px;
 	text-align: center;
 	margin: 0 auto;
 }
+
 .website-logo {
 	display: flex;
 }
+
 .language-selection {
 	width: 30px;
 }
+
 .language-selection-mobile {
 	width: 20px;
 }
-.language-selection-mobile-1 a img{
+
+.language-selection-mobile-1 a img {
 	margin: 15px 15px 15px 25px;
 }
+
 .language-selection-mobile-2 a img {
 	margin: 15px 5px;
+}
+
+/*How we score*/
+.how-we-score-sc--s-- {
+    padding-top: 50px;
+}
+.how-we-score-sc--s-- .container--s-- {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-- {
+    height: 200px;
+    width: 22%;
+    border: 2px solid #093F92;
+    text-align: center;
+    -webkit-background-origin: border-box;
+    background-origin: border-box;
+    -webkit-background-clip: content-box, border-box;
+    background-clip: content-box, border-box;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s--:hover {
+    border: 2px solid #093F92;
+    box-sizing: border-box;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s--:not(:last-child) {
+    margin-right: 37px;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div {
+    height: 100%;
+    position: relative;
+    z-index: 10;
+    padding: 40px 0px;
+    background: white;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div .img-outer--s-- {
+    width: 87px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div .fa-chevron-down {
+    opacity: 0;
+    cursor: pointer;
+    -webkit-transition: 0.2s ease-in-out;
+    -o-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- {
+    display: none;
+    width: 100%;
+    height: 100%;
+    padding: 5px 15px 15px 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 30px;
+    cursor: auto;
+    background: white;
+    margin-left: -30px;
+    font-weight: 500;
+    overflow-y: auto;
+}
+
+.info--s--::-webkit-scrollbar {
+  width: 6px;
+  height: 1px;
+}
+.info--s--::-webkit-scrollbar-track {
+  background: #4978BD; 
+}
+.info--s--::-webkit-scrollbar-thumb, .scrolling-footer ::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0, 0, 0, 0.4); 
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- .close--s-- {
+    text-align: right;
+    padding-top: 7px;
+    padding-right: 18px;
+    margin-right: -25px;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- .close--s-- i {
+    cursor: pointer;
+}
+.how-we-score-sc--s-- .list--s-- .col-25--s-->div:hover .fa-chevron-down {
+    opacity: 1;
+}
+.bc-how-we-score-container {
+    background-color: white;
+    padding: 40px 5px;
+}
+.bc-how-we-score-container .row:not(:first-child) {
+    margin-top: 15px;
+}
+.hws-read-more {
+    width: 20px;
+    margin-top: 10px;
+}
+.col-25--s-- div p {
+	color: #093F92 !important;
+}
+.footer-menu-list {
+	padding: 0;
+	/*border: 1px dotted red;*/
+}
+.footer-menu-list ul li:not(:first-child) {
+	margin: 0 0 0 15px;
+}
+.current-page {
+	position: relative;
+	height: 60px;
+	background: #FFC45B;
+	display: flex;
+	z-index: -1;
+}
+.current-page .container {
+	display: flex;
+}
+.home-page, .current-link {
+    color: #093F92;
+    font-weight: bold;
+    font-size: 29px;
+    box-sizing: border-box;
+    margin: 15px 30px 0px 0;
+}
+.current-link {
+	border-bottom: 3px solid #093F92;
+}
+.home-page a, .current-link a {
+	color: #093F92;
+	text-decoration: none;
+	padding: 10px;
+}
+.website-text-content {
+	padding: 20px 10px;
+}
+.website-text-content h1 {
+	color: #093F92;
+	text-align: center;
+	font-weight: bold;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+.website-text-content h2 {
+	color: #093F92;
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 25px;
+	margin-bottom: 5px;
+}
+.website-text-content p {
+	line-height: 19px;
+	letter-spacing: 0.1px;
 }
 /* ----------------- Min queries 768 px ----------------- */
 
@@ -666,6 +838,12 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.footer-menu-list ul li:not(:first-child) {
+	    margin: 0 0 0 15px;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:not(:last-child) {
+	    margin: 0 35px 0 0;
+	}
 	.footer-menu-list ul li a {
 		font-size: 14px;
 	}
@@ -706,16 +884,28 @@ body {
 
 }
 
+
 /* ------------------------------------------------------------------------------------------------ */
 
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
-	.website-background-text {
-	    top: 60px;
-	    left: -15px;
+	.how-we-score-sc--s-- .list--s-- .col-25--s-- {
+	    width: 45%;
 	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:not(:last-child), .how-we-score-sc--s-- .list--s-- .col-25--s--:last-child {
+		margin: 5px 0;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
+		margin-left: 65px;
+	}
+
+	.website-background-text {
+		top: 60px;
+		left: -15px;
+	}
+
 	.mobile-hidden {
 		display: none !important;
 	}
@@ -787,9 +977,9 @@ body {
 
 	.website-background-text h1 {
 		font-size: 17px;
-	    line-height: 25px;
-	    font-weight: 100;
-	    padding: 10px;
+		line-height: 25px;
+		font-weight: 100;
+		padding: 10px;
 	}
 
 	.date span {
@@ -806,9 +996,19 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.home-page, .current-link {
+	    margin: 15px 30px 0px 0;
+	}
+	.current-page {
+	    height: 60px;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
+	    margin-left: 55px;
+	}
 	.mobile-hidden-768 {
 		display: none !important;
 	}
+
 	.scrolling-footer {
 		padding: 20px 0;
 	}
@@ -945,6 +1145,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
+	    margin-left: 47px;
+	}
 	.hotels, .tab-body {
 		background-color: #F9F9F9;
 	}
@@ -1028,8 +1231,8 @@ body {
 
 	.website-background-text h1 {
 		font-size: 14px;
-	    line-height: 23px;
-	    padding: 5px 10px;
+		line-height: 23px;
+		padding: 5px 10px;
 	}
 
 }
@@ -1040,27 +1243,44 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.home-page, .current-link {
+	    font-size: 20px;
+	    margin: 10px 30px 0px 0;
+	}
+	.current-page {
+	    height: 45px;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s-- {
+	    width: 47%;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
+	    margin-left: 20px;
+	}
 	.website-background-text {
-	    left: 0px;
+		left: 0px;
 	}
+
 	.trusted {
-	    top: 62px;
-	    width: 65px;
+		top: 62px;
+		width: 65px;
 	}
+
 	.date span {
-	    top: 95px;
-	    width: 110px;
-	    padding: 5px;
-	    right: 90px;
-	    line-height: 20px;
+		top: 95px;
+		width: 110px;
+		padding: 5px;
+		right: 90px;
+		line-height: 20px;
 	}
+
 	.website-background-text h1 {
-	    width: 100%;
-	    padding: 5px;
-	    font-family: 'MarkPro-ExtraLight';
-	    line-height: 18px;
-	    font-size: 13px;
+		width: 100%;
+		padding: 5px;
+		font-family: 'MarkPro-ExtraLight';
+		line-height: 18px;
+		font-size: 13px;
 	}
+
 	.filter ul li a {
 		font-size: 16px;
 	}
@@ -1141,18 +1361,36 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.home-page, .current-link {
+	    font-size: 18px;
+	}
+	.bc-how-we-score-container {
+	    padding: 20px 5px;
+	}
+	.how-we-score-sc--s-- {
+	    padding-top: 0;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s-- {
+	    width: 100%;
+	}
+	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
+	    margin-left: 0px;
+	}
 	.language-selection-mobile-1 a img {
-	    margin: 15px 15px 15px 15px;
+		margin: 15px 15px 15px 15px;
 	}
+
 	.website-logo {
-	    width: 40%;
-	    height: 40px;
-	    margin-top: 5px;
-	    padding: 2.5px 0 2.5px;
+		width: 40%;
+		height: 40px;
+		margin-top: 5px;
+		padding: 2.5px 0 2.5px;
 	}
+
 	.website-background-text {
-	    top: 53px;
+		top: 53px;
 	}
+
 	.footer-copyright span {
 		font-size: 12px;
 	}
@@ -1224,10 +1462,12 @@ body {
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
 	.date span {
-	    top: 80px;
+		top: 80px;
 	}
+
 	.trusted {
-	    top: 55px;
-	    width: 55px;
+		top: 55px;
+		width: 55px;
 	}
+
 }
