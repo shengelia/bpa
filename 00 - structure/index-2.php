@@ -51,9 +51,11 @@
 				<div class="table-header-item-1-number"><span>#</span></div>
 				<div class="table-header-item-2-casino"><span>Casino</span></div>
 				<div class="table-header-item-3-address"><span>Address</span></div>
-				<div class="table-header-item-4-rating"><span>Rating</span></div>
-				<div class="table-header-item-5-score"><span>Our Score</span></div>
-				<div class="table-header-item-6-visit"><span></span></div>
+				<div class="table-header-item-4-active-players"><span>Active Players</span></div>
+				<div class="table-header-item-5-minimal-deposit"><span>Minimal Deposit</span></div>
+				<div class="table-header-item-6-score"><span>Our Score</span></div>
+				<div class="table-header-item-7-rating"><span>Rating</span></div>
+				<div class="table-header-item-8-visit"><span></span></div>
 			</div>
 		</div>
 	</div>
@@ -94,9 +96,9 @@
 						</div>
 					</div>
 					<div class="card-item-6-visit">
-						<button>
-							<a href="#">Visit Site</a>
-						</button>
+						<form action="http://mail.ru" target="_blank">
+						    <button type="submit">Visit Our Site</button>
+						</form>
 					</div>
 				</div>
 			</div>
