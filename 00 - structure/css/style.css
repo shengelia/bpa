@@ -804,6 +804,42 @@ body {
 	line-height: 19px;
 	letter-spacing: 0.1px;
 }
+.website-review-single {
+	padding: 30px 10px;
+	position: relative;
+}
+.review-img img {
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-top: 0;
+}
+.review-card .editors-choice span {
+	left: 53px
+}
+.single-review-text h1 {
+	font-family: 'MarkPro-Bold';
+    text-align: center;
+    margin: 20px auto 10px;
+    font-weight: bold;
+    color: #093F92;
+    font-size: 26px;
+}
+.single-review-text p {
+	line-height: 19px;
+    letter-spacing: 0.3px;
+}
+.review-bottom-button {
+	width: 100%;
+	border: none;
+	background-color: #20D389;
+	color: white;
+	font-weight: bold;
+	padding: 10px 0;
+	font-size: 22px;
+	margin-top: 15px;
+}
 /* ----------------- Min queries 768 px ----------------- */
 
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
@@ -838,6 +874,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.review-img img {
+	    height: 370px;
+	}
 	.footer-menu-list ul li:not(:first-child) {
 	    margin: 0 0 0 15px;
 	}
@@ -891,6 +930,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.review-img img {
+	    height: 280px;
+	}
 	.how-we-score-sc--s-- .list--s-- .col-25--s-- {
 	    width: 45%;
 	}
@@ -1145,6 +1187,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.review-img img {
+	    height: 220px;
+	}
 	.how-we-score-sc--s-- .list--s-- .col-25--s--:nth-child(even) {
 	    margin-left: 47px;
 	}
@@ -1328,6 +1373,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (min-width:414px) and (max-width:415px) {
+	.review-img img {
+	    height: 180px;
+	}
 	.trusted {
 		top: 60px;
 		width: 65px;
@@ -1361,6 +1409,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.review-img img {
+	    height: 130px;
+	}
 	.home-page, .current-link {
 	    font-size: 18px;
 	}

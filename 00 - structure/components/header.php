@@ -26,17 +26,17 @@
 					<li class="mobile-hidden-768"><a href="index.php"><img src="img/ger.png" class="language-selection" alt="French" width="100%"></a></li>
 					<li class="mobile-hidden-768"><a href="index.php"><img src="img/ger.png" class="language-selection" alt="English" width="100%"></a></li>
 					<!-- 
-					<li><a href="javascript:void(0);">Blackjack</a></li>
-		            <li><a href="javascript:void(0);">Roulett</a></li>
-		            <li><a href="javascript:void(0);">Poker</a></li>
-		            <li><a href="javascript:void(0);">Baccarat</a></li>
-		            <li><a href="javascript:void(0);">Slots</a></li>
-		            <li><a href="javascript:void(0);">Review All</a></li>
+						<li><a href="javascript:void(0);">Blackjack</a></li>
+			            <li><a href="javascript:void(0);">Roulett</a></li>
+			            <li><a href="javascript:void(0);">Poker</a></li>
+			            <li><a href="javascript:void(0);">Baccarat</a></li>
+			            <li><a href="javascript:void(0);">Slots</a></li>
+			            <li><a href="javascript:void(0);">Review All</a></li>
 		            -->
 		            <li class="desktop-hidden"><a href="about.php">About Us</a></li>
-		            <li class="desktop-hidden"><a href="javascript:void(0);">Contact Us</a></li>
+		            <li class="desktop-hidden"><a href="contact.php">Contact Us</a></li>
 		            <li class="desktop-hidden"><a href="terms.php">Terms of Service</a></li>
-		            <li class="desktop-hidden"><a href="javascript:void(0);">Cookie</a></li>
+		            <li class="desktop-hidden"><a href="cookie.php">Cookie</a></li>
 		            <li class="desktop-hidden"><a href="privacy.php">Privacy Policy</a></li>
 				</ul>
 	        </div><!--/.nav-collapse -->

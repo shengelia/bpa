@@ -100,7 +100,7 @@
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 							<div class="rated-info">
-								<a href="">Review</a>
+								<a href="review-single.php">Review</a>
 							</div>
 						</div>
 					</div>
@@ -136,7 +136,7 @@
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 							<div class="rated-info">
-								<a href="">Review</a>
+								<a href="review-single.php">Review</a>
 							</div>
 						</div>
 					</div>
@@ -171,7 +171,7 @@
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 							<div class="rated-info">
-								<a href="">Review</a>
+								<a href="review-single.php">Review</a>
 							</div>
 						</div>
 					</div>
@@ -206,7 +206,7 @@
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 							<div class="rated-info">
-								<a href="">Review</a>
+								<a href="review-single.php">Review</a>
 							</div>
 						</div>
 					</div>
@@ -241,7 +241,7 @@
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 							<div class="rated-info">
-								<a href="">Review</a>
+								<a href="review-single.php">Review</a>
 							</div>
 						</div>
 					</div>
