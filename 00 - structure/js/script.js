@@ -65,7 +65,7 @@ $("#signup-button").click(function(e) {
     $(".subscribe-message").fadeIn(1500).css("display", "block").delay(2000);
     e.preventDefault();
 });
-
+// subscribe ends
 
 // filter starts
 var arr = [];
@@ -231,6 +231,7 @@ $(".filter-header [filter]").click(function(e) {
 });
 // filter ends
 
+//games
 $(document).ready(function() {
     // Hide When focus lost on BlackJack
     $('.tab [tab]').on('click', function() {
@@ -266,7 +267,6 @@ $(document).ready(function() {
             }
         }
 
-
         for (var i = 1; i < tabTextLength + 1; i++) {
             var item = $('.filter-body .tab-texts [tab]:nth-child(' + i + ')').attr('tab')
             console.log(item.includes(tabName))
@@ -277,6 +277,7 @@ $(document).ready(function() {
 
     });
 });
+//games
 
 //Read more
 function myFunction() {
@@ -425,6 +426,7 @@ function myFunction_re4() {
 }
 //Read more ends
 
+//How we score
 $(document).ready(function () {  
     $(".how-we-score-sc--s-- .list--s-- .col-25--s--").click(function () {
         $(this).find(".info--s--").fadeToggle();
