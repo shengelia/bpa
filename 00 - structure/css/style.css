@@ -317,13 +317,13 @@ body {
 }
 .hotels {
 	background: #3C5552;
-	padding: 0px 0 25px;
+	padding: 20px 0 25px;
 }
 .card-item {
 	background: white;
 	border-radius: 20px;
 	box-shadow: 5px 12px 15px #2D2D2D;
-	margin: 18px 0;
+	margin: 0 0 18px;
 	position: relative;
 	display: flex;
 	width: 100%;
@@ -816,11 +816,11 @@ body {
 	margin-top: 15px;
 }
 .filter-games {
-	display: none;
+	display: none !important;
 }
 .tab-cards {
 	background: #3C5552;
-	margin-top: 5px;
+	margin-top: 15px;
 }
 .cards {
 	background: white !important;
@@ -851,9 +851,12 @@ body {
 .filter-body {
 	border: 1px dotted red;
 }
-.table-header .container {
-	width: 1140px;
+.tab-body .tab-cards {
+	padding-top: 10px;
 }
+/*.table-header .container {
+	width: 1140px;
+}*/
 /* ----------------- Min queries 768 px ----------------- */
 
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
@@ -887,9 +890,6 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
-	.scrolling-footer-and-image {
-	    height: 200px;
-	}
 	.review {
 	    margin: 0px 23px;
 	}
@@ -917,6 +917,7 @@ body {
 	}
 	.website-background {
 	    height: 255px;
+	    margin-top: 61px;
 	}
 	.website-background-2 {
 	    height: 255px;
@@ -928,7 +929,7 @@ body {
 	    top: 70px;
 	}
 	.navbar-right li:last-child {
-		margin-left: 7px;
+		margin-left: 0px;
 	}
 
 	.navbar-right li a {
@@ -951,6 +952,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.scrolling-footer-and-image {
+	    height: 200px;
+	}
 	.review {
 	    margin: 0px 18px;
 	}
@@ -1048,6 +1052,12 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.game_info {
+	    padding: 10px 0;
+	}
+	.tab-cards {
+		margin-top: 0;
+	}
 	.interior-card-item-3-address {
 		position: absolute;
 		width: 100%;
@@ -1495,6 +1505,17 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.footer-text p {
+		font-size: 13px;
+		line-height: 14px;
+		font-weight: bold;
+	}
+	.footer-text {
+	    padding: 0 20px;
+	}
+	.hotels {
+	    padding: 0px 0 25px;
+	}
 	.interior-card-item-4-score {
 	    height: 50px;
 	}
@@ -1532,7 +1553,7 @@ body {
 	    height: 245px;
 	}
 	.card-item {
-	    margin: 5px 0;
+	    margin: 5px 0 10px;
 	}
 	.card-item-7-rating {
 	    top: 162px;

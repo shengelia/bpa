@@ -89,7 +89,7 @@
 				</div>
 			</div>
 
-			<div class="col-12 col-md-12 col-xl-12 tab-cards">
+			<div class="col-12 col-md-12 col-xl-12 tab-cards tab-cards-games no-lr-padding">
 				<div class="container">
 					<!-- 1 -->
 					<div tab="bl" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
