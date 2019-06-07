@@ -1,6 +1,6 @@
 <header>
 	<nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
+        <div class="container no-lr-padding">
 	        <div class="navbar-header">
 	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		            <span class="sr-only">Toggle navigation</span>
@@ -33,9 +33,6 @@
 					</li>
 					<li class="mobile-hidden-768">
 						<a href="index-1.php"><img src="img/ger.png" class="language-selection" alt="Language Selection" width="100%"></a>
-					</li>
-					<li class="trusted-experts-nav">
-			            <img src="img/certificate.png" alt="Website Logo" width="100%" height="100%">
 					</li>
 				</ul>
 	        </div>

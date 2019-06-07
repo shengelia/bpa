@@ -4336,7 +4336,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 @media (min-width: 769px) {
   .navbar-nav {
     float: left;
-    margin: 0;
+    margin: 0 0 -4px;
   }
   .navbar-nav > li {
     float: left;
@@ -4473,8 +4473,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: white;
-  border-color: grey;
+  background-color: transparent;
+  border-color: transparent;
 }
 .navbar-default .navbar-brand {
   color: #777;

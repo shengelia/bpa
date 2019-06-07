@@ -6,169 +6,134 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	font: inherit;
 	vertical-align: baseline;
 }
-
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
 body {
 	line-height: 1;
 	cursor: default;
 }
-
 ol, ul {
 	list-style: none;
 }
-
 blockquote, q {
 	quotes: none;
 }
-
 blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
-
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 body {
 	position: relative;
 	font-family: 'MarkPro';
 }
-
 /* Width */
 ::-webkit-scrollbar {
 	width: 5px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #E3E3E3;
+	background-color: #C0DCE5;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #333333;
+	background: #11404F;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #333333;
+	background: #11404F;
 }
-
 .no-lr-padding {
 	padding-left: 0;
 	padding-right: 0;
 }
-
 .no-lr-margin {
 	margin-left: 0;
 	margin-right: 0;
 }
-
 @font-face {
 	font-family: 'MarkPro';
 	src: url('../fonts/MarkPro.otf');
 }
-
-@font-face {
-	font-family: 'MarkPro-Thin';
-	src: url('../fonts/MarkPro-Thin.otf');
-}
-
 @font-face {
 	font-family: 'MarkPro-ExtraLight';
 	src: url('../fonts/MarkPro-ExtraLight.otf');
 }
-
 @font-face {
 	font-family: 'MarkPro-Bold';
 	src: url('../fonts/MarkPro-Bold.otf');
 }
-
-.navbar-right li {
-	margin-top: 6px;
-}
-
 .navbar-right li a {
-	font-weight: bold;
-	font-size: 15px;
+	font-family: 'MarkPro-ExtraLight';
+	font-size: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	color: #173C74;
-}
-
-.navbar-right li.active {
-	box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-}
-
-.navbar-right li:last-child {
-	margin-left: 45px;
+	color: white;
 }
 .navbar-right .active {
-	border-bottom: 3px solid #173C74;
+	font-family: 'MarkPro-Bold';
+	font-weight: 900;
+	border-bottom: 2px solid white;
+	margin-bottom: -3px;
+}
+.scrolled {
+	background: white;
+	border-bottom: 1px solid #078ca9;
+}
+.scrolled li a {
+	color: #078ca9;
+}
+.scrolled .active {
+	border-bottom: 2px solid #078ca9;
+	margin-bottom: -3px;
+}
+.collapsing, .collapse.in {
+    background: white;
+    text-align: center;
+    color: #078ca9;
+}
+.navbar-fixed-top.scrolled ul li a, .navbar-fixed-top.scrolled li.active {
+    color: #078ca9 !important;
 }
 .website-logo {
-	width: 150px;
-	padding: 12.5px 0 2.5px;
+	width: 165px;
+    padding: 2px 0 0px;
 }
-
-.trusted-experts-nav {
-	width: 169px;
-	margin-top: 0;
-	padding: 0 !important;
-}
-
 .website-background {
-	background: url(../img/background.png);
+	background: url(../img/background.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	height: 400px;
-	margin-top: 63px;
+	margin-top: 0;
 }
-
 .website-background-2 {
 	background: url(../img/background-2.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 400px;
+	height: 390px;
 	margin-top: 63px;
 }
-
 .website-background .container {
 	position: relative;
 }
 .website-background-2 .container {
 	position: relative;
 }
-
 .website-background-text {
 	float: left;
-	top: 150px;
+	top: 140px;
 }
-
 .website-background-text h1 {
 	color: white;
 	font-size: 28px;
 	font-weight: bold;
-/*	font-size: 24px;
-	line-height: 38px;
-	font-weight: bold;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-stroke: 0.45px;
-	-webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
-	text-shadow: #fff 0px 1px 1px;
-	padding: 15px;
-	background: rgba(0, 0, 0, 0.45);*/
 }
 .website-background-text h2 {
 	color: white;
@@ -176,35 +141,50 @@ body {
     font-size: 20px;
     margin-top: 20px;
 }
-
 .website-background-trusted-and-date {
-	float: right;
+	position: absolute;
+	top: 150px;
+	right: 0;
 	text-align: center;
 }
-
+.date {
+	font-family: 'MarkPro-ExtraLight';
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 3px solid white;
+    border-radius: 10px;
+    width: 160px;
+    margin: 0 auto 10px;
+}
 .trusted {
 	width: 150px;
-	position: absolute;
-	top: 300px;
-	right: 0;	
-	/*border: 1px dotted yellow;*/
+	margin: 0 auto;
 }
 
-.date {
-	position: absolute;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    top: 145px;
-    right: 18px;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.45);
-    border: 3px solid white;
-    border-radius: 20px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .filter-main {
 	margin: 0 auto;
 }
+
 .filter-header {
 	position: relative;
 }
@@ -214,6 +194,7 @@ body {
 	width: 100%;
 	text-align: center;
 }
+
 .filter-header li {
 	padding: 35px 20px;
 	position: relative;
@@ -224,12 +205,15 @@ body {
 	box-sizing: border-box;
 	border-bottom: 5px solid #AAB1AF;
 }
+
 .filter-header li.filter_active {
 	border-bottom: 5px solid #FF6F00;
 }
+
 .filter-header li.filter_active a {
 	color: #FF6F00;
 }
+
 .filter ul li a {
 	margin: 0;
 	position: absolute;
@@ -242,6 +226,7 @@ body {
 	font-size: 18px;
 	width: 100%;
 }
+
 .table-header {
 	background: #3C5552;
 	color: white;
@@ -270,55 +255,70 @@ body {
 	width: 100%;
 	text-align: center;
 }
+
 /*.table-header-item-1-number, .card-item-1-number {
 	width: 2%;
 }*/
 .table-header-item-2-casino-logo, .card-item-2-casino-logo {
 	width: 22%;
 }
+
 .table-header-item-3-bonus, .card-item-3-bonus {
 	width: 15%;
 }
-.table-header-item-4-active-players, .card-item-4-active-players  {
+
+.table-header-item-4-active-players, .card-item-4-active-players {
 	width: 12%;
 }
+
 .table-header-item-5-minimal-deposit, .card-item-5-minimal-deposit {
 	width: 12%;
 }
+
 .table-header-item-6-score, .card-item-6-score {
 	width: 9%;
 }
+
 .table-header-item-7-rating, .card-item-7-rating {
 	width: 20%;
 }
+
 .table-header-item-8-visit, .card-item-8-visit {
 	width: 10%;
 }
+
 /*.interior-table-header-item-1-number {
 	width: 2%;
 }*/
 .interior-table-header-item-2-casino-logo, .interior-card-item-2-casino-logo {
 	width: 22%;
 }
+
 .interior-table-header-item-3-address, .interior-card-item-3-address {
 	width: 39%;
 }
+
 .interior-table-header-item-4-score, .interior-card-item-4-score {
 	width: 9%;
 }
+
 .interior-table-header-item-5-rating, .interior-card-item-5-rating {
 	width: 20%;
 }
+
 .interior-table-header-item-6-visit, .interior-card-item-6-visit {
 	width: 10%;
 }
+
 .card-item-2-casino-logo, .card-item-3-bonus, .card-item-4-active-players, .card-item-5-minimal-deposit, .card-item-6-score, .interior-card-item-2-casino-logo, .interior-card-item-3-address, .interior-card-item-4-score, .interior-card-item-5-rating, .interior-card-item-6-visit {
 	border-right: 1px dotted #999999;
 }
+
 .hotels {
 	background: #3C5552;
 	padding: 20px 0 25px;
 }
+
 .card-item {
 	background: white;
 	border-radius: 20px;
@@ -330,29 +330,33 @@ body {
 	text-align: center;
 	height: 150px;
 }
+
 .card-item-1-number, .interior-card-item-1-number {
 	position: absolute;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    left: -15px;
-    height: 40px;
-    width: 30px;
-    background: #FF6F00;
-    color: white;
-    font-weight: bold;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-    padding-top: 10px;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	left: -15px;
+	height: 40px;
+	width: 30px;
+	background: #FF6F00;
+	color: white;
+	font-weight: bold;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding-top: 10px;
 }
+
 .card-item-2-casino-logo, .interior-card-item-2-casino-logo {
 	position: relative;
 }
+
 .editors-choice {
 	position: absolute;
 	width: 35px;
 	right: 0;
 }
+
 .card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
 	position: absolute;
 	top: 50%;
@@ -361,9 +365,11 @@ body {
 	transform: translate(-50%, -50%);
 	width: 200px;
 }
+
 .card-item-3-bonus {
 	position: relative;
 }
+
 .card-item-3-bonus  span {
 	position: absolute;
 	top: 50%;
@@ -372,21 +378,25 @@ body {
 	transform: translate(-50%, -50%);
 	width: 150px;
 }
+
 .card-item-3-bonus h1 {
 	text-align: left;
 	font-weight: bold;
 	color: #3C5552;
 }
+
 .card-item-3-bonus h2 {
 	text-align: left;
-    margin-top: 5px;
-    color: #6D6D6D;
-    font-size: 12px;
-    font-weight: bold;
+	margin-top: 5px;
+	color: #6D6D6D;
+	font-size: 12px;
+	font-weight: bold;
 }
+
 .interior-card-item-3-address {
 	position: relative;
 }
+
 .interior-card-item-3-address span {
 	position: absolute;
 	top: 50%;
@@ -396,9 +406,11 @@ body {
 	width: 95%;
 	font-weight: bold;
 }
+
 .card-item-4-active-players {
 	position: relative;
 }
+
 .card-item-4-active-players span {
 	position: absolute;
 	top: 50%;
@@ -407,18 +419,22 @@ body {
 	transform: translate(-50%, -50%);
 	color: #6D6D6D;
 }
+
 .card-item-4-active-players span h1 {
 	font-size: 28px;
-    font-weight: bold;
-    color: #3C5552;
+	font-weight: bold;
+	color: #3C5552;
 }
+
 .card-item-4-active-players span h2 {
 	font-size: 12px;
-    font-weight: bold;
+	font-weight: bold;
 }
+
 .card-item-5-minimal-deposit {
 	position: relative;
 }
+
 .card-item-5-minimal-deposit span {
 	position: absolute;
 	top: 50%;
@@ -428,18 +444,22 @@ body {
 	color: #6D6D6D;
 	width: 100px;
 }
+
 .card-item-5-minimal-deposit span h1 {
 	font-size: 28px;
 	font-weight: bold;
 	color: #3C5552;
 }
+
 .card-item-5-minimal-deposit span h2 {
 	font-size: 12px;
 	font-weight: bold;
 }
+
 .card-item-6-score, .interior-card-item-4-score {
 	position: relative;
 }
+
 .our-score {
 	position: absolute;
 	top: 50%;
@@ -447,19 +467,23 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .our-score span {
 	font-size: 40px;
 	font-weight: bold;
 	color: #3C5552;
 }
+
 .our-score p {
 	font-size: 12px;
 	font-weight: bold;
-    color: #6D6D6D;
+	color: #6D6D6D;
 }
+
 .card-item-7-rating, .interior-card-item-5-rating {
 	position: relative;
 }
+
 .card-item-7-rating .ratings, .interior-card-item-5-rating .ratings {
 	position: absolute;
 	top: 50%;
@@ -467,6 +491,7 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .ratings div {
 	text-align: center;
 	margin: 0 auto;
@@ -499,6 +524,7 @@ body {
 	font-weight: bold;
 	font-size: 17px;
 }
+
 .card-item-8-visit, .interior-card-item-6-visit {
 	position: relative;
 	border: 1px solid #FF9100;
@@ -507,6 +533,7 @@ body {
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
+
 .card-item-8-visit span, .interior-card-item-6-visit span {
 	position: absolute;
 	top: 50%;
@@ -514,29 +541,35 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
+
 .card-item-8-visit span form button, .interior-card-item-6-visit span form button {
 	border: none;
 	background: transparent;
 	height: 150px;
 }
+
 .card-item-8-visit span form button:focus, .card-item-8-visit span form button:visited, .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
 	padding: 0;
 	outline: none;
 }
+
 .card-item-8-visit span p, .interior-card-item-6-visit span p {
 	font-size: 12px;
 	font-weight: bold;
 	width: 100px;
 }
+
 .website-footer {
 	background: #3C5552;
 	position: relative;
 }
+
 .scrolling-footer-and-image {
 	position: relative;
 	border-radius: 20px;
 }
+
 .scrolling-footer {
 	position: relative;
 	background-color: white;
@@ -545,11 +578,13 @@ body {
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
+
 .image-footer img {
 	height: 400px;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
+
 .scrolling-footer::-webkit-scrollbar {
 	width: 4px;
 	height: 2px;
@@ -562,6 +597,7 @@ body {
 .scrolling-footer::-webkit-scrollbar-thumb, .scrolling-footer::-webkit-scrollbar-thumb:window-inactive {
 	background: rgba(0, 0, 0, 0.2);
 }
+
 .footer-text {
 	max-height: 350px;
 	overflow-y: auto;
@@ -576,53 +612,61 @@ body {
 .footer-menu-list ul li {
 	margin: 0 10px;
 }
+
 .subscribe-form {
-    text-align: center;
-    padding: 30px 0;
-    position: relative;
+	text-align: center;
+	padding: 30px 0;
+	position: relative;
 }
+
 .subscribe-form input {
-    box-sizing: border-box;
-    background: #f5f5f5;
-    border: 2px solid #b3b3b3;
-    color: #717171;
-    border-radius: 5px;
-    padding: 8px 18px;
+	box-sizing: border-box;
+	background: #f5f5f5;
+	border: 2px solid #b3b3b3;
+	color: #717171;
+	border-radius: 5px;
+	padding: 8px 18px;
 }
+
 .subscribe-form button {
-    background-color: #ff6f00;
-    border: 2px solid #ff9100;
-    border-radius: 5px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 10px 25px 10px 25px;
-    box-sizing: border-box;
-    font-size: 18px;
+	background-color: #ff6f00;
+	border: 2px solid #ff9100;
+	border-radius: 5px;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px 25px 10px 25px;
+	box-sizing: border-box;
+	font-size: 18px;
 }
+
 .message-content {
-    position: absolute;
-    top: 10px;
+	position: absolute;
+	top: 10px;
 }
+
 .message-content, .message-content-err {
-    position: absolute;
-    font-size: 20px;
-    top: 25%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+	position: absolute;
+	font-size: 20px;
+	top: 25%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
 }
+
 .message-content {
-    font-weight: bold;
-    color: #0F9200;
-    border-radius: 5px;
+	font-weight: bold;
+	color: #0F9200;
+	border-radius: 5px;
 }
+
 .message-content-err {
-    font-weight: bold;
-    color: #FF0000;
-    border-radius: 5px;
+	font-weight: bold;
+	color: #FF0000;
+	border-radius: 5px;
 }
+
 .footer-bottom-subscribe {
 	background: white;
 	border-bottom: 1px solid #3C5552;
@@ -630,15 +674,18 @@ body {
 	position: relative;
 	height: 105px;
 }
+
 .bottom-inner {
 	position: relative;
 	width: 100%;
 	height: 100px;
 }
+
 .copyright {
 	position: relative;
 	margin-top: 15px;
 }
+
 .copyright span {
 	width: 100%;
 	display: table;
@@ -646,36 +693,43 @@ body {
 	color: #3C5552;
 	font-weight: bold;
 }
+
 .copyright img {
 	width: 160px;
 }
+
 .secure {
 	margin-top: 30px;
 }
+
 .footer-bottom-nav {
 	background: #e6e6e6;
 	height: 30px;
 	text-align: center;
 }
+
 .footer-bottom-nav ul {
-    width: 90%;
-    margin: 8px auto;
-    display: flex;
-    text-align: center;
+	width: 90%;
+	margin: 8px auto;
+	display: flex;
+	text-align: center;
 }
+
 .footer-bottom-nav ul li {
 	padding: 0 10px;
 	font-weight: bold;
 	color: #3C5552;
 	flex-basis: auto;
-    flex-grow: 1;
-    text-align: center;
-    box-sizing: border-box;
+	flex-grow: 1;
+	text-align: center;
+	box-sizing: border-box;
 }
+
 .footer-bottom-nav ul li a {
 	color: #3C5552;
 	text-decoration: none;
 }
+
 .tab-body .filter-body [tab] {
 	display: none
 }
@@ -690,12 +744,14 @@ body {
 }
 
 #more, #more1, #more2, #more3, #more4, #more-re1, #more-re2, #more-re3, #more-re4, #more-re5, #more-re6, #more-re7, #more-re8, #more-re9, #more-re10 {
-    display: none;
+	display: none;
 	outline: none;
 }
+
 #myBtn:focus, #myBtn1:focus, #myBtn2:focus, #myBtn3:focus, #myBtn4:focus {
 	outline: none;
 }
+
 .games-filter ul li:first-child {
 	display: none;
 }
@@ -707,6 +763,7 @@ body {
 .filter-games li {
 	margin-top: 0px !important;
 }
+
 .game_info {
 	background-color: #fff;
 	padding: 20px 0;
@@ -749,6 +806,7 @@ body {
 .language-selection-mobile-2 a img {
 	margin: 15px 5px;
 }
+
 .website-text-content {
 	padding: 20px 10px;
 }
@@ -815,19 +873,24 @@ body {
 	font-size: 22px;
 	margin-top: 15px;
 }
+
 .filter-games {
 	display: none !important;
 }
+
 .tab-cards {
 	background: #3C5552;
 	margin-top: 15px;
 }
+
 .cards {
 	background: white !important;
 }
+
 .filter-header-re li:first-child {
 	display: none;
 }
+
 .review {
 	position: absolute;
 	width: 95%;
@@ -841,32 +904,41 @@ body {
 	border-top: 1px solid grey;
 	box-shadow: 5px 12px 15px #2D2D2D;
 }
+
 .cards-re {
 	margin: 10px 0 100px;
 }
+
 .scrolling-footer-and-image {
 	height: 400px;
 	box-shadow: 5px 12px 15px #2D2D2D;
 }
+
 .filter-body {
 	border: 1px dotted red;
 }
+
 .tab-body .tab-cards {
 	padding-top: 10px;
 }
+
 .review-all-hotels {
 	padding: 0 0 25px;
 }
+
 .review-all-table {
 	margin-left: -15px;
 }
+
 .review-all-table .interior-table-header-item-3-address {
 	width: 38%;
 }
+
 .website-score {
 	background: #3C5552;
 	padding: 50px 0 50px;
 }
+
 .review-item {
 	background: white;
 	padding: 40px 20px 20px;
@@ -874,12 +946,15 @@ body {
 	position: relative;
 	border-radius: 20px;
 }
+
 .website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
 	margin-left: 15px;
 }
+
 .website-score-inner .col-lg-3 {
 	width: 24%;
 }
+
 .review-logo {
 	background: #FF6F00;
 	width: 60px;
@@ -888,49 +963,59 @@ body {
 	border-radius: 30px;
 	position: absolute;
 	top: 0%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding: 10px;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	padding: 10px;
 }
+
 .website-score-inner h1 {
 	color: #FF6F00;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
 }
+
 .review-single {
 	background: #3C5552;
 	padding: 50px 0 50px;
 }
+
 .review-single-inner {
 	background: white;
 	border-radius: 20px;
 }
+
 .review-image img {
 	border-top-left-radius: 20px;
 	border-top-right-radius: 20px;
 }
+
 .review-single-card {
 	margin-top: -3px;
 }
+
 .review-single-card .interior-card-item-6-visit {
 	border-top-right-radius: 0px;
 }
+
 .review-single-text {
 	padding: 20px 0px 0px;
 }
+
 .review-single-text h1 {
 	font-weight: bold;
 	color: #FF6F00;
 	font-size: 24px;
 	padding: 0 10px 10px;
 }
+
 .review-single-text span p {
 	padding: 0 10px 10px;
 	line-height: 19px;
 	color: #4F4F4F;
 }
+
 .review-single-text button {
 	width: 100%;
 	border-bottom-left-radius: 20px;
@@ -940,22 +1025,27 @@ body {
 	background: #FF6F00;
 	border: 3px solid #ff9100;
 }
+
 .review-single-card .interior-card-item-6-visit {
 	display: none;
 }
+
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
 }
+
 .website-static-text {
 	background: #3C5552;
 	padding: 50px 0 50px;
 }
+
 .website-static-text-inner {
 	background: white;
 	padding: 20px 20px;
 	border-radius: 20px;
 	box-shadow: 5px 12px 15px #2D2D2D;
 }
+
 .website-static-text-inner h1 {
 	font-weight: bold;
 	color: #FF6F00;
@@ -963,821 +1053,156 @@ body {
 	margin-bottom: 15px;
 	text-align: center;
 }
+
 .website-static-text-inner p {
 	line-height: 19px;
 	color: #4F4F4F;
 }
-/* ----------------- Min queries 768 px ----------------- */
 
-/* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
 
 /* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------- Min Queries 769, 650 ----------------------------------- */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 
-/* --------------------------------------------- ~ < 768 ------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------- Max Queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px ----------------*/
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- ~ > 768 ------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 @media (min-width:769px) {
 	.desktop-hidden {
-		display: none !important;
+		display: none;
 	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
-/* --------------------------------------------- ~ < 650 ------------------------------------------ */
-
+/* --------------------------------------------- ~ > 650 ------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 @media (min-width:650px) {
-	.card-item-5-score p {
-		display: none;
-	}
-
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 1199 - 992 --------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
-	.website-score-inner .review-item:nth-child(1), .website-score-inner .review-item:nth-child(2) {
-		margin-bottom: 50px;
-	}
-	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
-		margin-left: 15px;
-	}
-	.website-score-inner .review-item:nth-child(3) {
-		margin-left: 0 !important;
-	}
-	.website-score-inner .col-md-6 {
-	    width: 49%;
-	}
-	.review {
-	    margin: 0px 23px;
-	}
-	.our-score span {
-	    font-size: 32px;
-	}
-	.card-item-5-minimal-deposit span h1 {
-	    font-size: 26px;
-	}
-	.card-item-4-active-players span h1 {
-	    font-size: 26px;
-	}
-	.card-item-3-bonus span {
-	    width: 120px;
-	}
-	.card-item-1-number {
-	    left: -10px;
-	    width: 20px;
-	}
-	.card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
-	    width: 180px;
-	}
-	.filter ul li a {
-	    font-size: 15px;
-	}
-	.website-background {
-	    height: 255px;
-	    margin-top: 61px;
-	}
-	.website-background-2 {
-	    height: 255px;
-	}
-	.date {
-	    top: 65px;
-	}
-	.website-background-text {
-	    top: 70px;
-	}
-	.navbar-right li:last-child {
-		margin-left: 0px;
-	}
-
 	.navbar-right li a {
-		font-size: 14px;
-	}
-
-	.nav > li > a {
-		padding: 13px 7px;
-	}
-
-	.website-logo {
-		width: 115px;
-		padding: 14.5px 0 2.5px;
+	    font-size: 16px;
 	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
-	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
-	    margin-left: 14px;
+	.website-background-trusted-and-date {
+	    top: 60px;
 	}
-	.scrolling-footer-and-image {
-	    height: 200px;
+	.trusted {
+	    width: 115px;
 	}
-	.review {
-	    margin: 0px 18px;
+	.date {
+	    width: 100px;
 	}
-	.copyright span {
+	.website-background-text {
+	    top: 85px;
+	}
+	.website-background {
+	    height: 260px;
+	}
+	.navbar {
+	    min-height: 45px !important;
+	}
+	.navbar-right li a {
 	    font-size: 14px;
 	}
-	.copyright img {
-		width: 180px;
-	}
-	.website-background {
-	    height: 230px;
-	}
-	.website-background-2 {
-	    height: 230px;
-	}
-	.footer-text {
-	    max-height: 150px;
-	}
-	.scrolling-footer {
-	    height: 200px;
-	    min-height: 200px;
-	}
-	.card-item-1-number span, .interior-card-item-1-number span {
-		font-size: 10px;
-	}
-	.card-item-8-visit span p, .interior-card-item-6-visit span p {
-	    width: 67px;
-	}
-	.card-item-5-minimal-deposit span {
-	    width: 84px;
-	}
-	.card-item-5-minimal-deposit span h1 {
-	    font-size: 24px;
-	}
-	.card-item-4-active-players span h1 {
-	    font-size: 24px;
-	}
-	.card-item-3-bonus span {
-	    width: 98px;
-	}
-	.card-item-1-number, .interior-card-item-1-number {
-	    left: -6px;
-	    width: 12px;
-	}
-	.card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
-	    width: 150px;
-	}
-	.scrolling-footer {
-	    border-radius: 20px;
-	}
-	.image-footer {
-		display: none;
-	}
-	.filter ul li a {
-	    font-size: 13px;
-	}
-	.filter-header li {
-	    padding: 22px 20px;
-	    margin: 0 3px;
-	}
-	.website-background {
-	    margin-top: 53px;
-	}
-	.website-background-2 {
-	    margin-top: 53px;
-	}
-	.website-background-text h2 {
-	    font-size: 18px;
-	    margin-top: 10px;
-	}
-	.website-background-text h1 {
-	    font-size: 26px;
+	.website-logo {
+	    width: 135px;
+	    padding: 5px 0 0
 	}
 	.nav > li > a {
-		padding: 10px 5px;
-	}
-
-	.navbar-right li a {
-		font-size: 13px;
-	}
-
-	.trusted-experts-nav {
-		display: none !important;
-	}
-
-	.website-logo {
-		width: 135px;
-		padding: 10px 0 2.5px;
+	    padding: 10px 5px;
 	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
-	.review-single-card .card-item {
-		height: 285px;
+	
+	.navbar-right .active {
+	    border-bottom: 2px solid #078ca9;
+	    margin-bottom: -3px;
 	}
-	.review-single-card .interior-card-item-5-rating {
-	    width: 100%;
+	.nav > li > a {
+	    color: #078ca9;
+	    font-weight: bold;
 	}
-	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
-	    margin-left: 12px;
-	}
-	.cards-re {
-	    margin: 10px 0 120px;
-	}
-	.review {
-	    height: 100px;
-	    bottom: -100px;
-	}
-	.game_info {
-	    padding: 10px 0;
-	}
-	.tab-cards {
-		margin-top: 0;
-	}
-	.interior-card-item-3-address {
-		position: absolute;
-		width: 100%;
-		height: 55px;
-		top: 106px;
-		border-right: none;
-		/*border: 1px solid red;*/
-	}
-	.card-item-8-visit span form button, .interior-card-item-6-visit span form button {
-	    height: 45px;
+	.navbar-fixed-top .container {
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 	.mobile-hidden-768 {
 		display: none !important;
 	}
-	.secure img {
-		width: 100px;
-	}
-	.footer-bottom-nav ul li {
-	    padding: 0 5px;
-	}
-	.footer-bottom-nav ul {
-	    width: 100%;
-	}
-	.subscribe-form button {
-	    padding: 10px 15px 10px 15px;
-	}
-	.subscribe-form input {
-	    padding: 8px 5px;
-	    width: 190px;
-	}
-	.copyright img {
-	    width: 130px;
-	}
-	.card-item-1-number span, .interior-card-item-1-number span {
-	    font-size: 20px;
-	}
-	.card-item-8-visit span form button:visited, .card-item-8-visit span form button:focus, .interior-card-item-6-visit span form button:visited, .interior-card-item-6-visit span form button:focus {
-	    border: none;
-	    padding: 0;
-	}
-	.card-item-8-visit form button p:visited, .card-item-8-visit form button p:focus {
-		border: none;
-	}
-	.card-item-8-visit form button p, .interior-card-item-6-visit form button p {
-	    position: absolute;
-	    width: 100%;
-	    height: 50px;
-	    left: 0;
-	    bottom: -2px;
-	    padding: 18px 10px;
-	    text-align: left;
-	    font-size: 16px;
-	}
-	.card-item-8-visit span form button img, .interior-card-item-6-visit span form button img {
-		position: absolute;
-	    width: 40px;
-	    right: 35px;
-	    bottom: 4px;
-	}
-	.card-item-8-visit span, .interior-card-item-6-visit span {
-		width: 100%;
-    	height: 45px;
-	}
-	.card-item-8-visit, .interior-card-item-6-visit {
-	    position: absolute;
-	    width: 100%;
-	    height: 50px;
-	    bottom: 0;
-	    border: 1px solid #FF9100;
-	    background: #FF6F00;
-	    color: white;
-	    border-top-right-radius: 0px;
-	    border-bottom-right-radius: 20px;
-	    border-bottom-left-radius: 20px;
-	}
-	.card-item-7-rating, .interior-card-item-5-rating {
-	    position: absolute;
-	    width: 100%;
-	    height: 55px;
-	    top: 215px;
-	    left: 0px;
-	    border-right: none;
-	    /*border: 1px solid orange;*/
-	}
-	.our-score span {
-	    color: #ff9100;
-	}
-	.card-item-6-score {
-		position: absolute;
-		width: 50%;
-		right: 0;
-		height: 55px;
-		top: 160px;
-		/*border: 1px solid purple;*/
-	}
-	.interior-card-item-4-score {
-		position: absolute;
-		width: 100%;
-		right: 0;
-		height: 55px;
-		top: 160px;
-		border-right: 0;
-		/*border: 1px solid purple;*/
-	}
-	.card-item-5-minimal-deposit span h1 {
-	    font-size: 22px;
-        color: #929292;
-	}
-	.card-item-5-minimal-deposit span {
-	    width: 100%;
-	    text-align: left;
-	    padding: 0px 10px;
-	}
-	.card-item-5-minimal-deposit {
-	    position: absolute;
-	    width: 50%;
-	    height: 55px;
-	    top: 160px;
-        /*border: 1px solid black;*/
-	}
-	.card-item-4-active-players span {
-	    width: 100%;
-	}
-	.card-item-3-bonus span {
-	    width: 100%;
-	    padding: 0 10px;
-	}
-	.card-item-4-active-players {
-	    position: absolute;
-	    width: 50%;
-	    height: 55px;
-	    right: 0;
-	    top: 105px;
-	    border-right: none;
-	    /*border: 1px solid red;*/
-	}
-	.card-item-3-bonus {
-	    position: absolute;
-	    width: 50%;
-	    height: 55px;
-	    top: 105px;
-	    text-align: left;
-	    /*border: 1px solid green;*/
-	}
-	.card-item-2-casino-logo, .interior-card-item-2-casino-logo {
-	    position: absolute;
-	    width: 100%;
-	    height: 33%;
-	    border-right: none;
-	    border-bottom: 1px dotted #999999;
-	}
-	.card-item-1-number, .interior-card-item-1-number {
-		position: absolute;
-		width: 30px;
-	    left: 15px;
-	    top: 50px;
-	    border-top-left-radius: 0;
-	    border-bottom-left-radius: 0;
-	    border-top-right-radius: 5px;
-	    border-bottom-right-radius: 5px;
-	}
-	.card-item {
-	    height: 320px;
-	}
-	.table-header {
-		display: none;
-	}
-	.filter-header li.filter_active {
-	    border: 3px solid #FF6F00;
-	}
-	.filter-main {
-	    margin: 0 auto -3px;
-	}
-	.filter-header {
-		width: 100%;
-		position: relative;
-		display: table;
-	}
-	.filter-header li {
-		width: 30%;
-		display: inline-block;
-		border: 3px solid #AAB1AF;
-		padding: 15px 20px;
-	}
-	.website-background-text {
-	    top: 40px;
-	}
-	.language-selection-mobile-2 a img {
-	    margin: 17px 10px 12px 5px;
-	}
-	.language-selection-mobile-1 a img {
-	    margin: 15px 15px 12px 25px;
-	}
-	.date {
-	    top: 180px;
-	    padding: 10px;
-	    border-radius: 10px;
-	    font-size: 18px;
-	}
-	.website-background-trusted-and-date {
-	    float: none;
-	    text-align: center;
-	}
-	.website-background {
-	    height: 235px;
-	}
-	.website-background-2 {
-	    height: 235px;
-	}
-	.navbar-right li a {
-		font-size: 16px;
-	}
-	.navbar-right li {
-		text-align: center;
-	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
-	.website-score-inner .review-item:nth-child(1), .website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3) {
-	    margin-bottom: 50px;
-	}
-	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
-	    margin-left: 0;
-	}
-	.website-score-inner .col-md-6 {
-	    width: 100% !important;
-	}
-	.cards-re {
-	    margin: 10px 0 130px;
-	}
-	.review {
-	    width: 92%;
-	    bottom: -118px;
-	    margin: 0px 21px;
-	    height: 118px;
-	}
-	.game_info {
-	    padding: 12px 0 5px;
-	}
-	.game-text {
-	    font-size: 12px;
-	}
-	.footer-bottom-nav .container {
-		padding-left: 0;
-		padding-right: 0;
-	}
-	.footer-bottom-nav ul li a {
-	    font-size: 14px;
-	}
-	.secure img {
-	    width: 85px;
-	}
-	.subscribe-form button {
-	    font-size: 16px;
-	}
-	.subscribe-form input {
-	    width: 140px;
-	}
-	.filter-header li {
-	    padding: 20px 20px;
-	}
-	.filter ul li a {
-	    font-size: 15px;
-	    font-weight: bold;
-	}
-	.filter-header li {
-	    margin: 0 5px;
-	}
-	.website-background-text h2 {
-	    font-size: 15px;
-	}
-	.website-background-text {
-	    top: 20px;
-	}
-	.website-background-text h1 {
-	    font-size: 22px;
-	}
-	.review-img img {
-		height: 220px;
-	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 550 - 416 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
-	
-	.filter ul li a {
-	    font-size: 13px;
-	}
-	.review {
-	    margin: 0px 15px;
-	}
-	.review-scrool p {
-		font-size: 14px;
-    	font-weight: bold;
-	}
-	.footer-bottom-nav ul li a {
-	    font-size: 13px;
-	}
-	.footer-bottom-nav {
-	    height: 50px;
-	}
-	.footer-bottom-subscribe {
-	    height: 135px;
-	}
-	.secure {
-	    position: absolute;
-	    width: 100%;
-	    top: 62px;
-	    text-align: center;
-	    /*border: 1px solid orange;*/
-	}
-	.subscribe-form {
-	    padding: 0px 0;
-	    position: absolute;
-	    width: 100%;
-	    top: 45px;
-	    /*border: 1px solid green;*/
-	}
-	.copyright span {
-	    font-size: 14px;
-	    float: initial;
-	    right: 0;
-	    position: absolute;
-	    width: 50%;
-	}
-	.copyright {
-	    position: absolute;
-	    width: 100%;
-	    text-align: center;
-	    margin: 10px auto;
-	    display: flex;
-	    /*border: 1px solid red;*/
-	}
-	.card-item-8-visit span form button img {
-	    right: 10px;
-	}
-	.card-item-4-active-players {
-	    height: 64px;
-	    top: 96px;
-	}
-	.card-item-3-bonus h1 {
-	    font-size: 15px;
-	}
-	.card-item-3-bonus {
-	    height: 64px;
-	    top: 96px;
-	}
-	.card-item-2-casino-logo {
-	    position: absolute;
-	    width: 100%;
-	    height: 30%;
-	    border-right: none;
-	    border-bottom: 1px dotted #999999;
-	}
-	.filter-header li {
-		width: 32%;
-	    margin: 0 2px;
-	}
-	.filter .container {
-		padding: 0 !important;
-	}
-	
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 415 - 414 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:415px) and (min-width:414px) {
-	.website-background {
-	    height: 180px;
-	}
-	.website-background-2 {
-	    height: 180px;
-	}
-	.date {
-	    top: 130px;
-	    padding: 8px;
-	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
-	.review-scrool p {
-	    font-size: 13px;
-	}
-	.review {
-		width: 87%;
-		margin: 0px 19px;
-		padding: 10px 5px;
-	}
-	.our-score span {
-	    font-size: 26px;
-	}
-	.card-item-3-bonus h2 {
-	    text-align: center;
-	}
-	.card-item-3-bonus h1 {
-	    text-align: center;
-	}
-	.card-item-3-bonus span {
-	    text-align: center;
-	}
-	.card-item-5-minimal-deposit span {
-	    text-align: center;
-	}
-	.rated-info a {
-	    font-size: 14px;
-	}
-	.card-item-3-bonus h1 {
-	    font-size: 13px;
-	}
-	.card-item-3-bonus span {
-	    padding: 0 5px;
-	}
-	.filter-header li.filter_active {
-	    border: 2px solid #FF6F00;
-	}
-	.filter ul li a {
-	    font-size: 12px;
-	    font-weight: 100;
-	}
-	.filter-header li {
-	    width: 33%;
-	    margin: 0 0.5px;
-	    border: 2px solid #AAB1AF;
-	}
-	.website-background-text h2 {
-	    font-size: 14px;
-	    text-align: justify;
-	    font-weight: 100;
-	}
-	.website-background-text h1 {
-	    font-size: 16px;
-	    text-align: justify;
-	}
-	.website-background-text {
-	    top: 10px;
-	}
-	.language-selection-mobile-1 a img {
-	    margin: 15px 10px 12px 20px;
-	}
 	.website-logo {
 	    width: 110px;
-	    padding: 14px 0 2.5px;
+	    padding: 10px 0 0;
 	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-
 /* --------------------------------------------- 320 ---------------------------------------------- */
-
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
-	.review-single-card .card-item {
-	    height: 220px;
-	}
-	.review-single {
-	    padding: 20px 0 20px;
-	}
-	.cards-re {
-		margin-bottom: 130px !important;
-	}
-	.review-scrool p {
-	    font-size: 13px;
-	}
-	.review {
-		width: 87%;
-		margin: 0px 19px;
-		padding: 10px 5px;
-	}
-	.footer-text p {
-		font-size: 13px;
-		line-height: 14px;
-		font-weight: bold;
-	}
-	.footer-text {
-	    padding: 0 20px;
-	}
-	.hotels {
-	    padding: 0px 0 25px;
-	}
-	.interior-card-item-4-score {
-	    height: 50px;
-	}
-	.interior-card-item-5-rating {
-	    height: 50px;
-	    top: 160px;
-	}
-	.interior-card-item-4-score {
-	    top: 109px;
-	}
-	.interior-card-item-3-address {
-	    top: 54px;
-	}
-	.card-item-8-visit form button p, .interior-card-item-6-visit form button p {
-	    height: 29px;
-	    bottom: 7px;
-	    padding: 5px 20px;
-	    font-size: 16px;
-	}
-	.card-item-8-visit span form button img, .interior-card-item-6-visit span form button img {
-	    width: 30px;
-	    bottom: 9px;
-	}
-	.card-item-8-visit, .interior-card-item-6-visit {
-	    height: 33px;
-	}
-	.card-item-1-number span, .interior-card-item-1-number span {
-	    font-size: 14px;
-	}
-	.card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
-	    width: 115px;
-	    margin-top: 2px;
-	}
-	.card-item {
-	    height: 245px;
-	}
-	.card-item {
-	    margin: 5px 0 10px;
-	}
-	.card-item-7-rating {
-	    top: 162px;
-    	height: 50px;
-	}
-	.card-item-5-minimal-deposit, .card-item-6-score {
-	    top: 118px;
-    	height: 45px;
-	}
-	.card-item-3-bonus, .card-item-4-active-players {
-	    top: 54px;
-	}
-	.card-item-1-number, .interior-card-item-1-number {
-		top: 33px;
-		width: 25px;
-		left: 12px;
-		height: 30px;
-		padding-top: 7px;
-	}
-	.card-item-2-casino-logo, .interior-card-item-2-casino-logo {
-	    height: 22%;
-	}
-	.copyright span {
-	    font-size: 11px;
-	}
-	.filter-header li {
-	    padding: 15px 20px;
-	}
-	.filter ul li a {
-	    font-size: 11px;
-	}
-	.filter-header li {
-	    width: 32.9%;
-	    margin: 0 0.5px;
-	}
-	.date {
-		top: 100px;
-		padding: 6px;
-		border-radius: 8px;
-		font-size: 12px;
-	}
-	.website-background {
-	    height: 135px;
-	}
-	.website-background-2 {
-	    height: 135px;
-	}
 }
