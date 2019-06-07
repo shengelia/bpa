@@ -48,7 +48,7 @@
 	<div class="table-header">
 		<div class="container ">
 			<div class="table-header-items">
-				<div class="interior-table-header-item-1-number"><span></span></div>
+				<div class="interior-table-header-item-1-number"><span>#</span></div>
 				<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>
 				<div class="interior-table-header-item-3-address"><span>Adress</span></div>
 				<div class="interior-table-header-item-4-score"><span>Our Score</span></div>

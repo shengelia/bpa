@@ -164,56 +164,43 @@ body {
 	width: 150px;
 	margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.filter-index {
+	margin-top: -10px;
+}
 .filter-main {
 	margin: 0 auto;
 }
-
 .filter-header {
 	position: relative;
 }
-
 .filter-header {
 	display: flex;
 	width: 100%;
 	text-align: center;
 }
-
 .filter-header li {
-	padding: 35px 20px;
+	padding: 25px 20px;
 	position: relative;
-	margin: 0 10px;
+	margin: 0;
 	flex-basis: auto;
 	flex-grow: 1;
 	text-align: center;
 	box-sizing: border-box;
-	border-bottom: 5px solid #AAB1AF;
+	font-weight: bold;
+	background: white;
 }
-
 .filter-header li.filter_active {
-	border-bottom: 5px solid #FF6F00;
+	background-color: #078ca9;
 }
-
 .filter-header li.filter_active a {
-	color: #FF6F00;
+	color: white;
 }
-
+.filter-header li:first-child {
+	border-top-left-radius: 10px;
+}
+.filter-header li:last-child {
+	border-top-right-radius: 10px;
+}
 .filter ul li a {
 	margin: 0;
 	position: absolute;
@@ -221,29 +208,25 @@ body {
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: #737877;
+	color: #b9b9b9;
 	text-decoration: none;
 	font-size: 18px;
 	width: 100%;
 }
-
-.table-header {
-	background: #3C5552;
-	color: white;
-	margin-bottom: -20px;
-}
-
 .table-header-items {
 	display: flex;
 	position: relative;
+	margin: 0;
+	padding: 0 5px;
+	box-shadow: 0px 10px 10px #b9b9b9;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
-
 .table-header-items div {
 	position: relative;
 	padding: 20px 0;
 	font-size: 18px;
 }
-
 .table-header-items div span {
 	position: absolute;
 	top: 50%;
@@ -254,11 +237,33 @@ body {
 	font-size: 13px;
 	width: 100%;
 	text-align: center;
+	color: #b9b9b9;
+}
+.interior-table-header-item-1-number, .interior-card-item-1-number {
+	width: 5%;
+}
+.interior-table-header-item-2-casino-logo, .interior-card-item-2-casino-logo {
+	width: 22%;
 }
 
+.interior-table-header-item-3-address, .interior-card-item-3-address {
+	width: 29%;
+}
+
+.interior-table-header-item-4-score, .interior-card-item-4-score {
+	width: 9%;
+}
+
+.interior-table-header-item-5-rating, .interior-card-item-5-rating {
+	width: 20%;
+}
+
+.interior-table-header-item-6-visit, .interior-card-item-6-visit {
+	width: 15%;
+}
 /*.table-header-item-1-number, .card-item-1-number {
 	width: 2%;
-}*/
+}
 .table-header-item-2-casino-logo, .card-item-2-casino-logo {
 	width: 22%;
 }
@@ -285,78 +290,48 @@ body {
 
 .table-header-item-8-visit, .card-item-8-visit {
 	width: 10%;
-}
-
-/*.interior-table-header-item-1-number {
-	width: 2%;
 }*/
-.interior-table-header-item-2-casino-logo, .interior-card-item-2-casino-logo {
-	width: 22%;
-}
-
-.interior-table-header-item-3-address, .interior-card-item-3-address {
-	width: 39%;
-}
-
-.interior-table-header-item-4-score, .interior-card-item-4-score {
-	width: 9%;
-}
-
-.interior-table-header-item-5-rating, .interior-card-item-5-rating {
-	width: 20%;
-}
-
-.interior-table-header-item-6-visit, .interior-card-item-6-visit {
-	width: 10%;
-}
-
-.card-item-2-casino-logo, .card-item-3-bonus, .card-item-4-active-players, .card-item-5-minimal-deposit, .card-item-6-score, .interior-card-item-2-casino-logo, .interior-card-item-3-address, .interior-card-item-4-score, .interior-card-item-5-rating, .interior-card-item-6-visit {
-	border-right: 1px dotted #999999;
-}
 
 .hotels {
-	background: #3C5552;
-	padding: 20px 0 25px;
+	padding: 10px 0 25px;
 }
-
 .card-item {
-	background: white;
-	border-radius: 20px;
-	box-shadow: 5px 12px 15px #2D2D2D;
-	margin: 0 0 18px;
 	position: relative;
+	background: #f8f8f8;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px #A3A3A3;
+	margin: 0 0 18px;
 	display: flex;
 	width: 100%;
 	text-align: center;
 	height: 150px;
 }
-
-.card-item-1-number, .interior-card-item-1-number {
+.interior-card-item-1-number {
+	position: relative;
+}
+.interior-card-item-1-number span {
 	position: absolute;
 	top: 50%;
+	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	left: -15px;
-	height: 40px;
-	width: 30px;
-	background: #FF6F00;
-	color: white;
+	font-size: 18px;
 	font-weight: bold;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 5px;
-	padding-top: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 10px #A3A3A3;
+	padding: 12px;
+	color: #656565;
 }
-
 .card-item-2-casino-logo, .interior-card-item-2-casino-logo {
 	position: relative;
 }
-
 .editors-choice {
 	position: absolute;
 	width: 35px;
-	right: 0;
+	left: 0;
 }
-
 .card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
 	position: absolute;
 	top: 50%;
@@ -883,10 +858,6 @@ body {
 	margin-top: 15px;
 }
 
-.cards {
-	background: white !important;
-}
-
 .filter-header-re li:first-child {
 	display: none;
 }
@@ -1155,7 +1126,16 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
-	
+	.website-background-trusted-and-date {
+	    top: 85px;
+	    right: 15px;
+	}
+	.trusted {
+	    width: 100px;
+	}
+	.date {
+	    font-size: 11px;
+	}
 	.navbar-right .active {
 	    border-bottom: 2px solid #078ca9;
 	    margin-bottom: -3px;
@@ -1177,12 +1157,30 @@ body {
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.website-background-text {
+	    top: 65px;
+	}
+	.website-background-text h2 {
+	    margin-top: 5px;
+	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 550 - 416 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.trusted {
+	    width: 65px;
+	}
+	.date {
+	    width: 68px;
+	}
+	.website-background-text h2 {
+	    font-size: 16px;
+	}
+	.website-background-text h1 {
+	    font-size: 22px;
+	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -1195,6 +1193,22 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.website-background {
+	    height: 210px;
+	}
+	.website-background-trusted-and-date {
+	    top: 65px;
+	}
+	.trusted {
+	    width: 56px;
+	}
+	.date {
+	    padding: 5px;
+	    width: 55px;
+	}
+	.website-background-text h1 {
+	    font-size: 18px;
+	}
 	.website-logo {
 	    width: 110px;
 	    padding: 10px 0 0;
