@@ -32,30 +32,28 @@
 <section class="filter" id="filter">
     <div class="container no-lr-padding">
         <div class="row">
-            <div class="col-md-12 xs-nopadding">
-                <div class="filter-main">
-                    <ul class="filter-list filter-header filter-header-re">
-                        <li><a href="#">FILTER BY:</a></li>
-                        <li filter="all" class="filter_active"><a href="#">View all</a></li>
-                        <li filter="bl"><a href="#">Blackjack</a></li>
-                        <li filter="r"><a href="#">Roulette</a></li>
-                        <li filter="p"><a href="#">Poker</a></li>
-                        <li filter="ba"><a href="#">Baccarat</a></li>
-                        <li filter="s"><a href="#">Slot</a></li>
-                    </ul>
-                </div>
+            <div class="filter-main">
+                <ul class="filter-list filter-header filter-header-re">
+                    <li><a href="#">FILTER BY:</a></li>
+                    <li filter="all" class="filter_active"><a href="#">View all</a></li>
+                    <li filter="bl"><a href="#">Blackjack</a></li>
+                    <li filter="r"><a href="#">Roulette</a></li>
+                    <li filter="p"><a href="#">Poker</a></li>
+                    <li filter="ba"><a href="#">Baccarat</a></li>
+                    <li filter="s"><a href="#">Spielenautomaten</a></li>
+                </ul>
             </div>
         </div>
     </div>
 </section>
 
 
-<section class="hotels" id="hotels">
+<section class="hotels review-all-hotels" id="hotels">
     <div class="container">
         
         <div class="table-header">
-			<div class="container ">
-				<div class="table-header-items">
+			<div class="container">
+				<div class="table-header-items review-all-table">
 					<div class="interior-table-header-item-1-number"><span></span></div>
 					<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>
 					<div class="interior-table-header-item-3-address"><span>Adress</span></div>
@@ -117,7 +115,7 @@
                 </div>
             </div>
 
-            <div filter="bl" class="cards cards-re card-item cards-mob" id="card-2">
+            <div filter="p" class="cards cards-re card-item cards-mob" id="card-2">
                 <div class="interior-card-item-1-number">
 					<span>2</span>
 				</div>

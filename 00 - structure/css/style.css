@@ -854,9 +854,119 @@ body {
 .tab-body .tab-cards {
 	padding-top: 10px;
 }
-/*.table-header .container {
-	width: 1140px;
-}*/
+.review-all-hotels {
+	padding: 0 0 25px;
+}
+.review-all-table {
+	margin-left: -15px;
+}
+.review-all-table .interior-table-header-item-3-address {
+	width: 38%;
+}
+.website-score {
+	background: #3C5552;
+	padding: 50px 0 50px;
+}
+.review-item {
+	background: white;
+	padding: 40px 20px 20px;
+	text-align: center;
+	position: relative;
+	border-radius: 20px;
+}
+.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
+	margin-left: 15px;
+}
+.website-score-inner .col-lg-3 {
+	width: 24%;
+}
+.review-logo {
+	background: #FF6F00;
+	width: 60px;
+	height: 60px;
+	border: 2px solid #ff9100;
+	border-radius: 30px;
+	position: absolute;
+	top: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+.website-score-inner h1 {
+	color: #FF6F00;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.review-single {
+	background: #3C5552;
+	padding: 50px 0 50px;
+}
+.review-single-inner {
+	background: white;
+	border-radius: 20px;
+}
+.review-image img {
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+.review-single-card {
+	margin-top: -3px;
+}
+.review-single-card .interior-card-item-6-visit {
+	border-top-right-radius: 0px;
+}
+.review-single-text {
+	padding: 20px 0px 0px;
+}
+.review-single-text h1 {
+	font-weight: bold;
+	color: #FF6F00;
+	font-size: 24px;
+	padding: 0 10px 10px;
+}
+.review-single-text span p {
+	padding: 0 10px 10px;
+	line-height: 19px;
+	color: #4F4F4F;
+}
+.review-single-text button {
+	width: 100%;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	color: white;
+	font-weight: bold;
+	background: #FF6F00;
+	border: 3px solid #ff9100;
+}
+.review-single-card .interior-card-item-6-visit {
+	display: none;
+}
+.review-single-card .interior-card-item-5-rating {
+	width: 30%;
+}
+.website-static-text {
+	background: #3C5552;
+	padding: 50px 0 50px;
+}
+.website-static-text-inner {
+	background: white;
+	padding: 20px 20px;
+	border-radius: 20px;
+	box-shadow: 5px 12px 15px #2D2D2D;
+}
+.website-static-text-inner h1 {
+	font-weight: bold;
+	color: #FF6F00;
+	font-size: 24px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.website-static-text-inner p {
+	line-height: 19px;
+	color: #4F4F4F;
+}
 /* ----------------- Min queries 768 px ----------------- */
 
 /* -- Max queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px --*/
@@ -890,6 +1000,18 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.website-score-inner .review-item:nth-child(1), .website-score-inner .review-item:nth-child(2) {
+		margin-bottom: 50px;
+	}
+	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
+		margin-left: 15px;
+	}
+	.website-score-inner .review-item:nth-child(3) {
+		margin-left: 0 !important;
+	}
+	.website-score-inner .col-md-6 {
+	    width: 49%;
+	}
 	.review {
 	    margin: 0px 23px;
 	}
@@ -952,6 +1074,9 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
+	    margin-left: 14px;
+	}
 	.scrolling-footer-and-image {
 	    height: 200px;
 	}
@@ -1052,6 +1177,22 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.review-single-card .card-item {
+		height: 285px;
+	}
+	.review-single-card .interior-card-item-5-rating {
+	    width: 100%;
+	}
+	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
+	    margin-left: 12px;
+	}
+	.cards-re {
+	    margin: 10px 0 120px;
+	}
+	.review {
+	    height: 100px;
+	    bottom: -100px;
+	}
 	.game_info {
 	    padding: 10px 0;
 	}
@@ -1281,6 +1422,15 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.website-score-inner .review-item:nth-child(1), .website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3) {
+	    margin-bottom: 50px;
+	}
+	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(4) {
+	    margin-left: 0;
+	}
+	.website-score-inner .col-md-6 {
+	    width: 100% !important;
+	}
 	.cards-re {
 	    margin: 10px 0 130px;
 	}
@@ -1342,6 +1492,10 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	
+	.filter ul li a {
+	    font-size: 13px;
+	}
 	.review {
 	    margin: 0px 15px;
 	}
@@ -1442,6 +1596,14 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.review-scrool p {
+	    font-size: 13px;
+	}
+	.review {
+		width: 87%;
+		margin: 0px 19px;
+		padding: 10px 5px;
+	}
 	.our-score span {
 	    font-size: 26px;
 	}
@@ -1505,6 +1667,23 @@ body {
 
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.review-single-card .card-item {
+	    height: 220px;
+	}
+	.review-single {
+	    padding: 20px 0 20px;
+	}
+	.cards-re {
+		margin-bottom: 130px !important;
+	}
+	.review-scrool p {
+	    font-size: 13px;
+	}
+	.review {
+		width: 87%;
+		margin: 0px 19px;
+		padding: 10px 5px;
+	}
 	.footer-text p {
 		font-size: 13px;
 		line-height: 14px;

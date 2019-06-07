@@ -292,12 +292,12 @@
 
 
 <?php include "components/static-footer.php";?>
-<script>
-	setTimeout(function(){
-	    $("#gamesBl").click();
-	}, 350);
-</script>
 
 <?php include "components/javascript.php";?>
+<script>
+	$( document ).ready(function() {
+	    $("#gamesBl").click();
+	});
+</script>
 </body>
 </html>
