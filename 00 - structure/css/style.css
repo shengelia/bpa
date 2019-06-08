@@ -250,12 +250,12 @@ body {
 	width: 29%;
 }
 
-.interior-table-header-item-4-score, .interior-card-item-4-score {
-	width: 9%;
+.interior-table-header-item-4-rating, .interior-card-item-4-rating {
+	width: 20%;
 }
 
-.interior-table-header-item-5-rating, .interior-card-item-5-rating {
-	width: 20%;
+.interior-table-header-item-5-score, .interior-card-item-5-score {
+	width: 9%;
 }
 
 .interior-table-header-item-6-visit, .interior-card-item-6-visit {
@@ -324,7 +324,7 @@ body {
 	padding: 12px;
 	color: #656565;
 }
-.card-item-2-casino-logo, .interior-card-item-2-casino-logo {
+.interior-card-item-2-casino-logo {
 	position: relative;
 }
 .editors-choice {
@@ -332,7 +332,7 @@ body {
 	width: 35px;
 	left: 0;
 }
-.card-item-2-casino-logo a img, .interior-card-item-2-casino-logo a img {
+.interior-card-item-2-casino-logo a img {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -340,34 +340,6 @@ body {
 	transform: translate(-50%, -50%);
 	width: 200px;
 }
-
-.card-item-3-bonus {
-	position: relative;
-}
-
-.card-item-3-bonus  span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	width: 150px;
-}
-
-.card-item-3-bonus h1 {
-	text-align: left;
-	font-weight: bold;
-	color: #3C5552;
-}
-
-.card-item-3-bonus h2 {
-	text-align: left;
-	margin-top: 5px;
-	color: #6D6D6D;
-	font-size: 12px;
-	font-weight: bold;
-}
-
 .interior-card-item-3-address {
 	position: relative;
 }
@@ -380,61 +352,21 @@ body {
 	transform: translate(-50%, -50%);
 	width: 95%;
 	font-weight: bold;
+	color: #b7b7b7;
 }
-
-.card-item-4-active-players {
+.interior-card-item-4-rating {
 	position: relative;
 }
-
-.card-item-4-active-players span {
+.ratings {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: #6D6D6D;
 }
-
-.card-item-4-active-players span h1 {
-	font-size: 28px;
-	font-weight: bold;
-	color: #3C5552;
-}
-
-.card-item-4-active-players span h2 {
-	font-size: 12px;
-	font-weight: bold;
-}
-
-.card-item-5-minimal-deposit {
+.interior-card-item-5-score {
 	position: relative;
 }
-
-.card-item-5-minimal-deposit span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: #6D6D6D;
-	width: 100px;
-}
-
-.card-item-5-minimal-deposit span h1 {
-	font-size: 28px;
-	font-weight: bold;
-	color: #3C5552;
-}
-
-.card-item-5-minimal-deposit span h2 {
-	font-size: 12px;
-	font-weight: bold;
-}
-
-.card-item-6-score, .interior-card-item-4-score {
-	position: relative;
-}
-
 .our-score {
 	position: absolute;
 	top: 50%;
@@ -442,104 +374,58 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 }
-
 .our-score span {
 	font-size: 40px;
 	font-weight: bold;
-	color: #3C5552;
+	color: #b7b7b7;
 }
-
 .our-score p {
 	font-size: 12px;
 	font-weight: bold;
-	color: #6D6D6D;
+	color: #b7b7b7;
 }
-
-.card-item-7-rating, .interior-card-item-5-rating {
-	position: relative;
-}
-
-.card-item-7-rating .ratings, .interior-card-item-5-rating .ratings {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-
-.ratings div {
-	text-align: center;
-	margin: 0 auto;
-}
-
 .rating {
 	text-align: center;
-	color: #4D4D4D;/*Golden color*/
+	color: #fecb18;
 	font-size: 30px;
 }
-
-.rate_message {
-	position: absolute;
-	color: #4D4D4D;/*Golden color*/
-	text-align: center;
-	width: 100%;
-	top: 10px;
-}
-
-.rate_message p {
-	margin: -10px auto 0;
-}
-
-.rated-info p {
-	margin: 0 auto;
-}
-
 .rated-info a {
-	color: #3C5552;
-	font-weight: bold;
-	font-size: 17px;
+	color: #b7b7b7;
 }
-
-.card-item-8-visit, .interior-card-item-6-visit {
+.interior-card-item-6-visit {
 	position: relative;
-	border: 1px solid #FF9100;
-	background: #FF6F00;
+	background: #078ca9;
 	color: white;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
 }
-
-.card-item-8-visit span, .interior-card-item-6-visit span {
+.interior-card-item-6-visit span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	width: 100%;
 }
-
-.card-item-8-visit span form button, .interior-card-item-6-visit span form button {
+.interior-card-item-6-visit span form button {
 	border: none;
 	background: transparent;
 	height: 150px;
+	width: 100%;
 }
-
-.card-item-8-visit span form button:focus, .card-item-8-visit span form button:visited, .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
+.interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
 	padding: 0;
 	outline: none;
 }
-
-.card-item-8-visit span p, .interior-card-item-6-visit span p {
-	font-size: 12px;
-	font-weight: bold;
-	width: 100px;
+.interior-card-item-6-visit span p {
+	font-size: 16px;
+	width: 130px;
+	margin: 0 auto;
+	text-transform: uppercase;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
-
-.website-footer {
-	background: #3C5552;
-	position: relative;
-}
-
 .scrolling-footer-and-image {
 	position: relative;
 	border-radius: 20px;
