@@ -6,7 +6,6 @@
 	<title>Home</title>
 	<?php include "components/stylesheets.php";?>
 </head>
-
 <body>
 <?php include "components/header.php";?>
 

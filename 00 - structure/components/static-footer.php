@@ -1,7 +1,7 @@
 <footer class="website-footer">
 	<div class="container">
 		<div class="scrolling-footer-and-image">
-			<div class="scrolling-footer col-lg-8 col-md-8">
+			<div class="scrolling-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="footer-text">
 					<p>
 					Every lover of gambling dreams of once to break a huge jackpot that will forever change his life
@@ -35,32 +35,29 @@
 					Nowadays you can hit the jackpot, even playing on your mobile phone. But remember, the larger
 					the jackpot, the more players claim it. Really evaluate your capabilities.</p>
 				</div>
-			</div>
-			<div class="image-footer col-lg-4 col-md-4 no-lr-padding">
-				<img src="img/footer-img.png" alt="Casino Rankings" width="100%">
-			</div>			
+			</div>		
 		</div>
 	</div>
 
 	<div class="footer-bottom-subscribe">
 		<div class="container">
 			<div class="bottom-inner">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-lr-padding copyright">
-					<img src="img/logo.png" alt="Copyright" width="100%;" height="100%;">
-					<span>All Rights Reserved © 2019</span>
+				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-lr-padding secure">
+					<img src="img/mcafee.png" alt="McAfee Secure">
 				</div>
 				<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 subscribe-form">
 			        <form>
-			            <input type="email" id="subscribe-email" placeholder="Your email">
+			            <input type="email" id="subscribe-email" placeholder="example@mail.com">
 			            <button id="signup-button">Subscribe</button>
 			            <label for="subscribe-email" class="subscribe-message error">
 				            <span class="message-content"></span>
 				            <span class="message-content-err"></span>
 			            </label>
 			        </form>
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-lr-padding secure">
-					<img src="img/mcafee.png" alt="McAfee Secure">
+				</div>				
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 no-lr-padding copyright">
+					<img src="img/logo.png" alt="Copyright" width="100%;" height="100%;">
+					<span>All Rights Reserved © 2019</span>
 				</div>
 			</div>
 		</div>		
