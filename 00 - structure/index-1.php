@@ -215,7 +215,7 @@
 					</div>
 				</div>
 
-				<div filter="ba" class="cards card-item cards-mob" id="card-5">
+				<div filter="ba, s" class="cards card-item cards-mob" id="card-5">
 					<div class="interior-card-item-1-number">
 						<span>5</span>
 					</div>

@@ -79,11 +79,11 @@
 			<div class="table-header">
 				<div class="container ">
 					<div class="table-header-items">
-						<div class="interior-table-header-item-1-number"><span></span></div>
+						<div class="interior-table-header-item-1-number"><span>#</span></div>
 						<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>
 						<div class="interior-table-header-item-3-address"><span>Adress</span></div>
-						<div class="interior-table-header-item-4-score"><span>Our Score</span></div>
-						<div class="interior-table-header-item-5-rating"><span>Rating</span></div>
+						<div class="interior-table-header-item-4-rating"><span>Rating</span></div>
+						<div class="interior-table-header-item-5-score"><span>Our Score</span></div>
 						<div class="interior-table-header-item-6-visit"><span>Visit Our Website</span></div>
 					</div>
 				</div>
@@ -109,13 +109,7 @@
 								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 							</span>
 						</div>
-						<div class="interior-card-item-4-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>
-						<div class="interior-card-item-5-rating">
+						<div class="interior-card-item-4-rating">
 							<div class="ratings">
 								<div class="rate_message"></div>
 								<div class="rating not-rated" data-rate-value="3"></div>
@@ -123,11 +117,17 @@
 									<a href="review-single.php">Review</a>
 								</div>
 							</div>
-						</div>					
+						</div>
+						<div class="interior-card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
+						</div>										
 						<div class="interior-card-item-6-visit">
 							<span>
 								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+								    <button type="submit"><p>Visit Our Site</p></button>
 								</form>
 							</span>						
 						</div>
@@ -147,13 +147,7 @@
 								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 							</span>
 						</div>
-						<div class="interior-card-item-4-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>					
-						<div class="interior-card-item-5-rating">
+						<div class="interior-card-item-4-rating">
 							<div class="ratings">
 								<div class="rate_message"></div>
 								<div class="rating not-rated" data-rate-value="3"></div>
@@ -161,11 +155,17 @@
 									<a href="review-single.php">Review</a>
 								</div>
 							</div>
-						</div>					
+						</div>
+						<div class="interior-card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
+						</div>										
 						<div class="interior-card-item-6-visit">
 							<span>
 								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+								    <button type="submit"><p>Visit Our Site</p></button>
 								</form>
 							</span>						
 						</div>
@@ -185,13 +185,7 @@
 								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 							</span>
 						</div>
-						<div class="interior-card-item-4-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>					
-						<div class="interior-card-item-5-rating">
+						<div class="interior-card-item-4-rating">
 							<div class="ratings">
 								<div class="rate_message"></div>
 								<div class="rating not-rated" data-rate-value="3"></div>
@@ -199,11 +193,17 @@
 									<a href="review-single.php">Review</a>
 								</div>
 							</div>
-						</div>					
+						</div>
+						<div class="interior-card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
+						</div>										
 						<div class="interior-card-item-6-visit">
 							<span>
 								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+								    <button type="submit"><p>Visit Our Site</p></button>
 								</form>
 							</span>						
 						</div>
@@ -223,13 +223,7 @@
 								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 							</span>
 						</div>
-						<div class="interior-card-item-4-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>					
-						<div class="interior-card-item-5-rating">
+						<div class="interior-card-item-4-rating">
 							<div class="ratings">
 								<div class="rate_message"></div>
 								<div class="rating not-rated" data-rate-value="3"></div>
@@ -237,11 +231,17 @@
 									<a href="review-single.php">Review</a>
 								</div>
 							</div>
-						</div>					
+						</div>
+						<div class="interior-card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
+						</div>										
 						<div class="interior-card-item-6-visit">
 							<span>
 								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+								    <button type="submit"><p>Visit Our Site</p></button>
 								</form>
 							</span>						
 						</div>
@@ -261,13 +261,7 @@
 								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 							</span>
 						</div>
-						<div class="interior-card-item-4-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>					
-						<div class="interior-card-item-5-rating">
+						<div class="interior-card-item-4-rating">
 							<div class="ratings">
 								<div class="rate_message"></div>
 								<div class="rating not-rated" data-rate-value="3"></div>
@@ -275,11 +269,17 @@
 									<a href="review-single.php">Review</a>
 								</div>
 							</div>
-						</div>					
+						</div>
+						<div class="interior-card-item-5-score">
+							<div class="our-score">
+								<span>9.8</span>
+								<p>Our score</p>
+							</div>
+						</div>										
 						<div class="interior-card-item-6-visit">
 							<span>
 								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+								    <button type="submit"><p>Visit Our Site</p></button>
 								</form>
 							</span>						
 						</div>

@@ -581,7 +581,6 @@ body {
 
 .interior .filter-body [tab].active {
 	display: flex;
-	background: unset;
 }
 
 .interior .game_info [tab].active {
@@ -724,7 +723,6 @@ body {
 }
 
 .tab-cards {
-	background: #3C5552;
 	margin-top: 15px;
 }
 
