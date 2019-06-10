@@ -65,7 +65,7 @@
 	<div class="footer-bottom-nav">
 		<div class="container">
 			<ul>
-				<li class="mobile-hidden"><a href="about.html">About Us</a></li>
+				<li class="mobile-hidden"><a class="footer-active" href="about.html">About Us</a></li>
 				<li class="mobile-hidden"><a href="contact.html">Contact Us</a></li>
 				<li class="mobile-hidden"><a href="terms.html">Terms of Service</a></li>
 				<li class="mobile-hidden"><a href="cookie.html">Cookie (Cookies)</a></li>

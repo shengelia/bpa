@@ -9,24 +9,7 @@
 <body>
 <?php include "components/header.php";?>
 
-<section class="website-background">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-10 col-xs-10 website-background-text">
-				<h1>Top 10 Casino Hotels of Europe. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem.</h2>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 no-lr-padding website-background-trusted-and-date">
-				<div class="date">
-					<span id="current_date"></span>
-				</div>
-				<div class="trusted">
-					<img src="img/trusted.png" alt="Trusted Choise" width="100%" height="100%">
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<?php include "components/slider.php";?>
 
 <section class="filter-index">
 	<div class="filter" id="filter">
@@ -45,7 +28,7 @@
 	</div>
 
 	<div class="table-header">
-		<div class="container ">
+		<div class="container">
 			<div class="table-header-items">
 				<div class="interior-table-header-item-1-number"><span>#</span></div>
 				<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>

@@ -10,24 +10,7 @@
 <body>
 <?php include "components/header.php";?>
 
-<section class="website-background">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-10 website-background-text">
-				<h1>Top 10 Casino Hotels of Europe. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem.</h2>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-2 website-background-trusted-and-date">
-				<!-- <div class="trusted">
-					<img src="img/trusted.png" alt="Trusted Choise" width="100%">
-				</div> -->
-				<div class="date">
-					<span id="current_date"></span>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<?php include "components/slider.php";?>
 
 <section class="website-static-text">
 	<div class="container">

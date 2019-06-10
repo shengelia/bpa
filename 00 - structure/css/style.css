@@ -394,7 +394,6 @@ body {
 }
 .interior-card-item-6-visit {
 	position: relative;
-	background: #078ca9;
 	color: white;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
@@ -409,13 +408,13 @@ body {
 }
 .interior-card-item-6-visit span form button {
 	border: none;
-	background: transparent;
-	height: 150px;
-	width: 100%;
+	background: #078CA9;
+	width: 90%;
+	padding: 20px 0;
+	border-radius: 30px;
 }
 .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
-	padding: 0;
 	outline: none;
 }
 .interior-card-item-6-visit span p {
@@ -430,7 +429,6 @@ body {
 	position: relative;
 	border-radius: 20px;
 	height: 400px;
-	box-shadow: 0px 10px 15px #bfbfbf;
 }
 .scrolling-footer {
 	position: relative;
@@ -569,92 +567,72 @@ body {
 	text-align: center;
 	box-sizing: border-box;
 }
-
 .footer-bottom-nav ul li a {
 	color: #ccc;
 	text-decoration: none;
 }
-
 .tab-body .filter-body [tab] {
 	display: none
 }
-
 .interior .filter-body [tab].active {
 	display: flex;
 }
-
 .interior .game_info [tab].active {
 	display: block
 }
-
 #more, #more1, #more2, #more3, #more4, #more-re1, #more-re2, #more-re3, #more-re4, #more-re5, #more-re6, #more-re7, #more-re8, #more-re9, #more-re10 {
 	display: none;
 	outline: none;
 }
-
 #myBtn:focus, #myBtn1:focus, #myBtn2:focus, #myBtn3:focus, #myBtn4:focus {
 	outline: none;
 }
-
 .games-filter ul li:first-child {
 	display: none;
 }
-
 .games-filter ul li:not(:first-child) {
 	margin-top: 0;
 }
-
 .filter-games li {
 	margin-top: 0px !important;
 }
-
 .game_info {
 	background-color: #fff;
 	padding: 20px 0;
 }
-
 .game-text {
-	color: #3c5552;
+	color: #9299a3;
 	font-weight: bold;
 }
-
 .game-text button {
 	background: none;
 	border: none;
-	color: #1a2f2d;
+	color: #9299a3;
 	font-style: italic;
 }
-
 .language-selection {
 	width: 50px;
 	text-align: center;
 	margin: 0 auto;
 }
-
 .website-logo {
 	display: flex;
 }
-
 .language-selection {
 	width: 30px;
 }
-
 .language-selection-mobile {
 	width: 20px;
 }
-
 .language-selection-mobile-1 a img {
 	margin: 15px 15px 15px 25px;
 }
-
 .language-selection-mobile-2 a img {
 	margin: 15px 5px;
 }
-
 .website-text-content {
 	padding: 20px 10px;
 }
-
 .website-text-content h1 {
 	color: #093F92;
 	text-align: center;
@@ -662,7 +640,6 @@ body {
 	font-size: 32px;
 	margin-bottom: 10px;
 }
-
 .website-text-content h2 {
 	color: #093F92;
 	font-weight: bold;
@@ -670,17 +647,14 @@ body {
 	margin-top: 25px;
 	margin-bottom: 5px;
 }
-
 .website-text-content p {
 	line-height: 19px;
 	letter-spacing: 0.1px;
 }
-
 .website-review-single {
 	padding: 30px 10px;
 	position: relative;
 }
-
 .review-img img {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -688,11 +662,9 @@ body {
 	height: 400px;
 	margin-top: 0;
 }
-
 .review-card .editors-choice span {
 	left: 53px
 }
-
 .single-review-text h1 {
 	font-family: 'MarkPro-Bold';
 	text-align: center;
@@ -701,12 +673,10 @@ body {
 	color: #093F92;
 	font-size: 26px;
 }
-
 .single-review-text p {
 	line-height: 19px;
 	letter-spacing: 0.3px;
 }
-
 .review-bottom-button {
 	width: 100%;
 	border: none;
@@ -717,63 +687,37 @@ body {
 	font-size: 22px;
 	margin-top: 15px;
 }
-
 .filter-games {
 	display: none !important;
 }
-
-.tab-cards {
-	margin-top: 15px;
+.filter-re {
+	margin-top: -15px;
 }
-
-.filter-header-re li:first-child {
-	display: none;
-}
-
 .review {
 	position: absolute;
 	width: 95%;
 	bottom: -80px;
 	margin: 0 28px;
 	height: 80px;
-	background: #f5f5f5;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	padding: 20px 10px;
-	border-top: 1px solid grey;
-	box-shadow: 5px 12px 15px #2D2D2D;
 }
-
 .cards-re {
 	margin: 10px 0 100px;
 }
-
-
-.filter-body {
-	border: 1px dotted red;
-}
-
-.tab-body .tab-cards {
-	padding-top: 10px;
-}
-
 .review-all-hotels {
 	padding: 0 0 25px;
 }
-
 .review-all-table {
 	margin-left: -15px;
 }
-
 .review-all-table .interior-table-header-item-3-address {
 	width: 38%;
 }
-
 .website-score {
-	background: #3C5552;
-	padding: 50px 0 50px;
+	padding: 65px 0 50px;
 }
-
 .review-item {
 	background: white;
 	padding: 40px 20px 20px;
@@ -781,38 +725,30 @@ body {
 	position: relative;
 	border-radius: 20px;
 }
-
-.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
-	margin-left: 15px;
-}
-
-.website-score-inner .col-lg-3 {
-	width: 24%;
-}
-
 .review-logo {
-	background: #FF6F00;
-	width: 60px;
-	height: 60px;
-	border: 2px solid #ff9100;
-	border-radius: 30px;
-	position: absolute;
-	top: 0%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	padding: 10px;
+	width: 80px;
+    height: 80px;
+    border: 2px solid #0099c9;
+    border-radius: 40px;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 15px;
 }
-
 .website-score-inner h1 {
-	color: #FF6F00;
+	color: #0099c9;
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.website-score-inner h2 {
+	color: #b3b3b3;
 }
 
 .review-single {
-	background: #3C5552;
 	padding: 50px 0 50px;
 }
 
@@ -829,18 +765,16 @@ body {
 .review-single-card {
 	margin-top: -3px;
 }
-
-.review-single-card .interior-card-item-6-visit {
-	border-top-right-radius: 0px;
+.review-single-card {
+	margin-top: -20px;
 }
-
 .review-single-text {
 	padding: 20px 0px 0px;
 }
 
 .review-single-text h1 {
 	font-weight: bold;
-	color: #FF6F00;
+	color: #0099c9;
 	font-size: 24px;
 	padding: 0 10px 10px;
 }
@@ -853,24 +787,20 @@ body {
 
 .review-single-text button {
 	width: 100%;
-	border-bottom-left-radius: 20px;
-	border-bottom-right-radius: 20px;
+	border: none;
+	border-radius: 20px;
 	color: white;
 	font-weight: bold;
-	background: #FF6F00;
-	border: 3px solid #ff9100;
+	background: #078ca9;
+	padding: 20px 0;
+	text-transform: uppercase;
+	outline: none !important;
 }
-
-.review-single-card .interior-card-item-6-visit {
-	display: none;
-}
-
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
 }
 
 .website-static-text {
-	background: #3C5552;
 	padding: 50px 0 50px;
 }
 
@@ -878,12 +808,12 @@ body {
 	background: white;
 	padding: 20px 20px;
 	border-radius: 20px;
-	box-shadow: 5px 12px 15px #2D2D2D;
+	box-shadow: 0px 4px 15px #A3A3A3;
 }
 
 .website-static-text-inner h1 {
 	font-weight: bold;
-	color: #FF6F00;
+	color: #0099c9;
 	font-size: 24px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -891,10 +821,15 @@ body {
 
 .website-static-text-inner p {
 	line-height: 19px;
-	color: #4F4F4F;
+	color: #b3b3b3;
 }
-
-
+.tab-cards-games {
+	margin-top: 20px;
+}
+.footer-bottom-nav ul li a.footer-active {
+	color: #078ca9;
+	border-bottom: 3px solid #078ca9;
+}
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
@@ -947,6 +882,12 @@ body {
 /* --------------------------------------------- 1199 - 992 --------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
+		margin-top: 40px;
+	}
+	.filter ul li a {
+	    font-size: 13px;
+	}
 	.navbar-right li a {
 	    font-size: 16px;
 	}
@@ -956,6 +897,27 @@ body {
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.review {
+	    margin: 0px 18px;
+	}
+	.copyright span {
+	    font-size: 14px;
+	}
+	.interior-card-item-6-visit span p {
+	    font-size: 11px;
+	    width: 90px;
+	}
+	.interior-card-item-2-casino-logo a img {
+	    width: 150px;
+	}
+	.interior-card-item-1-number span {
+	    height: 30px;
+	    width: 30px;
+	    padding: 6px;
+	}
+	.table-header-items div span {
+	    font-size: 12px;
+	}
 	.website-background-trusted-and-date {
 	    top: 60px;
 	}
@@ -990,6 +952,91 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.footer-text {
+	    max-height: 255px;
+	}
+	.scrolling-footer-and-image {
+	    height: 250px;
+	}
+	.footer-bottom-nav ul li {
+	    padding: 0px 5px;
+	}
+	.footer-bottom-nav ul {
+	    width: 100%;
+	    margin: 15px auto;
+	}
+	.copyright img {
+	    margin-left: 100px;
+	}
+	.copyright {
+	    position: absolute;
+	    margin: 0 auto;
+	    width: 100%;
+	    text-align: center;
+	    top: 150px;
+	    display: flex;
+	}
+	.footer-bottom-subscribe {
+	    height: 200px;
+	}
+	.subscribe-form {
+	    text-align: center;
+	    padding: 5px 0;
+	    position: absolute;
+	    margin: 0 auto;
+	    width: 100%;
+	    top: 50px;
+	}
+	.secure {
+	    position: absolute;
+	    width: 100%;
+	    top: 0;
+	    height: 50px;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+	.filter-header li:nth-child(4), .filter-header li:nth-child(5), .filter-header li:nth-child(6) {
+		box-shadow: 0px 8px 6px #A3A3A3;
+		margin-top: -3px;
+	}
+	.filter-header li:last-child {
+	    border-bottom-right-radius: 10px;
+	    border-top-right-radius: 0;
+	}
+	.filter-header li:nth-child(3) {
+		border-top-right-radius: 10px;
+	}
+	.filter-header li:nth-child(4) {
+		border-bottom-left-radius: 10px;
+	}
+	.filter-header li {
+	    width: 33%;
+	    display: inline-block;
+	    border: 2px solid #AAB1AF;
+	    padding: 15px 20px;
+	}
+	.filter-header {
+	    width: 100%;
+	    position: relative;
+	    display: table;
+	}
+	.interior-card-item-6-visit span p {
+	    font-size: 12px;
+	    width: 70px;
+	}
+	.our-score span {
+	    font-size: 32px;
+	}
+	.interior-card-item-3-address h1 {
+		font-size: 14px;
+	}
+	.interior-card-item-2-casino-logo a img {
+	    width: 120px;
+	}
+	.copyright span {
+	    font-size: 13px;
+	    margin: 18px auto;
+	}
 	.website-background-trusted-and-date {
 	    top: 85px;
 	    right: 15px;
@@ -1021,6 +1068,70 @@ body {
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.review {
+	    padding: 5px 10px;
+	}
+	.copyright img {
+	    margin-left: 55px;
+	}
+	.interior-card-item-6-visit span p {
+	    font-size: 14px;
+	    width: 100%;
+	    font-weight: bold;
+	}
+	.interior-card-item-6-visit span form button {
+	    width: 100%;
+	    padding: 15px 0;
+	    border-radius: 15px;
+	}
+	.interior-card-item-6-visit {
+	    position: absolute;
+	    width: 100%;
+	    bottom: 22px;
+	}
+	.interior-card-item-5-score {
+	    position: absolute;
+	    width: 50%;
+	    height: 75px;
+	    top: 135px;
+	    right: 0;
+	}
+	.interior-card-item-4-rating {
+	    position: absolute;
+	    width: 50%;
+	    height: 75px;
+	    top: 135px;
+	}
+	.interior-card-item-3-address {
+	    position: absolute;
+	    width: 100%;
+	    height: 50px;
+	    top: 85px;
+	}
+	.editors-choice {
+	    right: 0;
+	    left: unset;
+	}
+	.interior-card-item-2-casino-logo a img {
+	    width: 170px;
+	}
+	.interior-card-item-2-casino-logo {
+	    position: absolute;
+	    width: 100%;
+	    height: 85px;
+	}
+	.interior-card-item-1-number {
+	    position: absolute;
+	    top: 30px;
+	    left: 10px;
+	}
+	.card-item {
+	    height: 254px;
+	    background: #F2F2F2;
+	}
+	.table-header {
+		display: none;
+	}
 	.website-background-text {
 	    top: 65px;
 	}
@@ -1033,6 +1144,20 @@ body {
 /* --------------------------------------------- 550 - 416 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.review {
+	    margin: 0px 12px;
+	}
+	.review-scrool p {
+		font-size: 14px;
+		font-weight: bold;
+		color: grey;
+	}
+	.subscribe-form form {
+	    width: 375px;
+	}
+	.copyright img {
+	    margin-left: 0px;
+	}
 	.trusted {
 	    width: 65px;
 	}
@@ -1057,6 +1182,50 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:413px) {
+	.cards-re {
+	    margin: 10px 0 135px;
+	}
+	.footer-bottom-nav ul li a {
+		font-size: 12px;
+	}
+	.footer-text p {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	.website-footer {
+		margin-top: -20px;
+	}
+	.footer-text {
+	    max-height: 120px;
+	}
+	.scrolling-footer {
+	    min-height: 150px;
+	}
+	.scrolling-footer-and-image {
+	    height: 110px;
+	}
+	.subscribe-form form {
+	    display: table;
+	    width: 290px;
+	}
+	.subscribe-form button {
+	    padding: 10px 5px 10px 5px;
+	    width: 105px;
+	}
+	.subscribe-form input {
+	    padding: 8px 10px;
+	    width: 175px;
+	}
+	.filter ul li a {
+	    font-size: 11px;
+	}
+	.filter .container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.filter-header li {
+	    font-weight: 100;
+	}
 	.website-background {
 	    height: 210px;
 	}
@@ -1083,4 +1252,19 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.review {
+	    margin: 0px 5px;
+	}
+	.copyright span {
+	    margin: 10px auto;
+	}
+	.copyright img {
+	    width: 130px;
+	}
+	.filter-index {
+	    margin-top: -25px;
+	}
+	.website-background-text {
+	    top: 55px;
+	}
 }

@@ -10,30 +10,13 @@
 <body>
 <?php include "components/header.php";?>
 
-<section class="website-background">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-9 col-md-9 col-sm-10 website-background-text">
-				<h1>Top 10 Casino Hotels of Europe. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</h1>
-				<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, rem.</h2>
-			</div>
-			<div class="col-lg-3 col-md-3 col-sm-2 website-background-trusted-and-date">
-				<!-- <div class="trusted">
-					<img src="img/trusted.png" alt="Trusted Choise" width="100%">
-				</div> -->
-				<div class="date">
-					<span id="current_date"></span>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+<?php include "components/slider.php";?>
 
 <section class="review-single">
 	<div class="container">
 		<div class="review-single-inner">
 			<div class="review-image">
-				<img src="img/about.png" alt="Review Single" width="100%" height="100%;">
+				<img src="img/review.jpg" alt="Review Single" width="100%" height="100%;">
 			</div>
 
 			<div class="review-single-card">
@@ -54,22 +37,22 @@
 							<h1>Delectus ea quibusdam incidunt, debitis!</h1>
 						</span>
 					</div>
-					<div class="interior-card-item-4-score">
-						<div class="our-score">
-							<span>9.8</span>
-							<p>Our score</p>
-						</div>
-					</div>					
-					<div class="interior-card-item-5-rating">
+					<div class="interior-card-item-4-rating">
 						<div class="ratings">
 							<div class="rate_message"></div>
 							<div class="rating not-rated" data-rate-value="3"></div>
 						</div>
-					</div>					
+					</div>
+					<div class="interior-card-item-5-score">
+						<div class="our-score">
+							<span>9.8</span>
+							<p>Our score</p>
+						</div>
+					</div>										
 					<div class="interior-card-item-6-visit">
 						<span>
 							<form action="http://www.mail.ru" target="_blank">
-							    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+							    <button type="submit"><p>Visit Our Site</p></button>
 							</form>
 						</span>						
 					</div>
@@ -84,7 +67,7 @@
 					</p>
 				</span>
 				<form action="http://www.mail.ru" target="_blank">
-				    <button type="submit"><img src="img/button_visit_arrow.png" alt="Visit"><p>Visit Our Site</p></button>
+				    <button type="submit"><p>Visit Our Site</p></button>
 				</form>
 			</div>
 		</div>
