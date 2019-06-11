@@ -124,15 +124,21 @@ body {
 	top: 140px;
 }
 .website-background-text h1 {
+	font-family: 'MarkPro-Bold';
 	color: white;
 	font-size: 28px;
 	font-weight: bold;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 .website-background-text h2 {
+	font-family: 'MarkPro-Bold';
 	color: white;
 	font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 .website-background-trusted-and-date {
 	position: absolute;
@@ -141,15 +147,12 @@ body {
 	text-align: center;
 }
 .date {
-	font-family: 'MarkPro-ExtraLight';
     text-align: center;
     color: white;
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
     background: rgba(0, 0, 0, 0.4);
-    border: 3px solid white;
-    border-radius: 10px;
     width: 160px;
     margin: 0 auto 10px;
 }
@@ -251,37 +254,6 @@ body {
 .interior-table-header-item-6-visit, .interior-card-item-6-visit {
 	width: 15%;
 }
-/*.table-header-item-1-number, .card-item-1-number {
-	width: 2%;
-}
-.table-header-item-2-casino-logo, .card-item-2-casino-logo {
-	width: 22%;
-}
-
-.table-header-item-3-bonus, .card-item-3-bonus {
-	width: 15%;
-}
-
-.table-header-item-4-active-players, .card-item-4-active-players {
-	width: 12%;
-}
-
-.table-header-item-5-minimal-deposit, .card-item-5-minimal-deposit {
-	width: 12%;
-}
-
-.table-header-item-6-score, .card-item-6-score {
-	width: 9%;
-}
-
-.table-header-item-7-rating, .card-item-7-rating {
-	width: 20%;
-}
-
-.table-header-item-8-visit, .card-item-8-visit {
-	width: 10%;
-}*/
-
 .hotels {
 	padding: 10px 0 25px;
 }
@@ -921,19 +893,20 @@ body {
 	    font-size: 12px;
 	}
 	.website-background-trusted-and-date {
-	    top: 60px;
+	    top: 130px;
 	}
 	.trusted {
 	    width: 115px;
 	}
 	.date {
 	    width: 100px;
+	    padding: 5px;
 	}
 	.website-background-text {
-	    top: 85px;
+	    top: 135px;
 	}
 	.website-background {
-	    height: 260px;
+	    height: 350px;
 	}
 	.navbar {
 	    min-height: 45px !important;
@@ -948,12 +921,27 @@ body {
 	.nav > li > a {
 	    padding: 10px 5px;
 	}
+	.navbar {
+	    min-height: 125px !important;
+	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.website-background-text {
+	    top: 85px;
+	}
+	.website-background {
+	    height: 280px;
+	}
+	.navbar {
+	    min-height: 60px !important;
+	}
+	.website-logo {
+	    width: 95px;
+	}
 	.footer-text {
 	    max-height: 255px;
 	}
@@ -1047,7 +1035,7 @@ body {
 	    width: 100px;
 	}
 	.date {
-	    font-size: 11px;
+	    font-size: 18px;
 	}
 	.navbar-right .active {
 	    border-bottom: 2px solid #078ca9;
@@ -1143,9 +1131,12 @@ body {
 }
 
 /* ------------------------------------------------------------------------------------------------ */
-/* --------------------------------------------- 550 - 416 ---------------------------------------- */
+/* --------------------------------------------- 550 - 415 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.website-background {
+	    height: 250px;
+	}
 	.review {
 	    margin: 0px 12px;
 	}
@@ -1173,17 +1164,19 @@ body {
 	    font-size: 22px;
 	}
 }
-
 /* ------------------------------------------------------------------------------------------------ */
-/* --------------------------------------------- 415 - 414 ---------------------------------------- */
+/* --------------------------------------------- 414 - 413 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
-@media (max-width:415px) and (min-width:414px) {
+@media (max-width: 414px) {
+	.website-background {
+	    height: 250px;
+	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
-@media (max-width:413px) {
+@media (max-width: 413px) {
 	.cards-re {
 	    margin: 10px 0 135px;
 	}
@@ -1232,7 +1225,7 @@ body {
 	    height: 210px;
 	}
 	.website-background-trusted-and-date {
-	    top: 65px;
+	    top: 55px;
 	}
 	.trusted {
 	    width: 56px;
@@ -1245,8 +1238,11 @@ body {
 	    font-size: 18px;
 	}
 	.website-logo {
-	    width: 110px;
-	    padding: 10px 0 0;
+	    width: 85px;
+	    padding: 5px 0 0;
+	}
+	.navbar {
+	    min-height: 53px !important;
 	}
 }
 
@@ -1254,6 +1250,15 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.date {
+	    font-size: 12px;
+	    font-weight: bold;
+	    font-family: 'MarkPro-Bold';
+	}
+	.website-logo {
+	    width: 80px;
+	    padding: 5px 0 0;
+	}
 	.review {
 	    margin: 0px 5px;
 	}
@@ -1263,10 +1268,7 @@ body {
 	.copyright img {
 	    width: 130px;
 	}
-	.filter-index {
-	    margin-top: -25px;
-	}
 	.website-background-text {
-	    top: 55px;
+	    top: 65px;
 	}
 }
