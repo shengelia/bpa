@@ -29,7 +29,7 @@ table {
 }
 body {
 	position: relative;
-	font-family: 'MarkPro';
+	font-family: 'MarkPro-ExtraLight';
 }
 /* Width */
 ::-webkit-scrollbar {
@@ -37,15 +37,15 @@ body {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #C0DCE5;
+	background-color: #c1af72;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #11404F;
+	background: #654d00;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background: #11404F;
+	background: #654d00;
 }
 .no-lr-padding {
 	padding-left: 0;
@@ -67,7 +67,19 @@ body {
 	font-family: 'MarkPro-Bold';
 	src: url('../fonts/MarkPro-Bold.otf');
 }
-.navbar-right li a {
+.desktop-logo {
+	width: 100%;
+	position: relative;
+	text-align: center;
+}
+.website-logo-main {
+	width: 150px;
+	margin: 0 auto;
+}
+.website-logo-main img {
+	width: 107px;
+}
+.navbar-nav li a {
 	font-family: 'MarkPro-ExtraLight';
 	font-size: 20px;
 	box-sizing: border-box;
@@ -75,30 +87,11 @@ body {
 	-webkit-box-sizing: border-box;
 	color: white;
 }
-.navbar-right .active {
+.navbar-nav .active {
 	font-family: 'MarkPro-Bold';
 	font-weight: 900;
 	border-bottom: 2px solid white;
 	margin-bottom: -3px;
-}
-.scrolled {
-	background: white;
-	border-bottom: 1px solid #078ca9;
-}
-.scrolled li a {
-	color: #078ca9;
-}
-.scrolled .active {
-	border-bottom: 2px solid #078ca9;
-	margin-bottom: -3px;
-}
-.collapsing, .collapse.in {
-    background: white;
-    text-align: center;
-    color: #078ca9;
-}
-.navbar-fixed-top.scrolled ul li a, .navbar-fixed-top.scrolled li.active {
-    color: #078ca9 !important;
 }
 .website-logo {
 	width: 165px;
@@ -109,7 +102,7 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 400px;
+	height: 355px;
 	margin-top: 0;
 }
 .website-background-2 {
@@ -161,11 +154,8 @@ body {
     margin: 0 auto 10px;
 }
 .trusted {
-	width: 150px;
+	width: 105px;
 	margin: 0 auto;
-}
-.filter-index {
-	margin-top: -10px;
 }
 .filter-main {
 	margin: 0 auto;
@@ -867,6 +857,18 @@ body {
 /* --------------------------------------------- ~ > 768 ------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 @media (min-width:769px) {
+	.navbar-nav {
+		width: 100%;
+		display: flex;
+	}
+	.navbar-nav li {
+	    flex-basis: auto;
+	    flex-grow: 1;
+	    text-align: center;
+	}
+	.website-logo {
+		display: none;
+	}
 	.desktop-hidden {
 		display: none;
 	}

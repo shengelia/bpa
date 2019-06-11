@@ -1,6 +1,11 @@
 <header>
 	<nav class="navbar navbar-default navbar-fixed-top">
         <div class="container no-lr-padding">
+        	<div class="desktop-logo mobile-hidden-768">
+        		<a class="website-logo-main" href="index-1.php">
+        			<img src="img/logo.png" alt="Website Logo" width="100%" height="100%">
+        		</a>
+        	</div>
 	        <div class="navbar-header">
 	            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 		            <span class="sr-only">Toggle navigation</span>
@@ -19,7 +24,7 @@
 	            </span>
 	        </div>
 	        <div id="navbar" class="navbar-collapse collapse">
-				<ul class="nav navbar-nav navbar-right">
+				<ul class="nav navbar-nav">
 					<li class="active"><a href="index-1.php">Home</a></li>
 					<li><a href="blackjack.php">Blackjack</a></li>
 		            <li><a href="roulette.php">Roulette</a></li>
