@@ -1,24 +1,26 @@
-// navbar
+// Scrolling navbar
 $(function () {
   $(document).scroll(function () {
       var $nav = $(".navbar-fixed-top");
       $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
     });
 });
+// Scrolling navbar
 
-// rating stars
+// Rating stars
 var options = {
     max_value: 5,
     step_size: 0.5,
     initial_value: 0,
-    cursor: 'pointer',
+    cursor: 'none',
     readonly: true,
-    change_once: true,
+    change_once: false,
     // ajax_method: 'POST',
     // url: 'http://localhost/test.php',
     additional_data: {} // Additional data to send to the server
 }
 $(".rating").rate(options);
+// Rating ends
 
 
 // current day (today) starts
@@ -40,12 +42,12 @@ months = [
     'October',
     'November',
     'December'
-]
+];
 
-today = months[parseInt(mm) - 1] + ' ' + dd + ' ' + yyyy;
-
+today = dd + ' ' + months[parseInt(mm) - 1] + ' ' + yyyy;
 var todayElem = document.getElementById('current_date');
 todayElem.innerHTML = today;
+// current day (today) ends
 
 
 // Subscribe
@@ -231,7 +233,7 @@ $(".filter-header [filter]").click(function(e) {
 });
 // filter ends
 
-//games
+// Games
 $(document).ready(function() {
     // Hide When focus lost on BlackJack
     $('.tab [tab]').on('click', function() {
@@ -244,7 +246,6 @@ $(document).ready(function() {
             $('#info_blackjack').show();
         }
     });
-    // Info about Games end
 
     var tabTextLength = $(".filter-body .tab-texts [tab]").length;
     var tabCardLength = $(".filter-body .tab-cards [tab]").length;
@@ -268,18 +269,17 @@ $(document).ready(function() {
         }
 
         for (var i = 1; i < tabTextLength + 1; i++) {
-            var item = $('.filter-body .tab-texts [tab]:nth-child(' + i + ')').attr('tab')
+            var item = $('.filter-body .tab-texts [tab]:nth-child(' + i + ')').attr('tab');
             console.log(item.includes(tabName))
             if (item.includes(tabName)) {
                 $('.filter-body .tab-texts [tab]:nth-child(' + i + ')').addClass('active');
             }
         }
-
     });
 });
-//games
+// Games over
 
-//Read more
+// Read more
 function myFunction() {
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");

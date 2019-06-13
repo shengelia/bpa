@@ -31,7 +31,7 @@
 
 
 <section class="hotels" id="hotels">       
-        <div class="table-header">
+        <div class="table-header table-header-review">
 			<div class="container">
 				<div class="table-header-items">
 					<div class="interior-table-header-item-1-number"><span>#</span></div>

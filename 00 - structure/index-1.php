@@ -21,7 +21,7 @@
 					<li filter="r"><a href="#">Roulette</a></li>
 					<li filter="p"><a href="#">Poker</a></li>
 					<li filter="ba"><a href="#">Baccarat</a></li>
-					<li filter="s"><a href="#">Spieleautomaten</a></li>
+					<li filter="s"><a href="#">Spielenautomaten</a></li>
 				</ul>
 			</div>
 		</div>
@@ -350,7 +350,7 @@
 					</div>
 				</div>
 
-				<div filter="s" class="cards card-item cards-mob" id="card-9">
+				<div filter="r, p, s" class="cards card-item cards-mob" id="card-9">
 					<div class="interior-card-item-1-number">
 						<span>9</span>
 					</div>
