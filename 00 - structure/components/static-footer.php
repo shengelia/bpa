@@ -61,11 +61,11 @@
 					<img src="img/logo.png" alt="Copyright" width="100%;" height="100%;">
 					<span>All Rights Reserved © 2019</span>
 				</li>
-				<li class="footer-active"><a href="about.html">About Us</a></li>
-				<li><a href="contact.html">Contact Us</a></li>
-				<li><a href="terms.html">Terms of Service</a></li>
-				<li><a href="cookie.html">Cookie (Cookies)</a></li>
-				<li><a href="privacy.html">Privacy Policy</a></li>
+				<li class="footer-active"><a href="about.php">About Us</a></li>
+				<li><a href="contact.php">Contact Us</a></li>
+				<li><a href="terms.php">Terms of Service</a></li>
+				<li><a href="cookie.php">Cookie (Cookies)</a></li>
+				<li><a href="privacy.php">Privacy Policy</a></li>
 			</ul>
 		</div>
 	</div>

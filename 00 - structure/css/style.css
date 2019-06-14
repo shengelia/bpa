@@ -1,9 +1,3 @@
-/* 
-#e9414d;
-#262626;
-rgba(38, 38, 38, 0.8);
-#f5f5f5;
- */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -39,15 +33,15 @@ body {
 }
 /* Width */
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #a7a7a7;
+	background-color: #CECECE;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #e9414d;
+	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .no-lr-padding {
 	padding-left: 0;
@@ -69,37 +63,26 @@ body {
 	font-family: 'MarkPro-Bold';
 	src: url('../fonts/MarkPro-Bold.otf');
 }
-.desktop-logo {
-	width: 100%;
-	position: relative;
-	text-align: center;
-}
-.website-logo-main {
-	width: 150px;
-	margin: 0 auto;
-}
-.website-logo-main img {
-	width: 107px;
-}
 .navbar-nav li a {
 	font-family: 'MarkPro-ExtraLight';
+	font-weight: bold;
 	font-size: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	color: white;
+	color: #7e7e7e;
 }
 .navbar-nav .active {
-	border-bottom: 3px solid #e9414d;
+	border-bottom: 3px solid #0bafc5;
 }
 .navbar-nav .active a {
 	font-family: 'MarkPro';
 	font-weight: bold;
-	color: #e9414d;
+	color: #0bafc5;
 }
-.website-logo {
+.navbar-logo {
 	width: 165px;
-    padding: 2px 0 0px;
+    padding: 15px 0;
 }
 .website-background {
 	position: relative;
@@ -129,9 +112,11 @@ body {
 	width: 150px;
 }
 .website-background-text {
-	float: left;
-	top: 100px;
-	text-align: right;
+    float: left;
+    top: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 0px 40px 0px 40px;
 }
 .website-background-text h1 {
 	font-family: 'MarkPro-Bold';
@@ -152,8 +137,8 @@ body {
 }
 .website-background-trusted-and-date {
 	position: absolute;
-	bottom: -47px;
-	right: 0px;
+	bottom: 0;
+	right: 0;
 	text-align: center;
 	width: 155px;
 }
@@ -162,20 +147,12 @@ body {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
-    width: 160px;
-    margin: 5px auto 5px;
-    display: flex;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-stroke: 0.45px;
-    text-shadow: #fff 0px 1px 1px;
-}
-.date img {
-	width: 20px;
-}
-#current_date {
-	margin-left: 10px;
+    padding: 10px 0;
+    width: 145px;
+    margin: 10px auto;
+    background: linear-gradient(20deg, #01cdbe, #0195cd);
+    border: 3px solid white;
+    border-radius: 10px;	
 }
 .filter-index {
 	background: #262626;
@@ -183,7 +160,6 @@ body {
 	background-size: cover;
 	background-repeat: repeat-y;
 	width: 100%;
-	margin-top: -35px;
 }
 .filter-main {
 	margin: 5px auto;
@@ -213,7 +189,7 @@ body {
 	margin-left: 5px;
 }
 .filter-header li.filter_active {
-	background: #e9414d;
+	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .filter ul li a {
 	margin: 0;
@@ -239,7 +215,7 @@ body {
 	margin-top: 0px;
 	padding: 0 5px;
 	background: white;
-	border-top: 2px solid #e9414d;
+	border-top: 2px solid #01cdbe;
 }
 .table-header-items div {
 	position: relative;
@@ -256,7 +232,7 @@ body {
 	font-size: 13px;
 	width: 100%;
 	text-align: center;
-	color: #e9414d;
+	color: #0bafc5;
 	font-family: 'MarkPro';
 }
 .interior-table-header-item-1-number, .interior-card-item-1-number {
@@ -293,7 +269,6 @@ body {
 	width: 100%;
 	text-align: center;
 	height: 150px;
-	border-bottom: 2px dashed #d5d5d5;
 }
 .interior-card-item-1-number {
 	position: relative;
@@ -308,7 +283,7 @@ body {
     font-weight: bold;
     padding-top: 16px;
     padding-right: 10px;
-    color: #e9414d;
+    color: #0bafc5;
     width: 30px;
     height: 50px;
     background: #262626;
@@ -355,7 +330,7 @@ body {
 	left: 50%;
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	color: #ffbf00;
+	color: #0bafc5;
 }
 .interior-card-item-5-score {
 	position: relative;
@@ -370,7 +345,7 @@ body {
 .our-score span {
 	font-size: 40px;
 	font-weight: bold;
-	color: #e9414d;
+	color: #0bafc5;
 	font-family: 'MarkPro-Bold';
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -415,7 +390,7 @@ body {
 }
 .interior-card-item-6-visit span form button {
     border: none;
-    background: #e9414d;
+    background: linear-gradient(20deg, #01cdbe, #0195cd);
     width: 90%;
     padding: 15px 0;
     border-radius: 5px;
@@ -462,7 +437,7 @@ body {
 	background: transparent;
 }
 .footer-text::-webkit-scrollbar-thumb, .scrolling-footer::-webkit-scrollbar-thumb:window-inactive {
-	background: #e9414d;
+	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .footer-text {
 	max-height: 350px;
@@ -481,61 +456,6 @@ body {
 }
 .footer-menu-list ul li {
 	margin: 0 10px;
-}
-.subscribe-form {
-	text-align: center;
-	padding: 5px 0;
-	position: relative;
-}
-.subscribe-form form {
-	width: 400px;
-	margin: 0 auto;
-	text-align: center;
-	border-radius: 10px;
-	background-color: #0099c9;
-	padding: 20px 0;
-}
-.subscribe-form input {
-	box-sizing: border-box;
-	background: #f5f5f5;
-	border: none;
-	color: #717171;
-	border-radius: 5px;
-	padding: 8px 18px;
-}
-.subscribe-form button {
-	background-color: #006685;
-	border: none;
-	border-radius: 5px;
-	color: white;
-	text-align: center;
-	text-decoration: none;
-	padding: 10px 25px 10px 25px;
-	box-sizing: border-box;
-	font-size: 18px;
-}
-.message-content {
-	position: absolute;
-	top: 10px;
-}
-.message-content, .message-content-err {
-	position: absolute;
-	font-size: 14px;
-	top: -5%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	text-align: center;
-}
-.message-content {
-	font-weight: bold;
-	color: #0F9200;
-	border-radius: 5px;
-}
-.message-content-err {
-	font-weight: bold;
-	color: #FF0000;
-	border-radius: 5px;
 }
 .footer-bottom-subscribe {
 	background: white;
@@ -571,7 +491,7 @@ body {
 	text-decoration: none;
 }
 .footer-bottom-nav ul li a.footer-active {
-	color: #e9414d;
+	color: #0bafc5;
 	border-bottom: 3px solid #e9414d;
 	padding-bottom: 5px;
 }
@@ -702,7 +622,7 @@ body {
 .review-logo {
     width: 80px;
     height: 80px;
-    border: 2px solid #e9414d;
+    border: 2px solid #01cdbe;
     border-radius: 40px;
     position: absolute;
     top: 0%;
@@ -718,13 +638,13 @@ body {
     font-weight: bold;
     margin-bottom: 10px;
     margin-top: 10px;
-    background: #e9414d;
+    background: linear-gradient(20deg, #01cdbe, #0195cd);
     padding: 10px;
     border-radius: 10px;
 }
 .website-score-inner h2 {
     color: #949494;
-    border: 3px solid #e9414d;
+    border: 3px solid #01cdbe;
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
@@ -759,7 +679,7 @@ body {
 .review-single-text h1 {
 	font-family: 'MarkPro';
 	font-weight: bold;
-	color: #e9414d;
+	color: #0bafc5;
 	font-size: 24px;
 	padding: 0 10px 10px;
 	text-align: center;
@@ -781,7 +701,7 @@ body {
     outline: none !important;
     font-weight: bold;
     font-family: 'MarkPro';
-    background: #e9414d;
+    background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
@@ -799,7 +719,7 @@ body {
 .website-static-text-inner h1 {
 	font-family: 'MarkPro-Bold';
 	font-weight: bold;
-	color: #e9414d;
+	color: #0bafc5;
 	font-size: 24px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -847,7 +767,7 @@ body {
     text-align: center;
     box-sizing: border-box;
     font-weight: bold;
-    border: 3px solid #e9414d;
+    border: 3px solid #01cdbe;
     background-color: white;
 }
 .how-we-score-sc--s-- .list--s-- .col-25--s--:hover {
@@ -895,7 +815,7 @@ body {
   background: #ededed; 
 }
 .info--s--::-webkit-scrollbar-thumb, .scrolling-footer ::-webkit-scrollbar-thumb:window-inactive {
-  background: #e9414d; 
+  background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- .close--s-- {
     text-align: right;
@@ -932,38 +852,31 @@ body {
 	margin-left: 15px;
 }
 /*How we score end*/
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* --------------------------------------- Min Queries 769, 650 ----------------------------------- */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* --------------------- Max Queries 1199, 991, 768, 650, 550, 415-414, 413, 320 px ----------------*/
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
-/* ------------------------------------------------------------------------------------------------ */
 
 
 
 
 
-
-
-
-
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- ~ > 768 ------------------------------------------ */
@@ -974,12 +887,13 @@ body {
 	}
 }
 
-
-
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 1199 - 992 --------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.navbar-right li a {
+		font-size: 16px;
+	}
 	.how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- {
 	    width: 100%;
 	    left: 0px;
@@ -1015,9 +929,6 @@ body {
 	.filter ul li a {
 	    font-size: 13px;
 	}
-	.navbar-right li a {
-	    font-size: 16px;
-	}
 }
 
 
@@ -1026,6 +937,26 @@ body {
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.date {
+	    font-size: 16px;
+	    width: 90px;
+	}
+	.website-background-trusted-and-date {
+	    right: unset;
+	    left: 3px;
+	    width: 125px;
+	}
+	.navbar {
+	    min-height: 43px;
+	}
+	.navbar-logo {
+	    width: 145px;
+	    padding: 13px 0;
+	}
+	.navbar-right li a {
+	    font-size: 14px;
+	    padding: 10px 5px;
+	}
 	.bc-row .review-item:not(:last-child) {
 		margin-bottom: 50px;
 	}
@@ -1041,10 +972,6 @@ body {
 	.filter ul li a {
 	    font-size: 11px;
 	}
-	.website-background-trusted-and-date {
-	    bottom: -31px;
-	    width: 100px;
-	}
 	.slider-logo {
 	    width: 110px;
 	    top: 65px;
@@ -1052,13 +979,6 @@ body {
 	.website-background-text {
 	    float: right;
 	    top: 100px;
-	}
-	.navbar {
-	    min-height: 43px;
-	}
-	.date {
-		margin: 0;
-		font-size: 14px;
 	}
 	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
 		margin-top: 55px;
@@ -1076,12 +996,6 @@ body {
 	.footer-bottom-nav ul li {
 	    padding-left: 0;
 	    padding-right: 0;
-	}
-	.interior-card-item-1-number span:before {
-	    border-top: 16px solid transparent;
-	    border-bottom: 14px solid transparent;
-	    right: -10px;
-	    border-left: 10px solid #fwebsitec2f;
 	}
 	.review {
 	    margin: 0px 18px;
@@ -1110,15 +1024,9 @@ body {
 	.website-background {
 	    height: 300px;
 	}
-	.navbar-right li a {
-	    font-size: 14px;
-	}
 	.website-logo {
 	    width: 160px;
 	    padding: 0;
-	}
-	.nav > li > a {
-	    padding: 10px 5px;
 	}
 }
 
@@ -1126,6 +1034,20 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.date {
+	    width: 115px;
+	}
+	.website-background-trusted-and-date {
+	    width: 120px;
+	    left: 20px;
+	}
+	.navbar {
+	    border-bottom: 1px solid #0bafc5;
+	}
+	.navbar-logo {
+	    width: 160px;
+	    padding: 14px 0;
+	}
 	.filter-re {
 	    margin-top: 0;
 	    padding-bottom: 0;
@@ -1142,12 +1064,6 @@ body {
 	}
 	.filter-index {
 	    margin-top: 0;
-	}
-	.website-background-trusted-and-date {
-	    right: unset;
-	    left: 15px;
-	    width: 130px;
-	    bottom: 0;
 	}
 	.website-background-text h2 {
 	    font-size: 16px;
@@ -1177,6 +1093,7 @@ body {
 	}
 	.website-background-text {
 	    top: 65px;
+	    text-align: right;
 	}
 	.website-background {
 	    height: 245px;
@@ -1256,15 +1173,8 @@ body {
 	    font-size: 13px;
 	    margin: 18px auto;
 	}
-	.date {
-	    margin-top: 5px;
-	}
-	.navbar-right .active {
-	    border-bottom: 3px solid #e9414d;
-	    margin-bottom: -3px;
-	}
 	.nav > li > a {
-	    color: white;
+	    color: #7f7f7f;
 	    font-weight: bold;
 	}
 	.navbar-fixed-top .container {
@@ -1437,6 +1347,10 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+	.navbar-logo {
+	    width: 135px;
+	    padding: 15px 0 0;
+	}
 	.filter-body .cards-re {
 	    height: 230px;
 	    margin-bottom: 140px;
