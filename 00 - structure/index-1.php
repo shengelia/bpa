@@ -16,12 +16,12 @@
 		<div class="container">
 			<div class="filter-main">
 				<ul class="filter-list filter-header">
-					<li filter="all" class="filter_active"><a href="#">View all</a></li>
-					<li filter="bl"><a href="#">Blackjack</a></li>
-					<li filter="r"><a href="#">Roulette</a></li>
-					<li filter="p"><a href="#">Poker</a></li>
-					<li filter="ba"><a href="#">Baccarat</a></li>
-					<li filter="s"><a href="#">Spielenautomaten</a></li>
+					<li filter="all" class="filter_active"><span><img src="img/filter_view_all.png" width="100%" alt="Filter Image"></span><a href="#">View all</a></li>
+					<li filter="bl"><span><img src="img/filter_blackjack.png" width="100%" alt="Filter Image"></span><a href="#">Blackjack</a></li>
+					<li filter="r"><span><img src="img/filter_roulette.png" width="100%" alt="Filter Image"></span><a href="#">Roulette</a></li>
+					<li filter="p"><span><img src="img/filter_blackjack.png" width="100%" alt="Filter Image"></span><a href="#">Poker</a></li>
+					<li filter="ba"><span><img src="img/filter_roulette.png" width="100%" alt="Filter Image"></span><a href="#">Baccarat</a></li>
+					<li filter="s"><span><img src="img/filter_slot.png" width="100%" alt="Filter Image"></span><a href="#">Slot</a></li>
 				</ul>
 			</div>
 		</div>
@@ -45,12 +45,12 @@
 			<div class="filter-body">
 				<div filter="bl, s" class="cards card-item cards-mob" id="card-1">
 					<div class="interior-card-item-1-number">
-						<span>1</span>
-					</div>
-					<div class="interior-card-item-2-casino-logo">
 						<div class="editors-choice">
 							<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
 						</div>
+						<span>1</span>
+					</div>
+					<div class="interior-card-item-2-casino-logo">
 						<a href="http://www.mail.ru" target="_blank">
 							<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
 						</a>

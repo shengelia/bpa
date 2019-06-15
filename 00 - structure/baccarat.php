@@ -77,12 +77,12 @@
 					<!-- 1 -->
 					<div tab="bl" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
 						<div class="interior-card-item-1-number">
-							<span>1</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
 							<div class="editors-choice">
 								<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
 							</div>
+							<span>1</span>
+						</div>
+						<div class="interior-card-item-2-casino-logo">
 							<a href="http://www.mail.ru" target="_blank">
 								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
 							</a>

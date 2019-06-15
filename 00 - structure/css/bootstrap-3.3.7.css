@@ -1367,12 +1367,10 @@ input, button, select, textarea {
 }
 
 a {
-    color: #337ab7;
     text-decoration: none;
 }
 
 a:hover, a:focus {
-    color: #23527c;
     text-decoration: underline;
 }
 
@@ -4876,6 +4874,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 .navbar-default {
     background-color: white;
     border-color: transparent;
+    border-bottom: 1px solid #0bafc5;
 }
 
 .navbar-default .navbar-brand {

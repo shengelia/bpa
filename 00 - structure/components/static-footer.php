@@ -1,5 +1,5 @@
 <footer class="website-footer">
-	<div class="scrolling-footer-and-image" style="background-image: url(img/footer-img.png);">
+	<div class="scrolling-footer-and-image">
 		<div class="container">
 			<div class="scrolling-footer col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<div class="footer-text">
@@ -58,7 +58,7 @@
 		<div class="container">
 			<ul>
 				<li class="footer-logo">
-					<img src="img/logo.png" alt="Copyright" width="100%;" height="100%;">
+					<!-- <img src="img/logo.png" alt="Copyright" width="100%;" height="100%;"> -->
 					<span>All Rights Reserved © 2019</span>
 				</li>
 				<li class="footer-active"><a href="about.php">About Us</a></li>

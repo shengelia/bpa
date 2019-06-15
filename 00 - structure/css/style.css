@@ -155,7 +155,6 @@ body {
     border-radius: 10px;	
 }
 .filter-index {
-	background: #262626;
 	background-position: center;
 	background-size: cover;
 	background-repeat: repeat-y;
@@ -167,23 +166,22 @@ body {
 .filter-header {
 	position: relative;
 	display: flex;
-	width: 74%;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 }
 .filter-header li {
-	padding: 20px 20px 40px;
-	position: relative;
-	margin: 0;
-	flex-basis: auto;
-	flex-grow: 1;
-	text-align: center;
-	box-sizing: border-box;
-	font-weight: bold;
-	background: #2f2f2f;
-	transform: skew(-15deg) rotate(0deg);
-	-webkit-transform: skew(-15deg) rotate(0deg);
-	-moz-transform: skew(-15deg) rotate(0deg);
+    padding: 20px 20px 40px;
+    position: relative;
+    margin: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+    background: white;
+    border-radius: 40px;
+    border: 2px solid #01cdbe;
 }
 .filter-header li:not(:first-child) {
 	margin-left: 5px;
@@ -191,31 +189,43 @@ body {
 .filter-header li.filter_active {
 	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
-.filter ul li a {
-	margin: 0;
-	position: absolute;
-	top: 36%;
-	left: 0%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+.filter-header li.filter_active a {
 	color: white;
-	text-decoration: none;
-	font-size: 14px;
-	width: 100%;
-	transform: skew(15deg) rotate(0deg);
-	-webkit-transform: skew(15deg) rotate(0deg);
-	-moz-transform: skew(15deg) rotate(0deg);
+}
+.filter ul li a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #01cdbe;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100%;
+}
+.filter-header li span {
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    padding: 15px 0;
+    border-radius: 25px;
+    background: linear-gradient(20deg, #01cdbe, #0195cd);
+}
+.filter-header li span img {
+	width: 20px;
 }
 .table-header {
-	margin-top: 20px;
+	margin: 20px 0;
 }
 .table-header-items {
 	display: flex;
 	position: relative;
 	margin-top: 0px;
-	padding: 0 5px;
 	background: white;
-	border-top: 2px solid #01cdbe;
+	color: #01cdbe;
 }
 .table-header-items div {
 	position: relative;
@@ -223,52 +233,58 @@ body {
 	font-size: 18px;
 }
 .table-header-items div span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	font-weight: bold;
-	font-size: 13px;
-	width: 100%;
-	text-align: center;
-	color: #0bafc5;
-	font-family: 'MarkPro';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    color: #0bafc5;
+    font-family: 'MarkPro';
 }
 .interior-table-header-item-1-number, .interior-card-item-1-number {
-	width: 5%;
+	width: 10%;
+	/*border: 1px solid magenta;*/
 }
 .interior-table-header-item-2-casino-logo, .interior-card-item-2-casino-logo {
 	width: 22%;
+	/*border: 1px solid green;*/
 }
 
 .interior-table-header-item-3-address, .interior-card-item-3-address {
-	width: 29%;
+	width: 24%;
+	/*border: 1px solid blue;*/
 }
 
 .interior-table-header-item-4-rating, .interior-card-item-4-rating {
 	width: 20%;
+	/*border: 1px solid orange;*/
 }
 
 .interior-table-header-item-5-score, .interior-card-item-5-score {
 	width: 9%;
+	/*border: 1px solid teal;*/
 }
 
 .interior-table-header-item-6-visit, .interior-card-item-6-visit {
 	width: 15%;
+	/*border: 1px solid maroon;*/
 }
 .hotels {
-	padding: 0 0 25px;
-	background: #262626;
+	padding: 0 0 15px;
 }
 .card-item {
-	position: relative;
-	background: white;
-	margin: 0;
-	display: flex;
-	width: 100%;
-	text-align: center;
-	height: 150px;
+    position: relative;
+    background: #f2fafc;
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    text-align: center;
+    height: 160px;
+    border-radius: 80px;
 }
 .interior-card-item-1-number {
 	position: relative;
@@ -276,28 +292,26 @@ body {
 .interior-card-item-1-number span {
     position: absolute;
     top: 50%;
-    left: 27%;
+    left: 80%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
-    padding-top: 16px;
-    padding-right: 10px;
     color: #0bafc5;
-    width: 30px;
-    height: 50px;
-    background: #262626;
     font-family: 'MarkPro-Bold';
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
+}
+#card-1 .interior-card-item-1-number span {
+	color: white;
 }
 .interior-card-item-2-casino-logo {
 	position: relative;
 }
 .editors-choice {
-	position: absolute;
-	width: 35px;
-	left: 0;
+    position: absolute;
+    width: 40px;
+    height: 155px;
+    left: 70px;
+    top: 1px;
 }
 .interior-card-item-2-casino-logo a img {
 	position: absolute;
@@ -306,6 +320,7 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 200px;
+	/*border: 2px solid red;*/
 }
 .interior-card-item-3-address {
 	position: relative;
@@ -393,8 +408,7 @@ body {
     background: linear-gradient(20deg, #01cdbe, #0195cd);
     width: 90%;
     padding: 15px 0;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px #A3A3A3;
+    border-radius: 30px;
 }
 .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
@@ -408,9 +422,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-family: 'MarkPro-Bold';
-}
-.website-footer {
-	background: #262626;
 }
 .scrolling-footer-and-image {
 	position: relative;
@@ -446,7 +457,7 @@ body {
 	text-align: justify;
 }
 .footer-text p {
-	color: white;
+	color: #7f7f7f;
 	line-height: 18px;
 	font-weight: bold;
 }
@@ -467,27 +478,24 @@ body {
 .footer-bottom-nav {
 	text-align: center;
 	position: relative;
+	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .footer-bottom-nav ul {
 	margin: 10px auto;
 	display: flex;
 	text-align: center;
-	border-top: 1px solid #949494;
 }
 .footer-bottom-nav ul li {
 	padding: 0 10px;
 	font-weight: bold;
-	color: #bbb;
+	color: white;
 	flex-basis: auto;
 	flex-grow: 1;
 	text-align: center;
 	box-sizing: border-box;
 }
-.footer-bottom-nav ul li:not(:first-child) {
-	padding-top: 20px;
-}
 .footer-bottom-nav ul li a {
-	color: #bbb;
+	color: white;
 	text-decoration: none;
 }
 .footer-bottom-nav ul li a.footer-active {
@@ -500,7 +508,6 @@ body {
 }
 .footer-logo span {
 	position: relative;
-	top: -57px;
 }
 .tab-body .filter-body [tab] {
 	display: none
@@ -520,7 +527,6 @@ body {
 }
 .games-filter {
 	padding-bottom: 25px;
-	background: #262626;
 }
 .games-filter ul li:first-child {
 	display: none;
@@ -532,11 +538,11 @@ body {
 	margin-top: 0px !important;
 }
 .game_info {
-	padding: 35px 0 20px;
+	padding: 10px 0 10px;
 	margin-bottom: -20px;
 }
 .game-text {
-    color: white;
+    color: #7f7f7f;
     font-weight: bold;
     letter-spacing: 0.3px;
 }
@@ -729,20 +735,15 @@ body {
 	color: #949494;
 	font-weight: bold;
 }
-.filter-re {
-	margin-top: -35px;
-	padding-bottom: 40px;
-	background: #262626;
-}
 .table-header-review {
 	margin-top: -20px;
 	margin-bottom: -10px;
 }
 .review-scrool p {
-	color: white;
+	color: #7f7f7f;
 }
 .review-scrool p a {
-	color: white;
+	color: #7f7f7f;
 	font-weight: bold;
 }
 .how-we-score {
@@ -891,6 +892,18 @@ body {
 /* --------------------------------------------- 1199 - 992 --------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.interior-card-item-6-visit span form button {
+	    width: 95%;
+	}
+	.interior-card-item-1-number span {
+	    left: 77%;
+	}
+	.editors-choice {
+	    left: 50px;
+	}
+	.table-header {
+	    margin: 10px 0;
+	}
 	.navbar-right li a {
 		font-size: 16px;
 	}
@@ -910,10 +923,6 @@ body {
 	.bc-row .col-lg-3 {
 	    width: 49%;
 	}
-	.filter-header {
-	    width: 83%;
-	    margin: 0px 8px 0;
-	}
 	.website-background-text {
 	    top: 100px;
 	}
@@ -928,6 +937,7 @@ body {
 	}
 	.filter ul li a {
 	    font-size: 13px;
+	    left: 60%;
 	}
 }
 
@@ -937,6 +947,14 @@ body {
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.hotels {
+	    padding: 0;
+	}
+	.editors-choice {
+	    left: 41px;
+	    height: 110px;
+	    width: 30px;
+	}
 	.date {
 	    font-size: 16px;
 	    width: 90px;
@@ -966,11 +984,10 @@ body {
 	.bc-row .col-lg-3 {
 	    width: 100%;
 	}
-	.filter-header {
-	    width: 87%;
-	}
 	.filter ul li a {
 	    font-size: 11px;
+	    width: 50px;
+	    left: 68%;
 	}
 	.slider-logo {
 	    width: 110px;
@@ -982,9 +999,6 @@ body {
 	}
 	.website-score-inner .review-item:nth-child(2), .website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
 		margin-top: 55px;
-	}
-	.footer-logo span {
-	    top: -59px;
 	}
 	.footer-bottom-nav ul li a {
 	    font-size: 13px;
@@ -1034,6 +1048,21 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.interior-card-item-1-number span {
+	    left: 44px;
+	}
+	.editors-choice {
+	    left: 30px;
+	}
+	.filter ul li a {
+	    left: 50%;
+	}
+	.filter-header li span {
+	    width: 40px;
+	    height: 40px;
+	    padding: 10px 0;
+	    top: 0px;
+	}
 	.date {
 	    width: 115px;
 	}
@@ -1057,10 +1086,9 @@ body {
 	}
 	.footer-logo span {
 	    top: -6px;
-	    padding-left: 25px;
 	}
 	.table-header {
-	    margin-top: 0px;
+	    margin: 0;
 	}
 	.filter-index {
 	    margin-top: 0;
@@ -1081,9 +1109,9 @@ body {
 	    margin: 10px 10px 10px 15px;
 	}
 	.footer-bottom-nav .container ul li:first-child {
-	    width: 96%;
+	    width: 95%;
 	    position: absolute;
-	    top: 0;
+	    top: 15px;
 	}
 	.filter-header li:not(:first-child) {
 	    margin-left: 0px;
@@ -1112,7 +1140,6 @@ body {
 	}
 	.footer-bottom-nav ul {
 	    width: 100%;
-	    margin: 100px auto 30px;
 	}
 	.copyright img {
 	    margin-left: 100px;
@@ -1147,8 +1174,7 @@ body {
 	.filter-header li {
 	    width: 32.88%;
 	    display: inline-block;
-	    border: none;
-	    padding: 15px 20px;
+	    padding: 20px 20px;
 	}
 	.filter-header {
 	    width: 100%;
@@ -1190,6 +1216,13 @@ body {
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.card-item {
+	    border-radius: 80px 80px 10px 10px;
+	}
+	.interior-card-item-1-number span {
+	    top: 15%;
+	    left: 85px;
+	}
 	.review {
 	    bottom: -105px;
 	}
@@ -1199,15 +1232,6 @@ body {
 	}
 	.interior-card-item-3-address span {
 	    width: 90%;
-	}
-	.footer-bottom-nav .container ul li:first-child {
-	    width: 95%;
-	}
-	.interior-card-item-1-number span {
-	    height: 40px;
-	    width: 35px;
-	    padding-top: 12px;
-	    padding-left: 5px;
 	}
 	.website-background {
 	    height: 225px;
@@ -1232,37 +1256,38 @@ body {
 	    font-weight: bold;
 	}
 	.interior-card-item-6-visit span form button {
-	    width: 95%;
-	    padding: 15px 0;
-	    border-radius: 0;
+	    width: 100%;
+	    padding: 25px 0;
+	    border-radius: 40px;
 	    box-shadow: none;
 	}
 	.interior-card-item-6-visit {
 	    position: absolute;
 	    width: 100%;
-	    bottom: 0px;
+	    bottom: 12px;
 	}
 	.interior-card-item-5-score {
 	    position: absolute;
 	    width: 50%;
 	    height: 75px;
-	    top: 135px;
+	    top: 85px;
 	    right: 0;
 	}
 	.interior-card-item-4-rating {
 	    position: absolute;
 	    width: 50%;
 	    height: 75px;
-	    top: 135px;
+	    top: 85px;
 	}
 	.interior-card-item-3-address {
 	    position: absolute;
 	    width: 100%;
 	    height: 50px;
-	    top: 85px;
+	    top: 160px;
 	}
 	.editors-choice {
-	    left: 0;
+	    left: 70px;
+	    height: 80px;
 	}
 	.interior-card-item-2-casino-logo a img {
 	    width: 170px;
@@ -1273,9 +1298,7 @@ body {
 	    height: 85px;
 	}
 	.interior-card-item-1-number {
-	    position: absolute;
-        top: 50%;
-        left: 0;
+        top: 0;
 	}
 	.card-item {
 	    height: 255px;
@@ -1286,7 +1309,7 @@ body {
 		display: none;
 	}
 	.website-background-text {
-	    top: 65px;
+	    top: 50px;
 	}
 	.website-background-text h2 {
 	    margin-top: 5px;
@@ -1297,14 +1320,17 @@ body {
 /* --------------------------------------------- 550 - 415 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.website-background-text {
+	    top: 55px;
+	}
+	.date {
+	    width: 80px;
+	}
 	.website-background-trusted-and-date {
-	    width: 65px;
+	    width: 80px;
 	}
 	.slider-logo {
 	    width: 64px;
-	}
-	.interior-card-item-6-visit span form button {
-	    width: 92%;
 	}
 	.filter-header li {
 	    width: 32.8%;
@@ -1329,7 +1355,7 @@ body {
 	    font-size: 14px;
 	}
 	.website-background-text h1 {
-	    font-size: 18px;
+	    font-size: 17px;
 	}
 }
 
@@ -1347,6 +1373,36 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+	.filter-header li span img {
+	    width: 15px;
+	}
+	.filter-header li span {
+	    width: 24px;
+	    height: 24px;
+	    padding: 5px 1px 0 0px;
+	    top: 2px;
+	    left: -1px;
+	}
+	.filter-header li {
+	    padding: 14px 0;
+	    width: 32%;
+	}
+	.interior-card-item-1-number span {
+	    left: 44px;
+	}
+	.editors-choice {
+	    left: 29px;
+	}
+	.date {
+	    width: 60px;
+	}
+	.website-background-trusted-and-date {
+	    width: 70px;
+	}
+	.website-background-text {
+	    padding: 5px;
+	    top: 50px;
+	}
 	.navbar-logo {
 	    width: 135px;
 	    padding: 15px 0 0;
@@ -1354,9 +1410,6 @@ body {
 	.filter-body .cards-re {
 	    height: 230px;
 	    margin-bottom: 140px;
-	}
-	.footer-bottom-nav .container ul li:first-child {
-	    width: 92%;
 	}
 	.filter-header {
 	    margin-left: 0px;
@@ -1371,9 +1424,6 @@ body {
 	.website-background-text h1 {
 	    font-size: 16px;
 	}
-	.website-background-text {
-	    top: 55px;
-	}
 	.website-background-trusted-and-date {
 	    left: 10px;
 	}
@@ -1387,9 +1437,6 @@ body {
 	}
 	.footer-text {
 	    padding: 0 10px;
-	}
-	.filter-header li {
-	    width: 32%;
 	}
 	.footer-bottom-nav ul li a {
 		font-size: 12px;
@@ -1410,25 +1457,15 @@ body {
 	.scrolling-footer-and-image {
 	    height: 170px;
 	}
-	.filter ul li a {
-	    font-size: 11px;
-	}
 	.filter .container {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.filter-header li {
-	    font-weight: 100;
-	}	
-	#current_date {
-	    margin-left: 5px;
-	}
 	.date {
 	    font-size: 12px;
-	}
-	.website-logo {
-	    width: 120px;
-	    margin-top: 2px;
+	}	
+	.footer-bottom-nav ul {
+	    margin: 50px auto 15px;
 	}
 }
 
@@ -1438,45 +1475,35 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.filter-main {
+	    margin: 5px auto 0;
+	}
 	.filter-body .cards-re {
 	    margin-bottom: 145px;
-	}
-	.footer-bottom-nav ul {
-	    margin: 115px auto 30px;
-	}
-	.footer-logo span {
-	    position: absolute;
-	    top: 95px;
-	    width: 100%;
-	    left: 0;
-	    padding: 0;
-	}
-	.editors-choice {
-	    left: unset;
-	    right: 0;
 	}
 	.slider-logo {
 	    width: 75px;
 	}
-	.interior-card-item-1-number {
-	    position: absolute;
-	    top: 25%;
-	    left: 12px;
-	}
 	.card-item {
-	    margin-bottom: 30px;
+	    margin: 0px 0 25px;
 	    height: 220px;
 	}
 	.review {
 	    margin: 0px 5px;
 	}
-	.copyright span {
-	    margin: 10px auto;
-	}
-	.copyright img {
-	    width: 130px;
-	}
 	.cards-re {
 		margin-bottom: 130px;
+	}
+	.interior-card-item-4-rating {
+	    height: 55px;
+	}
+	.interior-card-item-5-score {
+	    height: 55px;
+	}
+	.interior-card-item-3-address {
+	    top: 140px;
+	}
+	.interior-card-item-6-visit span form button {
+	    padding: 15px 0;
 	}
 }
