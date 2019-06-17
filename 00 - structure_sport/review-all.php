@@ -17,12 +17,7 @@
         <div class="row">
             <div class="filter-main">
                 <ul class="filter-list filter-header">
-                    <li filter="all" class="filter_active"><span><img src="img/filter_view_all.png" width="100%" alt="Filter Image"></span><a href="#">View all</a></li>
-					<li filter="bl"><span><img src="img/filter_blackjack.png" width="100%" alt="Filter Image"></span><a href="#">Football</a></li>
-					<li filter="r"><span><img src="img/filter_roulette.png" width="100%" alt="Filter Image"></span><a href="#">Hockey</a></li>
-					<li filter="p"><span><img src="img/filter_blackjack.png" width="100%" alt="Filter Image"></span><a href="#">Horse Race</a></li>
-					<li filter="ba"><span><img src="img/filter_roulette.png" width="100%" alt="Filter Image"></span><a href="#">Basketball</a></li>
-					<li filter="s"><span><img src="img/filter_slot.png" width="100%" alt="Filter Image"></span><a href="#">Cricket</a></li>
+                    <?php include "components/filter-li.php";?>
                 </ul>
             </div>
         </div>

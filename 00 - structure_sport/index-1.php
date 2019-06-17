@@ -16,12 +16,7 @@
 		<div class="container">
 			<div class="filter-main">
 				<ul class="filter-list filter-header">
-					<li filter="all" class="filter_active"><span><img src="img/filter_view_all.png" width="100%" alt="Filter Image"></span><a href="#">View all</a></li>
-					<li filter="bl"><span><img src="img/filter_footbal.png" width="100%" alt="Filter Image"></span><a href="#">Football</a></li>
-					<li filter="r"><span><img src="img/filter_hockey.png" width="100%" alt="Filter Image"></span><a href="#">Hockey</a></li>
-					<li filter="p"><span><img src="img/filter_horse.png" width="100%" alt="Filter Image"></span><a href="#">Horse Race</a></li>
-					<li filter="ba"><span><img src="img/filter_basketball.png" width="100%" alt="Filter Image"></span><a href="#">Basketball</a></li>
-					<li filter="s"><span><img src="img/filter_cricket.png" width="100%" alt="Filter Image"></span><a href="#">Cricket</a></li>
+					<?php include "components/filter-li.php";?>
 				</ul>
 			</div>
 		</div>
@@ -43,7 +38,7 @@
 	<div class="hotels" id="hotels">
 		<div class="container">
 			<div class="filter-body">
-				<div filter="bl, s" class="cards card-item cards-mob" id="card-1">
+				<div filter="golf" class="cards card-item cards-mob" id="card-1">
 					<div class="interior-card-item-1-number">
 						<div class="editors-choice">
 							<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
@@ -84,7 +79,7 @@
 					</div>
 				</div>
 
-				<div filter="bl, s" class="cards card-item cards-mob" id="card-2">
+				<div filter="golf" class="cards card-item cards-mob" id="card-2">
 					<div class="interior-card-item-1-number">
 						<span>2</span>
 					</div>
@@ -122,7 +117,7 @@
 					</div>
 				</div>
 
-				<div filter="p" class="cards card-item cards-mob" id="card-3">
+				<div filter="golf" class="cards card-item cards-mob" id="card-3">
 					<div class="interior-card-item-1-number">
 						<span>3</span>
 					</div>
@@ -160,7 +155,7 @@
 					</div>
 				</div>
 
-				<div filter="ba" class="cards card-item cards-mob" id="card-4">
+				<div filter="golf, socc" class="cards card-item cards-mob" id="card-4">
 					<div class="interior-card-item-1-number">
 						<span>4</span>
 					</div>
@@ -198,7 +193,7 @@
 					</div>
 				</div>
 
-				<div filter="ba, s" class="cards card-item cards-mob" id="card-5">
+				<div filter="golf, cric" class="cards card-item cards-mob" id="card-5">
 					<div class="interior-card-item-1-number">
 						<span>5</span>
 					</div>
@@ -236,7 +231,7 @@
 					</div>
 				</div>
 
-				<div filter="s" class="cards card-item cards-mob" id="card-6">
+				<div filter="golf, afl" class="cards card-item cards-mob" id="card-6">
 					<div class="interior-card-item-1-number">
 						<span>6</span>
 					</div>
@@ -274,7 +269,7 @@
 					</div>
 				</div>
 
-				<div filter="s" class="cards card-item cards-mob" id="card-7">
+				<div filter="golf, hors" class="cards card-item cards-mob" id="card-7">
 					<div class="interior-card-item-1-number">
 						<span>7</span>
 					</div>
@@ -312,7 +307,7 @@
 					</div>
 				</div>
 
-				<div filter="s" class="cards card-item cards-mob" id="card-8">
+				<div filter="golf, cric" class="cards card-item cards-mob" id="card-8">
 					<div class="interior-card-item-1-number">
 						<span>8</span>
 					</div>
@@ -350,7 +345,7 @@
 					</div>
 				</div>
 
-				<div filter="r, p, s" class="cards card-item cards-mob" id="card-9">
+				<div filter="afl" class="cards card-item cards-mob" id="card-9">
 					<div class="interior-card-item-1-number">
 						<span>9</span>
 					</div>
@@ -388,7 +383,7 @@
 					</div>
 				</div>
 
-				<div filter="s" class="cards card-item cards-mob" id="card-10">
+				<div filter="socc" class="cards card-item cards-mob" id="card-10">
 					<div class="interior-card-item-1-number">
 						<span>10</span>
 					</div>

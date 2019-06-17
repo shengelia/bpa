@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Poker</title>
+	<title>Cricket</title>
 	<?php include "components/stylesheets.php";?>
 </head>
 
@@ -18,24 +18,7 @@
 			<div class="row filter-main">
 				<div class="col-md-12 col-12">
 					<ul class="row filter-list filter-header filter-games">
-						<li tab="all" class="col-25 col-50 filter-item">
-							View all
-						</li>
-						<li tab="bl" id="gamesBl" class="active_filter col-25 col-50 filter-item">
-							<a href="javascript:void(0)">Blackjack</a>
-						</li>
-						<li tab="r" id="gamesR" class="col-25 col-50 filter-item">
-							<a href="javascript:void(0)">Roulette</a>
-						</li>
-						<li tab="p" id="gamesP" class="col-25 col-50 filter-item">
-							<a href="javascript:void(0)">Poker</a>
-						</li>
-						<li tab="ba" id="gamesB" class="col-25 col-50 filter-item">
-							<a href="javascript:void(0)">Baccarat</a>
-						</li>
-						<li tab="s" id="gamesS" class="col-25 col-50 filter-item">
-							<a href="javascript:void(0)">Slot</a>
-						</li>
+						<?php include "components/filter-li-games.php";?>
 					</ul>
 				</div>
 			</div>
@@ -47,13 +30,13 @@
 			<div class="game_info">
 				<div class="container">
 				<div class="col-12 tab-texts col-md-12 col-xl-12">
-					<p tab="p" class="game-text rm-link " id="info_poker">
-						Poker! One of the most thrilling games in gambling industry. In fact, a mature player knows how to count the cards, is more likely to win the game. But not everyone is an expert. So here we wrote a brief rule of this game.
-						<span id="dots2">...</span>
-						<span id="more2">
+					<p tab="cric" class="game-text rm-link " id="info_baccarat">
+						Cricket! One of the most thrilling games in gambling industry. In fact, a mature player knows how to count the cards, is more likely to win the game. But not everyone is an expert. So here we wrote a brief rule of this game.
+						<span id="dots">...</span>
+						<span id="more">
 						Each participant tries to beat the dealer, gaining as close as possible to 21, without passing it. Before starting the deal, each player bets in the form of chips in front of him in the designated area. Minimum and maximum limits are set on bets. When all players have placed their bets, the dealer gives one card face up to each player clockwise, and then one card face up to him.
 						</span>
-						<button onclick="myFunction2()" id="myBtn2">Read more</button>
+						<button onclick="myFunction()" id="myBtn">Read more</button>
 					</p>
 				</div>
 				</div>
@@ -75,7 +58,7 @@
 			<div class="col-12 col-md-12 col-xl-12 tab-cards tab-cards-games no-lr-padding">
 				<div class="container">
 					<!-- 1 -->
-					<div tab="bl" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
+					<div tab="afl, golf" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
 						<div class="interior-card-item-1-number">
 							<div class="editors-choice">
 								<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
@@ -116,7 +99,7 @@
 						</div>
 					</div>
 					<!-- 2 -->
-					<div tab="bl, r" class="row active card hotels-stars cards card-item cards-mob" id="card-2">
+					<div tab="golf, socc, cric" class="row active card hotels-stars cards card-item cards-mob" id="card-2">
 						<div class="interior-card-item-1-number">
 							<span>2</span>
 						</div>
@@ -154,7 +137,7 @@
 						</div>
 					</div>
 					<!-- 3 -->
-					<div tab="p" class="row active card hotels-stars cards card-item cards-mob" id="card-3">
+					<div tab="golf, hors, afl" class="row active card hotels-stars cards card-item cards-mob" id="card-3">
 						<div class="interior-card-item-1-number">
 							<span>3</span>
 						</div>
@@ -192,7 +175,7 @@
 						</div>
 					</div>
 					<!-- 4 -->
-					<div tab="ba" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
+					<div tab="socc, afl" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
 						<div class="interior-card-item-1-number">
 							<span>4</span>
 						</div>
@@ -230,7 +213,7 @@
 						</div>
 					</div>
 					<!-- 5 -->
-					<div tab="s" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
+					<div tab="golf, afl, socc, hors" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
 						<div class="interior-card-item-1-number">
 							<span>5</span>
 						</div>
@@ -277,10 +260,9 @@
 <?php include "components/static-footer.php";?>
 
 <?php include "components/javascript.php";?>
-
 <script>
 	$( document ).ready(function() {
-	    $("#gamesP").click();
+	    $("#Cricket").click();
 	});
 </script>
 </body>

@@ -238,7 +238,7 @@ $(document).ready(function() {
     // Hide When focus lost on BlackJack
     $('.tab [tab]').on('click', function() {
         var tabBl = $(this).attr('tab');
-        if (tabBl != 'bl') {
+        if (tabBl != 'afl') {
             $('#info_blackjack').hide();
         } else if (tabBl == 'all') {
             $('.tab-body .card').showAll();
@@ -425,17 +425,3 @@ function myFunction_re4() {
     }
 }
 //Read more ends
-
-//How we score
-$(document).ready(function () {  
-    $(".how-we-score-sc--s-- .list--s-- .col-25--s--").click(function () {
-        $(this).find(".info--s--").fadeToggle();
-        $(".how-we-score-sc--s-- .list--s-- .col-25--s--").not($(this)).find('.info--s--').fadeOut();
-    });
-
-    $(".how-we-score-sc--s-- .close--s-- i").click(function () {
-        $(this)
-            .closest(".info--s--")
-            .fadeOut();
-    });
-});

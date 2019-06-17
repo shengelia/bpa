@@ -710,7 +710,7 @@ body {
 }
 .website-static-text {
     padding: 50px 0 50px;
-    background: #262626;
+    background: transparent;
 }
 .website-static-text-inner {
 	background: white;
