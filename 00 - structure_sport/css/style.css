@@ -1,3 +1,4 @@
+@import "../fonts/fonts.css";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -29,7 +30,7 @@ table {
 }
 body {
 	position: relative;
-	font-family: 'MarkPro-ExtraLight';
+	font-family: 'Visby Round CF Extra Light';
 }
 /* Width */
 ::-webkit-scrollbar {
@@ -37,11 +38,11 @@ body {
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: #CECECE;
+	background-color: #DADADA;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(20deg, #01cdbe, #0195cd);
+	background: #1b516a;
 }
 .no-lr-padding {
 	padding-left: 0;
@@ -51,34 +52,36 @@ body {
 	margin-left: 0;
 	margin-right: 0;
 }
-@font-face {
-	font-family: 'MarkPro';
-	src: url('../fonts/MarkPro.otf');
-}
-@font-face {
-	font-family: 'MarkPro-ExtraLight';
-	src: url('../fonts/MarkPro-ExtraLight.otf');
-}
-@font-face {
-	font-family: 'MarkPro-Bold';
-	src: url('../fonts/MarkPro-Bold.otf');
-}
 .navbar-nav li a {
-	font-family: 'MarkPro-ExtraLight';
 	font-weight: bold;
 	font-size: 20px;
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	color: #7e7e7e;
+	color: white;
 }
 .navbar-nav .active {
-	border-bottom: 3px solid #0bafc5;
+	border-bottom: 3px solid white;
 }
 .navbar-nav .active a {
-	font-family: 'MarkPro';
+	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #0bafc5;
+	color: white;
+}
+.scrolled {
+	background: white;
+	border-bottom: 1px solid #1b516a;
+}
+.scrolled .active {
+	border-bottom: 3px solid #1b516a;
+}
+.scrolled li a, .scrolled .active a {
+	color: #1b516a;
+}
+.collapsing, .collapse.in {
+    background: white;
+    text-align: center;
+    color: #1b516a;
 }
 .navbar-logo {
 	width: 165px;
@@ -114,24 +117,22 @@ body {
 .website-background-text {
     float: left;
     top: 100px;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 0px 40px 0px 40px;
 }
 .website-background-text h1 {
-	font-family: 'MarkPro-Bold';
-	color: white;
 	font-size: 28px;
 	font-weight: bold;
+	background: rgba(255, 255, 255, 0.3);
+	color: white;
+	padding: 5px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 .website-background-text h2 {
-	font-family: 'MarkPro-Bold';
 	color: white;
 	font-weight: bold;
     font-size: 20px;
-    margin-top: 10px;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.3);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -149,10 +150,9 @@ body {
     font-weight: bold;
     padding: 10px 0;
     width: 145px;
-    margin: 10px auto;
-    background: linear-gradient(20deg, #01cdbe, #0195cd);
-    border: 3px solid white;
-    border-radius: 10px;	
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid white;
 }
 .filter-index {
 	background-position: center;
@@ -161,7 +161,7 @@ body {
 	width: 100%;
 }
 .filter-main {
-	margin: 5px auto;
+	margin: 5px auto 40px;
 }
 .filter-header {
 	position: relative;
@@ -179,29 +179,21 @@ body {
     text-align: center;
     box-sizing: border-box;
     font-weight: bold;
-    background: white;
-    border-radius: 40px;
-    border: 2px solid #01cdbe;
 }
 .filter-header li:not(:first-child) {
 	margin-left: 5px;
 }
-.filter-header li.filter_active {
-	background: linear-gradient(20deg, #01cdbe, #0195cd);
-}
-.filter-header li.filter_active a {
-	color: white;
-}
 .filter ul li a {
+	font-family: 'Visby Round CF Bold';
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #01cdbe;
+    color: #1b516a;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     width: 100%;
 }
 .filter-header li span {
@@ -214,22 +206,68 @@ body {
     border-radius: 25px;
     background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
-.filter-header li span img {
-	width: 20px;
+.filter-header li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #1B516A;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.filter-header li.filter_active:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -30px;
+    margin: auto;
+    width: 26px;
+    height: 26px;
+    border: 2px solid #1B516A;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    background: url(../img/check.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+.filter-header li.filter_active:before {
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: url(../img/ellipse.png);
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    -webkit-transform: translate(-10%, -50%);
+    -ms-transform: translate(-10%, -50%);
+    transform: translate(-10%, -50%);
+    z-index: -1;
 }
 .table-header {
-	margin: 20px 0;
+	margin: 25px 0 0;
 }
 .table-header-items {
-	display: flex;
-	position: relative;
-	margin-top: 0px;
-	background: white;
-	color: #01cdbe;
+    display: flex;
+    position: relative;
+    margin-top: 0px;
+    background: white;
+    color: #1b516a;
+    box-shadow: 0px 0px 15px #f0f1f2;
 }
 .table-header-items div {
 	position: relative;
-	padding: 20px 0;
+	padding: 24px 0;
 	font-size: 18px;
 }
 .table-header-items div span {
@@ -239,14 +277,14 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     width: 100%;
     text-align: center;
-    color: #0bafc5;
-    font-family: 'MarkPro';
+    color: #1b516a;
+    font-family: 'Visby Round CF Bold';
 }
 .interior-table-header-item-1-number, .interior-card-item-1-number {
-	width: 10%;
+	width: 5%;
 	/*border: 1px solid magenta;*/
 }
 .interior-table-header-item-2-casino-logo, .interior-card-item-2-casino-logo {
@@ -255,7 +293,7 @@ body {
 }
 
 .interior-table-header-item-3-address, .interior-card-item-3-address {
-	width: 24%;
+	width: 29%;
 	/*border: 1px solid blue;*/
 }
 
@@ -273,18 +311,22 @@ body {
 	width: 15%;
 	/*border: 1px solid maroon;*/
 }
+.interior-table-header-item-1-number span img {
+	width: 20px;
+	margin: 0 auto;
+}
 .hotels {
 	padding: 0 0 15px;
 }
 .card-item {
     position: relative;
-    background: #f2fafc;
     margin: 10px 0;
     display: flex;
     width: 100%;
     text-align: center;
     height: 160px;
-    border-radius: 80px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #f0f1f2;
 }
 .interior-card-item-1-number {
 	position: relative;
@@ -292,26 +334,22 @@ body {
 .interior-card-item-1-number span {
     position: absolute;
     top: 50%;
-    left: 80%;
+    left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-    color: #0bafc5;
-    font-family: 'MarkPro-Bold';
-}
-#card-1 .interior-card-item-1-number span {
-	color: white;
+    color: #1b516a;
+    font-family: 'Visby Round CF Bold';
 }
 .interior-card-item-2-casino-logo {
 	position: relative;
 }
 .editors-choice {
     position: absolute;
-    width: 40px;
-    height: 155px;
-    left: 70px;
-    top: 1px;
+    width: 35px;
+    left: 20%;
+    top: 5px;
 }
 .interior-card-item-2-casino-logo a img {
 	position: absolute;
@@ -333,19 +371,21 @@ body {
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
 	width: 95%;
+}
+.interior-card-item-3-address span h1 {
+	color: #1b516a;
 	font-weight: bold;
-	color: #7E7E7E;
 }
 .interior-card-item-4-rating {
 	position: relative;
 }
 .ratings {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: #0bafc5;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #9a861e;
 }
 .interior-card-item-5-score {
 	position: relative;
@@ -356,22 +396,23 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    width: 95px;
 }
 .our-score span {
-	font-size: 40px;
-	font-weight: bold;
-	color: #0bafc5;
-	font-family: 'MarkPro-Bold';
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-text-stroke: 0.45px;
-	text-shadow: #fff 0px 1px 1px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #1b516a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-stroke: 0.45px;
+    text-shadow: #fff 0px 1px 1px;
+    font-family: 'Visby Round CF';
 }
 .our-score p {
-	font-size: 12px;
-	font-weight: bold;
-	color: #7E7E7E;
-	-webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    font-weight: bold;
+    color: #1b516a;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 0.45px;
     text-shadow: #fff 0px 1px 1px;
@@ -382,7 +423,9 @@ body {
 	font-size: 30px;
 }
 .rated-info a {
-	color: #7E7E7E;
+	font-weight: bold;
+	color: #1b516a;
+	font-size: 16px;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -392,8 +435,6 @@ body {
 .interior-card-item-6-visit {
 	position: relative;
 	color: white;
-	border-top-right-radius: 20px;
-	border-bottom-right-radius: 20px;
 }
 .interior-card-item-6-visit span {
 	position: absolute;
@@ -405,23 +446,23 @@ body {
 }
 .interior-card-item-6-visit span form button {
     border: none;
-    background: linear-gradient(20deg, #01cdbe, #0195cd);
     width: 90%;
     padding: 15px 0;
     border-radius: 30px;
+    background: #2889c0;
 }
 .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
 	outline: none;
 }
 .interior-card-item-6-visit span p {
+	font-weight: bold;
 	font-size: 16px;
 	width: 130px;
 	margin: 0 auto;
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	font-family: 'MarkPro-Bold';
 }
 .scrolling-footer-and-image {
 	position: relative;
@@ -679,7 +720,6 @@ body {
 }
 
 .review-single-text h1 {
-	font-family: 'MarkPro';
 	font-weight: bold;
 	color: #0bafc5;
 	font-size: 24px;
@@ -702,7 +742,6 @@ body {
     text-transform: uppercase;
     outline: none !important;
     font-weight: bold;
-    font-family: 'MarkPro';
     background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .review-single-card .interior-card-item-5-rating {
@@ -719,7 +758,6 @@ body {
 	border: 2px solid #D4D4D4;
 }
 .website-static-text-inner h1 {
-	font-family: 'MarkPro-Bold';
 	font-weight: bold;
 	color: #0bafc5;
 	font-size: 24px;
@@ -842,7 +880,6 @@ body {
     margin-top: 10px;
 }
 .review-inner-content p {
-	font-family: 'MarkPro';
 	font-weight: bold;
 	font-size: 16px;
 	color: white;
@@ -894,18 +931,20 @@ body {
 /* --------------------------------------------- 1199 - 992 --------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:1199px) {
+	.editors-choice {
+	    left: 13%;
+	}
+	.filter-header li.filter_active:before {
+	    -webkit-transform: translate(-20%, -50%);
+	    -ms-transform: translate(-20%, -50%);
+	    transform: translate(-20%, -50%);
+	}
 	.navbar-logo {
 	    width: 140px;
 	    padding: 8px 0;
 	}
 	.interior-card-item-6-visit span form button {
 	    width: 95%;
-	}
-	.interior-card-item-1-number span {
-	    left: 77%;
-	}
-	.editors-choice {
-	    left: 50px;
 	}
 	.table-header {
 	    margin: 10px 0;
@@ -935,15 +974,8 @@ body {
 	.footer-logo span {
 	    font-size: 12px;
 	}
-	.interior-card-item-1-number span {
-	    width: 32px;
-	}
 	.website-score-inner .review-item:nth-child(3), .website-score-inner .review-item:nth-child(4) {
 		margin-top: 40px;
-	}
-	.filter ul li a {
-	    font-size: 13px;
-	    left: 60%;
 	}
 }
 
@@ -953,17 +985,35 @@ body {
 /* --------------------------------------------- 991 - 769 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:991px) {
+	.our-score p {
+	    font-size: 12px;
+	}
+	.editors-choice {
+	    width: 25px;
+	}
+	.filter ul li a {
+	    font-size: 18px;
+	}
+	.filter-header li:after {
+	    bottom: -15px;
+	}
+	.filter-header li.filter_active:before {
+	    width: 140px;
+	    height: 140px;
+	    background: url(../img/ellipse_140.png);
+	    -webkit-transform: translate(-22.5%, -50%);
+	    -ms-transform: translate(-22.5%, -50%);
+	    transform: translate(-22.5%, -50%);
+	}
+	.filter-header li.filter_active:after {
+	    bottom: -15px;
+	}
 	.navbar-logo {
 	    width: 110px;
 	    padding: 8px 0;
 	}
 	.hotels {
 	    padding: 0;
-	}
-	.editors-choice {
-	    left: 41px;
-	    height: 110px;
-	    width: 30px;
 	}
 	.date {
 	    font-size: 16px;
@@ -989,11 +1039,6 @@ body {
 	}
 	.bc-row .col-lg-3 {
 	    width: 100%;
-	}
-	.filter ul li a {
-	    font-size: 11px;
-	    width: 50px;
-	    left: 68%;
 	}
 	.slider-logo {
 	    width: 110px;
@@ -1054,14 +1099,23 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
-	.interior-card-item-1-number span {
-	    left: 44px;
+	.filter_active {
+		background: #fff4bb;
 	}
-	.editors-choice {
-	    left: 30px;
+	.filter-header li.filter_active:after, .filter-header li:after {
+	    bottom: 7px;
+	    left: unset;
 	}
-	.filter ul li a {
-	    left: 50%;
+	.filter-header li.filter_active:before {
+	    display: none;
+	}
+	.navbar-nav .active a {
+		color: #1b516a;
+	}
+	.navbar-right .active {
+	    border-bottom: 2px solid #1b516a;
+	    margin-bottom: -3px;
+	    color: #1b516a;
 	}
 	.filter-header li span {
 	    width: 40px;
@@ -1075,9 +1129,6 @@ body {
 	.website-background-trusted-and-date {
 	    width: 120px;
 	    left: 20px;
-	}
-	.navbar {
-	    border-bottom: 1px solid #0bafc5;
 	}
 	.navbar-logo {
 	    width: 160px;
@@ -1206,7 +1257,7 @@ body {
 	    margin: 18px auto;
 	}
 	.nav > li > a {
-	    color: #7f7f7f;
+	    color: #1b516a;
 	    font-weight: bold;
 	}
 	.navbar-fixed-top .container {
@@ -1222,14 +1273,19 @@ body {
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
-	.game_info {
-	    margin-bottom: 0px;
+	.our-score p {
+	    font-size: 16px;
+	}
+	.filter-main {
+	    margin: 5px auto 5px;
 	}
 	.filter ul li a {
-	    left: 55%;
+	    font-size: 16px;
+	    width: 110px;
+	    left: 33%;
 	}
-	.card-item {
-	    border-radius: 80px 80px 10px 10px;
+	.game_info {
+	    margin-bottom: 0px;
 	}
 	.interior-card-item-1-number span {
 	    top: 15%;
@@ -1269,14 +1325,14 @@ body {
 	}
 	.interior-card-item-6-visit span form button {
 	    width: 100%;
-	    padding: 25px 0;
-	    border-radius: 40px;
+	    padding: 15px 0;
+	    border-radius: 2px;
 	    box-shadow: none;
 	}
 	.interior-card-item-6-visit {
 	    position: absolute;
 	    width: 100%;
-	    bottom: 12px;
+	    bottom: 30px;
 	}
 	.interior-card-item-5-score {
 	    position: absolute;
@@ -1284,22 +1340,23 @@ body {
 	    height: 75px;
 	    top: 85px;
 	    right: 0;
+	    border-top: 1.5px solid #f8f8f8;
+	    border-left: 1.5px solid #f8f8f8;
 	}
 	.interior-card-item-4-rating {
 	    position: absolute;
 	    width: 50%;
 	    height: 75px;
 	    top: 85px;
+	    border-top: 1.5px solid #f8f8f8;
 	}
 	.interior-card-item-3-address {
 	    position: absolute;
 	    width: 100%;
 	    height: 50px;
 	    top: 160px;
-	}
-	.editors-choice {
-	    left: 70px;
-	    height: 80px;
+	    border-top: 1.5px solid #f8f8f8;
+	    border-bottom: 1.5px solid #f8f8f8;
 	}
 	.interior-card-item-2-casino-logo a img {
 	    width: 170px;
@@ -1313,7 +1370,7 @@ body {
         top: 0;
 	}
 	.card-item {
-	    height: 255px;
+	    height: 270px;
 	    margin-bottom: 40px;
 	    border-bottom: none;
 	}
@@ -1323,15 +1380,17 @@ body {
 	.website-background-text {
 	    top: 50px;
 	}
-	.website-background-text h2 {
-	    margin-top: 5px;
-	}
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 550 - 415 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.filter ul li a {
+	    font-size: 15px;
+	    width: 98px;
+	    left: 49px;
+	}
 	.website-background-text {
 	    top: 55px;
 	}
@@ -1385,6 +1444,23 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+	.filter ul li a {
+	    font-size: 14px;
+	    width: 100px;
+	    left: 50%;
+	}
+	.filter-main {
+	    margin: 5px auto 0;
+	}
+	.filter-header li:after {
+	    display: none;
+	}
+	.filter-header li.filter_active:after {
+	    display: none;
+	}
+	.website-background-text h1 {
+		padding: 5px 0 0 0;
+	}
 	.filter-header li span img {
 	    width: 15px;
 	}
@@ -1402,9 +1478,6 @@ body {
 	.interior-card-item-1-number span {
 	    left: 44px;
 	}
-	.editors-choice {
-	    left: 29px;
-	}
 	.date {
 	    width: 60px;
 	}
@@ -1412,7 +1485,6 @@ body {
 	    width: 70px;
 	}
 	.website-background-text {
-	    padding: 5px;
 	    top: 50px;
 	}
 	.navbar-logo {
@@ -1430,7 +1502,6 @@ body {
 	}
 	.website-background-text h2 {
 	    font-size: 12px;
-	    font-family: 'MarkPro-ExtraLight';
 	}
 	.website-background-text h1 {
 	    font-size: 16px;
@@ -1455,9 +1526,6 @@ body {
 	.footer-text p {
 		font-size: 14px;
 		font-weight: bold;
-	}
-	.website-footer {
-		margin-top: -20px;
 	}
 	.footer-text {
 	    max-height: 120px;
@@ -1486,6 +1554,9 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.website-background-text h2 {
+		padding: 0 0 5px 5px;
+	}
 	.filter-body .cards-re {
 	    margin-bottom: 145px;
 	    height: 220px;
@@ -1494,8 +1565,8 @@ body {
 	    width: 75px;
 	}
 	.card-item {
-	    height: 220px;
-	    margin-bottom: 30px;
+	    height: 250px;
+	    margin-bottom: 10px;
 	}
 	.review {
 	    margin: 0px 5px;
@@ -1515,24 +1586,10 @@ body {
 	.interior-card-item-6-visit span form button {
 	    padding: 15px 0;
 	}
-	.interior-card-item-3-address h1, .rated-info a {
-		font-size: 12px;
-	    font-weight: bold;
-	    color: #7E7E7E;
-	    -webkit-font-smoothing: antialiased;
-	    -moz-osx-font-smoothing: grayscale;
-	    -webkit-text-stroke: 0.45px;
-	    text-shadow: #fff 0px 1px 1px;
-	}
-	.interior-card-item-3-address h1, .rated-info a {
-		font-size: 12px;
-	    font-weight: bold;
-	    color: #7E7E7E;
-	}
-	.how-we-score-sc--s-- .list--s-- .col-25--s-->div .info--s-- {
-	    width: 97%;
-	}
 	.review-single-text {
 	    padding: 0;
+	}
+	.interior-card-item-3-address span h1 {
+		font-family: 'Visby Round CF';
 	}
 }
