@@ -141,7 +141,7 @@ body {
 	bottom: 0;
 	right: 0;
 	text-align: center;
-	width: 155px;
+	width: 150px;
 }
 .date {
     text-align: center;
@@ -150,7 +150,7 @@ body {
     font-weight: bold;
     padding: 10px 0;
     width: 145px;
-    margin: 0 auto;
+    margin: 0 auto 5px;
     background: rgba(255, 255, 255, 0.3);
     border: 1px solid white;
 }
@@ -448,7 +448,7 @@ body {
     border: none;
     width: 90%;
     padding: 15px 0;
-    border-radius: 30px;
+    border-radius: 2px;
     background: #2889c0;
 }
 .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
@@ -466,15 +466,16 @@ body {
 }
 .scrolling-footer-and-image {
 	position: relative;
-	height: 400px;
+	/*height: 400px;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	background: rgba(255, 244, 187, 0.2);
 }
 .scrolling-footer {
 	position: relative;
-	min-height: 300px;
-	padding: 25px 0;
+	/*min-height: 300px;*/
+	padding: 15px 0 5px;
 	border-radius: 20px;
 }
 .image-footer img {
@@ -492,13 +493,13 @@ body {
 	background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
 .footer-text {
-	max-height: 350px;
-	overflow-y: auto;
-	padding: 0 35px 0 0;
+	/*max-height: 350px;*/
+	/*overflow-y: auto;*/
+	/*padding: 0 35px 0 0;*/
 	text-align: justify;
 }
 .footer-text p {
-	color: #7f7f7f;
+	color: #1b516a;
 	line-height: 18px;
 	font-weight: bold;
 }
@@ -519,10 +520,10 @@ body {
 .footer-bottom-nav {
 	text-align: center;
 	position: relative;
-	background: linear-gradient(20deg, #01cdbe, #0195cd);
+	background: linear-gradient(20deg, #fff4bb, #1b516a);
 }
 .footer-bottom-nav ul {
-	margin: 10px auto;
+	margin: 20px auto;
 	display: flex;
 	text-align: center;
 }
@@ -559,12 +560,19 @@ body {
 .interior .game_info [tab].active {
 	display: block
 }
-#more, #more1, #more2, #more3, #more4, #more-re1, #more-re2, #more-re3, #more-re4, #more-re5, #more-re6, #more-re7, #more-re8, #more-re9, #more-re10 {
+#more, #more1, #more2, #more3, #more4, #more-re1, #more-re2, #more-re3, #more-re4, #more-re5, #more-re6, #more-re7, #more-re8, #more-re9, #more-re10, #more-footer {
 	display: none;
 	outline: none;
 }
-#myBtn:focus, #myBtn1:focus, #myBtn2:focus, #myBtn3:focus, #myBtn4:focus {
+#myBtn:focus, #myBtn1:focus, #myBtn2:focus, #myBtn3:focus, #myBtn4:focus, #more-footer:focus, #myBtn-footer, #myBtn-footer:focus {
 	outline: none;
+}
+#myBtn-footer {
+    border: none;
+    background: transparent;
+    text-align: center;
+    margin: 10px auto 0;
+    width: 100%;
 }
 .games-filter {
 	padding-bottom: 25px;
@@ -580,8 +588,7 @@ body {
 }
 .game_info {
 	padding: 10px 0 10px;
-	margin: -11px 0 -10px;
-	background: linear-gradient(20deg, #01cdbe, #0195cd);
+	background: linear-gradient(20deg, #fff4bb, #1b516a);
 }
 .game-text {
     color: white;
@@ -632,7 +639,7 @@ body {
 .review-card .editors-choice span {
 	left: 53px
 }
-.filter-games {
+.games-filter .filter {
 	display: none !important;
 }
 .review {
@@ -716,12 +723,13 @@ body {
 	margin-top: -3px;
 }
 .review-single-text {
-	padding: 20px 0px 0px;
+	padding: 10px 0px 0px;
 }
 
 .review-single-text h1 {
+	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #0bafc5;
+	color: #1b516a;
 	font-size: 24px;
 	padding: 0 10px 10px;
 	text-align: center;
@@ -730,7 +738,9 @@ body {
 .review-single-text span p {
 	padding: 0 10px 10px;
 	line-height: 19px;
-	color: #4F4F4F;
+	color: #1b516a;
+	/*font-weight: bold;*/
+	font-family: 'Visby Round CF';
 }
 .review-single-text button {
     width: 100%;
@@ -742,7 +752,7 @@ body {
     text-transform: uppercase;
     outline: none !important;
     font-weight: bold;
-    background: linear-gradient(20deg, #01cdbe, #0195cd);
+    background: linear-gradient(20deg, #fff4bb, #1b516a);
 }
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
@@ -752,32 +762,30 @@ body {
     background: transparent;
 }
 .website-static-text-inner {
-	background: white;
+	background: rgba(255, 244, 187, 0.2);
 	padding: 20px 20px;
 	border-radius: 10px;
-	border: 2px solid #D4D4D4;
+	/*border: 1.5px dotted #1b516a;*/
 }
 .website-static-text-inner h1 {
+	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #0bafc5;
+	color: #1b516a;
 	font-size: 24px;
 	margin-bottom: 15px;
 	text-align: center;
 }
+.website-static-text-inner h2 {
+	font-family: 'Visby Round CF';
+	font-weight: bold;
+	color: #1b516a;
+	font-size: 18px;
+	margin: 20px 0 5px;
+	text-align: left;
+}
 .website-static-text-inner p {
 	line-height: 19px;
-	color: #949494;
-	font-weight: bold;
-}
-.table-header-review {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-.review-scrool p {
-	color: #7f7f7f;
-}
-.review-scrool p a {
-	color: #7f7f7f;
+	color: #1b516a;
 	font-weight: bold;
 }
 .how-we-score {
@@ -896,6 +904,12 @@ body {
 }
 .contact-form span p {
 	margin-top: 10px;
+}
+.contact-form small a {
+	text-decoration: none;
+    font-weight: bold;
+    color: #1b516a;
+    font-family: 'Visby Round CF';
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
@@ -1016,7 +1030,7 @@ body {
 	    padding: 0;
 	}
 	.date {
-	    font-size: 16px;
+	    font-size: 14px;
 	    width: 90px;
 	}
 	.website-background-trusted-and-date {
@@ -1099,6 +1113,15 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.review-single {
+	    padding: 15px 0 25px;
+	}
+	.footer-bottom-nav ul {
+	    margin: 45px auto 20px;
+	}
+	.filter-main {
+	    margin: 5px auto 5px;
+	}
 	.filter_active {
 		background: #fff4bb;
 	}
@@ -1127,7 +1150,7 @@ body {
 	    width: 115px;
 	}
 	.website-background-trusted-and-date {
-	    width: 120px;
+	    width: 105px;
 	    left: 20px;
 	}
 	.navbar-logo {
@@ -1140,9 +1163,6 @@ body {
 	}
 	.game_info {
 	    padding: 10px 0 10px;
-	}
-	.footer-logo span {
-	    top: -6px;
 	}
 	.table-header {
 	    margin: 0;
@@ -1185,48 +1205,6 @@ body {
 	}
 	.website-logo {
 	    width: 140px;
-	}
-	.footer-text {
-	    max-height: 200px;
-	}
-	.scrolling-footer-and-image {
-	    height: 250px;
-	}
-	.footer-bottom-nav ul li {
-	    padding: 0px 5px;
-	}
-	.footer-bottom-nav ul {
-	    width: 100%;
-	}
-	.copyright img {
-	    margin-left: 100px;
-	}
-	.copyright {
-	    position: absolute;
-	    margin: 0 auto;
-	    width: 100%;
-	    text-align: center;
-	    top: 150px;
-	    display: flex;
-	}
-	.footer-bottom-subscribe {
-	    height: 200px;
-	}
-	.subscribe-form {
-	    text-align: center;
-	    padding: 5px 0;
-	    position: absolute;
-	    margin: 0 auto;
-	    width: 100%;
-	    top: 50px;
-	}
-	.secure {
-	    position: absolute;
-	    width: 100%;
-	    top: 0;
-	    height: 50px;
-	    margin: 0 auto;
-	    text-align: center;
 	}
 	.filter-header li {
 	    width: 32.88%;
@@ -1273,6 +1251,9 @@ body {
 /* --------------------------------------------- 650 - 551 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:650px) {
+	.review-single-text {
+	    margin-top: -30px;
+	}
 	.our-score p {
 	    font-size: 16px;
 	}
@@ -1386,6 +1367,15 @@ body {
 /* --------------------------------------------- 550 - 415 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.footer-text p {
+	    line-height: 16px;
+	    font-size: 14px;
+	    font-family: 'Visby Round CF';
+	}
+	.date {
+	    width: 80px;
+	    font-size: 12px;
+	}
 	.filter ul li a {
 	    font-size: 15px;
 	    width: 98px;
@@ -1393,9 +1383,6 @@ body {
 	}
 	.website-background-text {
 	    top: 55px;
-	}
-	.date {
-	    width: 80px;
 	}
 	.website-background-trusted-and-date {
 	    width: 80px;
@@ -1480,6 +1467,7 @@ body {
 	}
 	.date {
 	    width: 60px;
+	    font-size: 12px;
 	}
 	.website-background-trusted-and-date {
 	    width: 70px;
@@ -1517,34 +1505,9 @@ body {
 		padding-left: 0;
 		padding-right: 0;
 	}
-	.footer-text {
-	    padding: 0 10px;
-	}
-	.footer-bottom-nav ul li a {
-		font-size: 12px;
-	}
-	.footer-text p {
-		font-size: 14px;
-		font-weight: bold;
-	}
-	.footer-text {
-	    max-height: 120px;
-	}
-	.scrolling-footer {
-	    min-height: 150px;
-	}
-	.scrolling-footer-and-image {
-	    height: 170px;
-	}
 	.filter .container {
 		padding-left: 0;
 		padding-right: 0;
-	}
-	.date {
-	    font-size: 12px;
-	}	
-	.footer-bottom-nav ul {
-	    margin: 50px auto 15px;
 	}
 }
 
@@ -1554,12 +1517,20 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.review-single-text {
+	    margin-top: 0;
+	}
+	.our-score p {
+	    font-size: 14px;
+	}
+	.rated-info a {
+	    font-size: 14px;
+	}
 	.website-background-text h2 {
 		padding: 0 0 5px 5px;
 	}
 	.filter-body .cards-re {
 	    margin-bottom: 145px;
-	    height: 220px;
 	}
 	.slider-logo {
 	    width: 75px;

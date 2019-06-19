@@ -29,7 +29,7 @@
         <div class="table-header table-header-review">
 			<div class="container">
 				<div class="table-header-items">
-					<div class="interior-table-header-item-1-number"><span>#</span></div>
+					<div class="interior-table-header-item-1-number"><span><img src="img/number.svg" alt="Number" width="100%"></span></div>
 					<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>
 					<div class="interior-table-header-item-3-address"><span>Adress</span></div>
 					<div class="interior-table-header-item-4-rating"><span>Rating</span></div>
@@ -41,7 +41,7 @@
 
 		<div class="container">
 			<div class="row filter-body">
-	            <div filter="bl, ba, s" class="cards cards-re card-item cards-mob" id="card-1">
+	            <div filter="cric, afl, golf" class="cards cards-re card-item cards-mob" id="card-1">
 	                <div class="interior-card-item-1-number">
 	                	<div class="editors-choice">
 	                		<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
@@ -90,7 +90,7 @@
 	                </div>
 	            </div>
 
-	            <div filter="p" class="cards cards-re card-item cards-mob" id="card-2">
+	            <div filter="hors, golf, socc" class="cards cards-re card-item cards-mob" id="card-2">
 	                <div class="interior-card-item-1-number">
 						<span>2</span>
 					</div>
