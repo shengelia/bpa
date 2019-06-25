@@ -21,7 +21,7 @@
 			</div>
 		</div>
 	</div>
-`
+	
 	<div class="table-header">
 		<div class="container">
 			<div class="table-header-items">
