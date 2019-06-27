@@ -82,7 +82,7 @@ body {
 .collapsing, .collapse.in {
     background: white;
     text-align: center;
-    color: #1b516a;
+    color: #694548;
 }
 .navbar-logo {
 	width: 265px;
@@ -138,13 +138,13 @@ body {
     letter-spacing: 0.9px;
 }
 .website-background-text h1 span {
-	background: rgba(255, 255, 255, 0.3);
-	padding: 1px 10px 1px 10px;
-	line-height: 35px;
-	position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 1px 10px 1px 10px;
+    line-height: 35px;
+    position: absolute;
 }
 .website-background-text h2 span {
-	background: rgba(255, 255, 255, 0.3);
 	padding: 5px 10px 5px 10px;
 	line-height: 33px;
 }
@@ -163,8 +163,9 @@ body {
     padding: 10px 0;
     width: 145px;
     margin: 0 auto 5px;
-    background: rgba(255, 255, 255, 0.3);
-    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    /*border: 1px solid white;*/
 }
 .filter-index {
 	background-position: center;
@@ -173,7 +174,10 @@ body {
 	width: 100%;
 }
 .filter-main {
-	margin: 5px auto 40px;
+	position: relative;
+    margin: 15px auto;
+    box-shadow: 0px 0px 24px #ffd7bb;
+    border-radius: 10px;
 }
 .filter-header {
 	position: relative;
@@ -183,7 +187,7 @@ body {
 	text-align: center;
 }
 .filter-header li {
-    padding: 20px 20px 40px;
+    padding: 10px 0 10px 0;
     position: relative;
     margin: 0;
     flex-basis: auto;
@@ -191,22 +195,18 @@ body {
     text-align: center;
     box-sizing: border-box;
     font-weight: bold;
+    display: grid;
+    width: 0%;
 }
-.filter-header li:not(:first-child) {
-	margin-left: 5px;
+.filter-header li img {
+    margin: 0 auto;
 }
 .filter ul li a {
-	font-family: 'Visby Round CF Bold';
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    color: #1b516a;
+	font-family: 'Visby Round CF';
+    color: #694548;
     text-decoration: none;
     font-size: 24px;
-    width: 100%;
+    letter-spacing: 0.9px;
 }
 .filter-header li span {
     position: absolute;
@@ -218,16 +218,27 @@ body {
     border-radius: 25px;
     background: linear-gradient(20deg, #01cdbe, #0195cd);
 }
+.filter_active {
+	background: #ffefe4;
+}
+.filter-header li:first-child a {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.filter-header li:not(:first-child) {
+	margin-left: 5px;
+}
 .table-header {
-	margin: 25px 0 0;
+	margin: 10px 0;
 }
 .table-header-items {
     display: flex;
     position: relative;
     margin-top: 0px;
-    background: white;
-    color: #1b516a;
-    box-shadow: 0px 0px 15px #f0f1f2;
+    background: transparent;
 }
 .table-header-items div {
 	position: relative;
@@ -241,10 +252,10 @@ body {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     text-align: center;
-    color: #1b516a;
+    color: #694548;
     font-family: 'Visby Round CF Bold';
 }
 .interior-table-header-item-1-number, .interior-card-item-1-number {
@@ -276,7 +287,7 @@ body {
 	/*border: 1px solid maroon;*/
 }
 .interior-table-header-item-1-number span img {
-	width: 20px;
+	width: 25px;
 	margin: 0 auto;
 }
 .hotels {
@@ -284,13 +295,13 @@ body {
 }
 .card-item {
     position: relative;
-    margin: 10px 0;
+    margin: 15px 0;
     display: flex;
     width: 100%;
     text-align: center;
     height: 160px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px #f0f1f2;
+    border-radius: 90px;
+    box-shadow: 0px 0px 24px #ffd7bb;
 }
 .interior-card-item-1-number {
 	position: relative;
@@ -303,7 +314,7 @@ body {
     transform: translate(-50%, -50%);
     font-size: 24px;
     font-weight: bold;
-    color: #1b516a;
+    color: #694548;
     font-family: 'Visby Round CF Bold';
 }
 .interior-card-item-2-casino-logo {
@@ -337,8 +348,10 @@ body {
 	width: 95%;
 }
 .interior-card-item-3-address span h1 {
-	color: #1b516a;
-	font-weight: bold;
+    color: #694548;
+    font-family: 'Visby Round CF';
+    font-weight: bold;
+    letter-spacing: 0.9px;
 }
 .interior-card-item-4-rating {
 	position: relative;
@@ -349,7 +362,7 @@ body {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: #9a861e;
+    color: #ff8b59;
 }
 .interior-card-item-5-score {
 	position: relative;
@@ -365,7 +378,7 @@ body {
 .our-score span {
     font-size: 40px;
     font-weight: bold;
-    color: #1b516a;
+    color: #e24349;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 0.45px;
@@ -375,7 +388,8 @@ body {
 .our-score p {
     font-size: 16px;
     font-weight: bold;
-    color: #1b516a;
+    color: #e24349;
+    letter-spacing: 0.9px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 0.45px;
@@ -388,13 +402,14 @@ body {
 }
 .rated-info a {
 	font-weight: bold;
-	color: #1b516a;
+	color: #694548;
 	font-size: 16px;
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-stroke: 0.45px;
     text-shadow: #fff 0px 1px 1px;
+    letter-spacing: 0.9px;
 }
 .interior-card-item-6-visit {
 	position: relative;
@@ -411,9 +426,9 @@ body {
 .interior-card-item-6-visit span form button {
     border: none;
     width: 90%;
-    padding: 15px 0;
-    border-radius: 2px;
-    background: #2889c0;
+    padding: 25px 0;
+    border-radius: 70px;
+    background: #e24349;
 }
 .interior-card-item-6-visit span form button:focus, .interior-card-item-6-visit span form button:visited {
 	border: none !important;
@@ -427,20 +442,20 @@ body {
 	text-transform: uppercase;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.9px;
 }
 .scrolling-footer-and-image {
 	position: relative;
-	/*height: 400px;*/
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background: rgba(255, 244, 187, 0.2);
 }
 .scrolling-footer {
 	position: relative;
-	/*min-height: 300px;*/
-	padding: 15px 0 5px;
-	border-radius: 20px;
+	padding: 15px 10px;
+	margin: 15px 0;
+	border-radius: 10px;
+	box-shadow: 0px 0px 24px #ffd7bb;
 }
 .image-footer img {
 	height: 400px;
@@ -463,9 +478,10 @@ body {
 	text-align: justify;
 }
 .footer-text p {
-	color: #1b516a;
-	line-height: 18px;
-	font-weight: bold;
+    color: #694548;
+    line-height: 18px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
 }
 .footer-menu-list ul {
 	display: flex;
@@ -484,7 +500,6 @@ body {
 .footer-bottom-nav {
 	text-align: center;
 	position: relative;
-	background: linear-gradient(20deg, #fff4bb, #1b516a);
 }
 .footer-bottom-nav ul {
 	margin: 20px auto;
@@ -494,20 +509,15 @@ body {
 .footer-bottom-nav ul li {
 	padding: 0 10px;
 	font-weight: bold;
-	color: white;
+	color: #694548;
 	flex-basis: auto;
 	flex-grow: 1;
 	text-align: center;
 	box-sizing: border-box;
 }
 .footer-bottom-nav ul li a {
-	color: white;
+	color: #694548;
 	text-decoration: none;
-}
-.footer-bottom-nav ul li a.footer-active {
-	color: #0bafc5;
-	border-bottom: 3px solid #e9414d;
-	padding-bottom: 5px;
 }
 .footer-logo img{
 	width: 100px;
@@ -552,17 +562,22 @@ body {
 }
 .game_info {
 	padding: 10px 0 10px;
-	background: linear-gradient(20deg, #fff4bb, #1b516a);
+	background: transparent;
+}
+.game_info .container {
+	box-shadow: 0px 0px 24px #ffd7bb;
+	border-radius: 10px;
+	padding: 10px 0;
 }
 .game-text {
-    color: white;
+    color: #694548;
     font-weight: bold;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.9px;
 }
 .game-text button {
 	background: none;
 	border: none;
-	color: white;
+	color: #694548;
 	font-style: italic;
 }
 .language-selection {
@@ -641,7 +656,7 @@ body {
 .review-logo {
     width: 80px;
     height: 80px;
-    border: 2px solid #01cdbe;
+    border: 2px solid #694548;
     border-radius: 40px;
     position: absolute;
     top: 0%;
@@ -687,24 +702,25 @@ body {
 	margin-top: -3px;
 }
 .review-single-text {
-	padding: 10px 0px 0px;
+    padding: 10px 0px 0px;
+    box-shadow: 0px 0px 10px #ffd7bb;
+    border-radius: 25px;
 }
-
 .review-single-text h1 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #1b516a;
+	color: #694548;
 	font-size: 24px;
 	padding: 0 10px 10px;
 	text-align: center;
 }
-
 .review-single-text span p {
-	padding: 0 10px 10px;
-	line-height: 19px;
-	color: #1b516a;
-	/*font-weight: bold;*/
-	font-family: 'Visby Round CF';
+    padding: 0 10px 10px;
+    line-height: 19px;
+    color: #694548;
+    font-weight: bold;
+    font-family: 'Visby Round CF ExtraLight';
+    letter-spacing: 0.9px;
 }
 .review-single-text button {
     width: 100%;
@@ -716,7 +732,7 @@ body {
     text-transform: uppercase;
     outline: none !important;
     font-weight: bold;
-    background: linear-gradient(20deg, #fff4bb, #1b516a);
+    background: linear-gradient(20deg, #ffd7bb, #694548);
 }
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
@@ -726,15 +742,14 @@ body {
     background: transparent;
 }
 .website-static-text-inner {
-	background: rgba(255, 244, 187, 0.2);
 	padding: 20px 20px;
 	border-radius: 10px;
-	/*border: 1.5px dotted #1b516a;*/
+	box-shadow: 0px 0px 24px #ffd7bb;
 }
 .website-static-text-inner h1 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #1b516a;
+	color: #694548;
 	font-size: 24px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -742,15 +757,16 @@ body {
 .website-static-text-inner h2 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #1b516a;
+	color: #694548;
 	font-size: 18px;
 	margin: 20px 0 5px;
 	text-align: left;
 }
 .website-static-text-inner p {
 	line-height: 19px;
-	color: #1b516a;
+	color: #694548;
 	font-weight: bold;
+	letter-spacing: 0.9px;
 }
 .how-we-score {
 	border-radius: 10px;
@@ -872,8 +888,15 @@ body {
 .contact-form small a {
 	text-decoration: none;
     font-weight: bold;
-    color: #1b516a;
+    color: #694548;
     font-family: 'Visby Round CF';
+}
+.games-rm-img {
+	text-align: center;
+}
+.review-scrool p {
+	letter-spacing: 0.9px;
+	font-weight: bold;
 }
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
@@ -1067,6 +1090,9 @@ body {
 /* --------------------------------------------- 768 - 651 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:768px) {
+	.navbar {
+		border-bottom: 1px solid #694548;
+	}
 	.website-background-trusted-and-date {
 	    right: 25px;
 	    width: 120px;
@@ -1086,9 +1112,6 @@ body {
 	.filter-main {
 	    margin: 5px auto 5px;
 	}
-	.filter_active {
-		background: #fff4bb;
-	}
 	.filter-header li.filter_active:after, .filter-header li:after {
 	    bottom: 7px;
 	    left: unset;
@@ -1097,12 +1120,15 @@ body {
 	    display: none;
 	}
 	.navbar-nav .active a {
-		color: #1b516a;
+		color: #694548;
 	}
 	.navbar-right .active {
-	    border-bottom: 2px solid #1b516a;
 	    margin-bottom: -3px;
-	    color: #1b516a;
+	    background: #694548;
+	    border: unset;
+	}
+	.navbar-right .active a {
+	    color: white;
 	}
 	.filter-header li span {
 	    width: 40px;
@@ -1147,9 +1173,6 @@ body {
 	    top: 15px;
 	}
 	.filter-header li:not(:first-child) {
-	    margin-left: 0px;
-	}
-	.filter-header li:nth-child(2), .filter-header li:nth-child(3), .filter-header li:nth-child(5), .filter-header li:nth-child(6) {
 	    margin-left: 3px;
 	}
 	.website-background-text {
@@ -1161,20 +1184,9 @@ body {
 	.website-logo {
 	    width: 140px;
 	}
-	.filter-header li {
-	    width: 32.88%;
-	    display: inline-block;
-	    padding: 20px 20px;
-	}
-	.filter-header {
-	    width: 100%;
-	    position: relative;
-	    display: table;
-	    margin: 0;
-	}
 	.interior-card-item-6-visit span p {
 	    font-size: 12px;
-	    width: 70px;
+	    width: 100px;
 	}
 	.our-score span {
 	    font-size: 32px;
@@ -1190,7 +1202,7 @@ body {
 	    margin: 18px auto;
 	}
 	.nav > li > a {
-	    color: #1b516a;
+	    color: #694548;
 	    font-weight: bold;
 	}
 	.navbar-fixed-top .container {
@@ -1212,13 +1224,8 @@ body {
 	.our-score p {
 	    font-size: 16px;
 	}
-	.filter-main {
-	    margin: 5px auto 5px;
-	}
 	.filter ul li a {
 	    font-size: 16px;
-	    width: 110px;
-	    left: 33%;
 	}
 	.game_info {
 	    margin-bottom: 0px;
@@ -1228,10 +1235,10 @@ body {
 	    left: 85px;
 	}
 	.review {
-	    bottom: -105px;
+	    bottom: -90px;
 	}
 	.filter-body .cards-re {
-	    height: 250px;
+	    height: 210px;
 	    margin-bottom: 125px;
 	}
 	.interior-card-item-3-address span {
@@ -1271,23 +1278,23 @@ body {
 	    height: 75px;
 	    top: 85px;
 	    right: 0;
-	    border-top: 1.5px solid #f8f8f8;
-	    border-left: 1.5px solid #f8f8f8;
+	    border-top: 1.5px solid #eae4e0;
+	    border-left: 1.5px solid #eae4e0;
 	}
 	.interior-card-item-4-rating {
 	    position: absolute;
 	    width: 50%;
 	    height: 75px;
 	    top: 85px;
-	    border-top: 1.5px solid #f8f8f8;
+	    border-top: 1.5px solid #eae4e0;
 	}
 	.interior-card-item-3-address {
 	    position: absolute;
 	    width: 100%;
 	    height: 50px;
 	    top: 160px;
-	    border-top: 1.5px solid #f8f8f8;
-	    border-bottom: 1.5px solid #f8f8f8;
+	    border-top: 1.5px solid #eae4e0;
+	    border-bottom: 1.5px solid #eae4e0;
 	}
 	.interior-card-item-2-casino-logo a img {
 	    width: 170px;
@@ -1304,6 +1311,7 @@ body {
 	    height: 270px;
 	    margin-bottom: 40px;
 	    border-bottom: none;
+	    border-radius: 10px;
 	}
 	.table-header {
 		display: none;
@@ -1317,6 +1325,13 @@ body {
 /* --------------------------------------------- 550 - 415 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:550px) {
+	.filter-header li {
+	    padding: 5px 0 5px 0;
+	}
+	.filter-header li img {
+	    margin: 0 auto;
+	    width: 35px;
+	}
 	.website-background-text h1 span {
 	    line-height: 18px;
 	}
@@ -1330,9 +1345,7 @@ body {
 	    font-size: 12px;
 	}
 	.filter ul li a {
-	    font-size: 15px;
-	    width: 98px;
-	    left: 49px;
+	    font-size: 14px;
 	}
 	.website-background-text {
 	    top: 55px;
@@ -1342,9 +1355,6 @@ body {
 	}
 	.slider-logo {
 	    width: 64px;
-	}
-	.filter-header li {
-	    width: 32.8%;
 	}
 	.website-background {
 	    height: 215px;
@@ -1384,6 +1394,33 @@ body {
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+	.card-item {
+	    border-radius: 10px;
+	    box-shadow: 0px 0px 5px #ffd7bb;
+	}
+	.hotels {
+	    margin-top: 15px;
+	}
+	.filter-header li:first-child a {
+	    position: unset;
+	    top: unset;
+	    left: unset;
+	    -ms-transform: unset;
+	    transform: unset;
+	}
+	.filter-main {
+		box-shadow: none;
+		margin: 5px auto 20px;
+	}
+	.filter-header li:first-child {
+	    position: absolute;
+	    width: 100px;
+	    bottom: -33px;
+	    left: 36%;
+	    border-radius: 20px;
+	    padding: 7px;
+	    box-shadow: 0px 0px 10px #ffd7bb;
+	}
 	.website-background-trusted-and-date {
 	    right: 5px;
 	}
@@ -1396,14 +1433,6 @@ body {
 	.navbar-logo {
 	    width: 140px;
 	    padding: 11px 0;
-	}
-	.filter ul li a {
-	    font-size: 14px;
-	    width: 100px;
-	    left: 50%;
-	}
-	.filter-main {
-	    margin: 5px auto 0;
 	}
 	.filter-header li:after {
 	    display: none;
@@ -1420,10 +1449,6 @@ body {
 	    padding: 5px 1px 0 0px;
 	    top: 2px;
 	    left: -1px;
-	}
-	.filter-header li {
-	    padding: 14px 0;
-	    width: 32%;
 	}
 	.interior-card-item-1-number span {
 	    left: 44px;
@@ -1445,6 +1470,12 @@ body {
 		padding-left: 0;
 		padding-right: 0;
 	}
+	.website-background-text h2 {
+	    font-size: 12px;
+	}
+	.website-background-text h1 span {
+	    line-height: 15px;
+	}
 }
 
 
@@ -1453,6 +1484,9 @@ body {
 /* --------------------------------------------- 320 ---------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------ */
 @media (max-width:320px) {
+	.filter-main {
+	    margin: 0 auto 15px;
+	}
 	.review-single-text {
 	    margin-top: 0;
 	}
@@ -1462,9 +1496,6 @@ body {
 	.rated-info a {
 	    font-size: 14px;
 	}
-	.website-background-text h2 {
-		padding: 0 0 5px 5px;
-	}
 	.filter-body .cards-re {
 	    margin-bottom: 145px;
 	}
@@ -1472,7 +1503,7 @@ body {
 	    width: 75px;
 	}
 	.card-item {
-	    height: 250px;
+	    height: 210px;
 	    margin-bottom: 10px;
 	}
 	.review {
@@ -1483,20 +1514,42 @@ body {
 	}
 	.interior-card-item-4-rating {
 	    height: 55px;
+	    background: #fff7f2;
 	}
 	.interior-card-item-5-score {
 	    height: 55px;
+	    background: #fff7f2;
 	}
 	.interior-card-item-3-address {
-	    top: 140px;
+	    top: 125px;
+	    background: #fff7f2;
 	}
 	.interior-card-item-6-visit span form button {
-	    padding: 15px 0;
+	    padding: 11px 0;
+	    border-radius: 0px 0px 10px 10px;
 	}
 	.review-single-text {
 	    padding: 0;
 	}
 	.interior-card-item-3-address span h1 {
 		font-family: 'Visby Round CF';
+	}
+	.interior-card-item-6-visit {
+	    bottom: 17px;
+	}
+	.interior-card-item-2-casino-logo {
+	    height: 70px;
+	}
+	.interior-card-item-5-score, .interior-card-item-4-rating {
+	    top: 70px;
+	}
+	.interior-card-item-2-casino-logo a img {
+	    width: 165px;
+	}
+	.interior-card-item-1-number span {
+	    top: 14%;
+	}
+	.filter_active {
+	    border-radius: 15px;
 	}
 }

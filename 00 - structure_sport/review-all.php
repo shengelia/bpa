@@ -29,7 +29,7 @@
         <div class="table-header table-header-review">
 			<div class="container">
 				<div class="table-header-items">
-					<div class="interior-table-header-item-1-number"><span><img src="img/number.svg" alt="Number" width="100%"></span></div>
+					<div class="interior-table-header-item-1-number"><span><img src="img/number.png" alt="Number" width="100%"></span></div>
 					<div class="interior-table-header-item-2-casino-logo"><span>Casino</span></div>
 					<div class="interior-table-header-item-3-address"><span>Adress</span></div>
 					<div class="interior-table-header-item-4-rating"><span>Rating</span></div>
