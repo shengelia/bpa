@@ -1,5 +1,23 @@
+.navbar-brand {
+	color: white;
+	font-weight: bold;
+}
+.nav-item a {
+	color: white;
+	font-size: 18px;
+}
+.nav-item.active {
+	margin-bottom: -4px;
+	border-bottom: 3px solid white;
+}
+.nav-item.active a {
+	font-weight: bold;
+}
 .scrolled {
 	background: white;
+}
+.dropdown .btn span {
+	font-size: 18px;
 }
 .rating-list {
     margin: 5px 0;
@@ -8,8 +26,17 @@
     font-size: 22px;
     color: #62ab00;
 }
-
-
+/* Games Filter Start */
+.tab-body .filter-body [tab] {
+	display: none
+}
+.interior .filter-body [tab].active {
+	display: flex;
+}
+.interior .game_info [tab].active {
+	display: block
+}
+/* Games Filter End */
 
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
