@@ -234,3 +234,19 @@ $(document).ready(function () {
         $(this).append(html_m);
     });
 })
+
+function myFunction_footer() {
+    var dots = document.getElementById("dots-footer");
+    var moreText = document.getElementById("more-footer");
+    var btnText = document.getElementById("myBtn-footer");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "<img src=\"img/read_more.png\" alt=\"Read More\">";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "<img src=\"img/read_less.png\" alt=\"Read Less\">";
+        moreText.style.display = "inline";
+    }
+}

@@ -1,3 +1,40 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 .navbar-brand {
 	color: white;
 	font-weight: bold;
@@ -19,12 +56,278 @@
 .dropdown .btn span {
 	font-size: 18px;
 }
+.filter-header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+.filter-index .filter {
+	background: #6E5DC8;
+}
+.filter-header li {
+    padding: 35px 5px;
+    position: relative;
+    margin: 0;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.filter ul li a {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    width: 100%;
+}
+.filter-header li.filter_active {
+    background-color: #3E2D92;
+}
+.filter-header li.filter_active a {
+    color: white;
+}
+.filter-body .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+.card-item {
+	width: 49%;
+	height: 380px;
+	position: relative;
+	float: left;
+	text-align: center;
+	margin: 10px 5px 0;
+	padding: 10px 0;
+	box-shadow: 0px 0px 10px #B0B0B0;
+	border-radius: 10px;
+}
+.interior-card-item-1-name {
+	position: absolute;
+	width: 100%;
+	height: 30px;
+	/*border: 1px solid red;*/
+}
+.interior-card-item-2-book-cover {
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 40px;
+	/*border: 1px solid yellow;*/
+}
+.interior-card-item-3-desc {
+    position: absolute;
+    width: 100%;
+    top: 240px;
+    height: 40px;
+    /*border: 1px solid green;*/
+}
+.interior-card-item-4-rating {
+	position: absolute;
+	width: 50%;
+	height: 50px;
+	top: 280px;
+	left: 0;
+	/*border: 1px solid blue;*/
+}
+.interior-card-item-5-score {
+	position: absolute;
+	width: 50%;
+	height: 50px;
+	right: 0;
+	top: 280px;
+	/*border: 1px solid purple;*/
+}
+.interior-card-item-6-buy {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    /*border: 1px solid black;*/
+}
+.editors-choice {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 55px;
+}
+.interior-card-item-1-name span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 95%;
+    color: #696969;
+    font-weight: bold;
+    font-size: 18px;
+}
+.interior-card-item-2-book-cover a {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 95%;
+}
+.interior-card-item-2-book-cover a img {
+	width: 36%;
+	margin: 0 auto;
+}
+.interior-card-item-3-desc span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 95%;
+}
+.interior-card-item-3-desc span h1 {
+	color: #5E5E5E;
+	font-weight: normal;
+	font-size: 14px;
+}
+.interior-card-item-4-rating .ratings {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.interior-card-item-5-score .our-score {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.interior-card-item-5-score .our-score span {
+	color: #6E52C2;
+	font-weight: bold;
+	font-size: 22px;
+}
+.interior-card-item-5-score .our-score p {
+	color: #5E5E5E;
+	font-weight: normal;
+	font-size: 14px;
+}
+.interior-card-item-6-buy span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	width: 100%;
+}
+.interior-card-item-6-buy span form button {
+	border: none;
+	height: 50px;
+	width: 100%;
+	border-radius: 0 0 10px 10px;
+	background: #00B68F;
+}
+.interior-card-item-6-buy span form button p {
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+}
+.faq-and-terms {
+	clear: both;
+	display: -webkit-box;
+	padding: 20px 0;
+}
+.faq-inner {
+	float: left;
+	text-align: center;
+}
+.center-div img {
+	width: 100px;
+}
+#myBtn-footer {
+    border: none;
+    background: transparent;
+    text-align: center;
+    margin: 10px auto 0;
+    width: 100%;
+    outline: none;
+}
+#more-footer {
+	display: none;
+	outline: none;
+}
+.bottom-text {
+	background: #00B68F;
+	padding: 20px 0 10px;
+}
+.footer-text p {
+	color: white;
+	font-weight: 500;
+}
+.footer-bottom-nav {
+    text-align: center;
+    position: relative;
+}
+.footer-bottom-nav ul {
+    margin: 20px auto;
+    display: flex;
+    text-align: center;
+}
+.footer-bottom-nav ul li {
+    padding: 0 10px;
+    font-weight: bold;
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    box-sizing: border-box;
+}
+.footer-bottom-nav ul li a, .footer-logo {
+	color: #00B68F;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rating-list {
     margin: 5px 0;
 }
 .rating-list > i {
     font-size: 22px;
-    color: #62ab00;
+    color: #FFB900;
 }
 /* Games Filter Start */
 .tab-body .filter-body [tab] {
@@ -97,4 +400,15 @@
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1200px) {
 	
+}
+
+@media (max-width: 768px) {
+	.footer-bottom-nav ul {
+	    margin: 45px auto 20px;
+	}
+	.footer-bottom-nav .container ul li:first-child {
+	    width: 95%;
+	    position: absolute;
+	    top: 15px;
+	}
 }
