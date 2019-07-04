@@ -51,7 +51,7 @@ table {
 	font-weight: bold;
 }
 .scrolled {
-	background: white;
+    background: rgba(0, 0, 0, 0.5);
 }
 .dropdown .btn span {
 	font-size: 18px;
@@ -234,6 +234,11 @@ table {
 	border-radius: 0 0 10px 10px;
 	background: #00B68F;
 }
+.ratings a {
+	color: #5E5E5E;
+	font-weight: normal;
+	font-size: 14px;
+}
 .interior-card-item-6-buy span form button p {
 	color: white;
 	font-size: 18px;
@@ -291,39 +296,21 @@ table {
 .footer-bottom-nav ul li a, .footer-logo {
 	color: #00B68F;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.filter.tab {
+	display: none;
+}
+#more {
+	display: none;
+	outline: none;
+}
+.card-review {
+	width: 100%;
+}
+.card-review .book-cover {
+	width: 175px;
+}
 .rating-list {
-    margin: 5px 0;
+    margin: 5px 0 0;
 }
 .rating-list > i {
     font-size: 22px;
@@ -340,7 +327,43 @@ table {
 	display: block
 }
 /* Games Filter End */
-
+.single-review-inner {
+	text-align: center;
+}
+.single-review-inner h1 {
+	color: green;
+	font-size: 32px;
+	font-weight: bold;
+	padding: 10px 0;
+}
+.single-review-book {
+	width: 300px;
+}
+.our-score-sr span {
+	font-size: 30px;
+	font-weight: bold;
+	color: purple;
+}
+.our-score-sr p {
+	font-size: 14px;
+	font-weight: normal:
+	color: grey;
+}
+.single-review-text {
+	padding: 30px 0 60px;
+}
+.text-info-inner h1 {
+	margin: 20px 0;
+	text-align: center;
+	font-size: 32px;
+	color: purple;
+	font-weight: bold;
+}
+.text-info-inner p {
+	padding: 10px 0;
+	color: grey;
+	text-align: justify;
+}
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
