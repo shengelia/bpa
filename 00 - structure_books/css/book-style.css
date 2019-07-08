@@ -1,3 +1,5 @@
+@import "../fonts/fonts.css";
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -19,6 +21,7 @@ time, mark, audio, video {
 }
 body {
 	line-height: 1;
+	font-family: 'Visby Round CF Extra Light';
 }
 ol, ul {
 	list-style: none;
@@ -35,26 +38,55 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.navbar-expand-md {
+	background: white;
+}
 .navbar-brand {
 	color: white;
 	font-weight: bold;
 }
 .nav-item a {
-	color: white;
+	color: #0a53a2;
 	font-size: 18px;
+	letter-spacing: 0.3px;
+	font-family: 'Visby Round CF';
 }
 .nav-item.active {
-	margin-bottom: -4px;
-	border-bottom: 3px solid white;
+	margin-bottom: -5px;
+	border-bottom: 3px solid #0a53a2;
 }
 .nav-item.active a {
 	font-weight: bold;
 }
 .scrolled {
-    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid #0a53a2;
 }
 .dropdown .btn span {
 	font-size: 18px;
+}
+.books-slider {
+	position: relative;
+	top: 50px;
+}
+.carousel-caption h1 {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: 'Visby Round CF';
+	letter-spacing: 0.6px;
+}
+.carousel-caption p {
+	font-family: 'Visby Round CF';
+	letter-spacing: 0.6px;
+}
+.filter-index {
+	position: relative;
+	top: 50px;
+}
+.filter-main {
+	margin: 10px 0;
+	padding: 10px;
+	box-shadow: 0px 0px 15px 0px #b8daf0;
+	border-radius: 5px;
 }
 .filter-header {
     position: relative;
@@ -62,13 +94,10 @@ table {
     width: 100%;
     text-align: center;
 }
-.filter-index .filter {
-	background: #6E5DC8;
-}
 .filter-header li {
     padding: 35px 5px;
+    margin: 0 15px;
     position: relative;
-    margin: 0;
     flex-basis: auto;
     flex-grow: 1;
     text-align: center;
@@ -79,34 +108,60 @@ table {
     margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 40%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    color: white;
+    color: #01307e;
+    font-family: 'Visby Round CF';
     text-decoration: none;
     font-size: 18px;
     width: 100%;
 }
-.filter-header li.filter_active {
-    background-color: #3E2D92;
+.filter ul li:first-child a {
+	left: 50%;
 }
-.filter-header li.filter_active a {
-    color: white;
+.filter-header>li:not(:first-child)>a:before {
+	content: '';
+	border: 2px solid #6caded;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.filter-header>li:not(:first-child).filter_active>a:after {
+	content: '';
+	height: 16px;
+	width: 16px;
+	border-radius: 8px;
+	background: #6caded;
+	position: absolute;
+	top: 50%;
+	left: 98%;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.filter-header li.filter_active {
+	box-shadow: 0px 0px 15px 0px #b8daf0;
+	border-radius: 5px;
 }
 .filter-body .row {
 	margin-left: 0;
 	margin-right: 0;
 }
 .card-item {
-	width: 49%;
-	height: 380px;
+	width: 19.1%;
+	height: 411px;
 	position: relative;
 	float: left;
 	text-align: center;
 	margin: 10px 5px 0;
 	padding: 10px 0;
-	box-shadow: 0px 0px 10px #B0B0B0;
-	border-radius: 10px;
+	box-shadow: 0px 0px 15px 0px #b8daf0;
+	border-radius: 5px;
 }
 .interior-card-item-1-name {
 	position: absolute;
@@ -124,31 +179,31 @@ table {
 .interior-card-item-3-desc {
     position: absolute;
     width: 100%;
-    top: 240px;
+    top: 331px;
     height: 40px;
     /*border: 1px solid green;*/
 }
 .interior-card-item-4-rating {
-	position: absolute;
-	width: 50%;
-	height: 50px;
-	top: 280px;
-	left: 0;
-	/*border: 1px solid blue;*/
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 241px;
+    left: 0;
+    /*border: 1px solid blue;*/
 }
 .interior-card-item-5-score {
-	position: absolute;
-	width: 50%;
-	height: 50px;
-	right: 0;
-	top: 280px;
-	/*border: 1px solid purple;*/
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    right: 0;
+    top: 291px;
+    /*border: 1px solid purple;*/
 }
 .interior-card-item-6-buy {
     position: absolute;
     width: 100%;
     bottom: 0;
-    height: 50px;
+    height: 40px;
     /*border: 1px solid black;*/
 }
 .editors-choice {
@@ -158,13 +213,14 @@ table {
 	width: 55px;
 }
 .interior-card-item-1-name span {
+	font-family: 'Visby Round CF';
     position: absolute;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 95%;
-    color: #696969;
+    color: #01307e;
     font-weight: bold;
     font-size: 18px;
 }
@@ -177,7 +233,7 @@ table {
 	width: 95%;
 }
 .interior-card-item-2-book-cover a img {
-	width: 36%;
+	width: 70%;
 	margin: 0 auto;
 }
 .interior-card-item-3-desc span {
@@ -190,7 +246,7 @@ table {
 }
 .interior-card-item-3-desc span h1 {
 	color: #5E5E5E;
-	font-weight: normal;
+	font-weight: bold;
 	font-size: 14px;
 }
 .interior-card-item-4-rating .ratings {
@@ -210,12 +266,13 @@ table {
 	width: 100%;
 }
 .interior-card-item-5-score .our-score span {
-	color: #6E52C2;
+	font-family: 'Visby Round CF Bold';
+	color: #01307e;
 	font-weight: bold;
 	font-size: 22px;
 }
 .interior-card-item-5-score .our-score p {
-	color: #5E5E5E;
+	color: #6caded;
 	font-weight: normal;
 	font-size: 14px;
 }
@@ -229,14 +286,14 @@ table {
 }
 .interior-card-item-6-buy span form button {
 	border: none;
-	height: 50px;
+	height: 40px;
 	width: 100%;
 	border-radius: 0 0 10px 10px;
-	background: #00B68F;
+	background-image: linear-gradient(to right, #661aff , #8525ff);
 }
 .ratings a {
-	color: #5E5E5E;
-	font-weight: normal;
+	color: #01307e;
+	font-weight: bold;
 	font-size: 14px;
 }
 .interior-card-item-6-buy span form button p {
@@ -247,7 +304,7 @@ table {
 .faq-and-terms {
 	clear: both;
 	display: -webkit-box;
-	padding: 20px 0;
+	padding: 85px 0 20px;
 }
 .faq-inner {
 	float: left;
@@ -269,12 +326,12 @@ table {
 	outline: none;
 }
 .bottom-text {
-	background: #00B68F;
 	padding: 20px 0 10px;
 }
 .footer-text p {
 	color: white;
 	font-weight: 500;
+	text-align: justify;
 }
 .footer-bottom-nav {
     text-align: center;
@@ -314,7 +371,7 @@ table {
 }
 .rating-list > i {
     font-size: 22px;
-    color: #FFB900;
+    color: #ffaf00;
 }
 /* Games Filter Start */
 .tab-body .filter-body [tab] {
@@ -363,6 +420,21 @@ table {
 	padding: 10px 0;
 	color: grey;
 	text-align: justify;
+}
+.navbar-collapse.show, .navbar-collapse.collapsing {
+	background: rgba(0, 0, 0, 0.6);
+}
+.faq-text p {
+	text-align: justify;
+}
+.faq-text h1 {
+	font-family: 'Visby Round CF';
+	font-weight: bold;
+	color: #0a53a2;
+	padding: 10px 0;
+}
+.footer-text {
+	
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -422,16 +494,99 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1200px) {
-	
+	.card-item {
+	    width: 48%;
+	}
 }
 
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 991 - 769 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+@media (max-width: 991px) {
+	.navbar-expand-md .navbar-nav .nav-link {
+	    padding-right: 5.5px;
+	    padding-left: 2.5px;
+	}
+	.navbar-brand {
+	    padding: 10px;
+	    margin-right: 5px;
+	    font-size: 16px;
+	}
+	.navbar .container {
+		max-width: 850px;
+	}
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 768 - 651 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 768px) {
+	.filter .container {
+		max-width: 850px;
+	}
+	.card-item {
+	    width: 100%;
+	}
 	.footer-bottom-nav ul {
 	    margin: 45px auto 20px;
 	}
 	.footer-bottom-nav .container ul li:first-child {
-	    width: 95%;
+	    width: 40%;
 	    position: absolute;
-	    top: 15px;
+	    top: -30px;
+	    left: 50%;
+	    -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
 	}
+}
+
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 650 - 551 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+@media (max-width: 650px) {
+
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 550 - 414 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+@media (max-width: 550px) {
+	.footer-bottom-nav .container ul li:first-child {
+	    top: -25px;
+	}
+
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------- 413 - 321 ---------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+@media (max-width: 413px) {
+	.footer-bottom-nav ul li {
+	    padding: 0 8px;
+	}
+	.footer-bottom-nav ul li a, .footer-logo {
+	    font-size: 12px;
+	}
+}
+
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------ 320 ------------------------------------------------- */
+/* ------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------------ */
+@media (max-width: 320px) {
+
 }
