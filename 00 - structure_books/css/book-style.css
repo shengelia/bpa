@@ -50,6 +50,7 @@ table {
 	font-size: 18px;
 	letter-spacing: 0.3px;
 	font-family: 'Visby Round CF';
+	text-align: center;
 }
 .nav-item.active {
 	margin-bottom: -5px;
@@ -288,8 +289,8 @@ table {
 	border: none;
 	height: 40px;
 	width: 100%;
-	border-radius: 0 0 10px 10px;
-	background-image: linear-gradient(to right, #661aff , #8525ff);
+	border-radius: 0 0 5px 5px;
+	background-image: linear-gradient(to right, #661aff , #8b30da);
 }
 .ratings a {
 	color: #01307e;
@@ -328,8 +329,11 @@ table {
 .bottom-text {
 	padding: 20px 0 10px;
 }
+.footer-text {
+	padding: 10px;
+}
 .footer-text p {
-	color: white;
+	color: grey;
 	font-weight: 500;
 	text-align: justify;
 }
@@ -338,7 +342,8 @@ table {
     position: relative;
 }
 .footer-bottom-nav ul {
-    margin: 20px auto;
+    margin: 0 auto;
+    padding: 20px 0;
     display: flex;
     text-align: center;
 }
@@ -351,7 +356,7 @@ table {
     box-sizing: border-box;
 }
 .footer-bottom-nav ul li a, .footer-logo {
-	color: #00B68F;
+	color: white;
 }
 .filter.tab {
 	display: none;
@@ -422,10 +427,12 @@ table {
 	text-align: justify;
 }
 .navbar-collapse.show, .navbar-collapse.collapsing {
-	background: rgba(0, 0, 0, 0.6);
+	background: white;
 }
 .faq-text p {
 	text-align: justify;
+	font-weight: normal;
+	color: grey;
 }
 .faq-text h1 {
 	font-family: 'Visby Round CF';
@@ -434,7 +441,14 @@ table {
 	padding: 10px 0;
 }
 .footer-text {
-	
+	box-shadow: 0px 0px 15px 0px #b8daf0;
+	border-radius: 5px;
+}
+footer {
+	background: url('../img/footer.png') no-repeat;
+    background-size: cover;
+    /*width: 100%;*/
+    height: 320px;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -494,8 +508,17 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1200px) {
+	.interior-card-item-2-book-cover a img {
+	    width: 185px;
+	}
+	.filter-header li {
+	    margin: 0 5px;
+	}
+	footer {
+	    height: 202px;
+	}
 	.card-item {
-	    width: 48%;
+	    width: 48.926%;
 	}
 }
 
@@ -506,6 +529,30 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
+	.filter ul li a {
+	    top: 25%;
+	    left: 50%;
+	}
+	.filter-header>li:not(:first-child)>a:before {
+	    top: 200%;
+	    left: 50%;
+	}
+	.filter-header>li:not(:first-child).filter_active>a:after {
+	    top: 200%;
+	    left: 50%;
+	}
+	.navbar {
+	    padding: 2px 0;
+	}
+	.card-item {
+	    width: 48.6%;
+	}
+	.filter-index .container {
+		max-width: 769px;
+	}
+	footer {
+	    height: 151px;
+	}
 	.navbar-expand-md .navbar-nav .nav-link {
 	    padding-right: 5.5px;
 	    padding-left: 2.5px;
@@ -527,17 +574,53 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 768px) {
+	.nav-link img {
+		width: 25px;
+	}
+	.footer-bottom-nav ul {
+	    position: relative;
+	    top: 50px;
+	    padding: 0;
+	}
+	.faq-and-terms .container, .bottom-text .container, .footer-bottom-nav .container {
+		max-width: 750px;
+	}
+	.filter-index {
+	    top: 60px;
+	}
+	.filter-header li:not(:first-child).filter_active {
+		box-shadow: unset;
+	}
+	.filter-main {
+		box-shadow: unset;
+		margin: -10px 0 55px;
+		padding: 0;
+	}
+	.filter-main ul li:first-child a {
+		top: 50%;
+	}
+	.filter-main ul li:first-child {
+		position: absolute;
+		top: 75px;
+		height: 40px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 10px 0;
+	}
+	.filter ul li a {
+	    top: 35%;
+	    font-size: 15px;
+	}
 	.filter .container {
 		max-width: 850px;
 	}
 	.card-item {
 	    width: 100%;
-	}
-	.footer-bottom-nav ul {
-	    margin: 45px auto 20px;
+	    float: unset;
+	    margin: 0 0 10px;
 	}
 	.footer-bottom-nav .container ul li:first-child {
-	    width: 40%;
+	    width: 65%;
 	    position: absolute;
 	    top: -30px;
 	    left: 50%;
@@ -553,7 +636,7 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 650px) {
-
+	
 }
 
 /* ------------------------------------------------------------------------------------------------------ */
@@ -562,6 +645,28 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 550px) {
+	.filter-header>li:not(:first-child).filter_active>a:after {
+	    top: 225%;
+	}
+	.filter-header>li:not(:first-child)>a:before {
+	    top: 225%;
+	}
+	.filter-main ul li:first-child {
+	    top: 55px;
+	}
+	.filter-header li {
+	    padding: 25px 5px;
+	}
+	.filter ul li a {
+	    top: 25%;
+	    font-size: 13px;
+	}
+	.filter-header li {
+		margin: 0 1px;
+	}
+	.filter .container {
+		padding: 0;
+	}
 	.footer-bottom-nav .container ul li:first-child {
 	    top: -25px;
 	}
@@ -574,6 +679,21 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+	.carousel-item img {
+		height: 125px;
+	}
+	.filter ul li a {
+	    font-size: 10px;
+	}
+	.filter-header>li:not(:first-child).filter_active>a:after {
+	    top: 260%;
+	}
+	.filter-header>li:not(:first-child)>a:before {
+	    top: 260%;
+	}
+	.filter-header li {
+		margin: 0;
+	}
 	.footer-bottom-nav ul li {
 	    padding: 0 8px;
 	}
@@ -588,5 +708,11 @@ table {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 320px) {
-
+	.carousel-caption h1 {
+		font-size: 18px;
+	}
+	.filter-main ul li:first-child {
+	    width: 90.6%;
+	    margin-left: 15px;
+	}
 }
