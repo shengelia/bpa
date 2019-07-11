@@ -2613,8 +2613,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.5);
+    color: #557db0;
+    font-weight: bold;
+    background-color: transparent;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
@@ -3285,7 +3286,8 @@ input[type=submit].btn-block {
 .dropleft,
 .dropright,
 .dropup {
-    position: relative
+    position: relative;
+    text-align: center;
 }
 
 .dropdown-toggle::after {
@@ -3445,11 +3447,12 @@ input[type=submit].btn-block {
     padding: .25rem 1.5rem;
     clear: both;
     font-weight: 400;
-    color: #212529;
+    color: #557db0;
     text-align: inherit;
     white-space: nowrap;
     background-color: transparent;
-    border: 0
+    border: 0;
+    font-weight: bold;
 }
 
 .dropdown-item:focus,
@@ -4321,12 +4324,10 @@ input[type=submit].btn-block {
 
 .navbar-brand {
     display: inline-block;
-    padding-top: .3125rem;
-    padding-bottom: .3125rem;
-    margin-right: 1rem;
-    font-size: 1.25rem;
+    padding-top: 0px;
+    padding-bottom: 0px;
     line-height: inherit;
-    white-space: nowrap
+    white-space: nowrap;
 }
 
 .navbar-brand:focus,

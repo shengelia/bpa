@@ -266,3 +266,4 @@ function myFunction_footer() {
         moreText.style.display = "inline";
     }
 }
+
