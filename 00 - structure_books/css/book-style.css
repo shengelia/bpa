@@ -759,7 +759,7 @@ footer {
     left: -20px;
     top: 50%;
     color: #ffffff;
-    background: linear-gradient(to right, #661aff , #8b30da);
+    background: linear-gradient(to right, #5bacf4 , #7be2c7);
     transform: translateY(-50%);
     padding: 20px 20px;
     border: 2px solid white;
@@ -774,7 +774,7 @@ footer {
     right: -20px;
     top: 50%;
     color: #ffffff;
-    background: linear-gradient(to right, #661aff , #8b30da);
+    background: linear-gradient(to right, #5bacf4 , #7be2c7);
     transform: translateY(-50%);
     padding: 20px 20px;
     border: 2px solid white;
@@ -951,6 +951,26 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
+    .card-review .interior-card-item-6-buy {
+        left: 35%;
+    }
+    .card-review .interior-card-item-1-name {
+        width: 79%;
+    }
+    .card-review .interior-card-item-4-rating {
+        width: 65%;
+        left: 35%;
+    }
+    .card-review .interior-card-item-3-desc {
+        width: 65%;
+        left: 35%;
+    }
+    .card-review .interior-card-item-5-score {
+        left: 140px;
+    }
+    .card-review .interior-card-item-2-book-cover {
+        width: 30%;
+    }
     .filter-main ul li:first-child.filter_active {
         margin: 0px 8px;
     }
@@ -1009,6 +1029,12 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 768px) {
+    .card-review {
+        margin: 0 0 30px !important;
+    }
+    .card-review .interior-card-item-5-score {
+        left: 110px;
+    }
     .tab-cards-games .card-item {
         margin: 15px 0 55px;
     }
@@ -1098,6 +1124,24 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 650px) {
+    .card-review .interior-card-item-2-book-cover {
+        width: 37%;
+    }
+    .card-review .interior-card-item-6-buy {
+        left: 40%;
+    }
+    .card-review .interior-card-item-4-rating {
+        width: 60%;
+        left: 40%;
+        top: 190px;
+    }
+    .card-review .interior-card-item-3-desc {
+        width: 60%;
+        left: 40%;
+    }
+    .card-review .interior-card-item-1-name {
+        width: 95%;
+    }
 	.faq-and-terms .container .faq-inner:first-child {
         margin-bottom: 20px;
     }
@@ -1109,6 +1153,38 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 550px) {
+    .card-review .interior-card-item-5-score {
+        left: 90px;
+        width: 15%;
+    }
+    .card-review .interior-card-item-1-name {
+        width: 100%;
+    }
+    .card-review .book-cover {
+        width: 130px;
+    }
+    .card-review .interior-card-item-2-book-cover {
+        width: 45%;
+        height: 240px;
+    }
+    .card-review .interior-card-item-6-buy {
+        left: 50%;
+        width: 40%;
+        bottom: 20px;
+    }
+    .card-review .interior-card-item-4-rating {
+        width: 50%;
+        left: 50%;
+        top: 225px;
+    }
+    .card-review {
+        height: 360px;
+    }
+    .card-review .interior-card-item-3-desc {
+        width: 50%;
+        left: 50%;
+        top: 75px;
+    }
     .hotels {
         top: 0px;
     }
@@ -1152,6 +1228,38 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
+    .card-review .interior-card-item-6-buy {
+        width: 50%;
+        bottom: 15px;
+    }
+    .card-review .interior-card-item-4-rating {
+        top: 240px;
+    }
+    .card-review .interior-card-item-4-rating .ratings a {
+        top: 5px;
+        font-size: 14px;
+        left: 2px;
+    }
+    .card-review .interior-card-item-5-score {
+        left: 30px;
+        width: 25%;
+        top: 225px;
+    }
+    .card-review .interior-card-item-4-rating .rating-list > i {
+        font-size: 14px;
+    }
+    .card-review .interior-card-item-3-desc {
+        top: 95px;
+    }
+    .card-review .interior-card-item-2-book-cover {
+        height: 190px;
+    }
+    .card-review .book-cover {
+        width: 110px;
+    }
+    .card-review .interior-card-item-3-desc span h1 {
+        font-size: 12px;
+    }
 	.single-review-book {
 	    width: 280px;
 	}
