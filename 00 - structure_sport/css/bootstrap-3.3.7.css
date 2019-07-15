@@ -4872,7 +4872,7 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .navbar-default {
-    background: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 1);
 }
 
 .navbar-default .navbar-brand {
@@ -4904,16 +4904,16 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid #ff0038;
     border-radius: 5px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #694548;
+    background-color: #ff0038;
 }
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-color: white;
+    border-color: (0, 0, 0);
 }
 
 .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
