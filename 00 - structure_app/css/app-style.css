@@ -162,7 +162,7 @@ footer {
     letter-spacing: 0.9px;
 }
 .footer-text {
-    padding: 50px 0 0;
+    padding: 0;
 }
 .footer-text span {
     letter-spacing: 0.2px;
@@ -208,6 +208,25 @@ footer {
 }
 .download-links {
     display: flex;
+    margin: 50px auto 0;
+}
+.dl-1 img {
+    width: 300px;
+}
+.footer_logos {
+    display: flex;
+    position: relative;
+    margin: 20px auto;
+}
+.header18 {
+    background-color: transparent;
+    width: 85px;
+}
+.footer_logos button, .footer_logos a {
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    align-self: center !important;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -267,7 +286,12 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 1200px) {
-    
+    .index-main-1-cards {
+        width: 100%;
+    }
+    .footer_logos img {
+        width: 100px;
+    }
 }
 
 
@@ -277,7 +301,33 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
-    
+    footer {
+        padding: 1px 0 10px;
+    }
+    .footer-inner ul li {
+        margin: 25px auto;
+    }
+    .footer-inner ul {
+        display: block;
+    }
+    .index-main-2-logo-button {
+        display: block;
+    }
+    .index-main-1-cards img {
+        width: 20%;
+    }
+    .footer_logos img, .footer_logos button {
+        width: 150px;
+    }
+
+    .footer_logos button, .footer_logos a {
+        margin: 5px auto;
+    }
+
+    .footer_logos {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 
@@ -306,7 +356,15 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 550px) {
-    
+    .rf-img {
+        width: 100%;
+    }
+    .rf-img img {
+        width: 50%;
+    }
+    .lb-1 img {
+        width: 50%;
+    }    
 }
 
 /* ------------------------------------------------------------------------------------------------------ */
@@ -315,7 +373,12 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 413px) {
-    
+    .dl-1 img {
+        width: 90%;
+    }
+    .download-h1 {
+        font-size: 26px;
+    }
 }
 
 /* ------------------------------------------------------------------------------------------------------ */
