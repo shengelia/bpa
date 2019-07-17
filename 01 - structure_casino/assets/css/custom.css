@@ -108,13 +108,17 @@ body {
 .main-menu-footer {
     list-style: none;
     -webkit-padding-start: 0;
+    display: flex;
 }
 
 .main-menu-footer > li {
     display: inline-block;
+    /*margin-left: 20px;*/
+    /*padding-left: 20px;*/
+    /*border-right: 1px solid rgba(255, 255, 255, 0.3);*/
+}
+.main-menu-footer > li:not(:first-child) {
     margin-left: 20px;
-    padding-left: 20px;
-    border-right: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .main-menu-footer > li:nth-last-child(1) {
@@ -125,14 +129,14 @@ body {
     text-transform: uppercase;
     text-decoration: none !important;
     display: inline-block;
-    color: #151515;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 600;
 }
 
 .main-menu-footer > li.active > a {
-    color: #6382f7;
+    color: white;
 }
 
 .scale-in-center {
@@ -551,32 +555,35 @@ font-weight: 900;
 .n-box.editor-choice {
     background-repeat: no-repeat;
     color: #656565;
+    background-image: url(./assets/img/editors.png);
 }
 
 .info-box {
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    /*box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);*/
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #1c1959;
     padding: 30px;
 }
 
 .info-box p {
-    color: #143559;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     margin-bottom: 25px;
+    text-align: justify;
 }
 
 .read-more {
     width: 60px;
-    height: 60px;    /*box-shadow: 0 7px 25px rgba(165, 175, 235, 0.2);*/
+    height: 60px;
     border-radius: 50%;
-    background: #ffffff url("../img/arrow-down.png") no-repeat center;
+    background: url("../img/arrow-down.png") no-repeat center;
     margin: 0 auto;
     cursor: pointer;
     transition: all .4s;
+    border: 2px solid white;
 }
 
 .read-more.active {
@@ -654,11 +661,11 @@ font-weight: 900;
 }
 
 .copyright {
-    color: #01307e;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 300;
-    text-align: right;
+    text-align: left;
 }
 
 .game-inner-desc {
@@ -748,7 +755,7 @@ font-weight: 900;
 }
 
 .h2-title {
-    color: #8b2e00;
+    color: #1c1959;
     font-family: "Visby Round CF";
     font-size: 36px;
     font-weight: 700;
@@ -771,7 +778,7 @@ font-weight: 900;
 .rate-box {
     margin: 50px 0;
     text-align: center;
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
     background-color: #fefefe;
     padding: 20px;
     transition: all .3s;
@@ -832,7 +839,7 @@ font-weight: 900;
     font-weight: 400;
     line-height: 28px;
     margin-top: 20px;
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
     border: 1px solid rgba(233, 96, 29, 0.14);
     background-color: #fefefe;
 }
@@ -847,7 +854,7 @@ font-weight: 900;
     width: 100%;
     text-align: left;
     padding: 15px;
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
     border-radius: 5px;
     border: 1px solid rgba(233, 96, 29, 0.14);
 }
@@ -886,27 +893,27 @@ font-weight: 900;
 }
 
 .read-more-text {
-    color: #999999 !important;
+    color: #656565 !important;
     font-family: "Visby Round CF";
     font-size: 14px;
-    font-weight: 400;
+    font-weight: bold;
     line-height: 24px;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .footer-m {
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    /*box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);*/
     border-radius: 4px;
-    background-color: #ffffff;
+    background-color: #131043;
     margin-bottom: 25px;
     padding: 30px;
 }
 
 .h2-title-box {
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    /*box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);*/
     border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.56);
-    color: #6382f7;
+    /*background-color: rgba(255, 255, 255, 0.56);*/
+    color: #1c1959;
     font-family: "Visby Round CF";
     font-size: 35px;
     font-weight: 600;
@@ -918,7 +925,7 @@ font-weight: 900;
 
 .extra-information {
     margin-top: 25px;
-    box-shadow: 0 0 27px rgba(233, 96, 29, 0.1);
+    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.56);
     padding: 40px;
@@ -929,6 +936,33 @@ font-weight: 900;
 }
 .visit-6 {
     padding: 0 !important;
+}
+
+.info-box-outer {
+    background: #1c1959;
+}
+footer {
+    background: #131043;
+    padding: 20px 0 0;
+}
+.review-site {
+    padding: 20px 0 0;
+}
+.score-site {
+    padding-top: 10px;
+}
+.score-site .h2-title-box {
+    margin: 10px auto 0;
+}
+.games-inner-site {
+    padding-top: 20px !important;
+}
+.review-inner-site {
+    padding-top: 25px;
+}
+.privacy-site, .cookie-site, .terms-site {
+    margin-top: -50px;
+    padding-top: 25px;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -1332,6 +1366,17 @@ font-weight: 900;
 }
 
 @media (max-width: 575px) {
+    .main-menu-footer > li:not(:first-child) {
+        margin: 0 auto;
+    }
+    .main-menu-footer li {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .main-menu-footer {
+        display: grid;
+    }
     .game-single {
         border-radius: 2px;
     }
@@ -1435,9 +1480,5 @@ font-weight: 900;
 
     .rating .rating-list > i {
         font-size:12px;
-    }
-
-    .main-menu-footer li {
-        width: 20%;
     }
 }

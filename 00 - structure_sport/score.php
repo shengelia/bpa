@@ -80,9 +80,7 @@
     </div>
 </section>
 
-<?php include "components/static-footer.php";?>
-
+<?php include "components/footer-menu.php";?>
 <?php include "components/javascript.php";?>
-
 </body>
 </html>

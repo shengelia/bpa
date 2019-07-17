@@ -7659,7 +7659,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mb-4, .my-4 {
-	margin-bottom: 1.5rem !important
+	padding-bottom: 1.5rem !important
 }
 
 .ml-4, .mx-4 {
@@ -7671,7 +7671,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mt-5, .my-5 {
-	margin-top: 3rem !important
+	padding-top: 3rem !important
 }
 
 .mr-5, .mx-5 {
@@ -7679,7 +7679,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mb-5, .my-5 {
-	margin-bottom: 3rem !important
+	padding-bottom: 3rem !important
 }
 
 .ml-5, .mx-5 {

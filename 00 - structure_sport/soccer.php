@@ -58,207 +58,51 @@
 			<div class="col-12 col-md-12 col-xl-12 tab-cards tab-cards-games no-lr-padding">
 				<div class="container">
 					<!-- 1 -->
-					<div tab="afl, golf" class="row active card hotels-stars cards card-item cards-mob" id="card-1">
-						<div class="interior-card-item-1-number">
-							<div class="editors-choice">
-								<img src="img/editors.png" alt="Editors Choice" width="100%" height="100%">
-							</div>
-							<span>1</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
-							<a href="http://www.mail.ru" target="_blank">
-								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
-							</a>
-						</div>
-						<div class="interior-card-item-3-address">
-							<span>
-								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
-							</span>
-						</div>
-						<div class="interior-card-item-4-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="3"></div>
-								<div class="rated-info">
-									<a href="review-single.php">Review</a>
-								</div>
-							</div>
-						</div>
-						<div class="interior-card-item-5-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>										
-						<div class="interior-card-item-6-visit">
-							<span>
-								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><p>Visit Our Site</p></button>
-								</form>
-							</span>						
-						</div>
-					</div>
+					<?php include "components/games-card-interior-1.php";?>
+
+
 					<!-- 2 -->
-					<div tab="golf, socc, cric" class="row active card hotels-stars cards card-item cards-mob" id="card-2">
-						<div class="interior-card-item-1-number">
-							<span>2</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
-							<a href="http://www.mail.ru" target="_blank">
-								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
-							</a>
-						</div>
-						<div class="interior-card-item-3-address">
-							<span>
-								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
-							</span>
-						</div>
-						<div class="interior-card-item-4-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="3"></div>
-								<div class="rated-info">
-									<a href="review-single.php">Review</a>
-								</div>
-							</div>
-						</div>
-						<div class="interior-card-item-5-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>										
-						<div class="interior-card-item-6-visit">
-							<span>
-								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><p>Visit Our Site</p></button>
-								</form>
-							</span>						
-						</div>
-					</div>
+					<?php include "components/games-card-interior-x.php";?>
+
+
 					<!-- 3 -->
-					<div tab="golf, hors, afl" class="row active card hotels-stars cards card-item cards-mob" id="card-3">
-						<div class="interior-card-item-1-number">
-							<span>3</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
-							<a href="http://www.mail.ru" target="_blank">
-								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
-							</a>
-						</div>
-						<div class="interior-card-item-3-address">
-							<span>
-								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
-							</span>
-						</div>
-						<div class="interior-card-item-4-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="3"></div>
-								<div class="rated-info">
-									<a href="review-single.php">Review</a>
-								</div>
-							</div>
-						</div>
-						<div class="interior-card-item-5-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>										
-						<div class="interior-card-item-6-visit">
-							<span>
-								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><p>Visit Our Site</p></button>
-								</form>
-							</span>						
-						</div>
-					</div>
+					<?php include "components/games-card-interior-x.php";?>
+
+
 					<!-- 4 -->
-					<div tab="socc, afl" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
-						<div class="interior-card-item-1-number">
-							<span>4</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
-							<a href="http://www.mail.ru" target="_blank">
-								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
-							</a>
-						</div>
-						<div class="interior-card-item-3-address">
-							<span>
-								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
-							</span>
-						</div>
-						<div class="interior-card-item-4-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="3"></div>
-								<div class="rated-info">
-									<a href="review-single.php">Review</a>
-								</div>
-							</div>
-						</div>
-						<div class="interior-card-item-5-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>										
-						<div class="interior-card-item-6-visit">
-							<span>
-								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><p>Visit Our Site</p></button>
-								</form>
-							</span>						
-						</div>
-					</div>
+					<?php include "components/games-card-interior-x.php";?>
+
+
 					<!-- 5 -->
-					<div tab="golf, afl, socc, hors" class="row active card hotels-stars cards card-item cards-mob" id="card-4">
-						<div class="interior-card-item-1-number">
-							<span>5</span>
-						</div>
-						<div class="interior-card-item-2-casino-logo">
-							<a href="http://www.mail.ru" target="_blank">
-								<img src="img/casino-logo.png" alt="Hotel Logo" width="100%" class="casino-logo">
-							</a>
-						</div>
-						<div class="interior-card-item-3-address">
-							<span>
-								<h1>Delectus ea quibusdam incidunt, debitis!</h1>
-							</span>
-						</div>
-						<div class="interior-card-item-4-rating">
-							<div class="ratings">
-								<div class="rate_message"></div>
-								<div class="rating not-rated" data-rate-value="3"></div>
-								<div class="rated-info">
-									<a href="review-single.php">Review</a>
-								</div>
-							</div>
-						</div>
-						<div class="interior-card-item-5-score">
-							<div class="our-score">
-								<span>9.8</span>
-								<p>Our score</p>
-							</div>
-						</div>										
-						<div class="interior-card-item-6-visit">
-							<span>
-								<form action="http://www.mail.ru" target="_blank">
-								    <button type="submit"><p>Visit Our Site</p></button>
-								</form>
-							</span>						
-						</div>
-					</div>
+					<?php include "components/games-card-interior-x.php";?>
+
+
+					<!-- 6 -->
+					<?php include "components/games-card-interior-x.php";?>
+
+
+					<!-- 7 -->
+					<?php include "components/games-card-interior-x.php";?>
+
+
+					<!-- 8 -->
+					<?php include "components/games-card-interior-x.php";?>
+
+
+					<!-- 9 -->
+					<?php include "components/games-card-interior-x.php";?>
+
+
+					<!-- 10 -->
+					<?php include "components/games-card-interior-x.php";?>
 				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
-
-<?php include "components/static-footer.php";?>
-
+<?php include "components/footer-text.php";?>
+<?php include "components/footer-menu.php";?>
 <?php include "components/javascript.php";?>
 <script>
 	$( document ).ready(function() {
