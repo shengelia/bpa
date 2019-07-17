@@ -497,7 +497,7 @@ ul li.filter_active {
 	text-align: justify;
 }
 .footer-text p {
-    color: #694548;
+    color: #797979;
     line-height: 18px;
     font-weight: bold;
     letter-spacing: 0.6px;
@@ -528,14 +528,14 @@ ul li.filter_active {
 .footer-bottom-nav ul li {
 	padding: 0 10px;
 	font-weight: bold;
-	color: #694548;
+	color: #797979;
 	flex-basis: auto;
 	flex-grow: 1;
 	text-align: center;
 	box-sizing: border-box;
 }
 .footer-bottom-nav ul li a {
-	color: #694548;
+	color: #797979;
 	text-decoration: none;
 }
 .footer-logo img{
@@ -583,21 +583,21 @@ ul li.filter_active {
 	padding: 10px 0 10px;
 	background: transparent;
 }
-.game_info .container {
-	box-shadow: 0px 0px 24px #ffd7bb;
-	border-radius: 10px;
-	padding: 10px 0;
-}
 .game-text {
-    color: #694548;
+    color: #797979;
     font-weight: bold;
     letter-spacing: 0.9px;
 }
 .game-text button {
 	background: none;
 	border: none;
-	color: #694548;
+	color: #797979;
 	font-style: italic;
+}
+.tab-texts {
+	padding: 15px;
+	box-shadow: 0px 0px 10px #ffcdd6;
+	border-radius: 5px;
 }
 .language-selection {
 	width: 50px;
@@ -675,7 +675,7 @@ ul li.filter_active {
 .review-logo {
     width: 80px;
     height: 80px;
-    border: 2px solid #694548;
+    border: 2px solid #797979;
     border-radius: 40px;
     position: absolute;
     top: 0%;
@@ -722,13 +722,14 @@ ul li.filter_active {
 }
 .review-single-text {
     padding: 10px 0px 0px;
-    box-shadow: 0px 0px 10px #ffd7bb;
+    box-shadow: 0px 0px 10px #ffcdd6;
     border-radius: 25px;
+    background: #fffafb;
 }
 .review-single-text h1 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #694548;
+	color: #797979;
 	font-size: 24px;
 	padding: 0 10px 10px;
 	text-align: center;
@@ -736,7 +737,7 @@ ul li.filter_active {
 .review-single-text span p {
     padding: 0 10px 10px;
     line-height: 19px;
-    color: #694548;
+    color: #797979;
     font-weight: bold;
     font-family: 'Visby Round CF ExtraLight';
     letter-spacing: 0.9px;
@@ -751,7 +752,7 @@ ul li.filter_active {
     text-transform: uppercase;
     outline: none !important;
     font-weight: bold;
-    background: linear-gradient(20deg, #ffd7bb, #694548);
+    background: linear-gradient(20deg, #D82644, #000);
 }
 .review-single-card .interior-card-item-5-rating {
 	width: 30%;
@@ -763,12 +764,12 @@ ul li.filter_active {
 .website-static-text-inner {
 	padding: 20px 20px;
 	border-radius: 10px;
-	box-shadow: 0px 0px 24px #ffd7bb;
+	box-shadow: 0px 0px 10px #ffcdd6;
 }
 .website-static-text-inner h1 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #694548;
+	color: #797979;
 	font-size: 24px;
 	margin-bottom: 15px;
 	text-align: center;
@@ -776,14 +777,14 @@ ul li.filter_active {
 .website-static-text-inner h2 {
 	font-family: 'Visby Round CF';
 	font-weight: bold;
-	color: #694548;
+	color: #797979;
 	font-size: 18px;
 	margin: 20px 0 5px;
 	text-align: left;
 }
 .website-static-text-inner p {
 	line-height: 19px;
-	color: #694548;
+	color: #797979;
 	font-weight: bold;
 	letter-spacing: 0.9px;
 }
@@ -907,7 +908,7 @@ ul li.filter_active {
 .contact-form small a {
 	text-decoration: none;
     font-weight: bold;
-    color: #694548;
+    color: #797979;
     font-family: 'Visby Round CF';
 }
 .games-rm-img {
@@ -917,6 +918,33 @@ ul li.filter_active {
 	letter-spacing: 0.9px;
 	font-weight: bold;
 }
+.website-static-text-inner ul {
+	list-style: inside;
+	margin: 5px 0 15px;
+}
+.website-static-text-inner ul li{
+	font-family: 'Visby Round CF';
+}
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------ */
@@ -1391,16 +1419,6 @@ ul li.filter_active {
 	    font-size: 14px;
 	}
 }
-
-
-
-/* ------------------------------------------------------------------------------------------------ */
-/* --------------------------------------------- 414 - 413 ---------------------------------------- */
-/* ------------------------------------------------------------------------------------------------ */
-@media (max-width: 414px) {
-}
-
-
 
 /* ------------------------------------------------------------------------------------------------ */
 /* --------------------------------------------- 413 - 321 ---------------------------------------- */
