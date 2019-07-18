@@ -1,15 +1,4 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, ins, kbd, q, samp,
-small, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, menu, nav, section, summary,
-time, mark, audio, video {
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, ins, kbd, q, samp, small, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -38,8 +27,7 @@ body {
     line-height: 1;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, menu, nav, section {
     display: block;
 }
 
@@ -55,8 +43,7 @@ blockquote, q {
     quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before, blockquote:after, q:before, q:after {
     content: '';
 }
 
@@ -127,11 +114,7 @@ hr {
     padding: 0;
 }
 
-button,
-input,
-optgroup,
-select,
-textarea {
+button, input, optgroup, select, textarea {
     color: inherit;
     font: inherit;
     margin: 0;
@@ -141,26 +124,20 @@ button {
     overflow: visible;
 }
 
-button,
-select {
+button, select {
     text-transform: none;
 }
 
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
 }
 
-button[disabled],
-html input[disabled] {
+button[disabled], html input[disabled] {
     cursor: default;
 }
 
-button::-moz-focus-inner,
-input::-moz-focus-inner {
+button::-moz-focus-inner, input::-moz-focus-inner {
     border: 0;
     padding: 0;
 }
@@ -169,16 +146,14 @@ input {
     line-height: normal;
 }
 
-input[type="checkbox"],
-input[type="radio"] {
+input[type="checkbox"], input[type="radio"] {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 
@@ -189,8 +164,7 @@ input[type="search"] {
     box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
@@ -232,8 +206,7 @@ input[type="search"] {
     box-sizing: border-box;
 }
 
-input[type="radio"],
-input[type="checkbox"] {
+input[type="radio"], input[type="checkbox"] {
     margin: 4px 0 0;
     margin-top: 1px \9;
     line-height: normal;
@@ -248,14 +221,11 @@ input[type="range"] {
     width: 100%;
 }
 
-select[multiple],
-select[size] {
+select[multiple], select[size] {
     height: auto;
 }
 
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus {
+input[type="file"]:focus, input[type="radio"]:focus, input[type="checkbox"]:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px;
 }
@@ -264,10 +234,7 @@ input, select {
     vertical-align: middle;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
-button:focus {
+input:focus, select:focus, textarea:focus, button:focus {
     outline: none;
 }
 
@@ -275,11 +242,15 @@ button:focus {
     color: #9b9b9b;
 }
 
-:-moz-placeholder { /* Firefox 18- */
+:-moz-placeholder {
+
+    /* Firefox 18- */
     color: #9b9b9b;
 }
 
-::-moz-placeholder { /* Firefox 19+ */
+::-moz-placeholder {
+
+    /* Firefox 19+ */
     color: #9b9b9b;
 }
 
