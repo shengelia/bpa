@@ -64,7 +64,7 @@
     width: 100%;
     height: 60px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.14);
-    background-color: #1d164f;
+    background-color: #143559;
 }
 .main-menu {
     list-style: none;
@@ -76,7 +76,7 @@
 }
 .main-menu > li > a {
     position: relative;
-    color: #de6874;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 16px;
     font-weight: 400;
@@ -86,8 +86,8 @@
     padding: 0 5px;
 }
 .main-menu > li.active > a {
-    color: #1d164f;
-    background-color: #de6874;
+    color: #143559;
+    background-color: #E24349;
     font-weight: 600;
 }
 .main-menu-footer {
@@ -96,15 +96,8 @@
     display: flex;
 }
 .main-menu-footer > li {
-    display: inline-block;
-}
-
-.main-menu-footer > li:not(:first-child) {
-    margin-left: 20px;
-}
-
-.main-menu-footer > li:nth-last-child(1) {
-    border-right: 0;
+    flex-basis: 20%;
+    text-align: center;
 }
 
 .main-menu-footer > li > a {
@@ -118,7 +111,7 @@
 }
 
 .main-menu-footer > li.active > a {
-    color: #de6874;
+    color: #E24349;
 }
 
 .scale-in-center {
@@ -222,10 +215,6 @@
     position: absolute;
     right: 0;
     top: 35px;
-    width: 174px;
-    height: 174px;
-    background-repeat: no-repeat;
-    background-position: center center;
 }
 
 .slide-back h1 {
@@ -255,40 +244,47 @@
 .filter-list > li {
     flex-basis: 20%;
     align-self: center !important;
-    background: #1d164f;
+    background: white;
     padding: 10px 0;
     text-align: center;
+    border: 2px solid #143559;
+    border-right: 1px;
 }
 .filter-list li:first-child {
     border-radius: 5px;
     margin-right: 5px;
     padding: 5px 0;
     flex-basis: 10%;
+    background: white;
+    border: none;
+    box-shadow: 0 0 5px #BABABA;
 }
 .filter-list li:first-child a {
     font-size: 16px;
     width: 50px;
     text-align: center;
     padding: 0;
+    color: #143559;
 }
 .filter-list li:first-child.active a {
-    color: #1d164f;
+    color: white;
 }
 .filter-list li:first-child.active {
-    background: #de6874;
+    background: #143559;
 }
 .filter-list li:nth-child(2) {
     border-radius: 5px 0 0 5px;
 }
 .filter-list li:last-child {
     border-radius: 0 5px 5px 0;
-}
+    border-right: 2px solid #143559;
+}   
 .filter-list li:not(:first-child).active {
-    background: #de6874;
+    background: #143559;
     position: sticky;
 }
 .filter-list li.active a {
-    color: #1d164f;
+    color: white;
     font-weight: bold;
 }
 .filter-list li:not(:first-child).active a{
@@ -297,7 +293,7 @@
 .filter-list > li > a {
     position: relative;
     border-radius: 10px;
-    color: #de6874;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 14px;
     font-weight: 700;
@@ -306,28 +302,6 @@
     text-decoration: none;
     display: inline-block;
 }
-
-/*.filter-list > li:not(.all) > a:after {
-    content: '';
-    position: absolute;
-    margin-left: 10px;
-    top: 12px;
-    width: 21px;
-    height: 21px;
-    box-shadow: 0 0 7px rgba(29, 114, 255, 0.1);
-    border: 1px solid rgba(29, 114, 255, 0.3);
-    border-radius: 50%;
-    background-color: #fff;
-    transition: all .5s;
-    background-position: center center;
-    background-size: 0;
-}
-
-.filter-list > li.active:not(.all) > a:after {
-    border: 1px solid rgba(29, 114, 255, 0.3);
-    background: rgba(29, 114, 255, 0.3) url("../img/check.png") no-repeat center center;
-    background-size: 25px 25px;
-}*/
 
 .divTable {
     display: table;
@@ -431,17 +405,22 @@
 }
 
 .c-info {
-    line-height: 24px;
-    margin: 0;
-    color: #1d164f;
+    margin: 0 auto;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 15px;
     font-weight: 700;
 }
-
+.c-info-2 {
+    margin: 0 auto;
+    color: #E24349;
+    font-family: "Visby Round CF";
+    font-size: 15px;
+    font-weight: 700;
+}
 .play-now {
-    border-radius: 0 5px 5px 0;
-    padding: 11px 35px;
+    border-radius: 60px;
+    padding: 15px 35px;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: 700;
@@ -449,12 +428,10 @@
     display: block;
     white-space: nowrap;
     transition: all .3s;
-    background-image: linear-gradient(225deg, #1d164f 0%, #1d164f 100%);
-    color: #de6874;
-    background-size: 350% 350%;
+    background: #E24349;
+    color: white;
     position: relative;
 }
-
 .play-now:hover {
     color: #fff;
     text-decoration: none;
@@ -462,48 +439,34 @@
 }
 
 .c-score {
-    width: 80px;
-    height: 44px;
-    line-height: 42px;
-    border-radius: 3px;
     text-align: center;
     margin: 0 auto;
-    color: #1c1a58;
+    color: #E24349;
     font-family: "Visby Round CF";
     font-size: 35px;
-    font-weight: 500;
-    background-color: #de6874;
+    font-weight: 600;
+}
+.score-inner {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    border: 2px solid #E24349;
+    padding: 15px 0px;
+    border-radius: 45px;
 }
 .our-score-5 {
     padding: 0 !important;
 }
-.cm-5 {
-    background-color: #de6874;
-    border-radius: 5px 0 0 5px;
-}
-.cm-6 .play-now {
-    padding: 24px 0 !important;
-}
-
 .rating {
 }
 
 .rating > div {
     margin: 5px 0;
 }
-
-/*.rating .rating-list {
-direction: rtl;
-}*/
 .rating .rating-list > i {
     font-size: 22px;
-    color: #1d164f;
+    color: #E24349;
 }
-
-/*
-.rating .rating-list > i:hover ~ i, .rating .rating-list > i:hover {
-font-weight: 900;
-}*/
 .rating-footer span {
     display: inline-block;
 }
@@ -522,7 +485,7 @@ font-weight: 900;
 }
 
 .rating-footer span:nth-last-child(1) a {
-    color: #de6874;
+    color: #E24349;
     font-family: "Visby Round CF";
     font-size: 14px;
     font-weight: bold;
@@ -555,7 +518,7 @@ font-weight: 900;
 }
 
 .info-box p {
-    color: #656565;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 500;
@@ -625,7 +588,7 @@ font-weight: 900;
     line-height: 24px;
     padding-left: 25px;
     padding-right: 50px;
-    background: #5011ff url("../img/a-r.png") no-repeat center right 25px;
+    background: #143559 url("../img/a-r.png") no-repeat center right 25px;
     transition: all .3s;
 }
 
@@ -654,11 +617,11 @@ font-weight: 900;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 300;
-    text-align: left;
+    text-align: center;
 }
 
 .game-inner-desc {
-    color: #7a7a7a;
+    color: #1d164f;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: 400;
@@ -677,10 +640,11 @@ font-weight: 900;
     padding: 5px 10px;
     box-shadow: 0 0 5px #dedede;
     border-radius: 5px;
+    background: #143559;
 }
 
 .game-list-head > div {
-    color: #1d164f;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: 700;
@@ -691,7 +655,7 @@ font-weight: 900;
     padding: 35px 10px;
     position: relative;
     box-shadow: 0 0 5px #dedede;
-    border-radius: 7px;
+    border-radius: 100px;
     background-color: #ffffff;
     transition: all .5s;
 }
@@ -746,7 +710,7 @@ font-weight: 900;
 }
 
 .h2-title {
-    color: #1c1959;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 36px;
     font-weight: 700;
@@ -769,10 +733,11 @@ font-weight: 900;
 .rate-box {
     margin: 50px 0;
     text-align: center;
-    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
+    box-shadow: 0 0 5px #dedede;
     background-color: #fefefe;
     padding: 20px;
     transition: all .3s;
+    border-radius: 5px;
 }
 
 .rate-box:hover {
@@ -837,7 +802,7 @@ font-weight: 900;
 
 .c-card .btn-link {
     line-height: 28px;
-    color: #6382f7;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 22px;
     font-weight: 600;
@@ -851,7 +816,7 @@ font-weight: 900;
 }
 
 .dropdown-item.active, .dropdown-item:active {
-    background-color: #6382f7 !important;
+    background-color: #143559 !important;
 }
 
 .dropdown-menu {
@@ -884,7 +849,7 @@ font-weight: 900;
 }
 
 .read-more-text {
-    color: #656565 !important;
+    color: #E24349 !important;
     font-family: "Visby Round CF";
     font-size: 14px;
     font-weight: bold;
@@ -900,7 +865,7 @@ font-weight: 900;
 
 .h2-title-box {
     border-radius: 3px;
-    color: #1c1959;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 35px;
     font-weight: 600;
@@ -912,7 +877,7 @@ font-weight: 900;
 
 .extra-information {
     margin-top: 25px;
-    box-shadow: 0 0 15px rgba(231, 237, 255, 0.4);
+    box-shadow: 0 0 5px #dedede;
     border-radius: 4px;
     background-color: rgba(255, 255, 255, 0.56);
     padding: 40px;
@@ -920,7 +885,7 @@ font-weight: 900;
 }
 
 footer {
-    background: #1d164f;
+    background: #143559;
     padding: 20px 0 0;
 }
 
@@ -957,6 +922,64 @@ footer {
     top: -20px;
     left: 1px;
     width: 30px;
+}
+.info-box-outer .mt-5, .my-5 {
+    padding-top: 0rem !important;
+}
+.about-site h1, .contact-site h1, .cookie-site h1, .privacy-site h1, .terms-site h1 {
+    border-radius: 3px;
+    color: #143559;
+    font-family: "Visby Round CF";
+    font-size: 35px;
+    font-weight: 600;
+    padding: 20px 50px;
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+}
+.about-site h2, .contact-site h2, .cookie-site h2, .privacy-site h2, .terms-site h2 {
+    border-radius: 3px;
+    color: #143559;
+    font-family: "Visby Round CF";
+    font-size: 28px;
+    font-weight: bold;
+    width: fit-content;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -15px;
+}
+.about-site p, .contact-site p, .cookie-site p, .privacy-site p, .terms-site p {
+    font-family: "Visby Round CF";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 25px;
+    text-align: justify;
+    padding: 10px;
+}
+.about-site ul, .contact-site ul, .cookie-site ul, .privacy-site ul, .terms-site ul {
+    font-family: "Visby Round CF";
+    list-style-type: disc;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: black;
+}
+.about-site ul li ul, .contact-site ul li ul, .cookie-site ul li ul, .privacy-site ul li ul, .terms-site ul li ul {
+    font-family: "Visby Round CF";
+    margin-left: 30px;
+    list-style-type: circle;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: black;
+}
+.about-site ul, .about-site ul li ul, .contact-site ul, .contact-site ul li ul, .cookie-site ul, .cookie-site ul li ul, .privacy-site ul, .privacy-site ul li ul, .terms-site ul, .terms-site ul li ul {
+    margin-bottom: 30px;
+}
+.games-hidden {
+    display: none !important;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -1009,19 +1032,35 @@ footer {
     .main-menu > li {
         margin: 0 3px;
     }
-
     .main-menu > li > a {
         font-size: 14px;
     }
-
     .rating .rating-list > i {
         font-size: 20px;
     }
-
 }
 
 /* till 576 */
 @media (max-width:992px) {
+    .c-info-2 {
+        width: 50px;
+        top: -16px;
+        position: relative;
+        font-size: 13px;
+    }
+    .score-inner {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #E24349;
+        padding: 5px 0px;
+        border-radius: 45px;
+    }
+    .filter-list > li > a {
+        line-height: 12px;
+    }
+    .cm-5 {
+        border-radius: 0px;
+    }
     .filter-list li:first-child {
         padding: 0;
     }
@@ -1077,7 +1116,7 @@ footer {
         height: 100vh;
         z-index: 1006;
         overflow-y: scroll;
-        background-color: #fff;
+        background-color: #143559;
     }
 
     .main-menu > li > a {
@@ -1098,15 +1137,15 @@ footer {
     .main-menu.open > li > a {
         width: 100%;
         padding: 0 30px;
-        color: #333;
+        color: #E24349;
         font-family: "Visby Round CF";
         font-size: 20px;
         font-weight: 400;
     }
 
     .main-menu.open > li.active > a {
-        background-color: #e9601d;
-        color: #fefefe;
+        background-color: #E24349;
+        color: #143559;
     }
 
     .main-menu.open > li.active > a:after {
@@ -1217,8 +1256,8 @@ footer {
     }
 
     .read-more {
-        width: 30px;
-        height: 30px;
+        width: 45px;
+        height: 45px;
     }
 
     .game-single {
@@ -1232,9 +1271,10 @@ footer {
 
     .c-score {
         width: 100%;
-        height: 44px;
+        height: 52px;
         line-height: 36px;
         border-radius: 0 0 0 3px;
+        padding-top: 2px;
     }
 
     .editor-choice {
@@ -1334,17 +1374,12 @@ footer {
         text-indent: -10px;
     }
 
-    .game-single .play-now {
-        border-radius: 0px 0px 5px 0px;
-    }
-
     .h2-title-box {
         padding: 10px 20px;
         font-size: 20px;
     }
 
     .copyright {
-        text-align: left;
         display: block;
         margin-top: 20px;
         font-size: 16px;
@@ -1407,11 +1442,6 @@ footer {
         height: 250px;
     }
 
-    .slider-since {
-        top: 100px;
-        background-size: 100px 100px;
-    }
-
     .slide-back h1 {
         font-size: 26px;
     }
@@ -1452,7 +1482,22 @@ footer {
 
 }
 
+@media (max-width: 768px) {
+    .main-menu-footer > li > a {
+        font-size: 12px;
+    }
+    .slider-since {
+        top: 80px;
+    }
+    .slider-since img {
+        width: 100px;
+    }
+}
+
 @media (max-width:575px) {
+    .main-menu-footer > li > a {
+        font-size: 16px;
+    }
     .main-menu-footer > li:not(:first-child) {
         margin: 0 auto;
     }
@@ -1474,6 +1519,18 @@ footer {
 }
 
 @media (max-width: 475px) {
+    .filter-box li > a {
+        font-size: 12px;
+    }
+    .filter-list li:not(:first-child).active a {
+        font-size: 14px;
+    }
+    .slider-since {
+        top: 30px;
+    }
+    .cm-1 {
+        width: 50px !important;
+    }
     .slider-height {
         height: 150px;
     }
@@ -1483,9 +1540,5 @@ footer {
     }
     .slide-back h1 {
         font-size: 22px;
-    }
-    .certificate-position .slider-since {
-        width: 30px !important;
-        top: 10px !important;
     }
 }
