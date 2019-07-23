@@ -3155,7 +3155,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	padding: .25rem 1.5rem;
 	clear: both;
 	font-weight: 400;
-	color: #de6874;
+	color: #212529;
 	text-align: inherit;
 	white-space: nowrap;
 	background-color: transparent;
@@ -3180,9 +3180,7 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 }
 
 .dropdown-menu.show {
-	display: block;
-	background: #1d164f;
-	color: #de6874;
+	display: block
 }
 
 .dropdown-header {
@@ -7661,7 +7659,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mb-4, .my-4 {
-	padding-bottom: 1.5rem !important
+	margin-bottom: 1.5rem !important
 }
 
 .ml-4, .mx-4 {
@@ -7673,7 +7671,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mt-5, .my-5 {
-	padding-top: 3rem !important
+	margin-top: 3rem !important
 }
 
 .mr-5, .mx-5 {
@@ -7681,7 +7679,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .mb-5, .my-5 {
-	padding-bottom: 3rem !important
+	margin-bottom: 3rem !important
 }
 
 .ml-5, .mx-5 {
@@ -7753,7 +7751,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 }
 
 .pt-3, .py-3 {
-	/*padding-top: 1rem !important*/
+	padding-top: 1rem !important
 }
 
 .pr-3, .px-3 {
@@ -8010,7 +8008,7 @@ a.bg-dark:focus, a.bg-dark:hover, button.bg-dark:focus, button.bg-dark:hover {
 	}
 
 	.p-sm-3 {
-		/*padding: 1rem !important*/
+		padding: 1rem !important
 	}
 
 	.pt-sm-3, .py-sm-3 {

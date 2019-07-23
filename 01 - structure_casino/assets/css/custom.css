@@ -621,7 +621,7 @@
 }
 
 .game-inner-desc {
-    color: #1d164f;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: 400;
@@ -753,17 +753,17 @@
     font-weight: 700;
     line-height: 24px;
     margin-bottom: 10px;
-    color: #151515;
+    color: #E24349;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 700;
 }
 
 .rate-box .p-text {
-    color: #7a7a7a;
+    color: #143559;
     font-family: "Visby Round CF";
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 22px;
 }
 
@@ -879,7 +879,7 @@
     margin-top: 25px;
     box-shadow: 0 0 5px #dedede;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.56);
+    background-color: #143559;
     padding: 40px;
     text-align: center;
 }
@@ -948,6 +948,16 @@ footer {
     padding: 10px;
     margin-bottom: -15px;
 }
+.about-site h3, .contact-site h3, .cookie-site h3, .privacy-site h3, .terms-site h3 {
+    color: #143559;
+    font-family: "Visby Round CF";
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -15px;
+}
 .about-site p, .contact-site p, .cookie-site p, .privacy-site p, .terms-site p {
     font-family: "Visby Round CF";
     font-size: 18px;
@@ -980,6 +990,46 @@ footer {
 }
 .games-hidden {
     display: none !important;
+}
+.slider-since img {
+    width: 100%;
+}
+.single-review-img {
+    text-align: center;
+}
+.single-review-img img {
+    width: 80% !important;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+.logos{
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.logos img {
+    width: 200px;
+}
+.logos :nth-child(2) img {
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, .8);
+}
+.logos > *{
+    margin-top: 10px;
+}
+.plus18 img{
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
+.plus18{
+    background-color: transparent;
+    width: 85px;
+    height: 70px;
+    justify-self: center;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */

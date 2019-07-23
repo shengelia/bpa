@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('[data-toggle="tooltip"]').tooltip();
+
     $(".loader").fadeOut(600);
     $(".init-lang").each(function () {
         $(this).text($(this).attr("data-text").split(",")[0])
