@@ -1,6 +1,5 @@
 @import "font-awesome.css";
 @import "../fonts/fonts.css";
-
 *:not(.fa):not(.lg):not(.lg-icon):not(.jis) {
 }
 .loader {
@@ -99,7 +98,6 @@
     flex-basis: 20%;
     text-align: center;
 }
-
 .main-menu-footer > li > a {
     text-transform: uppercase;
     text-decoration: none !important;
@@ -109,36 +107,28 @@
     font-size: 18px;
     font-weight: 600;
 }
-
 .main-menu-footer > li.active > a {
     color: #E24349;
 }
-
 .scale-in-center {
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
-
 .d0 {
     animation-delay: 0.1s;
 }
-
 .d1 {
     animation-delay: 0.3s;
 }
-
 .d2 {
     animation-delay: 0.5s;
 }
-
 .d3 {
     animation-delay: 0.7s;
 }
-
 .d4 {
     animation-delay: 0.9s;
 }
-
 @-webkit-keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0);
@@ -151,54 +141,42 @@
         transform: scale(1);
         opacity: 1;
     }
-
 }
-
 @keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0);
         transform: scale(0);
         opacity: 1;
     }
-
     100% {
         -webkit-transform: scale(1);
         transform: scale(1);
         opacity: 1;
     }
-
 }
-
 .main-logo {
     max-width: 204px;
 }
-
 .footer-logo {
     position: relative;
 }
-
 .footer-logo > a {
     text-decoration: none !important;
 }
-
 .footer-logo img {
     display: inline-block;
 }
-
 .footer-logo img.r {
     margin-right: 10px;
     transition: all 10s;
 }
-
 .footer-logo:hover > a > .r {
     transform: rotate(1800deg);
 }
-
 .footer-logo:hover {
 
     /*transform: rotate(540deg);*/
 }
-
 .slide-back {
     position: relative;
     background-repeat: no-repeat;
@@ -206,17 +184,14 @@
     background-size: cover;
     top: -5px;
 }
-
 .slide-back .row {
     height: 240px;
 }
-
 .slider-since {
     position: absolute;
     right: 0;
     top: 35px;
 }
-
 .slide-back h1 {
     color: #ffffff;
     font-family: "Visby Round CF";
@@ -224,7 +199,6 @@
     font-weight: 700;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
-
 .date-viewer {
     position: absolute;
     top: 30px;
@@ -1077,7 +1051,7 @@ footer {
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
-/* till 993 */
+/* media1200 */
 @media (max-width:1200px) {
     .main-menu > li {
         margin: 0 3px;
@@ -1090,7 +1064,7 @@ footer {
     }
 }
 
-/* till 576 */
+/* media992 */
 @media (max-width:992px) {
     .c-info-2 {
         width: 50px;
@@ -1129,34 +1103,27 @@ footer {
     .main-menu li:not(.language-bar) {
         display: none;
     }
-
     .main-menu {
         display: inline-block;
     }
-
     .main-header {
         height: 40px;
         line-height: 40px;
     }
-
     .hamburger {
         display: inline-block;
         height: 40px;
         line-height: 40px;
     }
-
     .hamburger img {
         height: 24px;
     }
-
     .footer-logo img {
         width: 115px;
     }
-
     .footer-logo img.r {
         width: 44px;
     }
-
     .main-menu.open {
         position: fixed;
         top: 0;
@@ -1168,22 +1135,18 @@ footer {
         overflow-y: scroll;
         background-color: #143559;
     }
-
     .main-menu > li > a {
         line-height: 40px;
     }
-
     .main-menu.open li {
         display: block;
         text-align: left;
         padding: 0;
         margin: 0;
     }
-
     .main-menu.open li.language-bar {
         display: none;
     }
-
     .main-menu.open > li > a {
         width: 100%;
         padding: 0 30px;
@@ -1192,44 +1155,35 @@ footer {
         font-size: 20px;
         font-weight: 400;
     }
-
     .main-menu.open > li.active > a {
         background-color: #E24349;
         color: #143559;
     }
-
     .main-menu.open > li.active > a:after {
         display: none;
     }
-
     .flag {
         width: 17px;
         height: 12px;
     }
-
     .dropdown-menu.show {
         padding: 0;
     }
-
     .dropdown-item {
         padding: 0 10px;
         line-height: 26px;
         font-size: 14px;
     }
-
     .slide-back h1 {
         font-size: 16px;
     }
-
     .slide-back .row {
         height: 160px;
     }
-
     .date-viewer {
         top: 0;
         height: 30px;
     }
-
     .date-viewer span {
         color: #fff;
         font-family: "Visby Round CF";
@@ -1240,19 +1194,15 @@ footer {
         border: 0;
         margin: 0;
     }
-
     .date-viewer i {
         display: none;
     }
-
     .game-list-head {
         display: none;
     }
-
     .site {
         margin: 0;
     }
-
     .filter-box {
         margin-left: -15px;
         margin-right: -15px;
@@ -1260,7 +1210,6 @@ footer {
         border: 0;
         padding: 5px;
     }
-
     .filter-box li:nth-child(1) {
         display: block;
         position: absolute;
@@ -1268,7 +1217,6 @@ footer {
         left: 0;
         top: 30px;
     }
-
     .filter-box li:nth-child(1) > a {
         height: 30px;
         padding: 0 10px;
@@ -1277,14 +1225,12 @@ footer {
         border-radius: 0;
         width: 100%;
     }
-
     .filter-box li > a {
         background: transparent;
         padding: 0;
         text-align: center;
         font-size: 10px;
     }
-
     .filter-list li:not(.all) > a:after {
         left: calc(50% - 6px);
         top: -12px;
@@ -1294,31 +1240,25 @@ footer {
         background-size: 11px !important;
         background-position: top 2.4px center !important
     }
-
     .info-box {
         padding: 15px;
     }
-
     .info-box p {
         font-size: 12px;
         line-height: 16px;
         margin-bottom: 10px;
     }
-
     .read-more {
         width: 45px;
         height: 45px;
     }
-
     .game-single {
         border: 0;
         padding: 0;
     }
-
     .rating .rating-list > i {
         font-size: 14px;
     }
-
     .c-score {
         width: 100%;
         height: 52px;
@@ -1326,7 +1266,6 @@ footer {
         border-radius: 0 0 0 3px;
         padding-top: 2px;
     }
-
     .editor-choice {
         padding: 0;
         background-size: 20px;
@@ -1336,7 +1275,6 @@ footer {
         height: 20px;
         line-height: 20px;
     }
-
     .main-menu-footer li {
         margin: 0;
         padding: 0;
@@ -1346,12 +1284,10 @@ footer {
         width: 100%;
         float: left;
     }
-
     .c-info {
         font-size: 13px;
         line-height: 16px;
     }
-
     .c-info.line-3 {
         height: 48px;
         overflow: hidden;
@@ -1360,40 +1296,33 @@ footer {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 3;
     }
-
     .h2-title {
         font-size: 20px;
     }
-
     .info-text span {
         font-size: 14px;
         line-height: 20px;
     }
-
     .game-inner-desc {
         font-size: 15px;
         line-height: 20px;
         margin-top: 10px;
     }
-
     .rate-box {
         margin: 20px 0;
         padding: 0;
         box-shadow: none;
     }
-
     .game-review {
         margin: 0;
         width: 100%;
         padding: 10px 10px 25px;
     }
-
     .game-review p {
         font-size: 14px;
         line-height: 20px;
         height: 60px;
     }
-
     .read-more-link {
         font-size: 14px;
     }
@@ -1401,101 +1330,78 @@ footer {
     .c-card .card-header {
         padding: 10px;
     }
-
     .c-card .card-body {
         padding: 10px;
         font-size: 14px;
         line-height: 20px;
     }
-
     .c-card .btn-link {
         font-size: 16px;
     }
-
     .mini-padding {
         padding-left: 15px;
         padding-right: 15px;
     }
-
     .filter-list > li > a span {
         font-size: 12px;
         margin-top: -23px;
         display: block;
         text-indent: -10px;
     }
-
     .h2-title-box {
         padding: 10px 20px;
         font-size: 20px;
     }
-
     .copyright {
         display: block;
         margin-top: 20px;
         font-size: 16px;
     }
-
     .footer-m {
         padding: 20px;
     }
-
     .extra-information {
         padding: 20px;
     }
-
     .n-box {
         margin-left: 0;
         background-image: none !important;
         font-size: 16px;
-    }
-    .container {
+    }    .container {
         max-width: 100%;
     }
-
-    /*.main-menu li:not(.language-bar) {
-        display: none;
-    }*/
     .main-menu.open > li > a {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-
     .main-menu {
         display: inline-block;
     }
-
     .main-header {
         height: 60px;
         line-height: 60px;
     }
-
     .hamburger {
         display: inline-block;
         height: 40px;
         line-height: 40px;
     }
-
     .hamburger img {
         height: 24px;
     }
-
     .flag {
         width: 17px;
         height: 12px;
     }
-
     .dropdown-menu.show {
         padding: 0;
     }
-
     .slide-back .row {
         height: 250px;
     }
-
     .slide-back h1 {
         font-size: 26px;
     }
-
     .filter-box {
         margin: 0 -15px 30px;
         border-radius: 0;
@@ -1518,7 +1424,6 @@ footer {
         border-radius: 0;
         width: 100%;
     }
-
     .filter-box li > a {
         background: transparent;
         padding: 0;
@@ -1529,9 +1434,9 @@ footer {
     .rating .rating-list > i {
         font-size: 12px;
     }
-
 }
 
+/* media768 */
 @media (max-width: 768px) {
     .main-menu-footer > li > a {
         font-size: 12px;
@@ -1544,6 +1449,7 @@ footer {
     }
 }
 
+/* media575 */
 @media (max-width:575px) {
     .main-menu-footer > li > a {
         font-size: 16px;
@@ -1551,23 +1457,21 @@ footer {
     .main-menu-footer > li:not(:first-child) {
         margin: 0 auto;
     }
-
     .main-menu-footer li {
         width: 95%;
         text-align: center;
         margin: 0 auto;
     }
-
     .main-menu-footer {
         display: grid;
     }
-
     .game-single {
         border-radius: 2px;
     }
-
 }
 
+
+/* media475 */
 @media (max-width: 475px) {
     .filter-box li > a {
         font-size: 12px;
