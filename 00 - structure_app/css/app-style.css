@@ -19,6 +19,17 @@ time, mark, audio, video {
 	font-size: 100%;
 	vertical-align: baseline;
 }
+* {
+    -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.5s; /* Firefox < 16 */
+        -ms-animation: fadein 1.5s; /* Internet Explorer */
+         -o-animation: fadein 1.5s; /* Opera < 12.1 */
+            animation: fadein 1.5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
 body {
 	line-height: 1;
 	font-family: 'Visby Round CF';
@@ -41,109 +52,77 @@ table {
 .index-inner {
     text-align: center;
 }
-.index-main-1 {
-    margin: 40px auto 20px;
+.index-main {
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: cover;
 }
-.index-main-1>img {
-    width: 285px;
+.index-main-2 {
+    padding: 30px 0 20px;
 }
 footer {
     text-align: center;
 }
-.index-main-1-text-1 {
-    padding: 20px 0;
-}
-.index-main-1-text-1 span {
-    color: #093637;
+.app-img-2 img {
+    width: 320px;
     margin: 0 auto;
-    font-size: 30px;
+}
+.index-main-2-h1 h1 {
+    font-family: "Visby Round CF Bold";
+    color: #fff;
+    margin: 0 auto;
+    font-size: 36px;
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
-.index-main-1-text-2 {
-    padding: 20px 0;
-}
-.index-main-1-text-2 span {
-    color: #256769;
+.index-main-2-h1 h2 {
+    font-family: "Visby Round CF";
+    color: #fff;
+    margin: 0 auto;
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 800;
     -webkit-font-smoothing: antialiased;
-}
-.index-main-1-button {
-    padding: 20px 0;
-}
-.index-main-1-button form button {
-    padding: 15px 70px;
-    font-size: 22px;
-    background: linear-gradient(to right, #fd0c7a , #f6374c);
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased;
-}
-.index-main-1-cards {
-    display: flex;
-    padding: 20px 0;
-    width: 65%;
-    margin: 0 auto;
-}
-.index-main-1-cards img {
-    width: 180px;
-    margin: 0 auto;
-}
-.index-main-2-h1 span {
-    color: #093637;
-    margin: 0 auto;
-    font-size: 30px;
-    font-weight: bold;
-    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    line-height: 32px;
+    letter-spacing: 0.6px;
+    padding: 15px 0;
 }
 .index-main-2-h1 {
-    padding: 20px 0;
-}
-.index-main-2-p span {
-    color: #256769;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: normal;
-    -webkit-font-smoothing: antialiased;
+    padding: 10px 0;
+    text-align: left;
 }
 .index-main-2-p {
     padding: 10px 0 30px;
 }
 .index-main-2-logo-button {
     display: flex;
-}
-.lb-2 {
-    align-self: center;
+    padding: 0;
 }
 .lb-2 form button {
     padding: 15px 70px;
     font-size: 22px;
-    background: linear-gradient(to right, #fd0c7a , #f6374c);
+    background: linear-gradient(to right, #5F1AC9, #480066);
     border: none;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
-    align-self: center;
+    float: left;
+    text-align: left;
 }
 .index-main-2-h2 {
     padding: 40px 0 30px;
 }
 .index-main-2-h2 span {
-    color: #256769;
+    color: #2C2D36;
     font-size: 26px;
     line-height: 22px;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
 }
 footer {
-    padding: 50px 0;
-    background: #003738;
+    padding: 52px 0;
     color: white;
 }
 .footer-inner ul {
@@ -153,26 +132,26 @@ footer {
     margin: 0 auto;
 }
 .footer-inner ul li a {
-    border: 1px solid white;
     border-radius: 5px;
-    color: white;
+    color: #fff;
     font-weight: bold;
     padding: 7px 20px;
     text-decoration: none;
     letter-spacing: 0.9px;
+    background: rgba(0, 0, 0, 0.3);
 }
 .footer-text {
     padding: 0;
 }
 .footer-text span {
-    letter-spacing: 0.2px;
-    line-height: 22px;
+    letter-spacing: 0.3px;
+    line-height: 20px;
     font-size: 14px;
-    -webkit-font-smoothing: antialiased;
+    font-weight: 100;
+    font-family: "Visby Round CF";
 }
 .cookie, .privacy, .terms, .download {
     background: url(../img/bg.png);
-    padding: 0 0 100px;
 }
 .inner-section {
     text-align: center;
@@ -183,21 +162,42 @@ footer {
     padding: 50px 0;
 }
 .text-container {
-    border: 2px solid #50acae;
     border-radius: 10px;
-    background: #003738;
+    background: rgba(0, 0, 0, 0.3);
     color: white;
-    padding: 30px;
+    padding: 5px 30px 30px;
+    text-align: left;
+}
+.text-container h1 {
+    font-family: "Visby Round CF Bold";
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    font-size: 40px;
+    margin: 30px 0 -15px;
+}
+.text-container h2 {
+    font-family: "Visby Round CF Bold";
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    font-size: 32px;
+    margin: 30px 0 -15px;
 }
 .text-container p {
+    font-family: "Visby Round CF";
     margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
 }
 .text-container ul {
+    font-family: "Visby Round CF";
     padding-left: 35px;
 }
 .text-container ul li {
+    font-family: "Visby Round CF";
     list-style-type: circle;
     text-align: left;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
 }
 .download-h1 {
     width: 60%;
@@ -212,6 +212,8 @@ footer {
 }
 .dl-1 img {
     width: 300px;
+    border: 2px solid white;
+    border-radius: 7px;
 }
 .footer_logos {
     display: flex;
@@ -253,6 +255,36 @@ footer {
 .logos > * {
     margin-top: 20px;
     margin-left: 10px;
+}
+.lb-1, .lb-2 {
+    padding: 0;
+}
+.download-img {
+    padding: 20px 0;
+}
+.download-img h1 {
+    font-size: 34px;
+    font-weight: bold;
+    padding: 30px 0 10px;
+    color: #2C2D36;
+    font-family: "Visby Round CF Bold";
+}
+
+.download-img img {
+    width: 250px;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+.download-h1 h1 {
+    font-family: "Visby Round CF Bold";
+    font-weight: bold;
+    font-size: 42px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
