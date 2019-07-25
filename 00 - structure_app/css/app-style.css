@@ -53,11 +53,10 @@ table {
     text-align: center;
 }
 .index-main {
-    background: url(../img/bg.jpg) no-repeat;
-    background-size: cover;
+    min-height: 100vh;
 }
 .index-main-2 {
-    padding: 30px 0 20px;
+    padding: 40px 0 30px;
 }
 footer {
     text-align: center;
@@ -74,10 +73,13 @@ footer {
     font-weight: bold;
     -webkit-font-smoothing: antialiased;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    position: relative;
+    z-index: 10;
 }
 .index-main-2-h1 h2 {
     font-family: "Visby Round CF";
     color: #fff;
+    color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
     font-size: 24px;
     font-weight: 800;
@@ -86,10 +88,13 @@ footer {
     line-height: 32px;
     letter-spacing: 0.6px;
     padding: 15px 0;
+    position: relative;
+    z-index: 10;
 }
 .index-main-2-h1 {
-    padding: 10px 0;
-    text-align: left;
+    padding: 90px 0 40px;
+    text-align: center;
+    position: relative;
 }
 .index-main-2-p {
     padding: 10px 0 30px;
@@ -98,18 +103,24 @@ footer {
     display: flex;
     padding: 0;
 }
+.lb-2 {
+    margin: 0 auto;
+    padding: 20px 0;
+}
 .lb-2 form button {
-    padding: 15px 70px;
+    padding: 25px 80px;
     font-size: 22px;
-    background: linear-gradient(to right, #5F1AC9, #480066);
     border: none;
     border-radius: 5px;
     color: white;
     font-weight: bold;
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
-    float: left;
-    text-align: left;
+}
+.lb-2 form button span {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Visby Round CF Bold";
 }
 .index-main-2-h2 {
     padding: 40px 0 30px;
@@ -122,7 +133,8 @@ footer {
     -webkit-font-smoothing: antialiased;
 }
 footer {
-    padding: 52px 0;
+    margin: 65px 0 0;
+    padding: 30px 0;
     color: white;
 }
 .footer-inner ul {
@@ -132,20 +144,20 @@ footer {
     margin: 0 auto;
 }
 .footer-inner ul li a {
-    border-radius: 5px;
+    border-radius: 10px;
     color: #fff;
     font-weight: bold;
     padding: 7px 20px;
     text-decoration: none;
     letter-spacing: 0.9px;
-    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid white;
 }
 .footer-text {
     padding: 0;
 }
 .footer-text span {
-    letter-spacing: 0.3px;
-    line-height: 20px;
+    letter-spacing: 0.4px;
+    line-height: 25px;
     font-size: 14px;
     font-weight: 100;
     font-family: "Visby Round CF";
@@ -155,6 +167,7 @@ footer {
 }
 .inner-section {
     text-align: center;
+    padding: 0 0 70px;
 }
 .rf-img {
     width: 300px;
@@ -205,6 +218,15 @@ footer {
     color: white;
     font-weight: bold;
     font-size: 40px;
+    position: relative;
+}
+.slots-bg {
+    position: absolute;
+    top: -20px;
+}
+.slots-bg img {
+    width: 88%;
+    margin: 0 auto;
 }
 .download-links {
     display: flex;
@@ -212,8 +234,6 @@ footer {
 }
 .dl-1 img {
     width: 300px;
-    border: 2px solid white;
-    border-radius: 7px;
 }
 .footer_logos {
     display: flex;
@@ -256,9 +276,6 @@ footer {
     margin-top: 20px;
     margin-left: 10px;
 }
-.lb-1, .lb-2 {
-    padding: 0;
-}
 .download-img {
     padding: 20px 0;
 }
@@ -282,10 +299,54 @@ footer {
     font-weight: bold;
     font-size: 42px;
     color: #fff;
-    background: rgba(0, 0, 0, 0.2);
     padding: 30px;
     border-radius: 10px;
 }
+.glowing-button {
+    background: linear-gradient(314deg, #ff0000, #000000,  #870635, #000000, #ff0000, #000000);
+    background-size: 1200% 1200%;
+
+    -webkit-animation: iridescentButton 10s ease infinite;
+    -moz-animation: iridescentButton 10s ease infinite;
+    -o-animation: iridescentButton 10s ease infinite;
+    animation: iridescentButton 10s ease infinite;    
+}
+
+@-webkit-keyframes iridescentButton {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-moz-keyframes iridescentButton {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@-o-keyframes iridescentButton {
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+@keyframes iridescentButton { 
+    0%{background-position:0% 99%}
+    50%{background-position:100% 2%}
+    100%{background-position:0% 99%}
+}
+.footer-img {
+    width: 100%;
+    position: relative;
+    top: -50px;
+}
+.poker-bg {
+    position: absolute;
+    top: 40px;
+    z-index: 0;
+}
+.poker-bg img {
+    width: 50%;
+    margin: 0 auto;
+}
+
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -414,6 +475,18 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 550px) {
+    .download-h1 h1 {
+        font-size: 24px;
+    }
+    .inner-section {
+        padding: 0;
+    }
+    .index-main-2-h1 {
+        padding: 90px 0 0px;
+    }
+    .app-img-2 img {
+        width: 240px;
+    }
     .rf-img {
         width: 100%;
     }
