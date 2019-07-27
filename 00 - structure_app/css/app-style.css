@@ -33,6 +33,90 @@ time, mark, audio, video {
 body {
 	line-height: 1;
 	font-family: 'Visby Round CF';
+    background: #1B092F;
+    background-image: radial-gradient(#1B092F 10%, #1B092F 20%, #38082E 20%, #38082E 60%, #1B092F 30%, #1B092F 40%, #1B092F 40%, #1B092F 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%), linear-gradient(45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%), linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%), radial-gradient(#1B092F 10%, #1B092F 20%, #38082E 20%, #38082E 30%, #1B092F 30%, #1B092F 40%, #4F1922 40%, #4F1922 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%), radial-gradient(#331200 10%, #331200 20%, #38082E 20%, #38082E 30%, #1B092F 30%, #1B092F 40%, #4F1922 40%, #4F1922 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%);
+    background-blend-mode: lighten, normal, normal, overlay, lighten;
+    background-size: 6em 6em, 12em 12em, 12em 12em, 12em 12em, 0em 0em;
+    -webkit-animation: color 15s infinite;
+    animation: color 15s infinite;
+    background-position: 50% 50%;
+}
+@-webkit-keyframes color {
+  10% {
+    background-color: #4F1922;
+  }
+
+  20% {
+    background-color: #897C6C;
+  }
+
+  30% {
+    background-color: #200B00;
+  }
+
+  40% {
+    background-color: #897C6C;
+  }
+
+  50% {
+    background-color:  #897C6C;
+  }
+
+  60% {
+    background-color: #897C6C;
+  }
+
+  70% {
+    background-color: #897C6C;
+  }
+
+  80% {
+    background-color:  #1B092F;
+  }
+
+  90% {
+    background-color: #897C6C;
+  }
+
+}
+
+@keyframes color {
+  10% {
+    background-color: #4F1922;
+  }
+
+  20% {
+    background-color: #897C6C;
+  }
+
+  30% {
+    background-color: #200B00;
+  }
+
+  40% {
+    background-color: #897C6C;
+  }
+
+  50% {
+    background-color: #897C6C;
+  }
+
+  60% {
+    background-color: #897C6C;
+  }
+
+  70% {
+    background-color: #897C6C;
+  }
+
+  80% {
+    background-color:  #1B092F;
+  }
+
+  90% {
+    background-color: #897C6C;
+  }
+
 }
 ol, ul {
 	list-style: none;
@@ -64,6 +148,114 @@ footer {
 .app-img-2 img {
     width: 320px;
     margin: 0 auto;
+    -webkit-animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .6s;
+}
+@-webkit-keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    82% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+}
+
+@keyframes bounce-top {
+    0% {
+        -webkit-transform: translateY(-45px);
+        transform: translateY(-45px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    40% {
+        -webkit-transform: translateY(-24px);
+        transform: translateY(-24px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        -webkit-transform: translateY(-12px);
+        transform: translateY(-12px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    82% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    93% {
+        -webkit-transform: translateY(-4px);
+        transform: translateY(-4px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
 }
 .index-main-2-h1 h1 {
     font-family: "Visby Round CF Bold";
@@ -79,7 +271,6 @@ footer {
 .index-main-2-h1 h2 {
     font-family: "Visby Round CF";
     color: #fff;
-    color: rgba(255, 255, 255, 0.7);
     margin: 0 auto;
     font-size: 24px;
     font-weight: 800;
@@ -92,7 +283,7 @@ footer {
     z-index: 10;
 }
 .index-main-2-h1 {
-    padding: 90px 0 40px;
+    padding: 30px 0 40px;
     text-align: center;
     position: relative;
 }
@@ -133,7 +324,7 @@ footer {
     -webkit-font-smoothing: antialiased;
 }
 footer {
-    margin: 65px 0 0;
+    margin: 0;
     padding: 30px 0;
     color: white;
 }
@@ -150,14 +341,14 @@ footer {
     padding: 7px 20px;
     text-decoration: none;
     letter-spacing: 0.9px;
-    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.3);
 }
 .footer-text {
     padding: 0;
 }
 .footer-text span {
     letter-spacing: 0.4px;
-    line-height: 25px;
+    line-height: 20px;
     font-size: 14px;
     font-weight: 100;
     font-family: "Visby Round CF";
@@ -301,36 +492,38 @@ footer {
     color: #fff;
     padding: 30px;
     border-radius: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
 .glowing-button {
-    background: linear-gradient(314deg, #ff0000, #000000,  #870635, #000000, #ff0000, #000000);
-    background-size: 1200% 1200%;
-
-    -webkit-animation: iridescentButton 10s ease infinite;
-    -moz-animation: iridescentButton 10s ease infinite;
-    -o-animation: iridescentButton 10s ease infinite;
-    animation: iridescentButton 10s ease infinite;    
+    background: linear-gradient(247deg, #411D6B, #411D6B, #9A3142, #411D6B, #411D6B);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    -o-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 14s ease infinite;
+    -webkit-animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .2s;
 }
-
-@-webkit-keyframes iridescentButton {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
 }
-@-moz-keyframes iridescentButton {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
 }
-@-o-keyframes iridescentButton {
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
 }
-@keyframes iridescentButton { 
-    0%{background-position:0% 99%}
-    50%{background-position:100% 2%}
-    100%{background-position:0% 99%}
+@keyframes AnimationName { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
 }
 .footer-img {
     width: 100%;
@@ -346,7 +539,9 @@ footer {
     width: 50%;
     margin: 0 auto;
 }
-
+.app-img-2 {
+    padding: 0 0 40px;
+}
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
