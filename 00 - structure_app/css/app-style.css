@@ -53,92 +53,9 @@ table {
 }
 
 body {
-	line-height: 1;
+    line-height: 1;
 	font-family: 'Visby Round CF';
     background: #1B092F;
-    background-image: radial-gradient(#1B092F 10%, #1B092F 20%, #38082E 20%, #38082E 60%, #1B092F 30%, #1B092F 40%, #1B092F 40%, #1B092F 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%), linear-gradient(45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%), linear-gradient(-45deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%), radial-gradient(#1B092F 10%, #1B092F 20%, #38082E 20%, #38082E 30%, #1B092F 30%, #1B092F 40%, #4F1922 40%, #4F1922 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%), radial-gradient(#331200 10%, #331200 20%, #38082E 20%, #38082E 30%, #1B092F 30%, #1B092F 40%, #4F1922 40%, #4F1922 50%, #1B092F 50%, #1B092F 60%, #1B092F 60%, #1B092F 70%,  #1B092F 70%,  #1B092F 80%, #03291E 80%, #03291E 90%, #400000 90%);
-    background-blend-mode: lighten, normal, normal, overlay, lighten;
-    background-size: 6em 6em, 12em 12em, 12em 12em, 12em 12em, 0em 0em;
-    -webkit-animation: color 15s infinite;
-    animation: color 15s infinite;
-    background-position: 50% 50%;
-}
-
-@keyframes color {
-    10% {
-        background-color: #4F1922;
-    }
-
-    20% {
-        background-color: #897C6C;
-    }
-
-    30% {
-        background-color: #200B00;
-    }
-
-    40% {
-        background-color: #897C6C;
-    }
-
-    50% {
-        background-color: #897C6C;
-    }
-
-    60% {
-        background-color: #897C6C;
-    }
-
-    70% {
-        background-color: #897C6C;
-    }
-
-    80% {
-        background-color:  #1B092F;
-    }
-
-    90% {
-        background-color: #897C6C;
-    }
-}
-
-
-@-webkit-keyframes color {
-    10% {
-        background-color: #4F1922;
-    }
-
-    20% {
-        background-color: #897C6C;
-    }
-
-    30% {
-        background-color: #200B00;
-    }
-
-    40% {
-        background-color: #897C6C;
-    }
-
-    50% {
-        background-color:  #897C6C;
-    }
-
-    60% {
-        background-color: #897C6C;
-    }
-
-    70% {
-        background-color: #897C6C;
-    }
-
-    80% {
-        background-color:  #1B092F;
-    }
-
-    90% {
-        background-color: #897C6C;
-    }
 }
 
 .index-inner {
@@ -149,15 +66,15 @@ body {
     padding: 40px 0 0px;
 }
 
-footer {
-    text-align: center;
-}
-
 .app-img-2 img {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
+    box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
     width: 320px;
     margin: 0 auto;
-    -webkit-animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: .6s;
 }
 
@@ -299,6 +216,7 @@ footer {
     text-align: center;
     position: relative;
 }
+
 .index-main-2-p {
     padding: 10px 0 30px;
 }
@@ -306,28 +224,24 @@ footer {
     display: flex;
     padding: 0;
 }
+
 .lb-2 {
     margin: 0 auto;
     padding: 20px 0;
 }
-.lb-2 form button {
-    padding: 25px 80px;
-    font-size: 22px;
-    border: none;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased;
-}
+
+
 .lb-2 form button span {
     font-size: 26px;
     font-weight: bold;
     font-family: "Visby Round CF Bold";
 }
+
+
 .index-main-2-h2 {
     padding: 40px 0 30px;
 }
+
 .index-main-2-h2 span {
     color: #2C2D36;
     font-size: 26px;
@@ -335,17 +249,21 @@ footer {
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
 }
+
 footer {
     margin: 0;
     padding: 30px 0;
     color: white;
 }
+
 .footer-inner ul {
     display: flex;
 }
+
 .footer-inner ul li {
     margin: 0 auto;
 }
+
 .footer-inner ul li a {
     border-radius: 10px;
     color: #fff;
@@ -355,9 +273,11 @@ footer {
     letter-spacing: 0.9px;
     background: rgba(0, 0, 0, 0.3);
 }
+
 .footer-text {
     padding: 0;
 }
+
 .footer-text span {
     letter-spacing: 0.4px;
     line-height: 20px;
@@ -365,13 +285,16 @@ footer {
     font-weight: 100;
     font-family: "Visby Round CF";
 }
+
 .cookie, .privacy, .terms, .download {
     background: url(../img/bg.png);
 }
+
 .inner-section {
     text-align: center;
     padding: 0 0 70px;
 }
+
 .rf-img {
     width: 300px;
     margin: 0 auto;
@@ -507,6 +430,15 @@ footer {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
 }
 .glowing-button {
+    padding: 25px 80px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all .5s ease-in-out;
     background: linear-gradient(247deg, #411D6B, #411D6B, #9A3142, #411D6B, #411D6B);
     background-size: 1000% 1000%;
     -webkit-animation: AnimationName 14s ease infinite;
@@ -612,6 +544,45 @@ footer {
     font-family: "Visby Round CF";
     color: white;
     text-align: justify;
+}
+.index-main {
+    animation: colors 20s infinite;
+    background-image: url(../img/texture.png);
+}
+@keyframes colors {
+  0% {
+    background-color: #580000;
+  }
+  10% {
+    background-color: #58003E;
+  }
+  20% {
+    background-color: #2B0058;
+  }
+  30% {
+    background-color: #001358;
+  }
+  40% {
+    background-color: #004358;
+  }
+  50% {
+    background-color: #005558;
+  }
+  60% {
+    background-color: #004358;
+  }
+  70% {
+    background-color: #001358;
+  }
+  80% {
+    background-color: #2B0058;
+  }
+  90% {
+    background-color: #58003E;
+  }
+  100% {
+    background-color: #580000;
+  }
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -806,6 +777,3 @@ footer {
 /* ------------------------------------------------ 320 ------------------------------------------------- */
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
-@media (max-width: 320px) {
-    
-}
