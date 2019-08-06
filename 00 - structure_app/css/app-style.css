@@ -55,26 +55,35 @@ table {
 body {
     line-height: 1;
 	font-family: 'Visby Round CF';
-    background: #1B092F;
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FFB624 0%, #B29443 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                    radial-gradient(ellipse farthest-corner at left top, #F6F69F 0%, #FFFFAC 8%, #D1AE4F 25%, #54431C 62.5%, #54431C 100%);
+}
+.index-main, .cookie, .download, .privacy, .terms {
+    background-image: url(../img/texture-11.png);
+}
+.cookie, .privacy, .terms {
+    padding-top: 50px;
+}
+.download {
+    padding-top: 0px;
 }
 
+.download .rf-img {
+    margin: 0 auto;
+}
 .index-inner {
     text-align: center;
 }
 
 .index-main-2 {
-    padding: 40px 0 0px;
+    padding: 20px 0 0px;
 }
 
 .app-img-2 img {
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
-    -moz-box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
-    box-shadow: 0px 0px 68px 40px rgba(0,0,0,1);
     width: 320px;
     margin: 0 auto;
-    -webkit-animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    -webkit-animation: bounce-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounce-top 1.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: .6s;
 }
 
@@ -186,29 +195,29 @@ body {
 
 .index-main-2-h1 h1 {
     font-family: "Visby Round CF Bold";
-    color: #fff;
     margin: 0 auto;
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
-    -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
     position: relative;
     z-index: 10;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .index-main-2-h1 h2 {
     font-family: "Visby Round CF";
     color: #fff;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 800;
     -webkit-font-smoothing: antialiased;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
     line-height: 32px;
     letter-spacing: 0.6px;
     padding: 15px 0;
     position: relative;
     z-index: 10;
+    text-shadow: 3px 3px 5px #000000;
 }
 
 .index-main-2-h1 {
@@ -254,6 +263,7 @@ footer {
     margin: 0;
     padding: 30px 0;
     color: white;
+    background: rgba(0, 0, 0, 0.6);
 }
 
 .footer-inner ul {
@@ -271,23 +281,27 @@ footer {
     padding: 7px 20px;
     text-decoration: none;
     letter-spacing: 0.9px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
+    border: 2px solid #BBA958;
 }
 
 .footer-text {
     padding: 0;
+    text-align: center;
 }
 
 .footer-text span {
-    letter-spacing: 0.4px;
-    line-height: 20px;
-    font-size: 14px;
-    font-weight: 100;
+    letter-spacing: 0.9px;
+    line-height: 24px;
+    font-size: 16px;
     font-family: "Visby Round CF";
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
 
 .cookie, .privacy, .terms, .download {
-    background: url(../img/bg.png);
+    background: url(../img/texture-11.png);
 }
 
 .inner-section {
@@ -297,15 +311,18 @@ footer {
 
 .rf-img {
     width: 300px;
-    margin: 0 auto;
-    padding: 50px 0;
+    margin: 0px auto 30px;
+    -webkit-animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bounce-top 1.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .6s;
 }
 .text-container {
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 5px 30px 30px;
     text-align: left;
+    border: 5px outset #BCAB60;
 }
 .text-container h1 {
     font-family: "Visby Round CF Bold";
@@ -325,6 +342,15 @@ footer {
     font-size: 20px;
     letter-spacing: 0.3px;
     line-height: 24px;
+}
+.text-container p a, .text-container ul li a {
+    font-family: "Visby Round CF Bold";
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
 }
 .text-container ul {
     font-family: "Visby Round CF";
@@ -356,7 +382,7 @@ footer {
 }
 .download-links {
     display: flex;
-    margin: 50px auto 0;
+    margin: 20px auto;
 }
 .dl-1 img {
     width: 300px;
@@ -423,11 +449,13 @@ footer {
 .download-h1 h1 {
     font-family: "Visby Round CF Bold";
     font-weight: bold;
-    font-size: 42px;
+    font-size: 46px;
     color: #fff;
-    padding: 30px;
+    padding: 5px;
     border-radius: 10px;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+}
+.glowing-button:active, .glowing-button:focus {
+    outline: none;
 }
 .glowing-button {
     padding: 25px 80px;
@@ -439,15 +467,14 @@ footer {
     letter-spacing: 1px;
     outline: none;
     transition: all .5s ease-in-out;
-    background: linear-gradient(247deg, #411D6B, #411D6B, #9A3142, #411D6B, #411D6B);
+    background: linear-gradient(247deg, black, black, #E1C782, #6A5600, #E1C782, #6A5600, black);
     background-size: 1000% 1000%;
-    -webkit-animation: AnimationName 14s ease infinite;
-    -moz-animation: AnimationName 14s ease infinite;
-    -o-animation: AnimationName 14s ease infinite;
-    animation: AnimationName 14s ease infinite;
-    -webkit-animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: bounce-top 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: .2s;
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8); 
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
+    animation: AnimationName 10s infinite;
+}
+.glowing-button:hover {
+    transform: scale(1.2);
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 92%}
@@ -484,11 +511,11 @@ footer {
     margin: 0 auto;
 }
 .app-img-2 {
-    padding: 0 0 40px;
+    padding: 0 0 20px;
 }
 .partners-logo {
     padding: 10px 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.99);
 }
 .pl-logos {
     display: flex;
@@ -498,8 +525,8 @@ footer {
     align-self: center;
 }
 .steps {
-    padding: 20px 0;
-    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.8);
 }
 .steps-inner {
     display: flex;
@@ -512,77 +539,104 @@ footer {
 }
 .steps-img span {
     font-family: "Visby Round CF Bold";
-    color: black;
-    font-size: 36px;
+    color: white;
+    font-size: 40px;
     font-weight: bold;
-    position: absolute;
-    top: 20%;
-    left: 47.5%;
+    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
 }
+
+@keyframes ignite {
+    0% {
+        text-shadow: none;
+    }
+    50% {
+        text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #DD006E 0px 0px 20px, #DD006E 0px 0px 30px, #DD006E 0px 0px 40px, #DD006E 0px 0px 50px, #DD006E 0px 0px 75px;
+    }
+    100% {
+        text-shadow: none;
+    }
+}
+
 .steps-img h1 {
     font-family: "Visby Round CF Bold";
     color: white;
-    font-size: 20px;
+    font-size: 26px;
     text-transform: uppercase;
+    padding: 10px 0;
+    color: #FFFFFF;
+    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
 }
 .info-4 {
     padding: 40px 0;
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5);
 }
 .info-block {
     text-align: center;
     padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    border-radius: 5px;
 }
 .info-block h1 {
     font-family: "Visby Round CF Bold";
-    color: #B61E4E;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.9);
+    color: white;
     font-size: 34px;
     font-weight: bold;
+    padding-bottom: 20px;
+    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
 }
 .info-block h2 {
     font-family: "Visby Round CF";
     color: white;
+    font-weight: bold;
     text-align: justify;
+    font-size: 20px;
 }
-.index-main {
-    animation: colors 20s infinite;
-    background-image: url(../img/texture.png);
+#download-form {
+    font-family: "Visby Round CF";
+    width: 90%;
+    margin: 10px auto;
+    color: white;
+    text-align: center;
+    align-self: center;
+    padding: 40px 0;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
-@keyframes colors {
-  0% {
-    background-color: #580000;
-  }
-  10% {
-    background-color: #58003E;
-  }
-  20% {
-    background-color: #2B0058;
-  }
-  30% {
-    background-color: #001358;
-  }
-  40% {
-    background-color: #004358;
-  }
-  50% {
-    background-color: #005558;
-  }
-  60% {
-    background-color: #004358;
-  }
-  70% {
-    background-color: #001358;
-  }
-  80% {
-    background-color: #2B0058;
-  }
-  90% {
-    background-color: #58003E;
-  }
-  100% {
-    background-color: #580000;
-  }
+.custom-control {
+    margin: 10px auto;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+}
+.downloadBtn {
+    display: block;
+    margin: 20px auto;
+    padding: 25px 80px;
+    font-size: 22px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 1px;
+    outline: none;
+    transition: all .5s ease-in-out;
+    background: linear-gradient(247deg, black, black, #B8B8B8, black, #B8B8B8, black, black);
+    background-size: 1000% 1000%;
+    -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
+    box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
+    animation: AnimationName 10s infinite;
+}
+#download-form label {
+    font-size: 22px;
+}
+#download-form label a {
+    color: white;
+    text-decoration: underline;
+    font-weight:bold;
+}
+.partners-logo-mob {
+    background: rgba(0, 0, 0, 0.6);
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -631,8 +685,10 @@ footer {
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
-@media (min-width: 768px) {
-
+@media (min-width: 992px) {
+    .partners-logo-mob {
+        display: none; 
+    }
 }
 
 
@@ -657,6 +713,9 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
+    .partners-logo {
+        display: none;
+    }
     .steps-img span {
         left: 46%;
     }
@@ -675,6 +734,7 @@ footer {
     }
     .footer-inner ul {
         display: block;
+        text-align: center;
     }
     .index-main-2-logo-button {
         display: block;
@@ -703,6 +763,7 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 768px) {
+   
     .steps-inner {
         display: block;
     }
@@ -731,6 +792,10 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 550px) {
+    .downloadBtn {
+        padding: 10px 30px;
+        font-size: 28px;
+    }
     .download-h1 h1 {
         font-size: 24px;
     }
