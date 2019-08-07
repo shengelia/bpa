@@ -55,11 +55,14 @@ table {
 body {
     line-height: 1;
 	font-family: 'Visby Round CF';
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FFB624 0%, #B29443 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-                    radial-gradient(ellipse farthest-corner at left top, #F6F69F 0%, #FFFFAC 8%, #D1AE4F 25%, #54431C 62.5%, #54431C 100%);
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/tm-catalyst-bg.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-attachment: fixed;
 }
 .index-main, .cookie, .download, .privacy, .terms {
-    background-image: url(../img/texture-11.png);
 }
 .cookie, .privacy, .terms {
     padding-top: 50px;
@@ -73,12 +76,10 @@ body {
 }
 .index-inner {
     text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
 }
-
-.index-main-2 {
-    padding: 20px 0 0px;
-}
-
 .app-img-2 img {
     width: 320px;
     margin: 0 auto;
@@ -221,7 +222,7 @@ body {
 }
 
 .index-main-2-h1 {
-    padding: 30px 0 40px;
+    padding: 0 0 40px;
     text-align: center;
     position: relative;
 }
@@ -260,12 +261,13 @@ body {
 }
 
 footer {
-    margin: 0;
-    padding: 30px 0;
+    margin: 0 0 30px;
     color: white;
-    background: rgba(0, 0, 0, 0.6);
 }
-
+.footer-inner {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 40px 0 30px;
+}
 .footer-inner ul {
     display: flex;
 }
@@ -282,12 +284,16 @@ footer {
     text-decoration: none;
     letter-spacing: 0.9px;
     background: rgba(0, 0, 0, 0.4);
-    border: 2px solid #BBA958;
+    border: 2px solid white;
 }
-
+.logos-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+}
 .footer-text {
-    padding: 0;
+    padding: 20px 0;
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
 }
 
 .footer-text span {
@@ -300,8 +306,11 @@ footer {
     text-align: center;
 }
 
-.cookie, .privacy, .terms, .download {
-    background: url(../img/texture-11.png);
+/*.cookie, .privacy, .terms, .download {
+}*/
+
+.cookie .footer-inner, .privacy .footer-inner, .terms .footer-inner, .download .footer-inner {
+    border-radius: 10px 10px 0 0;
 }
 
 .inner-section {
@@ -322,7 +331,7 @@ footer {
     color: white;
     padding: 5px 30px 30px;
     text-align: left;
-    border: 5px outset #BCAB60;
+    border: 5px outset #C1CAFC;
 }
 .text-container h1 {
     font-family: "Visby Round CF Bold";
@@ -467,11 +476,9 @@ footer {
     letter-spacing: 1px;
     outline: none;
     transition: all .5s ease-in-out;
-    background: linear-gradient(247deg, black, black, #E1C782, #6A5600, #E1C782, #6A5600, black);
-    background-size: 1000% 1000%;
+    background:#CE3551;
     -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8); 
     box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
-    animation: AnimationName 10s infinite;
 }
 .glowing-button:hover {
     transform: scale(1.2);
@@ -513,23 +520,20 @@ footer {
 .app-img-2 {
     padding: 0 0 20px;
 }
-.partners-logo {
-    padding: 10px 0;
-    background: rgba(0, 0, 0, 0.99);
-}
 .pl-logos {
     display: flex;
+    background: rgba(0, 0, 0, 0.99);
+    padding: 10px 0;
+    text-align: center;
 }
 .pl-logos div {
     flex-basis: 20%;
     align-self: center;
 }
-.steps {
-    padding: 40px 0;
-    background: rgba(0, 0, 0, 0.8);
-}
 .steps-inner {
-    display: flex;
+    padding: 40px 0;
+    display: flex;    
+    background: rgba(0, 0, 0, 0.6);
 }
 .steps-img {
     position: relative;
@@ -542,19 +546,6 @@ footer {
     color: white;
     font-size: 40px;
     font-weight: bold;
-    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
-}
-
-@keyframes ignite {
-    0% {
-        text-shadow: none;
-    }
-    50% {
-        text-shadow: #FFF 0px 0px 2px, #FFF 0px 0px 5px, #FFF 0px 0px 10px, #DD006E 0px 0px 20px, #DD006E 0px 0px 30px, #DD006E 0px 0px 40px, #DD006E 0px 0px 50px, #DD006E 0px 0px 75px;
-    }
-    100% {
-        text-shadow: none;
-    }
 }
 
 .steps-img h1 {
@@ -564,26 +555,22 @@ footer {
     text-transform: uppercase;
     padding: 10px 0;
     color: #FFFFFF;
-    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
-}
-.info-4 {
-    padding: 40px 0;
-    background: rgba(0, 0, 0, 0.5);
 }
 .info-block {
     text-align: center;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.1);
     margin: 10px;
     border-radius: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
 }
 .info-block h1 {
     font-family: "Visby Round CF Bold";
-    color: white;
+    color: #E1E7FD;
     font-size: 34px;
     font-weight: bold;
     padding-bottom: 20px;
-    text-shadow: 0 0px 4px #FFF, 0 0px 10px #E5AC00, 0 0px 20px #ff8000, 0 5px 40px #F00;
 }
 .info-block h2 {
     font-family: "Visby Round CF";
@@ -592,16 +579,20 @@ footer {
     text-align: justify;
     font-size: 20px;
 }
+.info-4-inner .row {
+    margin-right: 15px;
+    margin-left: 15px;
+    text-align: center;
+}
+.info-4-inner {
+    background: rgba(0, 0, 0, 0.6);
+}
 #download-form {
     font-family: "Visby Round CF";
-    width: 90%;
-    margin: 10px auto;
     color: white;
     text-align: center;
     align-self: center;
     padding: 40px 0;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
 }
 .custom-control {
     margin: 10px auto;
@@ -621,11 +612,9 @@ footer {
     letter-spacing: 1px;
     outline: none;
     transition: all .5s ease-in-out;
-    background: linear-gradient(247deg, black, black, #B8B8B8, black, #B8B8B8, black, black);
-    background-size: 1000% 1000%;
+    background: #CE3551;
     -webkit-box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
     box-shadow: 5px 5px 20px 5px rgba(0,0,0,0.8);
-    animation: AnimationName 10s infinite;
 }
 #download-form label {
     font-size: 22px;
@@ -637,6 +626,14 @@ footer {
 }
 .partners-logo-mob {
     background: rgba(0, 0, 0, 0.6);
+}
+.download .inner-section {
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+    border-radius: 10px 10px 0 0;
+}
+.download .footer-inner {
+    border-radius: 0;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -713,9 +710,6 @@ footer {
 /* ------------------------------------------------------------------------------------------------------ */
 /* ------------------------------------------------------------------------------------------------------ */
 @media (max-width: 991px) {
-    .partners-logo {
-        display: none;
-    }
     .steps-img span {
         left: 46%;
     }
