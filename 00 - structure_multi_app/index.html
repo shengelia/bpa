@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--#include file="components/head.html"-->
+<body>
+<div id="casinoApp">
+    <!--#include file="components/header.html"-->
+    <div class="container-fluid home-background">
+        <div class="container">
+            <div class="row home-height align-items-center">
+
+                <div class="col-12 text-center">
+                    <a href="./games.html" class="button__action">Claim Bonus</a>
+                    <h3 class="page__ex_title">EXCLUSIVE TIME LIMITED OFFER</h3>
+                </div>
+
+                <div class="col-12 offset-md-2 col-md-8 mb-2">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header-box h-100">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Offers Exclusive VIP Program</li>
+                                            <li>Huge Selection Of Slots Games</li>
+                                            <li>Exclusive Welcome Bonus Packages</li>
+                                            <li>Huge Suite of Games Available For Mobile Play</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <ul>
+                                            <li>Bonus is Credited Instantly</li>
+                                            <li>Play Slots, Blackjack, Roulette</li>
+                                            <li>+500 Games, Including More Than 400 Slots</li>
+                                            <li>A Wide Variety of Table Games</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-6 offset-3">
+                                        <a href="./games.html" class="d-none d-md-block button__action__2">Get Bonus</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 text-center">
+                    <h1 class="page__title">TOP CASINO BONUS</h1>
+                    <h2 class="page__subtitle">UP TO 5.000 BONUS & FREE SPINS</h2>
+                </div>
+
+                <div class="col-12 partner__bottom">
+                    <div class="partner__list">
+                        <div class="partner__list_single">
+                            <img src="./assets/img/partner-2.png">
+                        </div>
+                        <div class="partner__list_single">
+                            <img src="./assets/img/partner-3.png">
+                        </div>
+                        <div class="partner__list_single">
+                            <img src="./assets/img/partner-4.png">
+                        </div>
+                        <div class="partner__list_single">
+                            <img src="./assets/img/partner-5.png">
+                        </div>
+                        <div class="partner__list_single">
+                            <img src="./assets/img/partner-6.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <a href="./games.html" class="d-block d-md-none button__action__2">Get Bonus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/cards.png">
+                    <p class="nb-text">Free Games</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/bonus.png">
+                    <p class="nb-text">Welcome bonus</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/jackpot.png">
+                    <p class="nb-text">Jackpot</p>
+                </div>
+            </div>
+
+
+            <div class="row mt-2 mt-md-5" v-if="games.top.length">
+                <div class="col-12 text-center">
+                    <h3 class="page__subtitle content-color">BEST ONLINE CASINO GAMES</h3>
+                </div>
+            </div>
+
+            <div class="row mt-2 mt-md-5" v-if="games.top.length">
+                <div class="col-6 col-md-4 col-lg-2 px-0 px-md-3" v-for="g in games.top">
+                    <div class="game-block">
+                        <div class="game-img">
+                            <a href="javascript:void(0);" @click="playNow(g.url)">
+                                <img :src="`assets/img/game/${g.id}.jpg`">
+                            </a>
+                        </div>
+                        <div class="game-info">
+                            <p>{{g.name}}</p>
+                            <a href="javascript:void(0);" class="play-now" @click="playNow(g.url)">Play now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-2 mt-md-4">
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <p class="info-box__title">CASINO BONUS</p>
+                        <p class="info-box__desc">
+                            Join now and new players will receive a huge welcome bonus. Don’t miss out on the opportunity to sign up and play at the best online casino for free!
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <p class="info-box__title">BEST SLOTS</p>
+                        <p class="info-box__desc">
+                            Play the best casino games at King Free Casino. Submerse yourself in classic slots games such as Book of Ra, Sizzling Hot, Age Of The Gods and many many more.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <p class="info-box__title">ONLINE CASINO GAMES</p>
+                        <p class="info-box__desc">
+                            We know avid players are always looking for the newest games to try - you’ll find hundreds of new games and all your old favourites right here!
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <p class="info-box__title">FREE SPINS</p>
+                        <p class="info-box__desc">
+                            Play 100s of the best online slots for free by claiming your free spins bonus when you join. You’ll find the biggest & best selection in Canada at King Free Casino
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-2 mt-md-5">
+                <div class="col-12 text-center">
+                    <a href="./games.html" class="button__action">Claim Bonus</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--#include file="components/modal.html"-->
+    <!--#include file="components/footer.html"-->
+</div>
+</body>
+</html>

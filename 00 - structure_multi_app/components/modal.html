@@ -1,0 +1,92 @@
+<div v-if="!isLogged" class="modal" :class="{'is-modal-active': modal.signIn}">
+    <div class="modal__dialog">
+        <header class="modal__header">
+            <h3 class="modal__title">WELCOME BACK TO YALAMA CASINO</h3>
+        </header>
+        <div class="modal__content">
+            <div class="error-block" v-if="error">{{error}}</div>
+            <input class="custom-control" v-model="input.signIn.email" type="text" placeholder="Your Email address">
+            <input class="custom-control" v-model="input.signIn.password" type="password" placeholder="Your password">
+        </div>
+        <footer class="modal__footer nav-right text-center">
+            <button class="nav-sign-in" @click="modal.signIn = false">Cancel</button>
+            <button class="nav-sign-up" @click="signInAction">Sign in</button>
+        </footer>
+        <div class="text-center">
+            <a href="javascript:void(0);" @click="forget" class="forget-password-link">Forget password?</a>
+        </div>
+    </div>
+</div>
+
+
+<div v-if="!isLogged" class="modal" :class="{'is-modal-active': modal.forget}">
+    <div class="modal__dialog">
+        <header class="modal__header">
+            <h3 class="modal__title">FORGET PASSWORD</h3>
+        </header>
+        <div class="modal__content">
+            <div class="error-block" v-if="error" v-html="error"></div>
+            <input class="custom-control" v-model="input.forget.email" type="text" placeholder="Your Email address">
+        </div>
+        <footer class="modal__footer nav-right text-center">
+            <button class="nav-sign-in" @click="modal.forget = false">Cancel</button>
+            <button class="nav-sign-up" @click="forgetAction">Submit</button>
+        </footer>
+    </div>
+</div>
+
+
+<div v-if="!isLogged" class="modal" :class="{'is-modal-active': modal.signUp}">
+    <div class="modal__dialog">
+        <header class="modal__header">
+            <h3 class="modal__title">JOIN YALAMA CASINO</h3>
+        </header>
+        <div class="modal__content">
+
+            <div class="error-block" v-if="error">{{error}}</div>
+
+            <input class="custom-control" v-model="input.signUp.email" type="email" placeholder="Your Email address">
+            <input class="custom-control" v-model="input.signUp.fullname" type="text" placeholder="Full name">
+            <input class="custom-control" v-model="input.signUp.password" type="password" placeholder="Your password">
+
+
+            <label class="terms"><input type="checkbox" :checked="input.signUp.terms" v-model="input.signUp.terms"> I CONFIRM I AM OVER 18 YEARS OR AGE AND THAT I HAVE READ AND AGREE <a href="./terms.html" target="_blank">TERMS AND CONDITIONS</a> </label>
+
+        </div>
+        <footer class="modal__footer nav-right text-center">
+            <button class="nav-sign-in" @click="modal.signUp = false">Cancel</button>
+            <button class="nav-sign-up" @click="joinAction">Sign up</button>
+        </footer>
+    </div>
+</div>
+
+
+<div v-if="!isLogged" class="modal" :class="{'is-modal-active': modal.pleaseLoginOrSignUp}">
+    <div class="modal__dialog">
+        <header class="modal__header">
+            <h3 class="modal__title">PLEASE LOGIN OR REGISTER TO PLAY OUR GAMES.</h3>
+        </header>
+        <footer class="modal__footer nav-right text-center">
+            <button class="nav-sign-in" @click="modal.pleaseLoginOrSignUp = false">Cancel</button>
+            <button class="nav-sign-in" @click="join">Join now</button>
+            <button class="nav-sign-up" @click="sign">Log in</button>
+        </footer>
+    </div>
+</div>
+
+
+<div v-if="isLogged" class="modal" :class="{'is-modal-active': modal.game}">
+    <div class="modal__dialog game-content">
+        <div class="modal__content">
+            <iframe class="game-frame" :src="activeGame"></iframe>
+        </div>
+        <footer class="modal__footer nav-right text-center">
+            <button class="nav-sign-in" @click="modal.game = false">Quit game</button>
+        </footer>
+    </div>
+</div>
+
+
+<div class="d-none" :class="{'loading': loading}">
+    <img src="assets/img/animation.png">
+</div>

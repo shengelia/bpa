@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--#include file="components/head.html"-->
+<body>
+<div id="casinoApp">
+    <!--#include file="components/header.html"-->
+    <div class="container-fluid home-background inner-background">
+        <div class="container">
+            <div class="row home-height align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="page__title">TOP CASINO BONUS</h1>
+                    <h2 class="page__subtitle">UP TO 5.000 BONUS & FREE SPINS</h2>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 px-0 px-md-3 text-center">
+                    <div class="filter">
+                        <a href="javascript:void(0);" @click="SetMenu('top')" :class="{'active': activeMenu === 'top'}">Top Games</a>
+                        <a href="javascript:void(0);" @click="SetMenu('poker')" :class="{'active': activeMenu === 'poker'}">Poker Games</a>
+                        <a href="javascript:void(0);" @click="SetMenu('slot')" :class="{'active': activeMenu === 'slot'}">Slot Machines</a>
+                        <a href="javascript:void(0);" @click="SetMenu('table')" :class="{'active': activeMenu === 'table'}">Table Games</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row mt-2 mt-md-5">
+                <div class="col-6 col-md-3 px-0 px-md-3" v-for="g in games[activeMenu]">
+                    <div class="game-block">
+                        <div class="game-img">
+                            <a href="javascript:void(0);" @click="playNow(g.url)">
+                                <img :src="`assets/img/game/${g.id}.jpg`">
+                            </a>
+                        </div>
+                        <div class="game-info">
+                            <p>{{g.name}}</p>
+                            <a href="javascript:void(0);" class="play-now" @click="playNow(g.url)">Play now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!--#include file="components/modal.html"-->
+    <!--#include file="components/footer.html"-->
+</div>
+</body>
+</html>
