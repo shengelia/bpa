@@ -6,11 +6,11 @@
     <!--#include file="components/header.html"-->
     <div class="container-fluid home-background">
         <div class="container">
-            <div class="row home-height align-items-center">
+            <div class="row home-height align-items-center home-page-content">
 
-                <div class="col-12 text-center">
-                    <a href="./games.html" class="button__action">Claim Bonus</a>
-                    <h3 class="page__ex_title">EXCLUSIVE TIME LIMITED OFFER</h3>
+                <div class="col-12 text-center top-bonus-text">
+                    <h1 class="page__title">TOP CASINO BONUS</h1>
+                    <h2 class="page__subtitle">UP TO 5.000 BONUS & FREE SPINS</h2>
                 </div>
 
                 <div class="col-12 offset-md-2 col-md-8 mb-2">
@@ -18,6 +18,9 @@
                         <div class="col-12">
                             <div class="header-box h-100">
                                 <div class="row">
+                                    <div class="col-6 offset-3">
+                                        <a href="./games.html" class="d-none d-md-block button__action__2">Get Bonus</a>
+                                    </div>
                                     <div class="col-12 col-md-6">
                                         <ul>
                                             <li>Offers Exclusive VIP Program</li>
@@ -34,9 +37,6 @@
                                             <li>A Wide Variety of Table Games</li>
                                         </ul>
                                     </div>
-                                    <div class="col-6 offset-3">
-                                        <a href="./games.html" class="d-none d-md-block button__action__2">Get Bonus</a>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -44,9 +44,11 @@
                 </div>
 
                 <div class="col-12 text-center">
-                    <h1 class="page__title">TOP CASINO BONUS</h1>
-                    <h2 class="page__subtitle">UP TO 5.000 BONUS & FREE SPINS</h2>
+                    <!-- <h3 class="page__ex_title">EXCLUSIVE TIME LIMITED OFFER</h3> -->
+                    <a href="./games.html" class="button__action">Claim Bonus</a>
                 </div>
+
+
 
                 <div class="col-12 partner__bottom">
                     <div class="partner__list">
@@ -74,49 +76,11 @@
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid content">
         <div class="container">
-
-            <div class="row">
-                <div class="col-4 text-center">
-                    <img class="nb-img" src="assets/img/cards.png">
-                    <p class="nb-text">Free Games</p>
-                </div>
-                <div class="col-4 text-center">
-                    <img class="nb-img" src="assets/img/bonus.png">
-                    <p class="nb-text">Welcome bonus</p>
-                </div>
-                <div class="col-4 text-center">
-                    <img class="nb-img" src="assets/img/jackpot.png">
-                    <p class="nb-text">Jackpot</p>
-                </div>
-            </div>
-
-
-            <div class="row mt-2 mt-md-5" v-if="games.top.length">
-                <div class="col-12 text-center">
-                    <h3 class="page__subtitle content-color">BEST ONLINE CASINO GAMES</h3>
-                </div>
-            </div>
-
-            <div class="row mt-2 mt-md-5" v-if="games.top.length">
-                <div class="col-6 col-md-4 col-lg-2 px-0 px-md-3" v-for="g in games.top">
-                    <div class="game-block">
-                        <div class="game-img">
-                            <a href="javascript:void(0);" @click="playNow(g.url)">
-                                <img :src="`assets/img/game/${g.id}.jpg`">
-                            </a>
-                        </div>
-                        <div class="game-info">
-                            <p>{{g.name}}</p>
-                            <a href="javascript:void(0);" class="play-now" @click="playNow(g.url)">Play now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="row mt-2 mt-md-4">
+            <div class="row info-box-outer">
                 <div class="col-12 col-md-6">
                     <div class="info-box">
                         <p class="info-box__title">CASINO BONUS</p>
@@ -144,6 +108,46 @@
                             Play 100s of the best online slots for free by claiming your free spins bonus when you join. You’ll find the biggest & best selection in Canada at King Free Casino
                         </p>
                     </div>
+                </div>
+            </div>
+
+
+            <div class="row" v-if="games.top.length">
+                <div class="col-12 text-center">
+                    <h3 class="page__subtitle content-color best-casino-subtitle">BEST ONLINE CASINO GAMES</h3>
+                </div>
+            </div>
+            
+
+            <div class="row games-list-outer" v-if="games.top.length">
+                <div class="col-6 col-md-4 col-lg-2 px-0 px-md-3" v-for="g in games.top">
+                    <div class="game-block">
+                        <div class="game-img">
+                            <a href="javascript:void(0);" @click="playNow(g.url)">
+                                <img :src="`assets/img/game/${g.id}.jpg`">
+                            </a>
+                        </div>
+                        <div class="game-info">
+                            <p>{{g.name}}</p>
+                            <a href="javascript:void(0);" class="play-now" @click="playNow(g.url)">Play now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row bonuses">
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/cards.png">
+                    <p class="nb-text">Free Games</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/bonus.png">
+                    <p class="nb-text">Welcome bonus</p>
+                </div>
+                <div class="col-4 text-center">
+                    <img class="nb-img" src="assets/img/jackpot.png">
+                    <p class="nb-text">Jackpot</p>
                 </div>
             </div>
 

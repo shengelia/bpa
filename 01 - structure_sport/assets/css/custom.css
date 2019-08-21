@@ -3,38 +3,11 @@
 
 *:not(.fa):not(.lg):not(.lg-icon):not(.jis) {
 }
+
 .loader {
     display: none;
 }
-/*.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    z-index: 2001;
-    text-align: center;
-}
 
-.loader img {
-    position: absolute;
-    top: calc(50% - 23px);
-    left: calc(50% - 23px);
-    -webkit-animation-name: spinner;
-    -webkit-animation-timing-function: linear;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-duration: 1s;
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    -webkit-transform-style: preserve-3d;
-    -moz-transform-style: preserve-3d;
-    -ms-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-*/
 @-webkit-keyframes spinner {
     from {
         -webkit-transform: rotateY(0deg);
@@ -59,18 +32,21 @@
     }
 
 }
+
 .site {
     padding-top: 0px;
     padding-bottom: 40px;
     position: relative;
-    top: -5px;
+    background: #F1EFEC;
 }
+
 .main-header {
     width: 100%;
     background-color: transparent;
     position: relative;
     z-index: 2000;
 }
+
 .main-header .container {
     padding: 0;
     background: white;
@@ -82,13 +58,15 @@
     list-style: none;
     -webkit-padding-start: 0;
 }
+
 .main-menu > li {
     display: inline-block;
     margin: 0 5px;
 }
+
 .main-menu > li > a {
     position: relative;
-    color: #282828;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 16px;
     font-weight: bold;
@@ -97,20 +75,24 @@
     display: inline-block;
     padding: 0 5px;
 }
+
 .main-menu > li.active > a {
-    color: #BE2827;
+    color: white;
     font-weight: 600;
-    border-bottom: 5px solid #BE2827;
+    background: #5FA767;
 }
+
 .main-menu-footer {
     list-style: none;
     -webkit-padding-start: 0;
     display: flex;
 }
+
 .main-menu-footer > li {
     flex-basis: 20%;
     text-align: center;
 }
+
 .main-menu-footer > li > a {
     text-transform: uppercase;
     text-decoration: none !important;
@@ -119,29 +101,40 @@
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 600;
+    padding: 5px;
 }
+
 .main-menu-footer > li.active > a {
-    color: #BE2827;
+    color: #213531;
+    border-radius: 5px;
+    background: #DECE40;
 }
+
 .scale-in-center {
     -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
 .d0 {
     animation-delay: 0.1s;
 }
+
 .d1 {
     animation-delay: 0.3s;
 }
+
 .d2 {
     animation-delay: 0.5s;
 }
+
 .d3 {
     animation-delay: 0.7s;
 }
+
 .d4 {
     animation-delay: 0.9s;
 }
+
 @-webkit-keyframes scale-in-center {
     0% {
         -webkit-transform: scale(0);
@@ -198,14 +191,17 @@
     background-size: cover;
     top: -110px;
 }
+
 .slide-back .row {
     height: 300px;
 }
+
 .slider-since {
     position: absolute;
     right: 0;
-    top: 135px;
+    top: 115px;
 }
+
 .slide-back h1 {
     color: #ffffff;
     font-family: "Visby Round CF";
@@ -215,11 +211,11 @@
 }
 .date-viewer {
     position: absolute;
-    top: 235px;
+    top: 205px;
     display: inline-block;
     width: fit-content;
     height: 50px;
-    color: #10004B;
+    color: #DECE40;
     font-family: "Visby Round CF";
     font-size: 25px;
     font-weight: 700;
@@ -234,7 +230,7 @@
     font-weight: bold;
 }
 .text-position {
-    top: 20px;
+    top: 15px;
 }
 .filter-list {
     list-style: none;
@@ -244,12 +240,11 @@
 .filter-list > li {
     flex-basis: 20%;
     align-self: center !important;
-    background: #F3F2F5;
     padding: 5px 0;
     text-align: center;
-    border: 2px solid #CCCCCC;
     margin: 0 10px;
     border-radius: 50px;
+    border: 3px solid #DECE40;
 }
 .filter-list li:first-child {
     border-radius: 50px;
@@ -258,13 +253,14 @@
     flex-basis: 10%;
     background: white;
     border: none;
-    box-shadow: 0 0 5px #BABABA;
+    -webkit-box-shadow: 0px 15px 10px 0px #EFECD0;
+    box-shadow: 0px 15px 10px 0px #EFECD0;
 }
 .filter-list li:first-child a {
     font-size: 16px;
     width: 50px;
     text-align: center;
-    color: #282828;
+    color: #213531;
     padding: 0;
 }
 .filter-list li:first-child.active a {
@@ -272,11 +268,11 @@
     padding: 0;
 }
 .filter-list li:first-child.active {
-    background: #BE2827;
+    background: #DECE40;
     border-radius: 50px;
 }
 .filter-list li:not(:first-child).active {
-    background: #5E7DF3;
+    background: #5FA767;
     position: sticky;
 }
 .filter-list li.active a {
@@ -284,12 +280,12 @@
     font-weight: bold;
 }
 .filter-list li:not(:first-child).active a{
-    font-size: 20px;
+    font-size: 14px;
 }
 .filter-list > li > a {
     position: relative;
     border-radius: 10px;
-    color: #282828;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 14px;
     font-weight: 700;
@@ -401,7 +397,7 @@
 
 .c-info {
     margin: 0 auto;
-    color: #6C6C6C;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 15px;
     font-weight: 700;
@@ -423,7 +419,7 @@
     display: block;
     white-space: nowrap;
     transition: all .3s;
-    background: #BE2827;
+    background: #5FA767;
     color: white;
     position: relative;
 }
@@ -436,10 +432,13 @@
 .c-score {
     text-align: center;
     margin: 0 auto;
-    color: #BE2827;
+    color: white;
     font-family: "Visby Round CF";
     font-size: 35px;
     font-weight: 600;
+    background: #DECE40;
+    border-radius: 35px;
+    padding: 5px;
 }
 .score-inner {
     width: 90px;
@@ -458,7 +457,7 @@
 }
 .rating .rating-list > i {
     font-size: 22px;
-    color: #EFE05C;
+    color: #DECE40;
 }
 .rating-footer span {
     display: inline-block;
@@ -506,13 +505,15 @@
 
 .info-box {
     box-shadow: 0 0 5px #dedede;
-    border-radius: 4px;
+    border-radius: 20px;
     padding: 30px;
     background: white;
+    -webkit-box-shadow: 0px 15px 20px 0px #EFECD0;
+    box-shadow: 0px 15px 20px 0px #EFECD0;
 }
 
 .info-box p {
-    color: #143559;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 18px;
     font-weight: 500;
@@ -529,7 +530,8 @@
     margin: 0 auto;
     cursor: pointer;
     transition: all .4s;
-    border: 2px solid white;
+    -webkit-box-shadow: 5px 5px 20px 0px #E9E9E9;
+    box-shadow: 5px 5px 20px 0px #E9E9E9;
 }
 
 .read-more.active {
@@ -616,15 +618,52 @@
 }
 
 .game-inner-desc {
-    color: white;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
 }
 
+.extra-information ul li {
+    color: #282828;
+    font-family: "Visby Round CF";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.extra-information ul li a {
+    color: #282828;
+    font-family: "Visby Round CF";
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.h2-header {
+    display: block;
+    color: #213531;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 10px 0;
+}
+
+.h3-header {
+    display: block;
+    color: #213531;
+    font-weight: bold;
+    font-size: 22px;
+    margin: 10px 0;
+}
+
 .more-game-inner-desc {
     display: none;
+    margin-top: 20px;
 }
 
 .v-center {
@@ -632,8 +671,11 @@
 }
 
 .game-list-head {
-    padding: 0px 10px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 15px 20px 0px #EFECD0;
+    box-shadow: 0px 15px 20px 0px #EFECD0;
+    background: white;
 }
 
 .game-list-head > div {
@@ -646,11 +688,13 @@
 .game-single {
     padding: 20px 10px;
     position: relative;
-    -webkit-box-shadow: 5px 5px 20px 0px #E9E9E9;
-    box-shadow: 5px 5px 20px 0px #E9E9E9;
-    border-radius: 10px;
+    -webkit-box-shadow: 0px 15px 20px 0px #EFECD0;
+    box-shadow: 0px 15px 20px 0px #EFECD0;
+    border-radius: 20px;
     background-color: #ffffff;
     transition: all .5s;
+    margin: 15px 0;
+    width: 100%;
 }
 
 .game-review {
@@ -842,12 +886,12 @@
 }
 
 .read-more-text {
-    color: #E24349 !important;
+    color: #213531 !important;
     font-family: "Visby Round CF";
     font-size: 14px;
     font-weight: bold;
     line-height: 24px;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .footer-m {
@@ -857,7 +901,7 @@
 
 .h2-title-box {
     border-radius: 3px;
-    color: #282828;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 35px;
     font-weight: 600;
@@ -870,20 +914,24 @@
 .extra-information {
     margin-top: 10px;
     box-shadow: 0 0 5px #dedede;
-    border-radius: 4px;
-    background-color: #282828;
+    border-radius: 20px;
+    background-color: white;
     padding: 40px;
     text-align: center;
+    -webkit-box-shadow: 0px 15px 20px 0px #EFECD0;
+    box-shadow: 0px 15px 20px 0px #EFECD0;
 }
 
 footer {
-    background: #272727;
-    padding: 65px 0 0;
-    margin-top: -100px;
+    /*background: linear-gradient(rgba(32, 64, 167, 0.7) 0%, rgba(58, 58, 165, 0.7) 100%), url(../img/footer.png);*/
+    background: #213531;
+    background-size: cover;
+    position: relative;
+    z-index: 2000;
 }
 
 .review-site {
-    margin-top: -100px;
+    margin-top: -110px;
 }
 
 .score-site {
@@ -895,19 +943,14 @@ footer {
 }
 
 .games-inner-site {
-    margin-top: -100px;
+    margin-top: -110px;
 }
 
 .review-inner-site {
-    margin-top: -100px;
-}
-
-.privacy-site, .cookie-site, .terms-site {
-    margin-top: -50px;
-    padding-top: 25px;
+    margin-top: -110px;
 }
 .index-page {
-    margin-top: -85px;
+    margin-top: -115px;
     padding-bottom: 10px;
 }
 .cm-1 img {
@@ -920,11 +963,13 @@ footer {
     padding-top: 0rem !important;
 }
 .about-site, .contact-site, .cookie-site, .privacy-site, .terms-site {
-    margin-top: -140px;
+    margin-top: -158px;
+    margin-bottom: -48px;
+    padding-bottom: 0 !important;
 }
 .about-site h1, .contact-site h1, .cookie-site h1, .privacy-site h1, .terms-site h1 {
     border-radius: 3px;
-    color: #BE2827;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 35px;
     font-weight: 600;
@@ -935,7 +980,7 @@ footer {
 }
 .about-site h2, .contact-site h2, .cookie-site h2, .privacy-site h2, .terms-site h2 {
     border-radius: 3px;
-    color: #BE2827;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 28px;
     font-weight: bold;
@@ -945,7 +990,7 @@ footer {
     margin-bottom: -15px;
 }
 .about-site h3, .contact-site h3, .cookie-site h3, .privacy-site h3, .terms-site h3 {
-    color: #BE2827;
+    color: #213531;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: bold;
@@ -1044,13 +1089,21 @@ footer {
 }
 .filter-box {
     padding: 20px;
-    border-radius: 90px;
-    -webkit-box-shadow: 5px 5px 20px 0px #E9E9E9;
-    box-shadow: 5px 5px 20px 0px #E9E9E9;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 15px 20px 0px #EFECD0;
+    box-shadow: 0px 15px 20px 0px #EFECD0;
+    background: white;
+    margin-top: -20px;
 }
 .info-box-outer {
     margin-top: -35px;
+    background: #F1EFEC;
+    padding: 20px 0;
+}
+
+.main-header .row {
     background: white;
+    border-radius: 10px;
 }
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -1131,11 +1184,8 @@ footer {
     .filter-list li:first-child.active a {
         padding: 10px;
     }
-    .cm-1 {
-
-    }
     .game-list-head {
-        padding: 10px 10px 0;
+        margin: 10px 0;
     }
     .filter-list li:first-child {
         margin: 0;
@@ -1147,7 +1197,7 @@ footer {
         top: 185px;
     }
     .c-info-2 {
-        width: 50px;
+        color: white;
         top: -16px;
         position: relative;
         font-size: 13px;
@@ -1258,7 +1308,14 @@ footer {
         display: none;
     }
     .index-page {
-        margin-top: -105px;
+        margin-top: -110px;
+    }
+    .filter-list {
+        background: #F1EFEC;
+        border-radius: 0;
+    }
+    .filter-list li:first-child.active {
+        border-radius: 0;
     }
     .filter-box {
         margin-left: -15px;
@@ -1318,10 +1375,10 @@ footer {
     }
     .c-score {
         width: 100%;
-        height: 52px;
+        height: 100%;
         line-height: 36px;
-        border-radius: 0 0 0 3px;
         padding-top: 2px;
+        border-radius: 15px;
     }
     .editor-choice {
         padding: 0;
@@ -1555,6 +1612,9 @@ footer {
 /* --------------------------------------------------- */
 /* media575 */
 @media (max-width:575px) {
+    .about-site, .contact-site, .cookie-site, .privacy-site, .terms-site {
+        margin-top: -126px;
+    }
     .cm-3 .c-info {
         width: 100%;
     }
@@ -1605,7 +1665,7 @@ footer {
 /* media475 */
 @media (max-width: 475px) {
     .filter-box li:nth-child(1) {
-        top: 46px;
+        top: 48px;
     }
     .filter-list > li {
         margin: 0;

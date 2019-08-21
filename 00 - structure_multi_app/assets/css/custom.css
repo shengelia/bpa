@@ -299,7 +299,7 @@ button:focus {
 }
 
 :root {
-    --bg-color: #eeeeee;
+    --bg-color: #DEEAEE;
     --primary-color: #eeeeee;
     --second-color: #3a4750;
     --three-color: #EE818A;
@@ -320,7 +320,7 @@ body {
 
 .home-background {
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.4) 59%, rgba(0, 0, 0, 0.2) 100%), url("../img/bg.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 59%, rgba(0, 0, 0, 0.1) 100%), url("../img/bg.jpg");
     background-size: cover;
 }
 
@@ -349,10 +349,9 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
+    background: transparent;
     padding: 15px 0;
     z-index: 9999;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     -webkit-transition: all .3s;
     transition: all .3s;
 }
@@ -368,25 +367,21 @@ body {
     padding: 8px 15px;
     font-weight: bold;
     text-decoration: none !important;
-    border: 0;
+}
+
+.scrolled {
+    background: white;
+    border-bottom: 1px solid grey;
 }
 
 .nav-sign-in {
-    background-color: #B4DFE5;
-    color: #535965;
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
 }
 
 .nav-sign-up {
-    background: #018A93;
-    color: white;
-}
-
-.nav-sign-up:hover {
-    color: var(--primary-color);
-}
-
-.nav-header:hover {
-    background: white;
+   background-color: white;
+    color: rgba(0, 0, 0, 1);
 }
 
 .nav-logo {
@@ -395,7 +390,7 @@ body {
 
 .page__title {
     font-family: "Visby Round CF Bold";
-    color: #EE818A;
+    color: #67AECA;
     font-size: 50px;
     font-weight: 900;
     text-shadow: var(--text-shadow);
@@ -420,7 +415,7 @@ body {
 
 .button__action {
     font-family: "Visby Round CF Bold";
-    background: #EAB000;
+    background: rgba(0, 0, 0, 0.5);
     color: var(--white-color) !important;
     text-decoration: none !important;
     font-size: 45px;
@@ -428,11 +423,11 @@ body {
     letter-spacing: 1.5px;
     display: inline-block;
     padding: 12px 30px 16px;
-    border: 5px groove white;
     margin: 0 auto;
     border-radius: 10px;
     -webkit-transition: all .3s;
     transition: all .3s;
+    border: 5px inset #67AECA;
 }
 
 @-webkit-keyframes pulsate-bck {
@@ -472,44 +467,54 @@ body {
 
 .button__action__2 {
     font-family: "Visby Round CF Bold";
-    background: white;
-    color: #018A93;
+    background: transparent;
+    color: white;
     text-decoration: none !important;
     font-size: 28px;
     padding: 8px 60px 12px;
     display: block;
     text-align: center;
-    margin: 10px auto 0;
+    margin: 0 auto 20px;
     border-radius: 10px;
     -webkit-transition: all .3s;
     transition: all .3s;
     font-weight: bold;
+    border: 2px solid white;
 }
 
 .button__action__2:hover {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-    color: #018A93;
+    color: #3F96B8;
 }
 
 .nb-img {
-    width: 60px;
+    width: 80px;
 }
 
 .nb-text {
     font-weight: 600;
-    color: var(--three-color);
-    font-size: 20px;
+    color: #3F96B8;
+    font-size: 28px;
     margin-top: 20px;
+    font-family: "Visby Round CF Bold";
+}
+
+.bonuses {
+    margin: 30px 0;
+}
+
+.top-bonus-text {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
 }
 
 .header-box {
     padding: 20px;
-    background: #FDD5DE;
+    background: rgba(0, 0, 0, 0.5);
     color: white;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px groove white;
 }
 
 .header-box ul {
@@ -525,6 +530,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     letter-spacing: 0.9px;
+    list-style-type: square;
 }
 
 .partner__bottom {
@@ -544,7 +550,7 @@ body {
 .partner__list {
     display: flex;
     overflow: hidden;
-    background: #EAB000;
+    background: #67AECA;
     border-radius: var(--global-border-radius);
     padding: 10px;
     align-items: center;
@@ -559,25 +565,31 @@ body {
     max-width: 100%;
 }
 
+.info-box-outer {
+    margin: 20px 0;
+}
+
 .content {
     background: url("../img/pattern.png");
-    padding-top: 70px;
+    padding-top: 15px;
     padding-bottom: 70px;
 }
 
 .content-color {
-    color: var(--four-color);
+    color: #3F96B8;
     text-shadow: none;
+    font-family: "Visby Round CF Bold";
 }
 
 .game-block {
-    background: #fff;
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
-    border-radius: var(--global-border-radius);
+    border-radius: 10px;
     margin-bottom: 30px;
     -webkit-box-shadow: var(--box-shadow);
     -moz-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+    border: 5px inset #67AECA;
 }
 
 .game-block .game-img {
@@ -610,6 +622,7 @@ body {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
+    color: white;
 }
 
 .game-block .game-info a {
@@ -621,7 +634,7 @@ body {
     text-align: center;
     text-decoration: none !important;
     text-transform: uppercase;
-    background-color: var(--four-color);
+    background-color: #67AECA;
     color: var(--primary-color);
     font-weight: 600;
     margin: 5px 0 0;
@@ -630,19 +643,20 @@ body {
 }
 
 .game-block:hover .game-info a {
-    background-color: var(--three-color);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+    background-color: #675582;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .info-box {
-    background: #fff;
-    border-radius: var(--global-border-radius);
-    padding: 20px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 20px;
     text-align: center;
     -webkit-box-shadow: var(--box-shadow);
     -moz-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
+    border: 5px inset #67AECA;
 }
 
 .info-box ~ .info-box {
@@ -658,31 +672,42 @@ body {
 }
 
 .info-box .info-box__title {
-    color: var(--three-color);
+    font-family: "Visby Round CF Bold";
+    color: #67AECA;
     font-weight: 700;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
 .info-box .info-box__desc {
-    color: var(--dark-gray-color);
+    color: white;
+    font-weight: bold;
     font-size: 14px;
     line-height: 16px;
+    letter-spacing: 1px;
+}
+
+.best-casino-subtitle {
+    margin: 40px auto 0;
+}
+
+.games-list-outer {
+    margin: 20px auto;
 }
 
 .footer-back {
-    background: var(--dark-gray-color) url("../img/bg-dots-big.png") no-repeat 0 0;
+    background: #467689 url("../img/bg-dots-big.png") no-repeat 0 0;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .footer-text {
     color: var(--primary-color);
+    text-align: center;
 }
 
 .footer-play-icon img {
-    filter: contrast(2%);
     height: 40px;
     display: inline-block;
     margin-right: 10px;
@@ -696,12 +721,16 @@ body {
     margin-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, .4);
     padding-bottom: 10px;
+    display: flex;
 }
 
 .footer-links a {
-    color: var(--primary-color);
     display: inline-block;
     margin: 0 5px;
+    flex-basis: 50%;
+    color: white;
+    font-size: 18px;
+    text-align: center;
 }
 
 .modal {
@@ -862,14 +891,14 @@ body {
 }
 
 .filter a.active {
-    background: var(--three-color);
+    background: #67AECA;
     color: var(--primary-color);
     transform: scale(1.2);
     z-index: 11;
 }
 
 .filter a:not(.active):hover {
-    background: var(--four-color);
+    background: #675582;
     color: var(--white-color);
 }
 
@@ -972,6 +1001,78 @@ body {
         opacity: 0;
     }
 }
+
+.about-site p, .contact-site p, .cookie-site p, .privacy-site p, .terms-site p {
+    font-family: "Visby Round CF";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 25px;
+    text-align: justify;
+    padding: 10px;
+    color: white;
+}
+
+.about-site p a, .contact-site p a, .cookie-site p a, .privacy-site p a, .terms-site p a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.about-site h2, .contact-site h2, .cookie-site h2, .privacy-site h2, .terms-site h2 {
+    border-radius: 3px;
+    color: #85BFD6;
+    font-family: "Visby Round CF";
+    font-size: 28px;
+    font-weight: bold;
+    width: fit-content;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -15px;
+}
+
+.about-site ul, .contact-site ul, .cookie-site ul, .privacy-site ul, .terms-site ul {
+    font-family: "Visby Round CF";
+    list-style-type: disc;
+    margin-left: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: black;
+}
+
+.about-site ul, .about-site ul li ul, .contact-site ul, .contact-site ul li ul, .cookie-site ul, .cookie-site ul li ul, .privacy-site ul, .privacy-site ul li ul, .terms-site ul, .terms-site ul li ul {
+    margin-bottom: 30px;
+    color: white;
+}
+
+.about-site ul li ul, .contact-site ul li ul, .cookie-site ul li ul, .privacy-site ul li ul, .terms-site ul li ul {
+    font-family: "Visby Round CF";
+    margin-left: 30px;
+    list-style-type: circle;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: white;
+}
+
+.about-site ul li a, .contact-site ul li a, .cookie-site ul li a, .privacy-site ul li a, .terms-site ul li a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.about-site h3, .contact-site h3, .cookie-site h3, .privacy-site h3, .terms-site h3 {
+    color: #85BFD6;
+    font-family: "Visby Round CF";
+    font-size: 20px;
+    font-weight: bold;
+    width: fit-content;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: -15px;
+}
+
 @media (max-width: 768px) {
     .nav-logo {
         max-height: 25px;
