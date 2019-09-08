@@ -3363,7 +3363,7 @@ footer h4.h05::after {
 }
 .send-mail, .contact-num {
     color: #455A64;
-    font-size: 22px;
+    font-size: 32px;
     font-weight: bold;
 }
 .about-Elnur, .about-Laura {
@@ -3421,4 +3421,39 @@ footer h4.h05::after {
     text-transform: uppercase;
     padding: 50px 0 0px;
     letter-spacing: 0px;
+}
+
+.testimonial-author img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.2rem auto;
+    display: block;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.content-500 {
+    text-align: center;
+}
+
+.e-b img {
+    width: 250px;
+}
+
+.l-o img {
+    width: 90%;
+}
+
+.content-500 p {
+    font-size: 18px;
+}
+
+.contact-us {
+    text-align: center;
+}
+
+.contact-us p {
+    font-weight: bold;
+    font-size: 44px;
+    margin: 50px auto 20px;
 }

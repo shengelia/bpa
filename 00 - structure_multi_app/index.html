@@ -13,6 +13,7 @@
                     <h2 class="page__subtitle">UP TO 5.000 BONUS & FREE SPINS</h2>
                 </div>
 
+
                 <div class="col-12 offset-md-2 col-md-8 mb-2">
                     <div class="row">
                         <div class="col-12">
@@ -43,12 +44,11 @@
                     </div>
                 </div>
 
-                <div class="col-12 text-center">
+                <div class="col-12 text-center pr-button-text">
                     <!-- <h3 class="page__ex_title">EXCLUSIVE TIME LIMITED OFFER</h3> -->
                     <a href="./games.html" class="button__action">Claim Bonus</a>
                 </div>
-
-
+                
 
                 <div class="col-12 partner__bottom">
                     <div class="partner__list">
@@ -80,44 +80,12 @@
 
     <div class="container-fluid content">
         <div class="container">
-            <div class="row info-box-outer">
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <p class="info-box__title">CASINO BONUS</p>
-                        <p class="info-box__desc">
-                            Join now and new players will receive a huge welcome bonus. Don’t miss out on the opportunity to sign up and play at the best online casino for free!
-                        </p>
-                    </div>
-                    <div class="info-box">
-                        <p class="info-box__title">BEST SLOTS</p>
-                        <p class="info-box__desc">
-                            Play the best casino games at King Free Casino. Submerse yourself in classic slots games such as Book of Ra, Sizzling Hot, Age Of The Gods and many many more.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="info-box">
-                        <p class="info-box__title">ONLINE CASINO GAMES</p>
-                        <p class="info-box__desc">
-                            We know avid players are always looking for the newest games to try - you’ll find hundreds of new games and all your old favourites right here!
-                        </p>
-                    </div>
-                    <div class="info-box">
-                        <p class="info-box__title">FREE SPINS</p>
-                        <p class="info-box__desc">
-                            Play 100s of the best online slots for free by claiming your free spins bonus when you join. You’ll find the biggest & best selection in Canada at King Free Casino
-                        </p>
-                    </div>
-                </div>
-            </div>
-
 
             <div class="row" v-if="games.top.length">
                 <div class="col-12 text-center">
                     <h3 class="page__subtitle content-color best-casino-subtitle">BEST ONLINE CASINO GAMES</h3>
                 </div>
             </div>
-            
 
             <div class="row games-list-outer" v-if="games.top.length">
                 <div class="col-6 col-md-4 col-lg-2 px-0 px-md-3" v-for="g in games.top">
@@ -135,7 +103,6 @@
                 </div>
             </div>
 
-
             <div class="row bonuses">
                 <div class="col-4 text-center">
                     <img class="nb-img" src="assets/img/cards.png">
@@ -149,14 +116,46 @@
                     <img class="nb-img" src="assets/img/jackpot.png">
                     <p class="nb-text">Jackpot</p>
                 </div>
+            </div>            
+            
+            <div class="row info-box-outer">
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <p class="info-box__title">CASINO BONUS</p>
+                        <p class="info-box__desc">
+                            Join now and new players will receive a huge welcome bonus. Don’t miss out on the opportunity to sign up and play at the best online casino for free!
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <p class="info-box__title">BEST SLOTS</p>
+                        <p class="info-box__desc">
+                            Play the best casino games at King Free Casino. Submerse yourself in classic slots games such as Book of Ra, Sizzling Hot, Age Of The Gods and many many more.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="info-box">
+                        <p class="info-box__title">ONLINE CASINO GAMES</p>
+                        <p class="info-box__desc">
+                            We know avid players are always looking for the newest games to try - you’ll find hundreds of new games and all your old favourites right here!
+                        </p>
+                    </div>
+                    <div class="info-box">
+                        <p class="info-box__title">FREE SPINS</p>
+                        <p class="info-box__desc">
+                            Play 100s of the best online slots for free by claiming your free spins bonus when you join. You’ll find the biggest & best selection in Canada at King Free Casino
+                        </p>
+                    </div>
+                </div>
             </div>
 
-
-            <div class="row mt-2 mt-md-5">
+            <div class="row claim-bonus">
                 <div class="col-12 text-center">
                     <a href="./games.html" class="button__action">Claim Bonus</a>
                 </div>
             </div>
+
         </div>
     </div>
     <!--#include file="components/modal.html"-->
