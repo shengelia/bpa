@@ -375,15 +375,13 @@ body {
 }
 
 .nav-sign-in {
-    background-color: rgba(255, 255, 255, 0.01);
-    color: #BFBFBF;
-    border: 2px solid #BFBFBF;
+    background-color: #3C6627;
+    color: white;
 }
 
 .nav-sign-up {
-    background-color: rgba(255, 255, 255, 0.01);
-    color: #BFBFBF;
-    border: 2px solid #BFBFBF;
+    background-color: #3C6627;
+    color: white;
 }
 
 .nav-logo {
@@ -393,7 +391,7 @@ body {
 .page__title {
     font-family: "Visby Round CF Bold";
     color: #FFFFFF;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px !important;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px !important;
     font-size: 50px;
     font-weight: 900;
     text-shadow: var(--text-shadow);
@@ -403,7 +401,7 @@ body {
 
 .page__subtitle {
     color: #FFFFFF;
-    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px, #B50717 0px 0px 5px !important;
+    text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 5px, #FFF 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px, #679326 0px 0px 5px !important;
     font-size: 42px;
     font-weight: 600;
     text-shadow: var(--text-shadow);
@@ -421,9 +419,8 @@ body {
 
 .button__action {
     font-family: "Visby Round CF Bold";
-    /*background: rgba(0, 0, 0, 0.5);*/
-    background: #ECECEC;
-    color: #131313 !important;
+    background: rgba(255, 255, 255, 0.7);
+    color: #fff !important;
     text-decoration: none !important;
     font-size: 45px;
     font-weight: 900;
@@ -434,8 +431,39 @@ body {
     border-radius: 10px;
     -webkit-transition: all .3s;
     transition: all .3s;
-    border: 5px ridge #B50717;
+    border: 5px double #679326;
+    background: linear-gradient(289deg, #008965, #037211, #46816d, #0da82f);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    -o-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
 }
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 59%}
+    50%{background-position:100% 42%}
+    100%{background-position:0% 59%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 59%}
+    50%{background-position:100% 42%}
+    100%{background-position:0% 59%}
+}
+@-o-keyframes AnimationName {
+    0%{background-position:0% 59%}
+    50%{background-position:100% 42%}
+    100%{background-position:0% 59%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 59%}
+    50%{background-position:100% 42%}
+    100%{background-position:0% 59%}
+}
+
 
 @-webkit-keyframes pulsate-bck {
     0% {
@@ -474,18 +502,19 @@ body {
 
 .button__action__2 {
     font-family: "Visby Round CF Bold";
-    background: #131313;
-    color: #ECECEC;
+    background: #fff;
+    color: #000;
     text-decoration: none !important;
     font-size: 28px;
     padding: 8px 60px 12px;
     display: block;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 20px auto 0;
     border-radius: 10px;
     -webkit-transition: all .3s;
     transition: all .3s;
     font-weight: bold;
+    border: 5px double #679326;
 }
 
 .button__action__2:hover {
@@ -500,14 +529,14 @@ body {
 
 .nb-text {
     font-weight: 600;
-    color: #1D1D1D;
+    color: #3C6627;
     font-size: 28px;
     margin-top: 20px;
     font-family: "Visby Round CF Bold";
 }
 
 .bonuses {
-    margin: 25px 0;
+    margin: 45px 0;
 }
 
 .top-bonus-text {
@@ -516,11 +545,11 @@ body {
 
 .header-box {
     padding: 20px;
-    background: #ECECEC;
+    background: rgba(255, 255, 255, 0.7);
     color: #131313 !important;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
-    border: 5px ridge #B50717;
+    border: 5px double #FFFFFF;
 }
 
 .top-bonus-text {
@@ -550,20 +579,14 @@ body {
     bottom: 0;
     max-width: none;
     padding: 0;
-    background: #ECECEC;
-    border: 5px ridge #B50717;
+    background: rgba(255, 255, 255, 0.6);
     border-radius: 20px;
-}
-
-.partner__bottom .partner__list {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: var(--box-shadow);
+    border: 5px double #FFFFFF;
 }
 
 .partner__list {
     display: flex;
     overflow: hidden;
-    background: #ECECEC;
     border-radius: 20px;
     padding: 10px;
     align-items: center;
@@ -583,16 +606,20 @@ body {
 }
 
 .content {
-    background: white url("../img/pattern.png");
+    background: white url(../img/pattern1.png);
     padding-top: 15px;
     padding-bottom: 70px;
+}
+
+.content-1 {
+    background: white url(../img/pattern.png);
 }
 
 .claim-bonus {
     margin: 25px 0;
 }
 .content-color {
-    color: #131313;
+    color: #3C6627;
     text-shadow: none;
     font-family: "Visby Round CF Bold";
 }
@@ -606,7 +633,7 @@ body {
     box-shadow: var(--box-shadow);
     background: #ECECEC;
     color: #131313 !important;
-    border: 5px ridge #B50717;
+    border: 5px double #679326;
 }
 
 .game-block .game-img {
@@ -651,7 +678,7 @@ body {
     text-align: center;
     text-decoration: none !important;
     text-transform: uppercase;
-    background-color: #131313;
+    background-color: #3C6627;
     color: var(--primary-color);
     font-weight: 600;
     margin: 5px 0 0;
@@ -660,7 +687,7 @@ body {
 }
 
 .game-block:hover .game-info a {
-    background-color: #CF291D;
+    background-color: #679326;
     -webkit-transform: scale(1.05);
     transform: scale(1.05);
 }
@@ -672,9 +699,9 @@ body {
     -webkit-box-shadow: var(--box-shadow);
     -moz-box-shadow: var(--box-shadow);
     box-shadow: var(--box-shadow);
-    background: #ECECEC;
+    background: #FAFAFA;
     color: #131313 !important;
-    border: 5px ridge #B50717;
+    border: 5px double #679326;
 }
 
 .info-box ~ .info-box {
@@ -691,7 +718,7 @@ body {
 
 .info-box .info-box__title {
     font-family: "Visby Round CF Bold";
-    color: #B50717;
+    color: #3C6627;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 24px;
@@ -708,7 +735,7 @@ body {
 
 .best-casino-subtitle {
     margin: 30px auto 10px;
-    color: #1D1D1D;
+    color: #3C6627;
 }
 
 .games-list-outer {
@@ -716,9 +743,15 @@ body {
 }
 
 .footer-back {
-    background: #1D1D1D url("../img/bg-dots-big.png") no-repeat 0 0;
     padding-top: 30px;
     padding-bottom: 30px;
+    background: linear-gradient(289deg, #008965, #037211, #46816d, #0da82f);
+    background-size: 800% 800%;
+
+    -webkit-animation: AnimationName 7s ease infinite;
+    -moz-animation: AnimationName 7s ease infinite;
+    -o-animation: AnimationName 7s ease infinite;
+    animation: AnimationName 7s ease infinite;
 }
 
 .footer-text {
@@ -887,7 +920,7 @@ body {
     width: 25%;
     font-weight: bold;
     text-decoration: none !important;
-    background: var(--primary-color);
+    background: rgba(255, 255, 255, 0.7);
     color: var(--dark-gray-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 5px;
@@ -910,14 +943,14 @@ body {
 }
 
 .filter a.active {
-    background: #CF291D;
+    background: #3C6627;
     color: var(--primary-color);
     transform: scale(1.2);
     z-index: 11;
 }
 
 .filter a:not(.active):hover {
-    background: #CF291D;
+    background: #3C6627;
     color: var(--white-color);
 }
 
@@ -1040,7 +1073,7 @@ body {
 
 .about-site h2, .contact-site h2, .cookie-site h2, .privacy-site h2, .terms-site h2 {
     border-radius: 3px;
-    color: #B50717;
+    color: #3C6627;
     font-family: "Visby Round CF";
     font-size: 28px;
     font-weight: bold;
@@ -1082,7 +1115,7 @@ body {
 }
 
 .about-site h3, .contact-site h3, .cookie-site h3, .privacy-site h3, .terms-site h3 {
-    color: #B50717;
+    color: #3C6627;
     font-family: "Visby Round CF";
     font-size: 20px;
     font-weight: bold;
