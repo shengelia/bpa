@@ -1,0 +1,23 @@
+/* Regular */
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('AvenirNextCyrRegular.eot?#iefix') format('embedded-opentype'),
+		 url('AvenirNextCyrRegular.woff') format('woff'),
+		 url('AvenirNextCyrRegular.ttf')  format('truetype'),
+		 url('AvenirNextCyrRegular.svg#AvenirNextCyrRegular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+/* Bold */
+@font-face {
+	font-family: 'AvenirNextCyr';
+	src: url('AvenirNextCyrBold.eot?#iefix') format('embedded-opentype'),
+		 url('AvenirNextCyrBold.woff') format('woff'),
+		 url('AvenirNextCyrBold.ttf')  format('truetype'),
+		 url('AvenirNextCyrBold.svg#AvenirNextCyrBold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}

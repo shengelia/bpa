@@ -1,0 +1,534 @@
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+html, body {height: 100%;}
+
+body {
+	overflow-x: hidden;
+	background: #f7f7f7;
+	font-size: 100%;
+	font-family: NeoSansPro, Arial, Tahoma, Verdana, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a, a:active , a:focus {
+	outline: 0;
+	text-decoration: none;
+}
+
+a:hover {
+	color: inherit;
+	outline: 0;
+	text-decoration: none;
+}
+
+* {
+	outline: none;
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle;
+}
+
+.noscroll {
+	overflow: hidden;
+}
+
+.vertical-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+/* Header Begin */
+#header {
+	position: relative;
+	height: 86px;
+}
+
+.logo {
+	float: left;
+	line-height: 86px;
+}
+
+.menu {
+	float: right;
+	padding-top: 35px;
+}
+
+.menu a {
+	position: relative;
+	float: left;
+	margin-right: 60px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+	color: #fff;
+}
+
+.menu a:last-child {
+	margin-right: 0;
+}
+
+.menu a.active {
+	font-weight: 700;
+}
+
+.btn_menu {
+	float: right;
+	display: none;
+	width: 30px;
+	height: 30px;
+	margin-top: 28px;
+	background: url(../images/icon/icon-menu.svg) no-repeat right center;
+	background-size: 22px;
+	border: none;
+}
+/* Header End */
+
+/* CoverBlock Begin */
+.cover_wrapper {
+	position: relative;
+	height: 400px;
+	background-color: #dadada;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.cover_wrapper.h270 {height: 270px;}
+.cover_wrapper.h390 {height: 390px;}
+.cover_wrapper.h430 {height: 430px;}
+
+.cover_block .container {
+	position: relative;
+	z-index: 10;
+}
+
+.cover_block h1 {
+	margin: 10px 0 0;
+	font-size: 35px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+}
+
+.cover_block span.date {
+	display: block;
+	margin-top: 15px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+}
+
+.filter {
+	position: relative;
+	width: 542px;
+	height: 60px;
+	margin: 60px auto 0;
+	padding: 0 55px;
+	background: #fff;
+	border-radius: 30px;
+	display: none;
+}
+
+.filter .txt {
+	display: none;
+	float: left;
+	width: 100%;
+	padding: 0 20px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 60px;
+	color: #000;
+	cursor: pointer;
+	background: #fff url(../images/arrow/arrow-filter.png) no-repeat right 20px center;
+	border-radius: 30px;
+	transition: 400ms ease;
+}
+
+.filter .txt.show {
+	border-radius: 30px 30px 0 0;
+}
+
+.filter .list {
+	text-align: center;
+}
+
+.filter .list a,
+.filter .list input[type=checkbox].css-checkbox + label.css-label {
+	position: relative;
+	display: inline-block;
+	margin: 0 20px 0 0;
+	padding-left: 25px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 60px;
+	color: #000;
+	text-align: left;
+	cursor: pointer;
+	transition: 400ms ease;
+}
+
+.filter .list a {
+	padding: 0;
+}
+
+.filter .list input[type=checkbox].css-checkbox + label.css-label:last-child {margin: 0;}
+
+.filter .list input[type=checkbox].css-checkbox + label.css-label:before {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-image: url(../images/icon/icon-checkbox.png);
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: 0.4s;
+}
+
+.filter .list input[type=checkbox].css-checkbox:checked + label.css-label:before {background-image: url(../images/icon/icon-checkbox-on.png);}
+
+.editor_review {
+	padding-top: 15px;
+	text-align: center;
+}
+
+.editor_review ul {
+	display: inline-block;
+	margin: 0;
+}
+
+.editor_review ul li {
+	float: left;
+	margin-right: 45px;
+	padding-left: 50px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 35px;
+	color: #fff;
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.editor_review ul li:first-child {background-image: url(../images/icon/icon-editor1.png);}
+.editor_review ul li:last-child {background-image: url(../images/icon/icon-editor2.png); margin-right: 0;}
+
+/* CoverBlock End */
+
+/* Wrapper Begin */
+.wrapper {
+	padding: 0 0 70px;
+}
+
+.static_text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #373737;
+	text-align: justify;
+}
+
+.casino_list {
+	position: relative;
+	margin-top: -180px;
+}
+
+.casino_list table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0 10px;
+}
+
+.casino_list table thead td {
+	padding: 5px 5px 10px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+}
+
+.casino_list table tbody tr td {
+	height: 100px;
+	padding: 15px 5px;
+	background: #fff;
+	text-align: center;
+}
+
+.casino_list table tbody tr td.first-col {
+	width: 54px;
+	padding: 0 7px;
+	text-align: left;
+	vertical-align: top;
+}
+
+.casino_list table tbody tr td.first-col span {
+	display: block;
+	width: 54px;
+}
+
+.casino_list table tbody tr td span.num {
+	width: auto;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 70px;
+	color: #000;
+}
+
+.casino_list table tbody tr td span.address {
+	display: block;
+	max-width: 200px;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.1;
+	color: #000;
+}
+
+.casino_list table tbody tr td span.score {
+	display: block;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 1;
+	color: #000;
+}
+
+.casino_list table tbody tr td:last-child {
+	width: 190px;
+	padding: 15px 20px;
+	background: #f0f0f0;
+}
+
+.go_site_block {
+	padding-top: 40px;
+}
+
+a.go_site {
+	display: block;
+	width: 150px;
+	height: 50px;
+	margin: 0 auto;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	background: #30ba27;
+	border-radius: 5px;
+}
+
+a.go_site:hover {
+	background: #2aa122;
+}
+
+.casino_list table tbody tr td span.visit_name {
+	display: block;
+	margin-top: 10px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #666;
+}
+
+.casino_list table tbody tr td span.visit_name a {
+	color: #666;
+}
+
+.casino_list table tbody tr td .rating .rate {
+	margin: 6px 0 2px;
+	border-spacing: 0;
+}
+
+.casino_list table tbody tr td p.read_review,
+.casino_list table tbody tr td .rating p,
+.casino_list table tbody tr td p.read_review a,
+.casino_list table tbody tr td .rating p a {
+	margin: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1;
+	color: #666;
+}
+
+.casino_list table tbody tr td .rating p span {
+	font-weight: 700;
+}
+
+.casino_list table tbody tr td p.read_review {margin-top: 5px;}
+/* Wrapper End */
+
+/* Footer Begin */
+#footer {
+	position: relative;
+	padding: 20px 0;
+	background: #f0f0f0;
+}
+
+#footer p {
+	float: left;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 50px;
+	color: #373737;
+}
+
+.footer_menu {
+	float: right;
+	padding-top: 17px;
+}
+
+.footer_menu a {
+	float: left;
+	margin-right: 40px;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 1;
+	color: #373737;
+	transition: color 600ms ease;
+}
+
+.footer_menu a:last-child {
+	margin-right: 0;
+}
+
+.footer_menu a:hover {
+	color: #000;
+}
+
+.subscribe {
+	padding-top: 35px;
+}
+
+.subscribe input[type="text"] {
+	float: left;
+	display: block;
+	width: 255px;
+	height: 50px;
+	padding: 0 15px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	color: #000;
+	background: #fff;
+	border: 0;
+	border-radius: 5px;
+}
+
+.subscribe input[type="text"]::-webkit-input-placeholder {color: #000;}
+.subscribe input[type="text"]::-moz-placeholder {color: #000;}
+
+.subscribe input[type="submit"] {
+	float: left;
+	display: block;
+	min-width: 120px;
+	height: 50px;
+	margin-left: 5px;
+	padding: 0 5px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1;
+	color: #fff;
+	background: #f8be13;
+	border: none;
+	border-radius: 5px;
+	transition: background 0.3s linear, border 400ms ease;
+}
+
+.subscribe input[type="submit"]:hover {
+	background: #deab12;
+}
+/* Footer End */
+
+/* Rankings work Begin */
+.rankings_work {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 99999;
+	overflow-x: hidden;
+	overflow-y: auto;
+	background: rgba(0,0,0,0.8);
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+}
+
+.rankings_work.show {
+	opacity: 1;
+	visibility: visible;
+}
+
+.rankings_work_inner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translate(-50%,-50%) scale(0.8,0.8);
+	width: 920px;
+	padding: 70px 90px;
+	background: #30ba27;
+	border-radius: 10px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s ease;
+}
+
+.rankings_work_inner.show {
+	transform: translate(-50%,-50%) scale(1,1);
+	opacity: 1;
+	visibility: visible;
+}
+
+.rankings_work_inner h1 {
+	margin: 0 0 80px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+}
+
+.rankings_work_inner .box {
+	text-align: center;
+}
+
+.rankings_work_inner .box figure {
+	width: 100%;
+	max-width: 150px;
+	height: 150px;
+	line-height: 150px;
+	background: #f8be13;
+	border-radius: 50%;
+}
+
+.rankings_work_inner .box h2 {
+	margin: 17px 0 0;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.1;
+	color: #fff;
+}
+/* Rankings work End */
+.read_review {
+	display: none;
+}
+.subscribe {
+	display: none;
+}

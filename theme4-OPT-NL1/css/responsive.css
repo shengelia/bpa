@@ -1,0 +1,77 @@
+@media only screen and (max-width: 991px) {
+	.rankings_work_inner {width: 80%; margin: 30px 0;padding: 30px;}
+	.rankings_work_inner h1,.rankings_work_inner .box {margin-bottom: 20px;}
+	.rankings_work_inner .box h2 {font-size: 14px;}
+	.rankings_work_inner .box figure {width: 100px; height: 100px; line-height: 100px; margin: 0 auto;}
+	.rankings_work_inner .box figure img {max-width: 45px;}
+	.footer_menu {float: none;width: 100%; padding: 0; text-align: center;}
+	.footer_menu a {float: none; display: inline-block; margin: 0 24px 5px;}
+	#footer {min-height: auto; padding: 20px 0;}
+	#footer .pull-right {width: 100%;}
+	#footer p {width: 100%; margin-top: 15px; text-align: center; line-height: 1;}
+	.subscribe input[type="text"] {width: 190px; height: 38px; font-size: 14px;}
+	.subscribe input[type="submit"] {min-width: 90px; height: 38px; font-size: 14px;}
+	.wrapper {padding: 0 0 50px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.logo {padding-top: 20px;}
+	.logo img {width: 110px;}
+	.btn_menu {display: block;}
+	.menu {display: none; padding: 0; position: absolute; top: 40px; z-index: 500; right: 15px; width: 40%; background: #fff;}
+	.menu a {width: 100%; margin: 0; padding: 20px 10px; font-size: 16px; line-height: 1; text-align: center; color: #000;}
+	.menu a:after {display: none;}
+	
+	.cover_wrapper {height: 270px!important; border-radius: 0 0 25% 25%;}
+	.cover_block h1 {margin-top: 10px; font-size: 25px;}
+	.cover_block span.date {margin-top: 10px; font-size: 16px;}
+	.trusted {margin-top: 15px;}
+	.trusted img {width: 250px;}
+	
+	.filter .list span {margin: 0 25px 15px 0;}
+	.filter .list input[type=checkbox].css-checkbox + label.css-label, .filter .list a {width: 125px; height: 45px; font-size: 14px; line-height: 45px;}
+	.filter .list a {padding: 0;}
+	
+	.wrapper {padding: 25px 0;}
+	.static_text.mt80 {margin-top: 30px!important;}
+	
+	.casino_list {margin: 0;padding: 0; border-radius: 0; background: none;}
+	.casino_list table {border-spacing: 0;}
+	.casino_list table thead {display: none;}
+	.casino_list table tbody tr {display: block; overflow: hidden; margin-bottom: 10px; background: #fff;}
+	.casino_list table tbody tr td {float: left; width: 50%;display: block; height: auto; border-radius: 0!important;}
+	.casino_list table tbody tr td:last-child {width: 100%; min-height: auto; padding: 15px;}
+	.casino_list table tbody tr td .rating {padding: 25px 0;}
+	.casino_list table tbody tr td span.score {font-size: 80px;}
+	.casino_list table tbody tr td figure {line-height: 110px;}
+	/* a.go_site {width: 100%;} */
+	.casino_list table tbody tr td span.address {max-width: 100%; min-height: 110px; padding-top: 40px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.col-mob-12 {width: 100%;}
+	.col-mob-6 {width: 50%;}
+	.filter .list span {display: block; float: left; width: calc((100% - 25px) / 2); margin-right: 25px; margin-bottom: 15px;}
+	.filter .list input[type=checkbox].css-checkbox + label.css-label {width: 100%; margin: 0;}
+	.filter .list span:nth-child(2n), .filter .list a:nth-child(2n) {margin-right: 0;}
+	.cover_block h1 {font-size: 20px;}
+	.casino_list table tbody tr td span.score {font-size: 50px;}
+	.menu {width: 70%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.btn_menu {display: none!important;}
+	.menu a {margin-right: 25px; font-size: 16px;}
+	.casino_list {padding: 15px;}
+	.casino_list table tbody tr td span.address {max-width: 200px;}
+	a.go_site {width: 120px; font-size: 13px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.btn_menu {display: none!important;}
+}
+
+@media only screen and (min-width:1200px) {
+	.btn_menu {display: none!important;}
+	.filter .list {display: block!important;}
+}

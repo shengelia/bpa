@@ -1,0 +1,80 @@
+@media only screen and (max-width: 991px) {
+	.rankings_work_inner {width: 80%; margin: 30px 0;padding: 30px;}
+	.rankings_work_inner h1,.rankings_work_inner .box {margin-bottom: 20px;}
+	.rankings_work_inner .box h2 {font-size: 14px;}
+	.rankings_work_inner .box figure {width: 100px; height: 100px; line-height: 100px; margin: 0 auto;}
+	.rankings_work_inner .box figure img {max-width: 45px;}
+	.footer_menu {float: none;width: 100%; padding: 0; text-align: center;}
+	.footer_menu a {float: none; display: inline-block; margin: 0 24px 5px;}
+	#footer {min-height: auto; padding: 20px 0;}
+	#footer .pull-right {width: 100%;}
+	#footer p {width: 100%; text-align: center; line-height: 1;}
+	.subscribe input[type="text"] {width: 190px; height: 38px; font-size: 14px;}
+	.subscribe input[type="submit"] {min-width: 90px; height: 38px; font-size: 14px;}
+	.wrapper {padding: 0 0 50px;}
+}
+
+@media only screen and (max-width: 767px) {
+	.btn_menu {display: block;}
+	.menu {display: none; padding: 0; position: absolute; top: 100%; z-index: 500; right: 0; width: 40%; background: #fff;}
+	.menu a {width: 100%; margin: 0; padding: 20px 10px; font-size: 16px; line-height: 1; text-align: center; color: #000;}
+	.menu a:after {display: none;}
+	
+	.cover_wrapper {height: 240px!important;}
+	.cover_wrapper.h270 {height: 270px!important;}
+	.cover_block h1 {margin-top: 5px; font-size: 25px;}
+	.cover_block span.date {margin-top: 10px; font-size: 16px;}
+	.editor_review ul li {margin: 0 5px;}
+	
+	.filter {width: 370px; padding: 0; margin-top: 20px;}
+	.filter .list {display: none; padding: 10px 20px 0; border-top: 1px solid #ccc; position: absolute; top: 100%; left: 0; z-index: 300; width: 100%; background: #fff; border-radius: 0 0 30px 30px; overflow: hidden;}
+	.filter .list input[type=checkbox].css-checkbox + label.css-label, .filter .list a {float: none; width: 100%; margin: 0 0 15px!important; padding: 0 20px; font-size: 16px; font-weight: 400; line-height: 18px; color: #000; background: #fff!important;}
+	.filter .list input[type=checkbox].css-checkbox + label.css-label:after, .filter .list a:after {display: none;}
+	.filter .list input[type=checkbox].css-checkbox + label.css-label:before {width: 20px; text-align: center;color: #2d5fd6;}
+	.filter .txt {display: block;}
+	.filter .list a {padding: 0;}
+	
+	.wrapper {padding: 25px 0;}
+	.static_text.mt80 {margin-top: 30px!important;}
+	
+	.casino_list {margin: 0;padding: 0; border-radius: 0; background: none;}
+	.casino_list table {border-spacing: 0;}
+	.casino_list table thead {display: none;}
+	.casino_list table tbody tr {display: block; overflow: hidden; margin-bottom: 10px; background: #fff;}
+	.casino_list table tbody tr td {float: left; width: calc((100% - 68px) / 2);display: block; height: auto; border-radius: 0!important;}
+	.casino_list table tbody tr td:first-child {width: 68px;}
+	.casino_list table tbody tr td:nth-child(4) {margin-left: 68px;}
+	.casino_list table tbody tr td:last-child {width: 100%; min-height: auto; padding: 15px;}
+	.casino_list table tbody tr td .rating {padding: 25px 0;}
+	.casino_list table tbody tr td span.score {font-size: 80px;}
+	.casino_list table tbody tr td figure {line-height: 110px;}
+	/* a.go_site {width: 100%;} */
+	.casino_list table tbody tr td span.address {max-width: 100%; min-height: 110px; padding-top: 40px;}
+	.logo {width: 220px;}
+}
+
+@media only screen and (max-width: 480px) {
+	.col-mob-12 {width: 100%;}
+	.col-mob-6 {width: 50%;}
+	.cover_block h1 {font-size: 20px;}
+	.filter {width: 280px; padding: 0; margin-top: 20px;}
+	.casino_list table tbody tr td span.score {font-size: 50px;}
+	.menu {width: 70%;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.btn_menu {display: none!important;}
+	.menu a {margin-right: 25px; font-size: 16px;}
+	.casino_list {padding: 15px;}
+	.casino_list table tbody tr td span.address {max-width: 200px;}
+	a.go_site {width: 120px; font-size: 13px;}
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.btn_menu {display: none!important;}
+}
+
+@media only screen and (min-width:1200px) {
+	.btn_menu {display: none!important;}
+	.filter .list {display: block!important;}
+}

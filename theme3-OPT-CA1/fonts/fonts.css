@@ -1,0 +1,35 @@
+/* Light */
+@font-face {
+	font-family: 'NeoSansPro';
+	src: url('NeoSansPro-Light_AZ.eot?#iefix') format('embedded-opentype'),
+		 url('NeoSansPro-Light_AZ.woff') format('woff'),
+		 url('NeoSansPro-Light_AZ.ttf')  format('truetype'),
+		 url('NeoSansPro-Light_AZ.svg#NeoSansPro-Light_AZ') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+/* Regular */
+@font-face {
+	font-family: 'NeoSansPro';
+	src: url('NeoSansPro-Regular_AZ.eot?#iefix') format('embedded-opentype'),
+		 url('NeoSansPro-Regular_AZ.woff') format('woff'),
+		 url('NeoSansPro-Regular_AZ.ttf')  format('truetype'),
+		 url('NeoSansPro-Regular_AZ.svg#NeoSansPro-Regular_AZ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+/* Bold */
+@font-face {
+	font-family: 'NeoSansPro';
+	src: url('NeoSansPro-Bold_AZ.eot?#iefix') format('embedded-opentype'),
+		 url('NeoSansPro-Bold_AZ.woff') format('woff'),
+		 url('NeoSansPro-Bold_AZ.ttf')  format('truetype'),
+		 url('NeoSansPro-Bold_AZ.svg#NeoSansPro-Bold_AZ') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
